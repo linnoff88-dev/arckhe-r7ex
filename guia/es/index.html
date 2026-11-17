@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>r7ex — el reel viral de INEMA</title>
+<meta name="description" content="r7ex convierte una tesis en un reel 9:16 viral: guion de 7 etapas de gatillo, avatar de Nei, imágenes de Codex y acabado de noticiero sincronizado con la voz.">
+<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/r7ex/guia/">
+<link rel="alternate" hreflang="en" href="https://inematds.github.io/r7ex/guia/en/">
+<link rel="alternate" hreflang="es" href="https://inematds.github.io/r7ex/guia/es/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0c0c10; --bg2:#14141b; --card:#16161e; --line:#272730;
+    --txt:#e9e9ee; --mut:#9a9aa6; --amb:#E2A23B; --amb2:#f0c070; --sky:#38bdf8; --pro:#cbd5e1;
+    color-scheme:dark;
+  }
+  body.light{
+    --bg:#f6f7f9; --bg2:#eceef2; --card:#ffffff; --line:#e1e3ea;
+    --txt:#1a1a22; --mut:#5b5b68; --amb:#b9791d; --amb2:#a16207; --sky:#0369a1; --pro:#b45309;
+    color-scheme:light;
+  }
+  body.light .hero .glow{opacity:.5}
+  body.light pre{background:#0e0e14;color:#d6d6e0}
+  body.light pre .c{color:#8a8a98}
+  body.light nav{background:rgba(246,247,249,.85)}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:Sora,sans-serif;line-height:1.15;margin:0}
+  a{color:var(--amb);text-decoration:none}
+  code,pre{font-family:"JetBrains Mono",monospace}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+  .mut{color:var(--mut)} .amb{color:var(--amb)}
+  .chip{display:inline-block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amb);font-weight:600;font-family:Sora}
+  nav{position:sticky;top:0;z-index:30;backdrop-filter:blur(12px);background:rgba(12,12,16,.78);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;gap:22px;height:60px}
+  nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
+  nav .brand .emoji{font-size:1.25rem}
+  nav .sep{color:var(--mut);opacity:.45}
+  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .inema:hover{filter:brightness(1.15)}
+  nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .pro:hover{filter:brightness(1.15)}
+  nav .clubpro{display:inline-flex;align-items:center;gap:6px}
+  nav .links{margin-left:auto;display:flex;align-items:center;gap:20px;font-size:.92rem}
+  nav .links a.sec{color:var(--mut)} nav .links a.sec:hover{color:var(--txt)}
+  .lang{display:inline-flex;gap:2px;font-family:Sora;font-size:.78rem}
+  .lang a{color:var(--mut);padding:.2em .45em;border-radius:6px} .lang a.on{color:var(--amb);background:rgba(226,162,59,.12)}
+  .tgl{background:var(--bg2);border:1px solid var(--line);color:var(--txt);width:38px;height:38px;border-radius:10px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
+  .tgl:hover{border-color:var(--amb)}
+  .btn{display:inline-block;background:var(--amb);color:#1a1206;font-weight:600;padding:.6em 1.05em;border-radius:10px;font-family:Sora}
+  .btn.ghost{background:transparent;color:var(--txt);border:1px solid var(--line)}
+  @media(max-width:900px){nav .links a.sec{display:none}}
+  @media(max-width:520px){nav .wrap{gap:8px;padding:8px 14px;height:auto;flex-wrap:wrap} nav .links{gap:8px;margin-left:0;width:100%;justify-content:space-between} nav .btn{padding:.45em .7em;font-size:.82rem} .tgl{width:34px;height:34px}}
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero .glow{position:absolute;inset:-40% -20% auto auto;width:70%;height:600px;background:radial-gradient(closest-side,rgba(226,162,59,.22),transparent 70%);pointer-events:none}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:74px 22px}
+  .hero h1{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;letter-spacing:-.025em}
+  .hero p.lead{font-size:1.18rem;color:var(--mut);margin:1.1em 0 1.6em;max-width:34ch}
+  .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+  .hero figure{margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000}
+  .hero figure img{width:100%;display:block}
+  .resumo{padding:38px 0 34px;border-bottom:1px solid var(--line)}
+  .resumo p{font-size:1.12rem;line-height:1.7;max-width:74ch;margin:.55em 0 0}
+  @media(max-width:780px){.hero .wrap{grid-template-columns:1fr;padding:48px 22px}}
+  section{padding:62px 0;border-bottom:1px solid var(--line)}
+  section h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:800;letter-spacing:-.02em}
+  section .sub{color:var(--mut);margin:.6em 0 2em;max-width:62ch}
+  .grid{display:grid;gap:16px}
+  .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)} .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:820px){.g3,.g4{grid-template-columns:1fr 1fr}}
+  @media(max-width:540px){.g2,.g3,.g4{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .card h3{font-size:1.05rem;margin-bottom:.4em}
+  .card p{color:var(--mut);font-size:.92rem;margin:0}
+  .big{font-family:Sora;font-weight:800;font-size:2.3rem;color:var(--amb);line-height:1;margin-bottom:.25em}
+  .num{display:inline-flex;width:30px;height:30px;align-items:center;justify-content:center;border-radius:8px;background:rgba(226,162,59,.14);color:var(--amb);font-family:Sora;font-weight:800;font-size:.9rem;margin-bottom:.7em}
+  .flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
+  .flow span{background:var(--bg2);border:1px solid var(--line);border-radius:999px;padding:.45em .9em;font-size:.85rem;font-family:Sora;font-weight:600}
+  .flow .arr{color:var(--amb);border:none;background:none;padding:0 .1em}
+  pre{background:#0a0a0e;border:1px solid var(--line);border-radius:12px;padding:16px 18px;overflow:auto;font-size:.86rem;line-height:1.6;color:#d6d6e0}
+  pre .c{color:#6f6f7c} pre .k{color:var(--amb2)} pre .s{color:#9ece6a}
+  .step{display:grid;grid-template-columns:46px minmax(0,1fr);gap:16px;margin-bottom:26px}
+  .step>div,.card{min-width:0}
+  p code,li code,td code{overflow-wrap:anywhere}
+  .step .b{width:46px;height:46px;border-radius:12px;background:var(--amb);color:#1a1206;font-family:Sora;font-weight:800;font-size:1.25rem;display:flex;align-items:center;justify-content:center}
+  .step h3{font-size:1.12rem;margin-bottom:.3em}
+  .step p{color:var(--mut);margin:.2em 0 .7em}
+  .tw{overflow-x:auto;border:1px solid var(--line);border-radius:14px}
+  table{width:100%;border-collapse:collapse;font-size:.92rem;min-width:560px}
+  th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-family:Sora;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--amb);background:var(--bg2)}
+  tr:last-child td{border-bottom:none}
+  td.mut{color:var(--mut)}
+  .ex{display:grid;grid-template-columns:1fr;gap:22px}
+  .ex figure{margin:0;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+  .ex figure img{width:100%;display:block}
+  .vids{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:0 0 26px}
+  .vids figure{margin:0;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#000}
+  .vids video{width:100%;aspect-ratio:9/16;display:block;background:#000}
+  .vids figcaption{padding:10px 12px;font-size:.86rem;color:var(--mut);background:var(--card)}
+  @media(max-width:520px){.vids{grid-template-columns:1fr}}
+  .ex figcaption{padding:12px 14px;font-size:.88rem;color:var(--mut);background:var(--card)}
+  .phase{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .phase:last-child{border:none}
+  .phase .tag{flex:0 0 92px;font-family:Sora;font-weight:800;color:var(--amb)}
+  .phase .d strong{display:block;margin-bottom:.2em}
+  .phase .d span{color:var(--mut);font-size:.92rem}
+  footer{padding:46px 0;text-align:center;color:var(--mut);font-size:.9rem}
+  .pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.3em .8em;font-size:.78rem;color:var(--mut);margin:4px}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="brand" href="#top"><span class="emoji">📺</span> r7ex</a>
+  <span class="sep">|</span>
+  <span class="clubpro">
+    <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+    <span class="sep">-</span>
+    <a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a>
+  </span>
+  <div class="links">
+    <a class="sec" href="#oque">Qué es</a>
+    <a class="sec" href="#etapas">7 etapas</a>
+    <a class="sec" href="#fluxo">Cómo funciona</a>
+    <a class="sec" href="#guia">Guía de uso</a>
+    <a class="sec" href="#exemplos">Ejemplos</a>
+    <a class="sec" href="#gancho">Novedades</a>
+    <span class="lang"><a href="../">PT</a><a href="../en/">EN</a><a class="on" href="./">ES</a></span>
+    <button class="tgl" id="themeToggle" aria-label="Cambiar tema" title="Cambiar tema">🌙</button>
+    <a class="btn" href="https://github.com/inematds/r7ex" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="glow"></div>
+  <div class="wrap">
+    <div>
+      <span class="chip">Reel 9:16 · 7 etapas · noticiero · v1.2.0</span>
+      <h1>De la tesis al reel que se <span class="amb">viraliza</span></h1>
+      <p class="lead">Guion de 7 etapas de gatillo con cara de noticiero: Claude escribe, Codex dibuja, HeyGen habla y el motor sincroniza todo con la voz.</p>
+      <div class="cta">
+        <a class="btn" href="#guia">Empezar la guía</a>
+        <a class="btn ghost" href="https://github.com/inematds/r7ex" target="_blank" rel="noopener">Ver en GitHub</a>
+      </div>
+    </div>
+    <figure><img src="../assets/banner-es.jpg" alt="Banner de r7ex: el reel que se viraliza"></figure>
+  </div>
+</header>
+
+<section id="resumo" class="resumo"><div class="wrap">
+  <span class="chip">En resumen</span>
+  <p>r7ex es la línea de producción de reels verticales (9:16) de INEMA. Tú aportas una idea potente, la tesis, y crea un video de unos 40 a 46 segundos (siempre por debajo de 1 minuto) con el avatar de Nei hablando, imágenes generadas por Codex y un acabado de noticiero: título al inicio, paneles que aparecen en la palabra adecuada, contador y subtítulos que se iluminan al ritmo de la voz. El guion sigue 7 etapas de activación, desde el gancho (uno de 5 tipos, con el titular ya escrito en el primer cuadro) hasta la invitación a comentar, y siempre lleva a la persona a inema.club. Para usarlo necesitas Python, Node, Codex y una suscripción a HeyGen, ejecutándose en la máquina de INEMA.</p>
+</div></section>
+
+<section id="oque"><div class="wrap">
+  <span class="chip">Qué es</span>
+  <h2>El guion de r7e con el acabado del noticiero</h2>
+  <p class="sub"><strong>r7ex = r7e + x.</strong> r7e (reel7etapas) aporta el guion en 7 etapas; la x viene de eventosextremospub, el acabado de noticiero que más se viralizó. El repo funciona solo, con copia propia de todo.</p>
+  <figure style="margin:0 0 26px;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000"><img src="../assets/banner-grade-es.jpg" alt="Las partes de r7ex: gancho con número, 7 etapas, noticiero, karaoke, avatar y cola" loading="lazy" style="width:100%;display:block"></figure>
+  <div class="grid g3">
+    <div class="card"><h3>🎯 Plan antes de hablar</h3><p>Público, qué quiere la persona, gancho de uno de los 5 tipos con número y fuente (nunca una lista), nota de potencial (por debajo de 8, se cambia el enfoque) y la página de inema.club que ofrece la solución. Un tema por video.</p></div>
+    <div class="card"><h3>📺 Cara de noticiero</h3><p>Título dibujado en la apertura, negro y amarillo, franja con sello rojo, paneles y contadores al ritmo del habla y subtítulo karaoke.</p></div>
+    <div class="card"><h3>🧩 Independiente</h3><p>Motor de render, estudio de HeyGen, transcripción, pista musical, envío al bot y cola copiados dentro del repo. Cambiar algo aquí no afecta a los otros proyectos.</p></div>
+  </div>
+  <div class="grid g4" style="margin-top:16px">
+    <div class="card"><div class="big">7</div><p>partes en el guion, del gancho al comentario</p></div>
+    <div class="card"><div class="big">40–46 s</div><p>de duración, con una tarjeta de 9 s al final (siempre por debajo de 60 s)</p></div>
+    <div class="card"><div class="big">450–620</div><p>caracteres de habla por reel (un tema con muchos elementos: hasta 800, con motivo)</p></div>
+    <div class="card"><div class="big">≥ 90%</div><p>del habla coincidiendo con el avatar (filtro del retempo)</p></div>
+  </div>
+</div></section>
+
+<section id="etapas"><div class="wrap">
+  <span class="chip">Las 7 etapas</span>
+  <h2>Ejemplo real: "Hackers robaron las claves"</h2>
+  <p class="sub">El orden de las etapas 2 a 6 puede adaptarse al tema (en el reel "Quién factura en 2027" la etapa 3 se volvió prueba), pero siempre son 7 partes.</p>
+  <div class="tw"><table>
+    <tr><th>Etapa</th><th>Habla</th><th>Pantalla</th></tr>
+    <tr><td>1. Gancho (tercero)</td><td>"Un tipo se fue a dormir y se despertó con una cuenta de IA de mil setecientos dólares…"</td><td class="mut">titular "ACORDOU DEVENDO US$ 1.700" dibujado en la portada con la llave partida; cortes de acercamiento a 1 s y 2 s</td></tr>
+    <tr><td>2. Miedo</td><td>"La clave es la contraseña que usa la IA… la tuya puede ser la próxima"</td><td class="mut">encapuchado sacando la clave + panel rojo</td></tr>
+    <tr><td>3. Deseo</td><td>"Imagina dormir sabiendo que… la pérdida tiene tope"</td><td class="mut">hombre durmiendo + "pérdida con tope"</td></tr>
+    <tr><td>4. Facilidad</td><td>"No necesitas ser especialista, ni programador"</td><td class="mut">panel de límite + "sin ser especialista"</td></tr>
+    <tr><td>5. Descubrimiento</td><td>"Son tres ajustes: límite, una clave por uso, alarma…"</td><td class="mut">candado, claves y campana + los 3 ajustes entrando</td></tr>
+    <tr><td>6. Beneficio</td><td>"El susto se convierte en un aviso en el celular…"</td><td class="mut">factura rota + "sin límite × con límite"</td></tr>
+    <tr><td>7. Comentario</td><td>"Está todo en inema.club. O pídeme el link…"</td><td class="mut">captura de inema.club + CTA rojo en pregunta + tarjeta del comentario en pantalla durante 9 s</td></tr>
+  </table></div>
+</div></section>
+
+<section id="fluxo"><div class="wrap">
+  <span class="chip">Cómo funciona</span>
+  <h2>El motor no crea contenido: sincroniza y anima</h2>
+  <p class="sub">El motor es una página web (<code>motor/mapa.html</code>) filmada a 30 cuadros por segundo. Recibe el avatar, el tiempo de cada palabra, las imágenes y la escena generada desde la ficha.</p>
+  <div class="flow">
+    <span>Tesis + destino</span><span class="arr">→</span>
+    <span>Plan y ficha</span><span class="arr">→</span>
+    <span>Avatar en HeyGen</span><span class="arr">→</span>
+    <span>Imágenes de Codex</span><span class="arr">→</span>
+    <span>Tiempo de las palabras (Whisper)</span><span class="arr">→</span>
+    <span>Ritmo (~180 palabras/min + tarjeta)</span><span class="arr">→</span>
+    <span>Escena</span><span class="arr">→</span>
+    <span>Render</span><span class="arr">→</span>
+    <span>Hoja de revisión</span><span class="arr">→</span>
+    <span>Bot v3 + cola del canal</span>
+  </div>
+  <div class="grid g3" style="margin-top:26px">
+    <div class="card"><span class="num">1</span><h3>Capas por cuadro</h3><p>Fondo negro, imagen del momento con zoom leve, franja superior con sello, panel con ítems y contador, subtítulo karaoke y el CTA en pregunta.</p></div>
+    <div class="card"><span class="num">2</span><h3>Filmación</h3><p><code>motor/render.mjs</code> graba la página en un Chrome oculto (pantalla <code>:99</code>), sin abrir nada en la pantalla de quien trabaja.</p></div>
+    <div class="card"><span class="num">3</span><h3>Composición</h3><p><code>motor/compor_avatar.sh</code> pone el rostro en la cajita de la esquina, la voz a −14 LUFS y la pista baja, que se atenúa cuando entra la voz, se silencia en la pausa antes de la frase final y continúa durante la tarjeta final.</p></div>
+  </div>
+</div></section>
+
+<section id="pre"><div class="wrap">
+  <span class="chip">Requisitos previos</span>
+  <h2>Lo que debe estar en la máquina</h2>
+  <p class="sub">r7ex fue hecho para el servidor de INEMA. Las copias en otra máquina necesitan las mismas piezas.</p>
+  <div class="grid g3">
+    <div class="card"><h3>Python + Node</h3><p>Python 3 para los scripts y el Whisper local (el de inemavox); Node para el motor de render y el estudio de HeyGen; ffmpeg para el ritmo y la composición; Claude Code (<code>claude -p</code>) para la nota del plan.</p><pre><span class="k">npm install</span>   <span class="c"># dependencias del motor</span></pre></div>
+    <div class="card"><h3>Codex CLI</h3><p>Dibuja la apertura con el título y una imagen por parte, con la suscripción.</p><pre><span class="k">codex --version</span></pre></div>
+    <div class="card"><h3>HeyGen (estudio)</h3><p>Avatar de Nei con la suscripción, en el navegador oculto. Generar solo con el OK de esa producción.</p><pre><span class="c"># OK de Nei para este reel</span>
+<span class="k">mkdir -p</span> edicoes/&lt;pasta&gt;/avatar
+<span class="k">echo</span> <span class="s">'Nei, &lt;data&gt;: "ok"'</span> &gt; edicoes/&lt;pasta&gt;/avatar/APROVADO_HEYGEN</pre></div>
+  </div>
+</div></section>
+
+<section id="guia"><div class="wrap">
+  <span class="chip">Guía de uso · paso a paso</span>
+  <h2>Del pedido al reel en la cola</h2>
+  <p class="sub">Basta un pedido en una línea: <em>"r7ex: &lt;tu tesis&gt; · destino: &lt;curso/página&gt; · canal: lives7 · puedes generar el avatar"</em>. Después, estos son los comandos.</p>
+
+  <div class="step"><div class="b">1</div><div>
+    <h3>Crear la edición</h3>
+    <p>Copia el modelo a una carpeta nueva con la ficha por completar: plan, apertura, las 7 partes (habla + imagen o captura + panel), CTA y destino.</p>
+<pre><span class="k">python3 r7ex.py novo</span> <span class="s">hacker</span>   <span class="c"># crea edicoes/&lt;data&gt;-hacker/ficha.yaml</span></pre>
+  </div></div>
+
+  <div class="step"><div class="b">2</div><div>
+    <h3>Pasar el filtro de la ficha</h3>
+    <p>Comprueba las 7 partes, que el texto hablado tenga entre 450 y 620 caracteres (un tema con muchos elementos: hasta 800, con <code>fala_max</code> y <code>fala_max_motivo</code> en la ficha), que cada palabra de los paneles aparezca en el texto hablado de esa parte y el bloque <code>gancho</code>: tipo válido, titular de hasta 6 palabras distinto del texto hablado, prueba hasta ~20 s y absolución. Los ganchos en forma de lista no pasan. Después, <code>plano</code> puntúa el guion: necesita un gancho ≥ 8 y un promedio ≥ 7,5 antes de grabar el avatar.</p>
+<pre><span class="k">python3 r7ex.py checar</span> <span class="s">edicoes/&lt;data&gt;-hacker</span>
+<span class="k">python3 r7ex.py plano</span> <span class="s">edicoes/&lt;data&gt;-hacker</span>   <span class="c"># nota del plan</span></pre>
+  </div></div>
+
+  <div class="step"><div class="b">3</div><div>
+    <h3>Hacer todo de una vez</h3>
+    <p>Imágenes + avatar → tiempo de las palabras → ritmo (habla alargada, pausa antes de la frase final, tarjeta de 9 s) → escena → render → hoja de 12 cuadros. Con <code>--de</code> reutiliza un avatar ya hecho.</p>
+<pre><span class="k">python3 r7ex.py fazer</span> <span class="s">edicoes/&lt;data&gt;-hacker</span>
+<span class="k">python3 r7ex.py fazer</span> <span class="s">edicoes/&lt;data&gt;-hacker</span> --de avatar.mp4   <span class="c"># el avatar ya existe</span></pre>
+  </div></div>
+
+  <div class="step"><div class="b">4</div><div>
+    <h3>Revisar antes de enviar</h3>
+    <p>Leer la apertura (ortografía del título) y la hoja de revisión: nada tapando nada, capturas legibles.</p>
+<pre><span class="c"># abrir y revisar</span>
+edicoes/&lt;pasta&gt;/capa/abertura.png
+edicoes/&lt;pasta&gt;/build/folha.jpg</pre>
+  </div></div>
+
+  <div class="step"><div class="b">5</div><div>
+    <h3>Enviar y publicar por la cola</h3>
+    <p>Manda el video al bot v3 y lo pone al final de la cola del canal (por defecto lives7). La cola publica 1 cada 2 h, de 9 h a 21 h. Nunca subida directa.</p>
+<pre><span class="k">python3 r7ex.py enviar</span> <span class="s">edicoes/&lt;pasta&gt;</span>   <span class="c"># bot v3</span>
+<span class="k">python3 r7ex.py fila</span> <span class="s">edicoes/&lt;pasta&gt;</span>     <span class="c"># final de la cola del canal</span>
+<span class="k">python3 fila/fila.py --status</span>          <span class="c"># ver la cola</span></pre>
+  </div></div>
+
+  <p class="mut">Paso a paso por separado: <code>avatar</code>, <code>imagens</code>, <code>cena</code>, <code>render</code>, <code>revisar</code> (ejecuta <code>python3 r7ex.py</code> para verlos todos).</p>
+</div></section>
+
+<section id="exemplos"><div class="wrap">
+  <span class="chip">Ejemplos</span>
+  <h2>Reels hechos con r7ex</h2>
+  <p class="sub">Cuadros de los reels finales: apertura con el título dibujado, imagen por etapa, panel al ritmo del habla y la tarjeta del comentario en pantalla al final, con inema.club.</p>
+  <div class="vids">
+    <figure><video controls playsinline preload="none" poster="../assets/videos/r7ex-divulga.jpg"><source src="../assets/videos/r7ex-divulga.mp4" type="video/mp4"></video><figcaption>Reel 1: "Mis reels tuvieron cero vistas, 4 lotes hasta acertar" — hecho por el propio r7ex (en portugués).</figcaption></figure>
+    <figure><video controls playsinline preload="none" poster="../assets/videos/r7e-para-r7ex.jpg"><source src="../assets/videos/r7e-para-r7ex.mp4" type="video/mp4"></video><figcaption>Reel 2: "El reel de 7 etapas quedó viejo, ahora existe el r7ex" — r7e × r7ex (en portugués).</figcaption></figure>
+  </div>
+  <div class="ex">
+    <figure><img src="../assets/ex1.jpg" alt="Cuatro cuadros del reel Hackers robaron las claves" loading="lazy"><figcaption>"Hackers robaron las claves": gancho con número (US$ 1.700 en una noche), miedo, los 3 ajustes y el cierre. <a href="https://youtube.com/shorts/DG30IdeqWcg" target="_blank" rel="noopener">Ver en YouTube</a></figcaption></figure>
+    <figure><img src="../assets/ex2.jpg" alt="Cuatro cuadros de otro reel r7ex" loading="lazy"><figcaption>Otro reel del mismo lote, con el mismo avatar e imágenes nuevas dibujadas por Codex.</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="gancho"><div class="wrap">
+  <span class="chip">Novedades · v1.2.0 · 28/10/2026</span>
+  <h2>El gancho se decide en los primeros 3 segundos</h2>
+  <p class="sub">Comparamos los reels de r7ex con reels que enganchan: usaban la misma estructura, pero no las técnicas para llamar la atención. La edición del 28/10 empezaba con "5 novedades de IA…", un gancho en forma de lista que no aparece en ninguno de los reels de referencia. La versión 1.2.0 trata el primer cuadro como la portada del video.</p>
+  <div class="tw"><table style="min-width:0">
+    <thead><tr><th>Tipo de gancho</th><th>Qué es</th></tr></thead>
+    <tbody>
+    <tr><td><code>contrario</code><br><strong>PARA DE CORRIGIR IA NO CHAT</strong><br><small class="mut">(deja de corregir la IA en el chat)</small></td><td>manda parar o invierte el sentido común</td></tr>
+    <tr><td><code>perda</code><br><strong>E SE SEU CHAT SUMISSE AMANHÃ?</strong><br><small class="mut">(¿y si tu chat desapareciera mañana?)</small></td><td>pérdida hipotética</td></tr>
+    <tr><td><code>estatistica</code><br><strong>METADE DO CÓDIGO É LIXO</strong><br><small class="mut">(la mitad del código es basura)</small></td><td>número que asusta, con la fuente verificada</td></tr>
+    <tr><td><code>terceiro</code><br><strong>ACORDOU DEVENDO US$ 1.700</strong><br><small class="mut">(despertó debiendo US$ 1.700)</small></td><td>historia de otra persona, con un número</td></tr>
+    <tr><td><code>noticia</code><br><strong>SAIU O CARRO VOADOR?</strong><br><small class="mut">(¿salió el coche volador?)</small></td><td>hecho de esta semana, con fecha y fuente</td></tr>
+    </tbody>
+  </table></div>
+  <p class="sub" style="margin-top:10px;font-size:.9rem">Los nombres de los tipos (contrario, perda, estatistica, terceiro, noticia) son los valores literales de <code>gancho.tipo</code> en la ficha. Los titulares quedan en portugués, tal como aparecen en el video; la traducción va debajo.</p>
+  <div class="grid g3" style="margin-top:22px">
+    <div class="card"><span class="num">1</span><h3>El titular es más potente que lo que se dice</h3><p>El titular ya aparece escrito en el primer cuadro: hasta 6 palabras, en mayúsculas, con una palabra en amarillo. Lo que dice es más contundente que la voz: la pantalla dice "PARA DE CORRIGIR" (deja de corregir), y la voz dice "creo que no deberías". Las listas ("5 novedades…"), "¿sabías que…?" y "yo hice…" no pasan el <code>checar</code>.</p></div>
+    <div class="card"><span class="num">2</span><h3>Objeto dañado y cambio cada 1 s</h3><p>En el centro de la portada aparece un objeto roto o amenazado, como una papelera, una llave partida o una marca roja. En los primeros 3 segundos, el encuadre cambia cada segundo: la portada en el segundo 0 y dos acercamientos, en los segundos 1 y 2, sin quitar el titular de la pantalla.</p></div>
+    <div class="card"><span class="num">3</span><h3>Prueba, absolución y un tema</h3><p>El número con su fuente aparece antes de los 20 segundos. Justo después viene el problema de quien mira, sin culparlo ("no es falta de estudio, nadie te dio el mapa"). Cada video trata un solo tema: si la solicitud incluye varios, la ficha propone un video para cada uno.</p></div>
+  </div>
+  <div class="ex" style="margin-top:22px">
+    <figure><img src="../assets/v120-gancho.jpg" alt="Tres cuadros de la portada con el titular PARA DE CORRIGIR IA NO CHAT, en 0, 1 y 2 segundos, cada uno un poco más cerca" loading="lazy"><figcaption>Prueba del montaje en la versión 1.2.0, con un titular de prueba sobre una ilustración de un chat tachado en rojo: la portada en el segundo 0 y los cortes de acercamiento en los segundos 1 y 2. El rostro de Nei aparece en la mitad inferior, que no se muestra aquí.</figcaption></figure>
+  </div>
+  <pre style="margin-top:22px"><code>gancho:
+  tipo: terceiro
+  manchete: "ACORDOU DEVENDO US$ 1.700"   # hasta 6 palabras, en mayúsculas
+  destaque: "1.700"                       # la palabra en amarillo
+  objeto: "chave dourada partida, com um risco vermelho"
+  prova: {parte: 1, de: "1.700"}          # número con fuente hasta ~20 s
+  absolvicao: "não é descuido seu"        # igual que en el diálogo de la parte 2 o 3
+  fontes: [{nome: "relatos de usuários, out/2026", trecho: "US$ 1.700 numa noite"}]</code></pre>
+</div></section>
+
+<section id="novidades"><div class="wrap">
+  <span class="chip">Novedades · v1.1.0 · 28/10/2026</span>
+  <h2>Más tiempo para leer, escuchar y comentar</h2>
+  <p class="sub">Medimos las ediciones anteriores: la voz iba a 202–222 palabras por minuto, sin una sola pausa, y la tarjeta del comentario aparecía en pantalla menos de 2 segundos, porque el video se cortaba en la última palabra. La versión 1.1.0 corrige ambas cosas.</p>
+  <div class="grid g3">
+    <div class="card"><span class="num">1</span><h3>Tarjeta en pantalla durante 9 s</h3><p>El video ya no se corta en la última palabra. La tarjeta del comentario aparece en pantalla unos 9 segundos y representa el gesto: el campo "Agrega un comentario…", el texto que se escribe, el botón Publicar que se presiona y el comentario publicado. El avatar se queda quieto en la esquina y la música continúa hasta el final.</p></div>
+    <div class="card"><span class="num">2</span><h3>Voz a ~180 palabras/min</h3><p>HeyGen habla a unas 200–215 palabras por minuto. La edición alarga la voz hasta un 12%, sin cambiar el tono y con la boca sincronizada, para acercarse a 180. Antes de la frase final, hay una pausa de 0,5 a 0,9 segundos, con la música en silencio.</p></div>
+    <div class="card"><span class="num">3</span><h3>Guion más corto</h3><p>Ahora la voz tiene entre 450 y 620 caracteres, unos 30 a 37 segundos al nuevo ritmo. Un reel de lista puede llegar hasta 800 caracteres, con el motivo escrito en la ficha (<code>fala_max</code> y <code>fala_max_motivo</code>), y sigue por debajo de 1 minuto con la tarjeta.</p></div>
+  </div>
+  <div class="ex" style="margin-top:22px">
+    <figure><img src="../assets/v110-cartao.jpg" alt="Dos cuadros de la tarjeta final: el comentario mientras se escribe, con el botón Publicar presionado, y al lado, el comentario ya publicado" loading="lazy"><figcaption>Edición "5 cosas de IA de este mes", la primera en la versión 1.1.0: a la izquierda, el comentario escrito y Publicar presionado; a la derecha, el comentario publicado, con el avatar quieto en la esquina. La pregunta de la tarjeta habla de 4 herramientas porque el 5.º ítem de la lista es un auto. <a href="https://www.youtube.com/watch?v=2EV6A5lArog" target="_blank" rel="noopener">Ver en YouTube</a></figcaption></figure>
+  </div>
+</div></section>
+
+<section id="roadmap"><div class="wrap">
+  <span class="chip">Cómo llegamos aquí</span>
+  <h2>4 lotes hasta el estándar (18/10/2026)</h2>
+  <p class="sub">El contenido acertó en el lote 3 (tesis fuertes, gatillo, plan) y la forma acertó en el lote 4 (motor del noticiero).</p>
+  <div class="phase"><div class="tag">Lote 1</div><div class="d"><strong>r7e antiguo</strong><span>Gancho de promesa, público de nicho, foto desenfocada detrás del rostro. Sin visualizaciones.</span></div></div>
+  <div class="phase"><div class="tag">Lote 2</div><div class="d"><strong>r7e "-gatilho"</strong><span>Solo cambió el gancho: miedo o novedad con número, imagen nítida. Mejor, pero "todavía genérico".</span></div></div>
+  <div class="phase"><div class="tag">Lote 3</div><div class="d"><strong>Plan antes del habla</strong><span>Habla nueva con el gatillo primero y el alivio en el medio, CTA fijo, capturas reales. "Quedó genérico" en la forma.</span></div></div>
+  <div class="phase"><div class="tag">Lote 4</div><div class="d"><strong>r7ex</strong><span>La misma habla del lote 3 con el motor del noticiero. Es el formato estándar a partir de ahora.</span></div></div>
+  <div class="phase"><div class="tag">v1.1.0</div><div class="d"><strong>Ritmo y tarjeta en pantalla (28/10/2026)</strong><span>Voz alargada a ~180 palabras/min, pausa antes de la frase final, guion de 450–620 caracteres y la tarjeta del comentario en pantalla durante 9 s.</span></div></div>
+  <div class="phase"><div class="tag">v1.2.0</div><div class="d"><strong>Gancho en el cuadro 0 (28/10/2026)</strong><span>5 tipos de gancho, titular de hasta 6 palabras más potente que lo que se dice, objeto dañado, cambio de cuadro cada ~1 s, prueba hasta los 20 s y un tema por video.</span></div></div>
+</div></section>
+
+<footer>
+  <div class="wrap">
+    <div class="pill">Python</div><div class="pill">Node + Chrome</div><div class="pill">Codex</div><div class="pill">HeyGen</div><div class="pill">Whisper</div>
+    <p style="margin-top:18px">r7ex v1.2.0 · licencia MIT ·
+      <a href="https://github.com/inematds/r7ex">github.com/inematds/r7ex</a> ·
+      <a href="https://inema.club">INEMA.CLUB</a></p>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var KEY='r7ex-theme';
+    var b=document.body, t=document.getElementById('themeToggle');
+    try{ if(localStorage.getItem(KEY)==='light'){ b.classList.add('light'); t.textContent='☀️'; } }catch(e){}
+    t.addEventListener('click',function(){
+      var light=b.classList.toggle('light');
+      t.textContent=light?'☀️':'🌙';
+      try{ localStorage.setItem(KEY, light?'light':'dark'); }catch(e){}
+    });
+  })();
+</script>
+</body>
+</html>

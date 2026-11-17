@@ -1,0 +1,27 @@
+node_modules/
+__pycache__/
+edicoes/*/avatar/
+edicoes/*/capa/*.png
+edicoes/*/prints/
+edicoes/*/build/
+edicoes/*/*.mp4
+edicoes/*/cena.js
+edicoes/*/.mapa.html
+edicoes/*/*.log
+.render.lock
+fila/.lock
+fila/fila.log
+fila/fila.json
+*.envio-v3.json
+guia/assets/*.codex.log
+edicoes/*/capa/codex.log
+producao/estado.json
+producao/estado.tmp
+producao/producao.log
+producao/.estado.lock
+producao/.rodada.lock
+edicoes/*/producao.log
+
+# Executor por etapa: telemetria local, sem credenciais
+**/ia-execucoes.jsonl
+producao/ia.lock
