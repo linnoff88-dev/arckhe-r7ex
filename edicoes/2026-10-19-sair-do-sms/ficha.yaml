@@ -7,10 +7,10 @@ plano:
   quer: "nêo perder a conta do banco/WhatsApp num golpe (dor) e ficar tranquilo com a proteçêo certa (desejo)"
   gancho: "medo: França, 11/10/2026 — controladores de geladeira ligados à internet com senha fraca, pelo menos 350 supermercados aquecidos até ~50 °C (Reuters)"
   nota: 8
-  destino: "https://inematds.github.io/sobreviver-ia/guia/#guia (checklist MFA, no inema.club, projetos)"
+  destino: "https://linnoff88-dev.github.io/arckhe-/guia/#guia (checklist MFA, no ARCKHÉ AI, projetos)"
 
-marca: "INEMA · SAIA DO SMS"
-selo: "ALERTA INEMA"
+marca: "ARCKHÉ · SAIA DO SMS"
+selo: "ALERTA ARCKHÉ"
 fonte: "<b>Reuters</b> · ataque a supermercados na França, 11/10/2026 · imagens: ilustraçêo"
 
 abertura:
@@ -72,8 +72,8 @@ partes:
       borda: vd
       itens: [[hoje, "📅 hoje"], [contas, "🔒 as 3 contas principais"]]
   - etapa: comentario
-    fala: "Tá tudo no inema ponto club. Ou me pede o link aqui nos comentários."
-    print: {url: "https://inematds.github.io/sobreviver-ia/guia/#guia", selo: "checklist de segurança · inema.club"}
+    fala: "Tá tudo no ARCKHÉ ponto club. Ou me pede o link aqui nos comentários."
+    print: {url: "https://linnoff88-dev.github.io/arckhe-/guia/#guia", selo: "checklist de segurança · ARCKHÉ AI"}
 
 cta: {a: "SEU BANCO AINDA USA SMS? 👇", b: "ou me pede o link do checklist nos comentários"}
 club: "o checklist para sair do SMS, conta por conta"
@@ -83,4 +83,4 @@ cores: {senha: "#ff2a1f", hackers: "#ff2a1f", trezentos: "#ff2a1f", SMS: "#ff2a1
 publicar:
   fila: lives1
   titulo: "Uma senha fraca derrubou 350 supermercados — e o SMS do seu banco é o próximo #shorts"
-  contexto: "Short vertical do INEMA.CLUB (Nei Maldaner). Em 11/10/2026, na França, hackers aqueceram até cerca de 50 °C as geladeiras de pelo menos 350 supermercados atacando controladores ligados à internet com senha fraca (Reuters). O código por SMS cai no golpe da troca de chip (SIM swap). Soluçêo: app autenticador (código de 6 dígitos) ou passkey, na ordem e-mail → banco → WhatsApp, 5 minutos por conta. Checklist no projeto aberto sobreviver-ia, no inema.club. CTA: seu banco ainda usa SMS / peça o link."
+  contexto: "Short vertical do ARCKHÉ AI (Nei Maldaner). Em 11/10/2026, na França, hackers aqueceram até cerca de 50 °C as geladeiras de pelo menos 350 supermercados atacando controladores ligados à internet com senha fraca (Reuters). O código por SMS cai no golpe da troca de chip (SIM swap). Soluçêo: app autenticador (código de 6 dígitos) ou passkey, na ordem e-mail → banco → WhatsApp, 5 minutos por conta. Checklist no projeto aberto sobreviver-ia, no ARCKHÉ AI. CTA: seu banco ainda usa SMS / peça o link."

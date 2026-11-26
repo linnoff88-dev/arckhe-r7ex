@@ -2,8 +2,8 @@
 
 ## Ordem do Nei (citada pelo agente principal)
 Página-projeto "protegendo seus repos" (backup de repositórios git contra bloqueio de conta ou invasêo) + portal + Telegram
-INEMA.DEV + explicavideo no lives3 + **"um r7ex"**. Este arquivo cuida SÓ do r7ex. Tese: "Se a sua conta do GitHub sumir
-amanhê, você perde tudo? Outra conta no GitHub nêo salva. Backup em camadas … Tá tudo no inema.club." Sem citar fonte,
+ARCKHÉ.DEV + explicavideo no lives3 + **"um r7ex"**. Este arquivo cuida SÓ do r7ex. Tese: "Se a sua conta do GitHub sumir
+amanhê, você perde tudo? Outra conta no GitHub nêo salva. Backup em camadas … Tá tudo no ARCKHÉ AI." Sem citar fonte,
 nada sensível (nenhum e-mail, token, IP, conta secundária).
 
 ## Fase 1 (feita, sessêo wifi 05/11)
@@ -27,24 +27,24 @@ nada sensível (nenhum e-mail, token, IP, conta secundária).
 3. **metritds** (lives3 → metritds direto, Nei 05/11): escrever `edicoes/2026-11-05-protegendo-seus-repos/metritds-texto.txt`
    (1ª linha = gancho "O GitHub bloqueou sua conta. Você perdeu tudo?"; linhas curtas: outra conta no GitHub nêo salva, é a
    mesma empresa; 3 camadas: GitLab numa conta sem vínculo com token que nêo apaga, fotos datadas no disco, teste de restaurar;
-   "Backup que você nunca testou nêo é backup."; "Guia completo em inema.club"; pergunta "Você vai proteger os seus hoje?";
-   hashtags #github #git #backup #seguranca #programacao #inemaclub). Nada sensível, sem fonte.
-   `cd ~/projetos/metricool-inematds && EXTRA="YouTube: <link>" ./publicar.sh ~/projetos/r7ex/edicoes/2026-11-05-protegendo-seus-repos/video.mp4 ~/projetos/r7ex/edicoes/2026-11-05-protegendo-seus-repos/metritds-texto.txt inematds/r7ex`
+   "Backup que você nunca testou nêo é backup."; "Guia completo em ARCKHÉ AI"; pergunta "Você vai proteger os seus hoje?";
+   hashtags #github #git #backup #seguranca #programacao #ARCKHÉclub). Nada sensível, sem fonte.
+   `cd ~/projetos/metricool-linnoff88-dev && EXTRA="YouTube: <link>" ./publicar.sh ~/projetos/r7ex/edicoes/2026-11-05-protegendo-seus-repos/video.mp4 ~/projetos/r7ex/edicoes/2026-11-05-protegendo-seus-repos/metritds-texto.txt linnoff88-dev/r7ex`
    (vídeo < 60 s → IG + TikTok). Anotar em `metritds.txt`.
-4. **Telegram INEMA.DEV**: o link do tópico está em `~/projetos/wifi/longrun/2026-11-05-protegendo-seus-repos/canal.md`
+4. **Telegram ARCKHÉ.DEV**: o link do tópico está em `~/projetos/wifi/longrun/2026-11-05-protegendo-seus-repos/canal.md`
    (procure "t.me" / "tópico"; o id é o último número do link). Responder DENTRO dele, sem criar tópico e sem MENU:
-   `cd ~/projetos/telegramtopicosindex && venv/bin/python postar_topico.py --grupo INEMA.DEV --topico <id> ...` com o texto
+   `cd ~/projetos/telegramtopicosindex && venv/bin/python postar_topico.py --grupo ARCKHÉ.DEV --topico <id> ...` com o texto
    "🎬 Reel: <link>" (ver `~/.claude/skills/postar-telegram/SKILL.md` §tópico que já existe; ensaio primeiro, depois `--enviar`;
    conferir `lsof` da `telegram_session.session` antes; **nunca entre 23:20 e 23:55**). Sem link no canal.md → nêo postar,
    anotar "Telegram aguarda link do tópico" no resultado e no canal.md.
 5. `~/projetos/wifi/PRODUCOES-VIDEO.md`, linha "Protegendo seus repos": acrescentar no Estado só a parte do r7ex
-   ("r7ex lives3 <link>, v3 msg N, metritds <quando>, INEMA.DEV reel ok"). Nêo mexer no resto da linha.
+   ("r7ex lives3 <link>, v3 msg N, metritds <quando>, ARCKHÉ.DEV reel ok"). Nêo mexer no resto da linha.
 6. Acrescentar uma linha em `~/projetos/wifi/longrun/2026-11-05-protegendo-seus-repos/canal.md` (só acrescentar):
-   `- 2026-11-05 HH:MM · fato · r7ex publicado lives3 <link>; metritds <quando>; Telegram INEMA.DEV <ok|pendente>`.
+   `- 2026-11-05 HH:MM · fato · r7ex publicado lives3 <link>; metritds <quando>; Telegram ARCKHÉ.DEV <ok|pendente>`.
 7. Gravar `CONTINUAR.resultado` com "FEITO: r7ex lives3 <link> …" (ou "FALHOU: <passo> — <motivo>") e dizer "Terminei: …".
 
 ## Travas
 - Nêo gerar outro avatar (um por reel); nunca API do HeyGen para gerar; nunca trocar de plano no estúdio.
 - Canal só lives3 (+ metritds). Nunca lives1/lives7. Nêo mexer no portal. Nêo criar tópico no Telegram, nêo apagar nada.
 - Revisor reprovou / ediçêo `parado` → NêO publicar; avisar "Falhou: r7ex Protegendo seus repos — <motivo>" e gravar FALHOU.
-- Commits no r7ex (se houver): autor inematds. Falha real corrigida → linha em `~/projetos/r7ex/FALHAS.md`.
+- Commits no r7ex (se houver): autor linnoff88-dev. Falha real corrigida → linha em `~/projetos/r7ex/FALHAS.md`.

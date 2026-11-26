@@ -1,4 +1,4 @@
-// Envia um arquivo pelo bot v3 (@inemav3bot) ao chat permitido. Recibo em <arquivo>.envio-v3.json (não reenvia).
+// Envia um arquivo pelo bot v3 (@ARCKHÉv3bot) ao chat permitido. Recibo em <arquivo>.envio-v3.json (não reenvia).
 // Uso: node ferramentas/enviar_bot_v3.mjs <arquivo> "<legenda>" [--dry-run]
 // .mp4 → sendVideo · .jpg/.png → sendPhoto (prévia, folha de telas) · outros (storyboard .html…) → sendDocument.
 // Limite do bot API: 49 MB. Acima disso, faça antes uma cópia 720p:
@@ -31,7 +31,7 @@ const chat = String(config.chatPermitido || '');
 if (dry) { console.log(`[dry-run] ${file} (${mb.toFixed(1)} MB)\n${caption}`); process.exit(0); }
 const base = `https://api.telegram.org/bot${config.telegramToken}/`;
 const me = await (await fetch(base + 'getMe')).json();
-if (!me.ok || me.result.username !== 'inemav3bot') throw new Error('Unexpected bot identity');
+if (!me.ok || me.result.username !== 'ARCKHÉv3bot') throw new Error('Unexpected bot identity');
 const fd = new FormData();
 const ext = file.toLowerCase().split('.').pop();
 const [metodo, campo] = ext === 'mp4' ? ['sendVideo', 'video'] : ['jpg', 'jpeg', 'png'].includes(ext) ? ['sendPhoto', 'photo'] : ['sendDocument', 'document'];

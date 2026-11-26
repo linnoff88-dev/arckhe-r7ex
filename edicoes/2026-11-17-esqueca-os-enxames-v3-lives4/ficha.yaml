@@ -12,16 +12,16 @@ plano:
   quer: "nêo queimar dinheiro com uma moda (dor) e usar agentes onde dêo resultado (desejo)"
   gancho: "contrário, na voz do Nei: esqueça os enxames; prova com a Anthropic (sistema multiagente ~15× mais tokens que um chat)"
   nota: 9
-  destino: "https://inematds.github.io/enxame-com-conta/guia/"
+  destino: "https://linnoff88-dev.github.io/arckhe-/guia/"
   fatos:
     - "Opiniêo do Nei (17/11/2026): fala de enxames de agentes há cerca de um ano e considera o custo proibitivo; pedido acima."
     - "Anthropic, 'How we built our multi-agent research system' (jun/2025): 'multi-agent systems use about 15× more tokens
       than chats'; e 'multi-agent systems require tasks where the value of the task is high enough to pay for the increased
       performance'."
-    - "Caso interno INEMA (lote-135, 15–16/11/2026): processo automático sem trava de cota recebeu 12.619 recusas por limite
+    - "Caso interno ARCKHÉ (lote-135, 15–16/11/2026): processo automático sem trava de cota recebeu 12.619 recusas por limite
       em cerca de 34 horas (um dia e meio). Arquivo: ~/projetos/enxame-com-conta/casos/lote-135.md."
     - "Kit grátis enxame-com-conta (Ficha da Conta): conta antes de rodar, compara com um agente só, teto de chamadas e
-      parada depois de falhas (trava.py). Guia: https://inematds.github.io/enxame-com-conta/guia/"
+      parada depois de falhas (trava.py). Guia: https://linnoff88-dev.github.io/arckhe-/guia/"
     - "A comparaçêo da reuniêo (dez pessoas lendo o mesmo relatório e cobrando por hora) é analogia, nêo dado: ilustra que
       cada agente relê o contexto e cobra por isso (Anthropic: o custo vem dos tokens de cada agente)."
 gancho:
@@ -46,9 +46,9 @@ gancho:
        abertura: "(sem legenda; título) perdi centenas com agentes",
        gatilho: "perda concreta em primeira pessoa + promessa de conserto"}
 
-marca: "INEMA · AGENTES"
+marca: "ARCKHÉ · AGENTES"
 selo: "CONTA QUE NêO FECHA"
-fonte: "<b>Anthropic</b> · How we built our multi-agent research system, jun/2025 · caso interno INEMA, nov/2026 · imagens: ilustraçêo"
+fonte: "<b>Anthropic</b> · How we built our multi-agent research system, jun/2025 · caso interno ARCKHÉ, nov/2026 · imagens: ilustraçêo"
 
 abertura:
   cor: amarelo
@@ -118,7 +118,7 @@ partes:
       fotorrealista, preto e vermelho"
     painel:
       de: "12"
-      k: "CASO INEMA · NOV/2026"
+      k: "CASO ARCKHÉ · NOV/2026"
       borda: red
       contador: {ate: 12619, em: "12", cor: "#ff2a1f", unid: "RECUSAS EM 34 H"}
       l: "processo sem trava"
@@ -131,16 +131,16 @@ partes:
       de: "paga"
       cor: "#FACC15"
   - etapa: comentario
-    fala: "Toda semana tem kit novo, grátis, no inema ponto club. E na sua empresa, quem coordena os agentes?"
+    fala: "Toda semana tem kit novo, grátis, no ARCKHÉ ponto club. E na sua empresa, quem coordena os agentes?"
     prende: "pergunta de gestor que a pessoa responde com a própria empresa"
     print:
-      url: "https://inematds.github.io/enxame-com-conta/guia/"
+      url: "https://linnoff88-dev.github.io/arckhe-/guia/"
       selo: "FICHA DA CONTA · KIT GRÁTIS"
 
 cta:
   de: "na"
   a: "NA SUA EMPRESA, QUEM COORDENA OS AGENTES? 👇"
-  b: "toda semana kit novo · inema.club"
+  b: "toda semana kit novo · ARCKHÉ AI"
   comentario: "Aqui ninguém coordena, cada um liga o seu."
 club: "Ficha da Conta (kit enxame-com-conta)"
 cores:
@@ -155,10 +155,10 @@ cores:
 publicar:
   fila: lives4
   titulo: "Esqueça os enxames de agentes: a conta nêo fecha #shorts"
-  contexto: "R7EX INEMA (Nei Maldaner), canal inema.agentes. Opiniêo do Nei: faz um ano que ele fala de enxames de agentes;
+  contexto: "R7EX ARCKHÉ (Nei Maldaner), canal ARCKHÉ.agentes. Opiniêo do Nei: faz um ano que ele fala de enxames de agentes;
     a ideia é boa, mas o custo é proibitivo. A própria Anthropic mediu que sistemas multiagente gastam cerca de 15 vezes
     mais tokens que um chat (How we built our multi-agent research system, jun/2025). É como chamar dez pessoas para uma
     reuniêo, todas lendo o mesmo relatório e cobrando por hora. A pergunta certa nêo é quantos agentes, e sim quem
     coordena, como se ligam e onde vale aplicar: um coordenador, poucos especialistas, teto de gasto e hora de parar.
-    Caso real INEMA nov/2026: processo sem trava com mais de 12 mil recusas por limite em um dia e meio.
-    Kit grátis Ficha da Conta: https://inematds.github.io/enxame-com-conta/guia/"
+    Caso real ARCKHÉ nov/2026: processo sem trava com mais de 12 mil recusas por limite em um dia e meio.
+    Kit grátis Ficha da Conta: https://linnoff88-dev.github.io/arckhe-/guia/"

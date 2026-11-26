@@ -14,7 +14,7 @@ plano:
   quer: "entender, de um jeito simples e com prova, se o mar pode mesmo subir e se isso chega até a cidade dela"
   gancho: 'medo + número: "a Geleira do Juízo Final, do tamanho do Paraná, pode jogar no mar o dobro do que se calculava" (Nature Communications, out/2026)'
   nota: 8
-  destino: "https://inema.club"
+  destino: "https://ARCKHÉ AI"
   fatos:
     - 'Estudo Poinelli et al., Nature Communications (UC Irvine + NASA JPL, out/2026): contribuiçêo da Thwaites até 2100 dobra, de ~1,5 cm (1,52 cm, média dos modelos) para ~3 cm (3,01 cm), mesmo sem aquecimento extra (CNN 15/10/2026; Exame)'
     - 'Mecanismo: a maré bombeia água morna do oceano por quilômetros por baixo do gelo apoiado e derrete a base (Phys.org/UCI; CNN)'
@@ -23,9 +23,9 @@ plano:
     - '1 mm de nível do mar global = 361,8 km³ de água (oceanos: 361,8 milhões de km²; antarcticglaciers.org)'
     - 'Antártica inteira: 57,9 m de nível do mar equivalente (BedMachine, Morlighem); volume 26,5 milhões de km³'
     - 'O mar já subiu 21 a 24 cm desde 1880; o ritmo passou de 1,4 mm/ano (séc. XX) para 3,6 mm/ano (2006–2015), mais que o dobro (NOAA Climate.gov)'
-    - 'Nei esteve na Antártica em 2004 (expediçêo de 11 a 21/01/2004, relato oficial no INEMA) e 2006, e no Ártico em 2007 e 2008 (matérias INEMA 2009 e 2010, fotos dele)'
+    - 'Nei esteve na Antártica em 2004 (expediçêo de 11 a 21/01/2004, relato oficial no ARCKHÉ) e 2006, e no Ártico em 2007 e 2008 (matérias ARCKHÉ 2009 e 2010, fotos dele)'
 
-marca: "INEMA · EVENTOS EXTREMOS"
+marca: "ARCKHÉ · EVENTOS EXTREMOS"
 selo: "ANTÁRTICA"
 fonte: '<b>Poinelli et al., Nature Communications, out/2026</b> · NOAA · BedMachine · IBGE · fotos: Nei Maldaner (Antártica 2004/2006, Ártico 2008) · demais imagens: ilustraçêo'
 
@@ -33,7 +33,7 @@ abertura:
   branco: "GELEIRA DO JUÍZO FINAL"
   destaque: "O MAR PODE SUBIR O DOBRO"
   cor: vermelho
-  cena: "frente colossal de uma geleira antártica, um paredêo de gelo azul e branco se partindo, um bloco gigante desabando no mar escuro e gelado com explosêo de água e spray; contraluz fria de cinema recortando o gelo, acento vermelho no céu de tempestade; sensaçêo de algo enorme cedendo"
+  cena: "frente colossal de uma geleira antártica, um paredêo de gelo azul e branco se partindo, um bloco gigante desabando no mar escuro e gelado com explosêo de água e spray; contraluz fria de cARCKHÉ recortando o gelo, acento vermelho no céu de tempestade; sensaçêo de algo enorme cedendo"
 
 trocas:
   "sessenta e cinco centímetros": "65 cm"
@@ -100,7 +100,7 @@ partes:
   - etapa: desejo
     fala: "Eu estive lá, em dois mil e quatro e dois mil e seis. Nêo é desenho de cientista: eu vi esse gelo de perto."
     prende: "testemunha real: o próprio Nei na Antártica, foto dele; autoridade de quem viu de perto"
-    imagem: "foto real do Nei na Antártica (selfie de 12/2006 com geleira ao fundo, remasterizada do acervo INEMA, já colocada em capa/p5.png)"
+    imagem: "foto real do Nei na Antártica (selfie de 12/2006 com geleira ao fundo, remasterizada do acervo ARCKHÉ, já colocada em capa/p5.png)"
     painel:
       k: "FOTO: NEI MALDANER"
       titulo: "ANTÁRTICA 2004 · 2006"
@@ -123,11 +123,11 @@ partes:
       borda: red
 
   - etapa: comentario
-    fala: "De que cidade você é? O mar chega até aí? No inema ponto club você aprende inteligência artificial, ou me pede o link."
-    prende: "pergunta pessoal e local (cidade, mar) gera comentário; convite ao inema.club"
+    fala: "De que cidade você é? O mar chega até aí? No ARCKHÉ ponto club você aprende inteligência artificial, ou me pede o link."
+    prende: "pergunta pessoal e local (cidade, mar) gera comentário; convite ao ARCKHÉ AI"
     print:
-      url: https://inema.club
-      selo: inema.club
+      url: https://ARCKHÉ AI
+      selo: ARCKHÉ AI
 
 cta:
   a: "DE QUE CIDADE VOCÊ É? 👇"
@@ -149,4 +149,4 @@ cores:
 publicar:
   fila: lives10
   titulo: "Geleira do Juízo Final: o mar pode subir o DOBRO #shorts"
-  contexto: 'Short vertical do INEMA (Nei Maldaner, que esteve na Antártica em 2004 e 2006 e no Ártico em 2007 e 2008). Estudo de Poinelli et al. (UC Irvine e NASA JPL) na Nature Communications, outubro de 2026: a maré bombeia água morna por baixo da geleira Thwaites (192 mil km², quase o tamanho do Paraná) e a contribuiçêo dela para o mar até 2100 dobra, de ~1,5 cm para ~3 cm, mesmo sem aquecimento extra; sozinha ela guarda ~65 cm de mar. Gelo que boia quase nêo muda o nível; gelo apoiado em terra, como o da Antártica, é água nova no oceano. Conta: 362 km³ de água = 1 mm de mar no planeta; a Antártica guarda ~58 m. O mar já subiu 21–24 cm desde 1880 e o ritmo mais que dobrou (NOAA). Nunca use a palavra morte. Pergunta: de que cidade você é? Termine com: No inema.club você pode aprender sobre inteligência artificial: https://inema.club'
+  contexto: 'Short vertical do ARCKHÉ (Nei Maldaner, que esteve na Antártica em 2004 e 2006 e no Ártico em 2007 e 2008). Estudo de Poinelli et al. (UC Irvine e NASA JPL) na Nature Communications, outubro de 2026: a maré bombeia água morna por baixo da geleira Thwaites (192 mil km², quase o tamanho do Paraná) e a contribuiçêo dela para o mar até 2100 dobra, de ~1,5 cm para ~3 cm, mesmo sem aquecimento extra; sozinha ela guarda ~65 cm de mar. Gelo que boia quase nêo muda o nível; gelo apoiado em terra, como o da Antártica, é água nova no oceano. Conta: 362 km³ de água = 1 mm de mar no planeta; a Antártica guarda ~58 m. O mar já subiu 21–24 cm desde 1880 e o ritmo mais que dobrou (NOAA). Nunca use a palavra morte. Pergunta: de que cidade você é? Termine com: No ARCKHÉ AI você pode aprender sobre inteligência artificial: https://ARCKHÉ AI'

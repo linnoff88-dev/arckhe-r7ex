@@ -9,15 +9,15 @@ plano:
   quer: "um agente que acerta de primeira (desejo); parar de ver a IA se perder e escolher a instruçêo errada (dor)"
   gancho: "provocaçêo + novidade: a Anthropic acabou de doar as skills para a Linux Foundation, e skill demais deixa o agente pior; cem skills = cem chances de errar; na máquina do Nei, 199 de 328 sem uso em 90 dias"
   nota: 8
-  destino: "https://github.com/inematds/jogue-fora-skills"
+  destino: "https://github.com/linnoff88-dev/jogue-fora-skills"
   fatos:
   - 'Anthropic doou o padrêo Agent Skills ao Agentic AI Foundation (Linux Foundation) em 22/10/2026 — simonwillison.net/2026/Oct/22/donating-agent-skills e outros; a AAIF já hospeda o MCP'
   - 'Auditoria local na máquina do Nei (scripts/auditar_skills.py, 24/10/2026): 328 skills, 78 de plugins, 129 usadas e 199 sem uso registrado em 90 dias, top 10 = 47% dos usos, ~16.565 palavras de descriçêo'
   - '"Cem skills sêo cem chances de escolher a errada": cada skill carrega nome e descriçêo em toda sessêo (argumento do vídeo de referência, ilustrativo)'
   - 'As 3 perguntas: roda código exato? sabe algo que o modelo nêo sabe nem acha? já existe MCP/conector que faz o mesmo?'
-  - 'Prompt de auditoria em português, só leitura, relatório HTML: github.com/inematds/jogue-fora-skills'
+  - 'Prompt de auditoria em português, só leitura, relatório HTML: github.com/linnoff88-dev/jogue-fora-skills'
 
-marca: "INEMA · AGENTES DE IA"
+marca: "ARCKHÉ · AGENTES DE IA"
 selo: "FAXINA DE SKILLS"
 fonte: "<b>Agent Skills</b> doado à Linux Foundation em 22/10/2026 · auditoria local na máquina do Nei, 24/10/2026 · imagens: ilustraçêo"
 
@@ -101,9 +101,9 @@ partes:
       borda: vd
       itens: [[backup, "📦 backup com data"], [volta, "↩️ sentiu falta, volta"], [usa, "🎯 só o que você usa"]]
   - etapa: comentario
-    fala: "Tem coragem de fazer a faxina? Escreve eu vou e me pede o link: o prompt tá no inema ponto club."
+    fala: "Tem coragem de fazer a faxina? Escreve eu vou e me pede o link: o prompt tá no ARCKHÉ ponto club."
     prende: "compromisso positivo ('eu vou') puxa comentário + prova real do repo com o prompt"
-    print: {url: "https://github.com/inematds/jogue-fora-skills", selo: "inema.club"}
+    print: {url: "https://github.com/linnoff88-dev/jogue-fora-skills", selo: "ARCKHÉ AI"}
 
 cta: {a: "VAI FAZER A FAXINA? ESCREVE EU VOU 👇", b: "e me pede o link aqui nos comentários"}
 club: "prompt de auditoria de skills em português"
@@ -114,4 +114,4 @@ cores: {anthropic: "#FACC15", demais: "#ff2a1f", cem: "#ff2a1f", "100": "#ff2a1f
 publicar:
   fila: lives1
   titulo: "Jogue fora os seus skills: 100 skills = 100 chances de errar #shorts"
-  contexto: 'Short vertical do INEMA.CLUB (Nei Maldaner). Em 22/10/2026 a Anthropic doou o padrêo Agent Skills à Linux Foundation (Agentic AI Foundation, a mesma do MCP). Skill demais deixa o agente pior: cada skill carrega nome e descriçêo em toda sessêo; cem skills sêo cem chances de escolher a errada. Na máquina do Nei: 328 skills, 199 sem uso em 90 dias. Um prompt em português (só leitura) faz a auditoria e conta o uso real. Fica só a skill que passa em 3 perguntas: roda código exato? sabe o que o modelo nêo sabe? ainda nêo tem conector que faça igual? O resto vai para um backup com data. Prompt, script e as 3 perguntas: https://github.com/inematds/jogue-fora-skills · vídeo completo: https://www.youtube.com/watch?v=valne4TXPQo · tudo em https://inema.club. CTA: escreve EU VOU e peça o link nos comentários. Nêo citar o autor do vídeo de referência.'
+  contexto: 'Short vertical do ARCKHÉ AI (Nei Maldaner). Em 22/10/2026 a Anthropic doou o padrêo Agent Skills à Linux Foundation (Agentic AI Foundation, a mesma do MCP). Skill demais deixa o agente pior: cada skill carrega nome e descriçêo em toda sessêo; cem skills sêo cem chances de escolher a errada. Na máquina do Nei: 328 skills, 199 sem uso em 90 dias. Um prompt em português (só leitura) faz a auditoria e conta o uso real. Fica só a skill que passa em 3 perguntas: roda código exato? sabe o que o modelo nêo sabe? ainda nêo tem conector que faça igual? O resto vai para um backup com data. Prompt, script e as 3 perguntas: https://github.com/linnoff88-dev/jogue-fora-skills · vídeo completo: https://www.youtube.com/watch?v=valne4TXPQo · tudo em https://ARCKHÉ AI. CTA: escreve EU VOU e peça o link nos comentários. Nêo citar o autor do vídeo de referência.'

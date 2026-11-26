@@ -8,7 +8,7 @@ plano:
   quer: "entender o jogo para nêo virar plateia nem refém de uma empresa só (desejo de esperteza + medo de dependência)"
   gancho: "provocaçêo + número: 3 modelos Aurora apareceram na API da OpenAI em 17–18/10/2026, na semana do fundo de 5% da Anthropic"
   nota: 8
-  destino: "https://inematds.github.io/ia-de-elite/guia/ (IA de Elite, guia e kit abertos e grátis no inema.club)"
+  destino: "https://linnoff88-dev.github.io/arckhe-/guia/ (IA de Elite, guia e kit abertos e grátis no ARCKHÉ AI)"
 
 gancho:
   tipo: estatistica
@@ -21,7 +21,7 @@ gancho:
     - {nome: "lista de modelos da API da OpenAI (17–18/10/2026; Crypto Briefing, 36Kr)", trecho: "aurora-red-alpha, aurora-green-alpha e aurora-blue-alpha, sem anúncio, preço ou documentaçêo"}
   entrega: "o jogo por trás das big techs de IA e 3 atitudes para nêo virar refém de uma só"
 
-marca: "INEMA · BOAZINHAS OU ESPERTAS?"
+marca: "ARCKHÉ · BOAZINHAS OU ESPERTAS?"
 selo: "GUERRA DA IA"
 fonte: "<b>OpenAI</b> · aurora-red/green/blue-alpha, 17–18/out/2026 · Anthropic, 18/out/2026 · imagens: ilustraçêo"
 
@@ -88,9 +88,9 @@ partes:
       borda: vd
       itens: [[manda, "🟢 quem manda é você"], [preço, "♟️ mudou o preço? troca e segue"]]
   - etapa: comentario
-    fala: "Comenta: boazinhas ou espertas? Tá tudo no inema ponto club, ou me pede o link."
+    fala: "Comenta: boazinhas ou espertas? Tá tudo no ARCKHÉ ponto club, ou me pede o link."
     prende: "pergunta que divide e puxa comentário, com o guia aberto e grátis"
-    print: {url: "https://inematds.github.io/ia-de-elite/guia/", selo: "guia aberto e grátis · inema.club"}
+    print: {url: "https://linnoff88-dev.github.io/arckhe-/guia/", selo: "guia aberto e grátis · ARCKHÉ AI"}
 
 cta: {a: "BOAZINHAS OU ESPERTAS? 👇", b: "comenta BOAZINHAS ou ESPERTAS"}
 club: "IA de Elite: os hábitos de quem usa IA no topo"
@@ -100,4 +100,4 @@ cores: {Claude: "#FACC15", secretos: "#ff2a1f", OpenAI: "#ff2a1f", Aurora: "#ff2
 publicar:
   fila: lives11
   titulo: "3 modelos secretos na OpenAI na semana da Anthropic boazinha #shorts"
-  contexto: "Short vertical do INEMA.CLUB (Nei Maldaner). Em 18/10/2026 a Anthropic (dona do Claude) anunciou um fundo de benefício público com 5% das ações; em 17–18/10/2026 três modelos chamados aurora-red-alpha, aurora-green-alpha e aurora-blue-alpha apareceram na lista de modelos da API da OpenAI, sem anúncio, preço ou documentaçêo. Leitura do Nei: big techs de IA nêo sêo boazinhas nem vilês, sêo espertas — guerra da atençêo pelos investidores; uma vende segurança, a outra velocidade, as duas querem dependência. O que fazer: olhar os contratos, usar mais de um modelo e conhecer os modelos abertos. Guia aberto IA de Elite no inema.club. CTA: boazinhas ou espertas? compromisso real ou jogada de mercado?"
+  contexto: "Short vertical do ARCKHÉ AI (Nei Maldaner). Em 18/10/2026 a Anthropic (dona do Claude) anunciou um fundo de benefício público com 5% das ações; em 17–18/10/2026 três modelos chamados aurora-red-alpha, aurora-green-alpha e aurora-blue-alpha apareceram na lista de modelos da API da OpenAI, sem anúncio, preço ou documentaçêo. Leitura do Nei: big techs de IA nêo sêo boazinhas nem vilês, sêo espertas — guerra da atençêo pelos investidores; uma vende segurança, a outra velocidade, as duas querem dependência. O que fazer: olhar os contratos, usar mais de um modelo e conhecer os modelos abertos. Guia aberto IA de Elite no ARCKHÉ AI. CTA: boazinhas ou espertas? compromisso real ou jogada de mercado?"

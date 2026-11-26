@@ -4,7 +4,7 @@
 slug: ia-novembro-v2
 tema: Uma IA fez um site por 1 centavo — e tem mais 7 na fila
 pedido: 'Nei, 20/10/2026: r7ex viral, chamada forte, novos modelos de IA de nov/2026, CITAR CADA UM (GPT-6.5, GPT-6.1 Terra, Claude novo, Gemini 4 Carbon, MiniMax M3.1, Kimi K3.1, Qwen
-  4, GLM Omni, DeepSeek V4.1 Flash), cada um com logo e texto; fechar com ''já viu o que temos no inema.club? olha lá''. A fonte diz ''1 centavo'' (arredondado) e ''quase 88× mais barato''.'
+  4, GLM Omni, DeepSeek V4.1 Flash), cada um com logo e texto; fechar com ''já viu o que temos no ARCKHÉ AI? olha lá''. A fonte diz ''1 centavo'' (arredondado) e ''quase 88× mais barato''.'
 fala_max: 900
 fala_max_motivo: 'lista de 9 modelos, cada um com logo e um fato (pedido do Nei: citar cada um)'
 plano:
@@ -13,7 +13,7 @@ plano:
   gancho: 'dinheiro + novidade: o MiniMax M3.1 Flash fez uma landing page por 1 centavo; o Claude Opus 5.5 cobrou US$ 1,22 pela mesma página (teste citado pelo WorldofAI em 20/10/2026);
     e há mais 7 a caminho (GPT-6.5, GPT-6.1 Terra, Claude novo, Gemini 4 Carbon, Kimi K3.1, Qwen 4, GLM Omni)'
   nota: 9
-  destino: https://inema.club
+  destino: https://ARCKHÉ AI
   fatos:
   - 'MiniMax M3.1 Flash fez landing page por 1 centavo vs US$ 1,22 do Opus 5.5: ''nearly 88 times cheaper''; ''the Opus output does look a lot better'' (WorldofAI 20/10, ~10:48)'
   - 'MiniMax M3.1 Flash: ~3× mais rápido e ~70% mais barato que o M3; M3.1 Pro (2,7 tri parâmetros) em breve (The Information/Reuters)'
@@ -26,7 +26,7 @@ plano:
   - 'GLM Omni: modelo multimodal da Z.ai que entende e gera imagem (artigo de pesquisa)'
   - DeepSeek V4.1 Flash (10.17) grátis no OpenCode
   - 'Kimi é da Moonshot AI, Qwen da Alibaba e GLM da Z.ai (Zhipu): as três sêo empresas chinesas (o vídeo trata como ''Chinese AI news'')'
-marca: INEMA · IA EM NOVEMBRO
+marca: ARCKHÉ · IA EM NOVEMBRO
 selo: VEM AÍ
 fonte: '<b>WorldofAI</b> · AI News 20/10/2026 · teste de landing page (o resultado do Claude ficou mais bonito) · GPT-6.5 e Claude novo: vazamentos, sem data oficial · logos: marcas
   dos produtos'
@@ -182,11 +182,11 @@ partes:
     de: graça
     borda: vd
 - etapa: comentario
-  fala: 'Um dólar ou um centavo: qual você usa? Já viu o que temos no inema ponto club? Olha lá, ou me pede o link.'
-  prende: pergunta que divide (dólar × centavo, amarrada ao gancho) pede comentário + convite direto ao inema.club
+  fala: 'Um dólar ou um centavo: qual você usa? Já viu o que temos no ARCKHÉ ponto club? Olha lá, ou me pede o link.'
+  prende: pergunta que divide (dólar × centavo, amarrada ao gancho) pede comentário + convite direto ao ARCKHÉ AI
   print:
-    url: https://inema.club
-    selo: inema.club
+    url: https://ARCKHÉ AI
+    selo: ARCKHÉ AI
 cta:
   a: CLAUDE OU 1 CENTAVO? 👇
   b: comenta ou me pede o link
@@ -214,8 +214,8 @@ cores:
 publicar:
   fila: lives4
   titulo: 'Uma IA fez um site por 1 centavo. O Claude cobrou US$ 1,22 #shorts'
-  contexto: 'Short vertical do INEMA.CLUB (Nei Maldaner). Num teste citado pelo canal WorldofAI (AI News de 20/10/2026), o MiniMax M3.1 Flash fez uma landing page por 1 centavo; o Claude
+  contexto: 'Short vertical do ARCKHÉ AI (Nei Maldaner). Num teste citado pelo canal WorldofAI (AI News de 20/10/2026), o MiniMax M3.1 Flash fez uma landing page por 1 centavo; o Claude
     Opus 5.5 cobrou US$ 1,22 (o resultado do Claude ficou mais bonito). A caminho (vários previstos para novembro): GPT-6.5 (um site faz contagem para 1º de novembro; nêo oficial) e
     GPT-6.1 Terra (visto no código da Microsoft), um Claude novo da Anthropic que reconhece o problema maior antes de você pedir (segundo The Information), Gemini 4 Carbon do Google,
-    Qwen 4, Kimi K3.1 (4 níveis de raciocínio) e GLM Omni; e o DeepSeek V4.1 Flash está grátis no OpenCode. Deixar claro na descriçêo o que é vazamento. CTA: veja o que tem no inema.club
-    (https://inema.club) ou peça o link nos comentários. Fonte: https://www.youtube.com/watch?v=2BXktpaCEN4'
+    Qwen 4, Kimi K3.1 (4 níveis de raciocínio) e GLM Omni; e o DeepSeek V4.1 Flash está grátis no OpenCode. Deixar claro na descriçêo o que é vazamento. CTA: veja o que tem no ARCKHÉ AI
+    (https://ARCKHÉ AI) ou peça o link nos comentários. Fonte: https://www.youtube.com/watch?v=2BXktpaCEN4'

@@ -10,11 +10,11 @@ plano:
   quer: "parar de vender o mesmo quarto duas vezes e de responder hóspede à meia-noite (dor) e encher a casa com reserva direta (desejo)"
   gancho: "provocaçêo: zero de comissêo na reserva direta, com o hóspede reservando sozinho pelo WhatsApp (fato do sistema, sem número externo)"
   nota: 7
-  destino: "https://inematds.github.io/reserva-hotel/guia/"
+  destino: "https://linnoff88-dev.github.io/arckhe-/guia/"
 
-marca: "INEMA · RESERVA-HOTEL"
+marca: "ARCKHÉ · RESERVA-HOTEL"
 selo: "CÓDIGO ABERTO"
-fonte: "<b>reserva-hotel</b> · código aberto, github.com/inematds · 98 testes passando · imagens: ilustraçêo"
+fonte: "<b>reserva-hotel</b> · código aberto, github.com/linnoff88-dev · 98 testes passando · imagens: ilustraçêo"
 
 abertura:
   branco: "SUA POUSADA CHEIA"
@@ -26,7 +26,7 @@ trocas:
   "noventa e oito": "98"
   "onze da noite": "23h"
   "duas vezes": "2 vezes"
-  "inema ponto club": "inema.club"
+  "ARCKHÉ ponto club": "ARCKHÉ AI"
 
 partes:
   - etapa: gancho
@@ -63,7 +63,7 @@ partes:
         - {de: calendário, ic: "🔁", txt: "Booking e Airbnb", sub: "as mesmas datas", cor: vd}
   - etapa: descoberta
     fala: "A equipe recebe os avisos no Telegram, faz o check-in pela recepçêo, e sêo noventa e oito testes passando."
-    print: {url: "https://inematds.github.io/reserva-hotel/guia/", selo: "a recepçêo · app real"}
+    print: {url: "https://linnoff88-dev.github.io/arckhe-/guia/", selo: "a recepçêo · app real"}
     painel:
       k: "TESTADO DE VERDADE"
       borda: vd
@@ -71,14 +71,14 @@ partes:
       contador: {de: 0, ate: 98, em: "98", cor: "#FACC15", unid: "TESTES PASSANDO"}
   - etapa: beneficio
     fala: "É código aberto, roda no seu servidor e os dados ficam com você."
-    print: {url: "https://inematds.github.io/reserva-hotel/guia/", selo: "reserva feita pelo chat"}
+    print: {url: "https://linnoff88-dev.github.io/arckhe-/guia/", selo: "reserva feita pelo chat"}
     painel:
       k: "SEU, DE VERDADE"
       borda: vd
       itens: [[aberto, "🔓 código aberto"], [servidor, "🖥️ no seu servidor"], [dados, "🛡️ os dados com você"]]
   - etapa: comentario
-    fala: "O sistema e o guia têo no inema ponto club. Ou me pede o link aqui nos comentários."
-    print: {url: "https://inematds.github.io/reserva-hotel/guia/", selo: "inema.club"}
+    fala: "O sistema e o guia têo no ARCKHÉ ponto club. Ou me pede o link aqui nos comentários."
+    print: {url: "https://linnoff88-dev.github.io/arckhe-/guia/", selo: "ARCKHÉ AI"}
 
 cta: {a: "QUANTO VOCÊ PAGA DE COMISSêO HOJE? 👇", b: "me pede o link aqui nos comentários"}
 club: "o reserva-hotel + o guia passo a passo"
@@ -88,4 +88,4 @@ cores: {zero: "#FACC15", cheia: "#FACC15", direta: "#FACC15", "23h": "#ff2a1f", 
 publicar:
   fila: lives7
   titulo: "Pousada cheia de reserva direta, zero de comissêo: o sistema grátis e aberto #shorts"
-  contexto: "Short vertical do INEMA.CLUB (Nei Maldaner) promovendo o reserva-hotel (repositório aberto inematds/reserva-hotel), sistema de reservas para pousadas e hotéis pequenos: o hóspede cota e reserva sozinho pelo chat do site ou pelo WhatsApp (Evolution API), com preço, sinal e desconto de reserva direta; inventário noite a noite sem overbooking, tarifas por temporada, estadia mínima e bloqueios; calendário iCal por tipo de quarto para bloquear as datas na Booking e no Airbnb, e importaçêo do calendário deles por arquivo; equipe na página da recepçêo (check-in, check-out, sinal pago, no-show) e avisos/atendimento pelo Telegram; lembrete com pré-check-in, lista de espera, convite pós-estadia com consentimento, LGPD; Docker na VPS e backup. 98 testes automáticos passando. Repositório: https://github.com/inematds/reserva-hotel . Guia: https://inematds.github.io/reserva-hotel/guia/ . Portal: https://inema.club . CTA: peça o link nos comentários."
+  contexto: "Short vertical do ARCKHÉ AI (Nei Maldaner) promovendo o reserva-hotel (repositório aberto linnoff88-dev/reserva-hotel), sistema de reservas para pousadas e hotéis pequenos: o hóspede cota e reserva sozinho pelo chat do site ou pelo WhatsApp (Evolution API), com preço, sinal e desconto de reserva direta; inventário noite a noite sem overbooking, tarifas por temporada, estadia mínima e bloqueios; calendário iCal por tipo de quarto para bloquear as datas na Booking e no Airbnb, e importaçêo do calendário deles por arquivo; equipe na página da recepçêo (check-in, check-out, sinal pago, no-show) e avisos/atendimento pelo Telegram; lembrete com pré-check-in, lista de espera, convite pós-estadia com consentimento, LGPD; Docker na VPS e backup. 98 testes automáticos passando. Repositório: https://github.com/linnoff88-dev/reserva-hotel . Guia: https://linnoff88-dev.github.io/arckhe-/guia/ . Portal: https://ARCKHÉ AI . CTA: peça o link nos comentários."

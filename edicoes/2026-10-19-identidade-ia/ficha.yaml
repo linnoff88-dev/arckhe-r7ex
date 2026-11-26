@@ -7,10 +7,10 @@ plano:
   quer: "nêo sentir cada avanço da IA como ameaça pessoal (dor) e atravessar a mudança firme (desejo)"
   gancho: "provocaçêo: Dario Amodei (Anthropic), Machines of Loving Grace, 2024 — 50 a 100 anos de progresso da biologia em 5 a 10 anos"
   nota: 7
-  destino: "https://inematds.github.io/sobreviver-ia/guia/#plano (plano de 90 dias, semanas 9–13, no inema.club, projetos)"
+  destino: "https://linnoff88-dev.github.io/arckhe-/guia/#plano (plano de 90 dias, semanas 9–13, no ARCKHÉ AI, projetos)"
 
-marca: "INEMA · QUEM É VOCÊ SEM CARGO"
-selo: "ALERTA INEMA"
+marca: "ARCKHÉ · QUEM É VOCÊ SEM CARGO"
+selo: "ALERTA ARCKHÉ"
 fonte: "<b>Dario Amodei</b> · Machines of Loving Grace, 2024 · imagens: ilustraçêo"
 
 abertura:
@@ -70,8 +70,8 @@ partes:
       borda: vd
       itens: [[Cargo, "🔴 cargo: a IA troca"], [Caráter, "🟢 caráter: fica"]]
   - etapa: comentario
-    fala: "Tá tudo no inema ponto club. Ou me pede o link aqui nos comentários."
-    print: {url: "https://inematds.github.io/sobreviver-ia/guia/#plano", selo: "plano de 90 dias · inema.club"}
+    fala: "Tá tudo no ARCKHÉ ponto club. Ou me pede o link aqui nos comentários."
+    print: {url: "https://linnoff88-dev.github.io/arckhe-/guia/#plano", selo: "plano de 90 dias · ARCKHÉ AI"}
 
 cta: {a: "QUEM É VOCÊ SEM O SEU CARGO? 👇", b: "ou me pede o link do plano nos comentários"}
 club: "o plano de 90 dias, semana a semana"
@@ -81,4 +81,4 @@ cores: {Anthropic: "#FACC15", cem: "#FACC15", cargo: "#ff2a1f", ameaça: "#ff2a1
 publicar:
   fila: lives3
   titulo: "100 anos de progresso em 10: quem é você sem o seu cargo? #shorts"
-  contexto: "Short vertical do INEMA.CLUB (Nei Maldaner). Dario Amodei (Anthropic) escreveu em Machines of Loving Grace (2024) que a IA pode comprimir 50 a 100 anos de progresso da biologia em 5 a 10 anos. Quem se define pelo cargo sente cada avanço como ameaça pessoal. Exercício do plano de 90 dias do projeto aberto sobreviver-ia: complete 10 vezes 'eu sou alguém que…' sem cargo nem empresa e circule as 3 que você quer manter. Cargo a IA troca, caráter fica. No inema.club. CTA: quem é você sem o seu cargo / peça o link."
+  contexto: "Short vertical do ARCKHÉ AI (Nei Maldaner). Dario Amodei (Anthropic) escreveu em Machines of Loving Grace (2024) que a IA pode comprimir 50 a 100 anos de progresso da biologia em 5 a 10 anos. Quem se define pelo cargo sente cada avanço como ameaça pessoal. Exercício do plano de 90 dias do projeto aberto sobreviver-ia: complete 10 vezes 'eu sou alguém que…' sem cargo nem empresa e circule as 3 que você quer manter. Cargo a IA troca, caráter fica. No ARCKHÉ AI. CTA: quem é você sem o seu cargo / peça o link."

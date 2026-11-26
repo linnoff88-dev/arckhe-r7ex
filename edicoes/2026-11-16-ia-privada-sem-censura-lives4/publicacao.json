@@ -6,7 +6,7 @@
   "revisor": {
     "veredito": "aprovado",
     "impacto": 8,
-    "motivo": "A abertura corresponde à ficha, os painéis sustentam a fala e o fecho apresenta a pergunta vermelha e a pílula inema.club, sem defeito visível.",
+    "motivo": "A abertura corresponde à ficha, os painéis sustentam a fala e o fecho apresenta a pergunta vermelha e a pílula ARCKHÉ AI, sem defeito visível.",
     "sugestoes": [
       "Quadro 6/18,56 s: aproximar o trecho relevante do guia para facilitar a leitura dos textos menores no celular."
     ]
@@ -18,9 +18,9 @@
   },
   "data": "2026-11-16T15:11:28.826294",
   "portal_commit": "fbdb855f10afe72a7dab2e5625026f015f854bcb",
-  "portal_url": "https://inema.club/videos/#shorts",
-  "release": "https://github.com/inematds/ia-privada-pronta/releases/tag/r7ex-v1.0.0",
-  "mp4": "https://github.com/inematds/ia-privada-pronta/releases/download/r7ex-v1.0.0/video.mp4",
+  "portal_url": "https://ARCKHÉ AI/videos/#shorts",
+  "release": "https://github.com/linnoff88-dev/ia-privada-pronta/releases/tag/r7ex-v1.0.0",
+  "mp4": "https://github.com/linnoff88-dev/ia-privada-pronta/releases/download/r7ex-v1.0.0/video.mp4",
   "verificacao": {
     "portal_testes": 13,
     "portal_build": "passou",

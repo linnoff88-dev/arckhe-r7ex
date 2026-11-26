@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""r7ex — reel viral do INEMA: roteiro de 7 etapas (r7e) + acabamento de telejornal (motor copiado do eventosextremospub).
+"""r7ex — reel viral do ARCKHÉ: roteiro de 7 etapas (r7e) + acabamento de telejornal (motor copiado do eventosextremospub).
 Padrêo em PADRAO.md · explicaçêo completa em README.md · ficha de exemplo em modelo/ficha.yaml.
 
   python3 r7ex.py novo <slug>             cria edicoes/<data>-<slug>/ficha.yaml (copia o modelo para editar)
@@ -45,7 +45,7 @@ GANCHO_TIPOS = {
     "provocacao": "afirmaçêo que cutuca quem assiste, com nome ou número na 1ª frase e uma pergunta deixada no ar "
                   "(\"A Hyundai contratou 25 mil funcionários. Nenhum pede aumento.\")",
     # v1.4.4 (D20, Nei 12/11/2026: "nêo adianta estar claro e correto se nêo chama atençêo, nêo mexe na dor ou desejo").
-    # Regra: ~/projetos/inema-design/regras/chamada.md. Os dois falam com a pessoa ("você") na 1ª frase.
+    # Regra: ~/projetos/ARCKHÉ-design/regras/chamada.md. Os dois falam com a pessoa ("você") na 1ª frase.
     "promessa": "o ganho, com a garantia verdadeira, falado em 'você' (\"O seu agente nunca mais vai dizer pronto se nêo tiver provado. É isso que este método faz.\")",
     "acusacao": "revela o que está acontecendo com a pessoa, em 'você' (\"Seu agente mente pra você.\")",
 }
@@ -71,20 +71,20 @@ TIPOS_POSICAO = ("contrario", "provocacao", "acusacao")   # D25: a opiniêo do N
 EU = re.compile(r"\b(eu|meu|minha|me|comigo)\b", re.I)
 PALAVRAS_20S = 60   # ~20 s de fala a ~182 palavras/min: a prova (número com fonte) entra antes disso
 
-PERFIL = Path(os.environ.get("R7X_HEYGEN_PERFIL", Path.home() / ".cache/inemaccbot/perfil-heygen"))   # perfil do estúdio (compartilhado: tem fila própria)
+PERFIL = Path(os.environ.get("R7X_HEYGEN_PERFIL", Path.home() / ".cache/ARCKHÉccbot/perfil-heygen"))   # perfil do estúdio (compartilhado: tem fila própria)
 TEMPLATE_HEYGEN = os.environ.get("R7X_HEYGEN_TEMPLATE", "TEMPLATE-AVATAR16")
 # Estúdio fora do spark (VPS da Tiza, 25/10/2026): R7X_HEYGEN_DIR=/root/projetos/heygen-estudio com enviar.mjs/baixar.mjs
 HEYGEN_DIR = Path(os.environ.get("R7X_HEYGEN_DIR", R / "heygen"))
 HEYGEN_ENVIAR = os.environ.get("R7X_HEYGEN_ENVIAR", "heygen-studio.mjs")
 HEYGEN_BAIXAR = os.environ.get("R7X_HEYGEN_BAIXAR", "heygen-estudio-baixar.mjs")
 TELA = ":99"                                                  # nunca a tela do Nei (memória heygen-login-na-tela)
-TROCAS_PADRAO = {"inema ponto club": "inema.club", "dois mil e vinte e sete": "2027", "dois mil e trinta": "2030",
+TROCAS_PADRAO = {"ARCKHÉ ponto club": "ARCKHÉ AI", "dois mil e vinte e sete": "2027", "dois mil e trinta": "2030",
                  "dois mil e vinte e seis": "2026"}
 # Imagem LIMPA (Nei, 19/10/2026: "saturadas, muita informaçêo, nêo é como o eventosextremos"): um assunto só, fundo liso,
 # luz neutra; o amarelo é do texto/painel (regra "imagens sem amarelado" de 12/10). A metade de baixo fica sob legenda+painel+avatar.
 # 2ª calibragem (Nei, 19/10/2026: o limpo "ficou limpo demais, nêo tem impacto"): continua UM assunto e fundo liso,
-# mas com luz dramática de cinema no assunto — o impacto vem da luz e da açêo, nêo da quantidade de coisas.
-ESTILO = ("Estilo foto cinematográfica realista de impacto, como pôster de filme: UM único objeto ou assunto principal, grande, "
+# mas com luz dramática de cARCKHÉ no assunto — o impacto vem da luz e da açêo, nêo da quantidade de coisas.
+ESTILO = ("Estilo foto cARCKHÉtográfica realista de impacto, como pôster de filme: UM único objeto ou assunto principal, grande, "
           "na metade de CIMA do quadro, numa AÇêO ou estado dramático (quebrando, acendendo, se abrindo, sendo puxado); "
           "luz dramática: foco de luz forte de cima ou contraluz com recorte brilhante na borda, sombras profundas, contraste alto. "
           "A luz do assunto pode ser amarela (#FACC15) ou, só se houver perigo, vermelha (#ff2a1f); o resto da cena é fundo "
@@ -97,7 +97,7 @@ COR = {"vermelho": "vermelho #ff2a1f", "amarelo": "amarelo #FACC15"}
 # Capa chocante (v1.8.6, Nei 17/11/2026: "a imagem inicial chocante nêo está feita com o Codex… cria este padrêo para o r7ex e o
 # rtex"). A imersêo saiu com capas de anúncio calmo (mêo apertando botêo, documentos com check) feitas fora do `imagens`.
 # Regra: a abertura é SEMPRE do Codex image_gen, mostra o momento da perda/quebra ou o "depois" chocante, e o render recusa
-# abertura sem capa/abertura.codex.json (sha256 igual a um arquivo de ~/.codex*/generated_images). Kit: inema-design D24.
+# abertura sem capa/abertura.codex.json (sha256 igual a um arquivo de ~/.codex*/generated_images). Kit: ARCKHÉ-design D24.
 CHOQUE = ("PADRêO CAPA CHOCANTE: tem de parar o dedo num relance, como pôster de filme de suspense. Mostre o MOMENTO da perda, "
           "da quebra ou o \"depois\" chocante (o que dá errado se nada mudar), nunca a soluçêo pronta, nunca anúncio calmo de produto "
           "(nada de mêo apertando botêo, documentos com check verde, escritório arrumado). Luz vermelha #ff2a1f no perigo. "
@@ -340,15 +340,15 @@ def cmd_checar(pasta):
             if not any(CENA.n(w) in CENA.n(legenda_da(f, x)) for w in ws):
                 erros.append(f"parte {i}: painel.titulo '{pn['titulo']}' sem 'de' e sem palavra da fala — diga em que palavra ele entra")
     f7 = f["partes"][-1]["fala"]
-    if "inema ponto club" not in f7:
-        erros.append("a parte 7 precisa de 'inema ponto club' (onde está; 'grátis, direto na internet' se for verdade)")
+    if "ARCKHÉ ponto club" not in f7:
+        erros.append("a parte 7 precisa de 'ARCKHÉ ponto club' (onde está; 'grátis, direto na internet' se for verdade)")
     elif not PERTENCE.search(f7.split("?")[0] if "?" in f7 else f7):   # v1.5.4: pertencimento ANTES da pergunta final
-        log("aviso: parte 7 sem frase de comunidade antes da pergunta (ex.: 'toda semana tem kit novo, grátis, no inema ponto "
+        log("aviso: parte 7 sem frase de comunidade antes da pergunta (ex.: 'toda semana tem kit novo, grátis, no ARCKHÉ ponto "
             "club'; PADRAO §2.4)")
     # D20 (Nei 12/11/2026): "no CTA nêo deve pedir para a pessoa colocar palavra ou link; deve sempre criar engajamento
     # natural". Antes o CTA fixo era "Ou me pede o link aqui nos comentários". Ediçêo com avatar gravado só recebe aviso.
     m = CTA_PROIBIDO.search(f7) or CTA_PALAVRA.search(f7)
-    for prob in ([f"a parte 7 pede palavra/link ('{m.group(0)}'): pergunta de verdade + inema ponto club (chamada.md §4)"] if m else []) \
+    for prob in ([f"a parte 7 pede palavra/link ('{m.group(0)}'): pergunta de verdade + ARCKHÉ ponto club (chamada.md §4)"] if m else []) \
             + ([] if "?" in f7 else ["a parte 7 sem pergunta: o fecho pergunta algo da vida/opiniêo da pessoa, ligado à dor/desejo"]) \
             + ([] if "pede" in [CENA.n(w) for w in f7.split()] or (f.get("cta") or {}).get("de") else
                ["cta.de: sem 'pede' na fala, diga a palavra da parte 7 onde a caixa da pergunta entra (1ª palavra da pergunta)"]):
@@ -478,7 +478,7 @@ def cmd_plano(pasta):
         sys.path.insert(0, str(R / "producao"))
         from ia_motor import executar, CotaEsgotada
         pedido = (R / "producao/critico-plano.md").read_text()
-        regra = Path.home() / "projetos/inema-design/regras/chamada.md"
+        regra = Path.home() / "projetos/ARCKHÉ-design/regras/chamada.md"
         anexos = [p / "ficha.yaml"] + ([regra] if regra.is_file() else [])
         try:
             res = executar("critico_plano", pedido, p, arquivos=anexos, preferir=os.environ.get("R7X_CRITICO") or None)

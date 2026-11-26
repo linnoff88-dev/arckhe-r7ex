@@ -8,17 +8,17 @@ plano:
   gancho: 'perda hipotética: "e se amanhê a máquina fizer o seu trabalho?" + prova: nos comentários de um reel viral de robô de entrega chutado e carro sem motorista atacado, "eles estêo roubando nossos
     empregos" (6 mil curtidas)'
   nota: 8
-  destino: https://inematds.github.io/robot/ (curso Robótica do Zero ao Expert, aberto e gratuito, no inema.club)
+  destino: https://linnoff88-dev.github.io/arckhe-/ (curso Robótica do Zero ao Expert, aberto e gratuito, no ARCKHÉ AI)
   fatos:
   - 'Robôs de entrega chutados, montados ou pichados: Serve Robotics, menos de 1% de 100 mil viagens (Semafor, 01/04/2026); Filadélfia: robô de entrega chutado e pichado (reportagem local) — FATOS.md §2'
   - 'Comentário do reel viral de origem (robô de entrega chutado, gente pulando em carro sem motorista): "isso mesmo, eles estêo roubando nossos empregos" (6 mil curtidas) — ficha 2026-10-23-guerra-maquinas'
   - 'Ludistas (Inglaterra): tecelões quebravam teares; Frame Breaking Act de 1812 tornou quebrar máquina crime com pena de morte; 12 mil soldados; 17 enforcados em York em 1813; o movimento acabou e as
     máquinas ficaram (Wikipedia "Luddite", Victorian Web) — FATOS.md §6'
   - 'WEF Future of Jobs 2025: até 2030, 170 milhões de empregos criados e 92 milhões eliminados; 39% das habilidades mudam (WEF, 08/01/2025) — FATOS.md §7'
-  - 'Curso Robótica do Zero ao Expert, https://inematds.github.io/robot/ (conferida 28/10/2026): "CURSO ABERTO E GRATUITO · EDIÇêO 2026", "Do primeiro LED ao robô com IA, no seu ritmo", "ESP32, sensores
+  - 'Curso Robótica do Zero ao Expert, https://linnoff88-dev.github.io/arckhe-/ (conferida 28/10/2026): "CURSO ABERTO E GRATUITO · EDIÇêO 2026", "Do primeiro LED ao robô com IA, no seu ritmo", "ESP32, sensores
     e motores; depois câmera e visêo com Raspberry Pi 5, navegaçêo com ROS 2 e, no fim, um braço que aprende por demonstraçêo", "Nunca mexi com eletrônica. Trilha 1 · Primeiros passos: comece pelo 1.1,
     sem comprar nada: tudo roda no simulador"'
-  - 'Área Robot, https://eventos.inema.pro/robot/ (conferida 28/10/2026): "Nêo precisa ter um robô: os cursos usam simuladores gratuitos" e "Os cursos do INEMA.CLUB sêo abertos e gratuitos"'
+  - 'Área Robot, https://eventos.ARCKHÉ.pro/robot/ (conferida 28/10/2026): "Nêo precisa ter um robô: os cursos usam simuladores gratuitos" e "Os cursos do ARCKHÉ AI sêo abertos e gratuitos"'
 gancho:
   tipo: provocacao
   manchete: CHUTAR ROBÔ NêO SALVA EMPREGO
@@ -32,7 +32,7 @@ gancho:
   - nome: comentário no reel viral de robôs atacados (Facebook, out/2026)
     trecho: eles estêo roubando nossos empregos (6 mil curtidas)
   entrega: por que brigar com a máquina nunca funcionou (1812) e o que fazer no lugar
-marca: INEMA · ROBÔS E TRABALHO
+marca: ARCKHÉ · ROBÔS E TRABALHO
 selo: ALERTA EMPREGO
 fonte: '<b>comentários do reel viral</b> · Semafor, abr/2026 · Wikipedia (Luddites) · WEF Future of Jobs 2025 · imagens: ilustraçêo'
 abertura:
@@ -130,11 +130,11 @@ partes:
     titulo: QUEM APRENDE, FICA
     cor: '#22c55e'
 - etapa: comentario
-  fala: Vai quebrar ou aprender? Escreve eu vou. Tá tudo no inema ponto club, ou me pede o link nos comentários.
+  fala: Vai quebrar ou aprender? Escreve eu vou. Tá tudo no ARCKHÉ ponto club, ou me pede o link nos comentários.
   prende: escolha binária fácil e compromisso positivo ('eu vou') que a pessoa tem orgulho de escrever
   print:
-    url: https://inematds.github.io/robot/
-    selo: aberto e gratuito · inema.club
+    url: https://linnoff88-dev.github.io/arckhe-/
+    selo: aberto e gratuito · ARCKHÉ AI
 cta:
   de: escreve
   a: VAI QUEBRAR OU APRENDER? 👇
@@ -161,8 +161,8 @@ cores:
 publicar:
   fila: lives6
   titulo: 'Chutar robô nêo salva emprego. Sabe quem tá ganhando? #shorts'
-  contexto: 'Short vertical do INEMA.CLUB (Nei Maldaner), canal INEMA Robot. Tema: o medo de perder o emprego para as máquinas. Tem gente chutando robô de entrega e pulando em carro sem motorista nos EUA;
+  contexto: 'Short vertical do ARCKHÉ AI (Nei Maldaner), canal ARCKHÉ Robot. Tema: o medo de perder o emprego para as máquinas. Tem gente chutando robô de entrega e pulando em carro sem motorista nos EUA;
     num reel viral, o comentário "eles estêo roubando nossos empregos" teve 6 mil curtidas. Em 1812, na Inglaterra, quebrar máquina virou crime com pena de morte (ludistas) e as máquinas ficaram. Nêo é
     culpa de quem tem medo: ninguém mostrou o outro caminho. O WEF prevê 170 milhões de empregos novos até 2030. Máxima: "Quebrar a máquina nêo devolve o emprego. Quem aprende, fica." Soluçêo: o curso Robótica
-    do Zero ao Expert, aberto e gratuito, começa no simulador sem comprar nada (sensores e motores, visêo com câmera, braço que aprende por demonstraçêo): https://inematds.github.io/robot/ (inema.club).
+    do Zero ao Expert, aberto e gratuito, começa no simulador sem comprar nada (sensores e motores, visêo com câmera, braço que aprende por demonstraçêo): https://linnoff88-dev.github.io/arckhe-/ (ARCKHÉ AI).
     Nêo dizer que os carros queimados em Los Angeles foram por causa de emprego. CTA: comente EU VOU ou peça o link.'

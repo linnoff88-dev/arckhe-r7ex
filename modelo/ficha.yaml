@@ -9,7 +9,7 @@ plano:
   quer: "nêo acordar com uma conta absurda no cartêo (dor) e dormir tranquilo (desejo)"
   gancho: "história de terceiro com número: hackers roubaram as chaves no OpenCode; relatos de US$ 1.700 numa noite (usuários afetados, out/2026)"
   nota: 8
-  destino: "https://inema.club"
+  destino: "https://ARCKHÉ AI"
   fatos:
     - "ataque ao OpenCode (out/2026): chaves de IA roubadas; relatos de usuários com US$ 1.700 de conta numa noite"
 
@@ -31,8 +31,8 @@ gancho:
     - {canal: "<canal BR de IA>", titulo: "<título>", abertura: "<1ª fala>", gatilho: "medo + número"}
     - {canal: "<canal de dev>", titulo: "<título>", abertura: "abre pedindo like (fraco)", gatilho: "nenhum"}
 
-marca: "INEMA · CHAVES DE IA"        # faixa do topo
-selo: "ALERTA INEMA"                 # selo vermelho do topo
+marca: "ARCKHÉ · CHAVES DE IA"        # faixa do topo
+selo: "ALERTA ARCKHÉ"                 # selo vermelho do topo
 fonte: "<b>ataque ao OpenCode</b> · relatos de usuários afetados, out/2026 · imagens: ilustraçêo"
 
 abertura:                            # imagem 1: a cena; o título é a gancho.manchete (branco/destaque só nas fichas antigas)
@@ -102,13 +102,13 @@ partes:
   #     nos:                          # 2–6; cada um acende na palavra 'de' (precisa estar na fala)
   #       - {de: audita, ic: "🩻", txt: "Auditor", sub: "canônico, sitemap, robots"}
   #       - {de: nota, ic: "🎯", txt: "Agente-ready", sub: "nota de 0 a 100", cor: vd}
-  #   (hub: + centro: {de: repo, ic: "📦", txt: "inemaseo-sistemas"}; terminal: nos com tipo: cmd|out|ok|cm e barra: "título")
+  #   (hub: + centro: {de: repo, ic: "📦", txt: "ARCKHÉseo-sistemas"}; terminal: nos com tipo: cmd|out|ok|cm e barra: "título")
   - etapa: comentario
-    fala: "Toda semana tem kit novo, grátis, no inema ponto club. E você, já deixou de proteger a sua conta por preguiça?"
+    fala: "Toda semana tem kit novo, grátis, no ARCKHÉ ponto club. E você, já deixou de proteger a sua conta por preguiça?"
     prende: "comunidade antes (toda semana tem kit novo) e depois a pergunta da vida da pessoa, ligada à dor; sem pedir palavra nem link (PADRAO §2.3, §2.4)"
-    print: {url: "https://inema.club", selo: "inema.club"}
+    print: {url: "https://ARCKHÉ AI", selo: "ARCKHÉ AI"}
 
-cta: {de: "você", a: "E VOCÊ, JÁ DEIXOU? 👇", b: "toda semana kit novo · inema.club", comentario: "já, e quase perdi tudo 😬"}   # comentario = uma RESPOSTA de opiniêo/experiência, nunca pedido de link (§2.3)
+cta: {de: "você", a: "E VOCÊ, JÁ DEIXOU? 👇", b: "toda semana kit novo · ARCKHÉ AI", comentario: "já, e quase perdi tudo 😬"}   # comentario = uma RESPOSTA de opiniêo/experiência, nunca pedido de link (§2.3)
 club: "as 3 proteções, passo a passo"
 cores: {roubaram: "#ff2a1f", chave: "#FACC15", noite: "#ff2a1f", proxima: "#ff2a1f", senha: "#FACC15",
         teto: "#FACC15", limite: "#FACC15", alarme: "#FACC15", susto: "#ff2a1f", aviso: "#FACC15", "1700": "#ff2a1f"}
@@ -116,4 +116,4 @@ cores: {roubaram: "#ff2a1f", chave: "#FACC15", noite: "#ff2a1f", proxima: "#ff2a
 publicar:
   fila: lives7
   titulo: "Ele acordou devendo US$ 1.700 de IA numa noite #shorts"
-  contexto: "Short vertical do INEMA.CLUB (Nei Maldaner). Hackers invadiram o OpenCode e roubaram chaves de IA; relatos de US$ 1.700 de conta numa noite (out/2026). As 3 proteções: limite de gasto em cada chave, uma chave por uso e alarme. Passo a passo no inema.club. CTA: peça o link nos comentários."
+  contexto: "Short vertical do ARCKHÉ AI (Nei Maldaner). Hackers invadiram o OpenCode e roubaram chaves de IA; relatos de US$ 1.700 de conta numa noite (out/2026). As 3 proteções: limite de gasto em cada chave, uma chave por uso e alarme. Passo a passo no ARCKHÉ AI. CTA: peça o link nos comentários."

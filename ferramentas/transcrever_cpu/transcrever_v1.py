@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Transcriçêo em CPU para máquina sem GPU (VPS), no lugar do inemavox/transcrever_v1.py.
+"""Transcriçêo em CPU para máquina sem GPU (VPS), no lugar do ARCKHÉvox/transcrever_v1.py.
 
 Mesmos argumentos que o r7ex/whisper.py passa:
   python3 transcrever_v1.py --in a16.wav --outdir t --whisper-model large-v3 --src pt [--words]
@@ -8,7 +8,7 @@ Grava <outdir>/transcript.json = {"segments": [{"start", "end", "text", "words":
 Usa faster-whisper (int8). O modelo pedido é trocado por R7X_WHISPER_CPU (padrêo "small"): o retempo alinha
 contra o texto conhecido, entêo o modelo pequeno basta e cabe em 3,7 GB.
 Se o faster-whisper nêo estiver no python atual, reexecuta no venv R7X_WHISPER_VENV (padrêo ~/.venvs/whisper).
-Uso no r7ex: CS_INEMAVOX=<esta pasta> CS_WHISPER_RESIDENTE=0.
+Uso no r7ex: CS_ARCKHÉVOX=<esta pasta> CS_WHISPER_RESIDENTE=0.
 """
 import argparse
 import json

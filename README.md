@@ -1,31 +1,31 @@
-ï»¿# r7ex ê¢â¬â o reel viral do INEMA
+ï»¿# r7ex ê¢â¬â o reel viral do ARCKHÉ
 
-[![r7ex ê¢â¬â o reel viral do INEMA](guia/assets/banner.jpg)](https://inematds.github.io/r7ex/guia/)
+[![r7ex ê¢â¬â o reel viral do ARCKHÉ](guia/assets/banner.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/)
 
 **ê°Å¸â¡Â§ê°Å¸â¡Â· [PortuguêÂªs](README.md) êÂ· ê°Å¸â¡Âºê°Å¸â¡Â¸ [English](README.en.md) êÂ· ê°Å¸â¡Âªê°Å¸â¡Â¸ [EspaêÂ±ol](README.es.md)**
 
 ## O que êÂ©
 
-O r7ex êÂ© a linha de produêÂ§êÂ£o de reels verticais (9:16) do INEMA. VocêÂª entrega uma ideia forte, a tese, e ele monta um vêÂ­deo de 40 a 50 segundos (30ê¢â¬â37 s de fala num ritmo calmo + 9 s de cartêÂ£o do comentêÂ¡rio) com o avatar do Nei falando, imagens geradas pelo Codex e um acabamento de telejornal: têÂ­tulo na abertura, painêÂ©is que entram na palavra certa, contador e legenda que acende junto com a fala. O roteiro segue 7 etapas de gatilho, do gancho com nêÂºmero atêÂ© o pedido de comentêÂ¡rio, sempre levando a pessoa ao inema.club. Para usar êÂ© preciso Python, Node, o Codex e a assinatura do HeyGen, rodando na mêÂ¡quina do INEMA.
+O r7ex êÂ© a linha de produêÂ§êÂ£o de reels verticais (9:16) do ARCKHÉ. VocêÂª entrega uma ideia forte, a tese, e ele monta um vêÂ­deo de 40 a 50 segundos (30ê¢â¬â37 s de fala num ritmo calmo + 9 s de cartêÂ£o do comentêÂ¡rio) com o avatar do Nei falando, imagens geradas pelo Codex e um acabamento de telejornal: têÂ­tulo na abertura, painêÂ©is que entram na palavra certa, contador e legenda que acende junto com a fala. O roteiro segue 7 etapas de gatilho, do gancho com nêÂºmero atêÂ© o pedido de comentêÂ¡rio, sempre levando a pessoa ao ARCKHÉ AI. Para usar êÂ© preciso Python, Node, o Codex e a assinatura do HeyGen, rodando na mêÂ¡quina do ARCKHÉ.
 
 ## ê°Å¸Å½Â¬ VêÂ­deos sobre o r7ex
 
 Feitos com o prêÂ³prio r7ex (19/10/2026):
 
-- [Reel 1 ê¢â¬â "Meus reels tiveram zero visualizaêÂ§êÂ£o, 4 lotes atêÂ© acertar"](https://inematds.github.io/r7ex/guia/assets/videos/r7ex-divulga.mp4)
-- [Reel 2 ê¢â¬â "O reel de 7 etapas ficou velho, agora tem o r7ex"](https://inematds.github.io/r7ex/guia/assets/videos/r7e-para-r7ex.mp4)
+- [Reel 1 ê¢â¬â "Meus reels tiveram zero visualizaêÂ§êÂ£o, 4 lotes atêÂ© acertar"](https://linnoff88-dev.github.io/arckhe-/guia/assets/videos/r7ex-divulga.mp4)
+- [Reel 2 ê¢â¬â "O reel de 7 etapas ficou velho, agora tem o r7ex"](https://linnoff88-dev.github.io/arckhe-/guia/assets/videos/r7e-para-r7ex.mp4)
 
 TambêÂ©m tocam no guia, seêÂ§êÂ£o Exemplos.
 
 ## ê°Å¸ââ Guia de uso
 
-Guia completo (landing + passo a passo): **https://inematds.github.io/r7ex/guia/**
+Guia completo (landing + passo a passo): **https://linnoff88-dev.github.io/arckhe-/guia/**
 
 ---
 
 **r7ex = r7e + x.** O **r7e** (reel7etapas) dêÂ¡ o **roteiro**: 7 etapas de gatilho, do gancho ao comentêÂ¡rio.
 O **x** vem do **eventosextremospub**: o **acabamento de telejornal** que viraliza mais.
-Objetivo de todo reel: **trazer gente para o inema.club.**
+Objetivo de todo reel: **trazer gente para o ARCKHÉ AI.**
 
 Este repo funciona **sozinho**: tem cêÂ³pia prêÂ³pria do motor de render, dos scripts do estêÂºdio do HeyGen, da transcriêÂ§êÂ£o,
 da trilha, do envio ao bot e da fila de publicaêÂ§êÂ£o. Mudar algo aqui **nêÂ£o afeta** o eventosextremospub, o reel7etapas,
@@ -47,7 +47,7 @@ o explicavideos nem o cardshorts.
 | 1 | Pedido | o Nei diz o tema, o canal e o que citar | Nei |
 | 2 | Pesquisa | conferir fatos e fontes (vêÂ£o para `plano.fatos` com a origem) + **ganchos de quem fala do tema** (v1.5.4): têÂ­tulos com `yt-dlp --flat-playlist "ytsearch15:<termo>"` e a 1êÂª fala (0ê¢â¬â35 s) pela legenda automêÂ¡tica ê¢â â `gancho.referencias` (3ê¢â¬â5 `{canal, titulo, abertura, gatilho}`; nêÂºmero de terceiro nêÂ£o entra no roteiro, sêÂ³ serve de rêÂ©gua) | ê°Å¸Â§Â  |
 | 3 | Ficha | `python3 r7ex.py novo <slug>` + escrever o **gancho** (tipo, manchete do quadro 0, objeto com dano, prova, absolviêÂ§êÂ£o, entrega ê¢â¬â v1.3.1; tipo `provocacao` no PADRAO êÂ§2.2), as 7 partes, a abertura, os painêÂ©is e `publicar`. VêÂ¡rios temas ê¢â â um vêÂ­deo por tema | ê°Å¸Â§Â  |
-| 4 | PortêÂ£o da ficha | `python3 r7ex.py checar <pasta>`: 7 partes, objetivo 620 e teto 900 caracteres (D26), print sem repetir, palavras dos painêÂ©is na fala, **gancho** (tipo vêÂ¡lido, manchete ê¢â°Â¤ 6 palavras ê¢â°Â  fala, prova atêÂ© ~20 s, absolviêÂ§êÂ£o; lista reprova); **fecho** (v1.4.4: pergunta + inema ponto club, sem "me pede o link"/"comenta PALAVRA", tambêÂ©m em `cta.b`/`cta.comentario`); **avisos** v1.5.4: sem `gancho.referencias` (3ê¢â¬â5) e sem frase de comunidade antes da pergunta da parte 7 | ê¢Å¡â¢ê¯Â¸Â |
+| 4 | PortêÂ£o da ficha | `python3 r7ex.py checar <pasta>`: 7 partes, objetivo 620 e teto 900 caracteres (D26), print sem repetir, palavras dos painêÂ©is na fala, **gancho** (tipo vêÂ¡lido, manchete ê¢â°Â¤ 6 palavras ê¢â°Â  fala, prova atêÂ© ~20 s, absolviêÂ§êÂ£o; lista reprova); **fecho** (v1.4.4: pergunta + ARCKHÉ ponto club, sem "me pede o link"/"comenta PALAVRA", tambêÂ©m em `cta.b`/`cta.comentario`); **avisos** v1.5.4: sem `gancho.referencias` (3ê¢â¬â5) e sem frase de comunidade antes da pergunta da parte 7 | ê¢Å¡â¢ê¯Â¸Â |
 | 5 | PortêÂ£o viral | `python3 r7ex.py plano <pasta>`: crêÂ­tico (`producao/ia.yaml`, etapa `critico_plano`, com trava de cota e reserva) dêÂ¡ nota por parte; sem bloqueio, gancho ê¢â°Â¥ 8, mêÂ©dia ê¢â°Â¥ 7,5; compara o gancho com a melhor `gancho.referencias` e cobra a frase de comunidade na parte 7 (v1.5.4) | ê°Å¸Â¤â |
 | 6 | Entregar êÂ  produêÂ§êÂ£o | `avatar/APROVADO_HEYGEN` + `python3 producao/producao.py --add <pasta>` | ê°Å¸Â§Â  |
 | 7 | Enviar o avatar | o timer `r7ex-producao` manda a fala ao estêÂºdio HeyGen (tela :99; todas as pendentes na mesma rodada, sem esperar a anterior ficar pronta ê¢â¬â 25/10/2026) | ê¢Å¡â¢ê¯Â¸Â |
@@ -62,11 +62,11 @@ o explicavideos nem o cardshorts.
 | 11 | Entregar | `r7ex.py enviar` (v3) + `r7ex.py fila` (fila do canal); aviso "Terminei" no v3 | ê¢Å¡â¢ê¯Â¸Â |
 | 12 | Publicar | o timer da fila sobe 1 a cada 2 h (9 hê¢â¬â21 h) pelo yt-pubx e avisa no v3 | ê¢Å¡â¢ê¯Â¸Â |
 
-**Pelo bot, sem sessêÂ£o nenhuma (22/10/2026): `/r7ex <tema>` no inemaccbot.** (Desde 05/11/2026 o `/rtex` do bot roda o repo `rtex` e existe o `/rtexjp`; atêÂ© entêÂ£o o `/rtex` era apelido deste.)
+**Pelo bot, sem sessêÂ£o nenhuma (22/10/2026): `/r7ex <tema>` no ARCKHÉccbot.** (Desde 05/11/2026 o `/rtex` do bot roda o repo `rtex` e existe o `/rtexjp`; atêÂ© entêÂ£o o `/rtex` era apelido deste.)
 
 | # | Passo | Comando / o que acontece | Quem |
 |---|---|---|---|
-| B1 | Pedido | o Nei manda `/r7ex <tema, canal, "agora">` no inemaccbot; o comando jêÂ¡ êÂ© o OK do avatar | Nei |
+| B1 | Pedido | o Nei manda `/r7ex <tema, canal, "agora">` no ARCKHÉccbot; o comando jêÂ¡ êÂ© o OK do avatar | Nei |
 | B2 | Ficha + portêÂµes | fase `ficha` (`prompts/bot-ficha.md`): passos 2ê¢â¬â6 acima, canal em `publicar.fila`, "agora" ê¢â â `FRENTE`, `APROVADO_HEYGEN`, `producao.py --add`; mostra o `BOT-RESUMO.md` no chat | ê°Å¸Â¤â |
 | B3 | ProduêÂ§êÂ£o | passos 7ê¢â¬â11 pelo timer `r7ex-producao`, como sempre | ê¢Å¡â¢ê¯Â¸Â |
 | B4 | Fim no bot | fase `producao`: `producao/esperar.py <pasta>` espera `na_fila` e mostra o `BOT-FIM.md`; `parado` ê¢â â falha com o motivo | ê¢Å¡â¢ê¯Â¸Â |
@@ -74,7 +74,7 @@ o explicavideos nem o cardshorts.
 DefiniêÂ§êÂ£o: `flow.json` (prefixo `RX`), ajuda do bot em `HELP.md`. O bot nêÂ£o faz upload direto nem têÂ³pico no Telegram:
 isso continua pela sessêÂ£o + vigia `continua` (abaixo). O `/r7ex` no terminal segue igual.
 
-**Quando o Nei pede algo fora do caminho padrêÂ£o** ("publica agora sem fila", "posta no INEMA.DEV", links no inemaytbot),
+**Quando o Nei pede algo fora do caminho padrêÂ£o** ("publica agora sem fila", "posta no ARCKHÉ.DEV", links no ARCKHÉytbot),
 os passos 8ê¢â¬â12 vêÂ£o pelo vigia **`continua`** do wifi (`~/projetos/wifi/continua`): a sessêÂ£o escreve
 `<pasta>/CONTINUAR.md` com o que falta, as ordens e as travas, tira a ediêÂ§êÂ£o da produêÂ§êÂ£o e registra
 `continua.py --add <pasta> --cwd ~/projetos/r7ex --confere "python3 r7ex.py avatar-conferir <pasta>"`. Quando o avatar
@@ -91,7 +91,7 @@ Primeiro uso: `edicoes/2026-10-22-hackers-atacam` (22/10/2026).
 |---|---|---|---|
 | **1. r7e antigo** (deepseek, faxina, opencode, contexto, diga) | Assunto do dia (divulgar guia/repo), pêÂºblico de nicho, gancho = **promessa** ("SEU AGENTE OBEDECE E GASTA MENOS"), 7 etapas em ordem fixa, medo fraco e êÂ s vezes desarmado na hora | Motor do r7e: foto de banco de imagens desfocada atrêÂ¡s do rosto em meia tela, letra Anton com êÂ¢mbar apagado | Sem visualizaêÂ§êÂ£o no TikTok/Instagram |
 | **2. r7e "-gatilho"** (os mesmos 5, mesmo avatar) | Fala igual (a voz êÂ s vezes contrariava a tela) | SêÂ³ o gancho mudou: medo/novidade/provocaêÂ§êÂ£o com nêÂºmero, imagem nêÂ­tida dramêÂ¡tica, amarelo #FACC15 com contorno | Melhor, mas "ainda padrêÂ£o" |
-| **3. r7e D10** (5 teses do Nei + hacker refeito; 2 de gestêÂ£o) | **Plano antes da fala** (pessoa, o que quer, gancho com nêÂºmero, nota, destino no inema.club), **fala nova** com o gatilho primeiro e o alêÂ­vio no meio, CTA fixo, prints reais das pêÂ¡ginas | Motor do r7e com tarja e diagramas em Pillow | "Ficou padrêÂ£o" |
+| **3. r7e D10** (5 teses do Nei + hacker refeito; 2 de gestêÂ£o) | **Plano antes da fala** (pessoa, o que quer, gancho com nêÂºmero, nota, destino no ARCKHÉ AI), **fala nova** com o gatilho primeiro e o alêÂ­vio no meio, CTA fixo, prints reais das pêÂ¡ginas | Motor do r7e com tarja e diagramas em Pillow | "Ficou padrêÂ£o" |
 | **4. r7ex** (os mesmos 7, **mesmo avatar e fala do lote 3**) | Nenhum conteêÂºdo novo: a fala dividida em 7 blocos, cada um com imagem e painel tirados da prêÂ³pria fala | **Motor do eventosextremospub**: têÂ­tulo dentro da arte, preto e dourado, faixa de telejornal, painêÂ©is no tempo da fala, contador, karaokêÂª, CTA em pergunta | Formato padrêÂ£o a partir de agora |
 
 LiêÂ§êÂ£o: o **conteêÂºdo** acertou no lote 3 (teses fortes, gatilho, plano) e a **forma** acertou no lote 4 (motor do eventos).
@@ -118,7 +118,7 @@ Antes de escrever uma palavra da fala:
    promessa ou acusaêÂ§êÂ£o (a dor/desejo da pessoa em "vocêÂª", v1.4.4) ê¢â¬â **com nêÂºmero, fato ou dor/desejo** e fonte. Nunca lista ("5 novidadesê¢â¬Â¦"), "vocêÂª sabiaê¢â¬Â¦" ou "eu fizê¢â¬Â¦". Um tema por vêÂ­deo.
    Regras completas do quadro 0 e dos 3 primeiros segundos: [PADRAO.md êÂ§2.1](PADRAO.md).
 4. **Nota de potencial (0ê¢â¬â10):** "um desconhecido rolando o feed para aqui?" Abaixo de 8, troque o êÂ¢ngulo ou o tema.
-5. **Destino:** a pêÂ¡gina do inema.club que resolve (vira o print de prova).
+5. **Destino:** a pêÂ¡gina do ARCKHÉ AI que resolve (vira o print de prova).
 
 Base real: leio a pêÂ¡gina do curso/guia antes (nome, quantas aulas, se êÂ© grêÂ¡tis). Nunca invento nêÂºmero;
 "grêÂ¡tis" sêÂ³ quando a pêÂ¡gina diz ou o Nei afirma.
@@ -133,7 +133,7 @@ Base real: leio a pêÂ¡gina do curso/guia antes (nome, quantas aulas, se ê�
 | 4. Facilidade | "VocêÂª nêÂ£o precisa ser especialista, nem programador" | painel de limite + "sem ser especialista" |
 | 5. Descoberta | "SêÂ£o trêÂªs ajustes: limite, uma chave por uso, alarmeê¢â¬Â¦" | cadeado, chaves e sino + os 3 ajustes entrando |
 | 6. BenefêÂ­cio | "O susto vira um aviso no celularê¢â¬Â¦" | fatura rasgada + "sem limite êâ com limite" |
-| 7. ComentêÂ¡rio | "Toda semana tem kit novo, grêÂ¡tis, no inema.club. E vocêÂª, jêÂ¡ê¢â¬Â¦?" (comunidade antes, depois a pergunta de verdade, sem pedir link, v1.5.4) | print do inema.club + CTA vermelho em pergunta |
+| 7. ComentêÂ¡rio | "Toda semana tem kit novo, grêÂ¡tis, no ARCKHÉ AI. E vocêÂª, jêÂ¡ê¢â¬Â¦?" (comunidade antes, depois a pergunta de verdade, sem pedir link, v1.5.4) | print do ARCKHÉ AI + CTA vermelho em pergunta |
 
 A ordem 2ê¢â¬â6 se adapta ao tema (ex.: no "Quem fatura em 2027" a etapa 3 virou **prova**: "jêÂ¡ aconteceu 3 vezes"),
 mas sêÂ£o sempre 7 partes (~30ê¢â¬â37 s de fala + 9 s de cartêÂ£o desde 28/10/2026).
@@ -152,7 +152,7 @@ O motor **nêÂ£o cria conteêÂºdo nem imagem**: ele **sincroniza e anima
   3. a faixa do topo (marca + selo vermelho) e a linha de fonte;
   4. o painel, com os itens entrando no segundo da palavra e o contador subindo;
   5. a legenda karaokêÂª;
-  6. o CTA em pergunta e a pêÂ­lula do inema.club.
+  6. o CTA em pergunta e a pêÂ­lula do ARCKHÉ AI.
 - **Filma** a pêÂ¡gina a 30 quadros por segundo (`motor/render.mjs`, Chrome escondido na tela `:99`).
 - **Antes, acerta o ritmo** (`r7ex/ritmo.py` v2, D26 17/11/2026): a fala fica na velocidade natural do HeyGen (sem esticar,
   sem pausa congelada) e o vêÂ­deo segue 9 s depois da êÂºltima palavra, jêÂ¡ sem o rosto (o original fica em
@@ -171,7 +171,7 @@ Em uma frase: **o Claude escreve, o Codex desenha, o HeyGen fala e o motor sincr
 |---|---|
 | As 7 etapas de gatilho e a ordem | O motor de render (`mapa.html`, `render.mjs`, `compor_avatar.sh`) |
 | O gancho = gatilho com nêÂºmero (D9) | O visual de telejornal: faixa, selo, linha de fonte |
-| O plano antes da fala e o CTA fixo do inema.club (D10) | A abertura com o têÂ­tulo desenhado pelo Codex (`abertura-desce`) |
+| O plano antes da fala e o CTA fixo do ARCKHÉ AI (D10) | A abertura com o têÂ­tulo desenhado pelo Codex (`abertura-desce`) |
 | O avatar do Nei pelo estêÂºdio do HeyGen | A paleta preto + amarelo, vermelho sêÂ³ no perigo |
 | Os prints reais das pêÂ¡ginas como prova | Os painêÂ©is com itens no tempo da fala e os contadores |
 | A fila e o envio ao bot v3 | A legenda karaokêÂª colorida e o CTA vermelho em pergunta |
@@ -224,7 +224,7 @@ Passo a passo separado: `avatar`, `imagens`, `cena`, `render`, `revisar` (ver `p
 
 ### Mudar o planejamento (o que se fala)
 - `plano:` na ficha (pessoa, quer, gancho, nota, destino) e as regras do êÂ§2.
-- As regras fixas estêÂ£o em `PADRAO.md` e no kit `inema-design` (D9, D10, D11). MudanêÂ§a de padrêÂ£o:
+- As regras fixas estêÂ£o em `PADRAO.md` e no kit `ARCKHÉ-design` (D9, D10, D11). MudanêÂ§a de padrêÂ£o:
   primeiro o kit (`DECISOES.md` + `HISTORICO.md`), depois aqui.
 
 ## 8. HeyGen e publicaêÂ§êÂ£o

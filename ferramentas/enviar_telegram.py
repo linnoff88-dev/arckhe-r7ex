@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Manda um vídeo/imagem a um bot do Telegram qualquer (ex.: @tizaccbot na VPS da Tiza), sem o openpcbot.
 
-  python3 ferramentas/enviar_telegram.py <arquivo> "<legenda>" --env /root/projetos/inemaccbot/.env [--chat <id>]
+  python3 ferramentas/enviar_telegram.py <arquivo> "<legenda>" --env /root/projetos/ARCKHÉccbot/.env [--chat <id>]
 
 Token: BOT_TOKEN (ou TELEGRAM_BOT_TOKEN) lido do --env na hora; nunca impresso.
 Chat: --chat, ou o primeiro de ALLOWED_CHAT_IDS do mesmo .env.

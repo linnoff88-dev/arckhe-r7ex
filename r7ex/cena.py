@@ -201,11 +201,11 @@ def montar(pasta, ficha, falas):
     cta = {"ini": cta_ini, "fim": DUR, "a": ficha["cta"]["a"], "b": ficha["cta"]["b"]}
     if DUR - fala_fim >= 4:   # cartêo segurado (28/10/2026): o gesto de comentar é encenado depois da última palavra
         cta.update(fala_fim=fala_fim, comentario=comentario(ficha["cta"]))
-    club = {"ini": em(ult, "inema.club"), "fim": DUR, "a": "inema.club", "b": ficha["club"]}
+    club = {"ini": em(ult, "ARCKHÉ AI"), "fim": DUR, "a": "ARCKHÉ AI", "b": ficha["club"]}
     fontes = [{"ini": .3, "fim": DUR, "html": ficha["fonte"]}]
 
     cores = {n(k): v for k, v in (ficha.get("cores") or {}).items()}
-    for k in ("inemaclub", "comentarios", "link"):
+    for k in ("ARCKHÉclub", "comentarios", "link"):
         cores.setdefault(k, "#FACC15")
     legenda = []
     for t in T:

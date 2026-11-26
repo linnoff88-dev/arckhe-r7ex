@@ -4,7 +4,7 @@
 Ex.: "a era das ferramentas acabou; quem nêo souber pedir perdeu"
 Ex.: "vem demissêo em massa de gerentes que nêo gerem agentes"
 
-2) Diga o DESTINO (o que a pessoa ganha no inema.club)
+2) Diga o DESTINO (o que a pessoa ganha no ARCKHÉ AI)
 Ex.: "a formaçêo Empresas de 2027", "o curso Do chat ao agente".
 Se for grátis, diga "é grátis" (eu só falo grátis quando você ou a página diz).
 
@@ -26,7 +26,7 @@ Modelo de pedido em 1 linha:
 • Nunca desarmar o medo logo depois; o alívio vem no meio
 • Frases curtas, sem jargêo, como se falasse com um amigo leigo
 • Sua opiniêo em 1ª pessoa: "eu já passei por isso", "eu criei…"
-• 7 partes: gancho → medo → desejo → facilidade → descoberta (3 itens) → benefício → "toda semana tem kit novo no inema ponto club" + pergunta de verdade (nunca pedir palavra nem link)
+• 7 partes: gancho → medo → desejo → facilidade → descoberta (3 itens) → benefício → "toda semana tem kit novo no ARCKHÉ ponto club" + pergunta de verdade (nunca pedir palavra nem link)
 • Gancho que mexe na dor ou no desejo de quem assiste, em "você"; se tiver método/kit, diga o NOME dele
 • fala mais lenta (160–190 palavras/min): 450–620 letras, ~30–37 s de fala; uma pausa antes da frase final; número e ano por extenso na fala
 • no fim, o cartêo do comentário fica 9 s na tela, com o comentário sendo digitado e publicado
@@ -34,4 +34,4 @@ Modelo de pedido em 1 linha:
 🎬 O QUE EU FAÇO DEPOIS
 plano (público, gancho com tipo e manchete, nota ≥ 8) → sua fala → avatar no estúdio → imagens do Codex (título dentro da abertura) → telejornal (painéis, contador, legenda karaokê) → reviso → te mando aqui → fila do canal (1 a cada 2 h)
 
-Repo: github.com/inematds/r7ex (README explica tudo)
+Repo: github.com/linnoff88-dev/r7ex (README explica tudo)

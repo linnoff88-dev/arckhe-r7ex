@@ -8,7 +8,7 @@ plano:
   gancho: 'perda hipotética do emprego, com fato: a Hyundai e a Boston Dynamics planejam começar com vinte e cinco mil robôs Atlas nas fábricas da Hyundai e da Kia (anúncio do RMAC citado na referência
     jHb70I1Zqiw)'
   nota: 8
-  destino: 'https://inematds.github.io/HG1/ (HG1: Academia de Humanoides, 7 tiers, 70+ módulos, 100% gratuito, no inema.club)'
+  destino: 'https://linnoff88-dev.github.io/arckhe-/ (HG1: Academia de Humanoides, 7 tiers, 70+ módulos, 100% gratuito, no ARCKHÉ AI)'
   fatos:
   - 'Hyundai/Boston Dynamics (transcriçêo da referência jHb70I1Zqiw, src/transcript.txt): ''Boston Dynamics'' RMAC announcement describes plans that begin with 25,000 Atlas robots across Hyundai Motor and
     Kia plants worldwide. That is a plan for the coming years, rather than a headcount of robots already on the job.'' e ''Hyundai is targeting parts sequencing at Metaplant America beginning in 2028.'''
@@ -20,10 +20,10 @@ plano:
   - 'Tesla Optimus (mesma transcriçêo): ''Elon Musk called Optimus the hardest product to scale manufacturing that we''ve ever made at Tesla'' — a corrida é para fabricar em escala'
   - 'Boston Dynamics (mesma transcriçêo): ''Mark DiLeo, who leads Atlas Service and Repair, says the production version was made to be serviced in a customer environment'' e ''Repairs have to be quick because
     a company running a large fleet cannot treat every breakdown like a research project'' — a fábrica com robôs precisa de gente que opera e conserta'
-  - 'HG1: Academia de Humanoides, página https://inematds.github.io/HG1/ (conferida 28/10/2026): ''7 Tiers Progressivos • 70+ Módulos • 100% Gratuito''; tiers ''Tier 1.0 Conhecendo Humanoides'' (✓ Principais
+  - 'HG1: Academia de Humanoides, página https://linnoff88-dev.github.io/arckhe-/ (conferida 28/10/2026): ''7 Tiers Progressivos • 70+ Módulos • 100% Gratuito''; tiers ''Tier 1.0 Conhecendo Humanoides'' (✓ Principais
     modelos (Unitree, Tesla, Figure)), ''Tier 2.0 Operando Humanoides'' (✓ Interfaces de controle ✓ Segurança e melhores práticas ✓ Simuladores (Gazebo, Isaac Sim)) e ''Tier 3.0 Programando Humanoides''
     (✓ Python e ROS2 avançado ✓ Visêo computacional e IA)'
-  - 'Área Robot do INEMA, https://eventos.inema.pro/robot/ (conferida 28/10/2026): ''Tesla Optimus, Unitree e Figure saíram do vídeo de demonstraçêo e começam a entrar em fábricas. Estes dois cursos [HG1
+  - 'Área Robot do ARCKHÉ, https://eventos.ARCKHÉ.pro/robot/ (conferida 28/10/2026): ''Tesla Optimus, Unitree e Figure saíram do vídeo de demonstraçêo e começam a entrar em fábricas. Estes dois cursos [HG1
     e FTH], em português, mostram como eles funcionam e como programar um em simulador, sem comprar o robô.'' e ''7 cursos abertos'''
 gancho:
   tipo: provocacao
@@ -38,7 +38,7 @@ gancho:
   - nome: Boston Dynamics, anúncio do RMAC citado na referência jHb70I1Zqiw
     trecho: plans that begin with 25,000 Atlas robots across Hyundai Motor and Kia plants worldwide
   entrega: quem está trocando gente por robô e como virar quem opera e programa esses robôs, de graça
-marca: INEMA · ROBÔS E TRABALHO
+marca: ARCKHÉ · ROBÔS E TRABALHO
 selo: ALERTA EMPREGO
 fonte: '<b>Boston Dynamics/Hyundai</b> · plano do RMAC (meta, nêo robôs já operando) · Figure: relato do CEO (200 h revezando robôs para carregar) · imagens: ilustraçêo'
 abertura:
@@ -136,11 +136,11 @@ partes:
     titulo: QUEM MANDA NELE?
     cor: '#22c55e'
 - etapa: comentario
-  fala: Você vai ser quem comanda? Tá tudo no inema ponto club. Ou me pede o link aqui nos comentários.
+  fala: Você vai ser quem comanda? Tá tudo no ARCKHÉ ponto club. Ou me pede o link aqui nos comentários.
   prende: pergunta com compromisso positivo (a pessoa escreve 'eu vou'), oferta concreta e grátis
   print:
-    url: https://inematds.github.io/HG1/
-    selo: 70+ módulos · 100% gratuito · inema.club
+    url: https://linnoff88-dev.github.io/arckhe-/
+    selo: 70+ módulos · 100% gratuito · ARCKHÉ AI
 cta:
   de: comanda
   a: VOCÊ VAI SER QUEM COMANDA? 👇
@@ -168,9 +168,9 @@ cores:
 publicar:
   fila: lives6
   titulo: '25 mil funcionários novos. Nenhum pede aumento #shorts'
-  contexto: 'Short vertical do INEMA.CLUB (Nei Maldaner), canal INEMA Robot. Gancho de medo: e se o robô ficar com o seu trabalho? A Boston Dynamics e a Hyundai planejam começar com 25.000 robôs humanoides
+  contexto: 'Short vertical do ARCKHÉ AI (Nei Maldaner), canal ARCKHÉ Robot. Gancho de medo: e se o robô ficar com o seu trabalho? A Boston Dynamics e a Hyundai planejam começar com 25.000 robôs humanoides
     Atlas nas fábricas da Hyundai e da Kia (plano do RMAC, meta para os próximos anos, nêo robôs já operando; a Hyundai nêo disse quantos empregos vêo mudar). Na Figure, os robôs Figure 03 separaram pacotes
     por 200 horas seguidas revezando para carregar (relato do CEO). A Tesla diz que o Optimus é o produto mais difícil de fabricar em escala que ela já fez. Virada: em vez de ser trocado, ser quem opera,
-    conserta e programa esses robôs. Começa no simulador, sem comprar robô e de graça: HG1 Academia de Humanoides (7 tiers, 70+ módulos, 100% gratuito) https://inematds.github.io/HG1/ e a área Robot https://eventos.inema.pro/robot/
-    (inema.club). Máxima: ''O robô vai chegar. A pergunta é quem manda nele.'' Nêo inventar números. CTA: comente ''eu vou'' ou peça o link.'
+    conserta e programa esses robôs. Começa no simulador, sem comprar robô e de graça: HG1 Academia de Humanoides (7 tiers, 70+ módulos, 100% gratuito) https://linnoff88-dev.github.io/arckhe-/ e a área Robot https://eventos.ARCKHÉ.pro/robot/
+    (ARCKHÉ AI). Máxima: ''O robô vai chegar. A pergunta é quem manda nele.'' Nêo inventar números. CTA: comente ''eu vou'' ou peça o link.'
   so_v3: true

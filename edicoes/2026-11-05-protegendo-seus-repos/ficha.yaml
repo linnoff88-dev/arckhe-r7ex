@@ -1,13 +1,13 @@
 slug: protegendo-seus-repos
 tema: 'Se a sua conta do GitHub sumir amanhê, você perde tudo? Backup em camadas dos repositórios git'
-pedido: 'Nei, 05/11/2026: página-projeto "protegendo seus repos" + portal + Telegram INEMA.DEV + explicavideo no lives3 + "um r7ex". Tese: outra conta no GitHub nêo salva; backup em camadas
-  (outra empresa, conta sem vínculo, token que nêo apaga) + fotos datadas no disco + teste de restauraçêo; tá tudo no inema.club. Sem citar fonte, nada sensível.'
+pedido: 'Nei, 05/11/2026: página-projeto "protegendo seus repos" + portal + Telegram ARCKHÉ.DEV + explicavideo no lives3 + "um r7ex". Tese: outra conta no GitHub nêo salva; backup em camadas
+  (outra empresa, conta sem vínculo, token que nêo apaga) + fotos datadas no disco + teste de restauraçêo; tá tudo no ARCKHÉ AI. Sem citar fonte, nada sensível.'
 plano:
   pessoa: quem guarda trabalho no GitHub (dev, criador de conteúdo, professor, pequena empresa) e nunca pensou no dia em que a conta é bloqueada ou invadida
   quer: nêo perder anos de código num bloqueio ou numa invasêo (dor) e ter tudo de volta no mesmo dia (desejo)
   gancho: 'perda hipotética: a conta do GitHub bloqueada amanhê (denúncia, robô antifraude, engano de política) e você nêo consegue nem baixar o que é seu'
   nota: 8
-  destino: 'https://inematds.github.io/protegendo-seus-repos/guia/ (guia Protegendo seus repos, no inema.club)'
+  destino: 'https://linnoff88-dev.github.io/arckhe-/guia/ (guia Protegendo seus repos, no ARCKHÉ AI)'
   fatos:
   - 'VISAO.md §1: ''Bloqueio da conta. Uma denúncia, um robô antifraude, um engano de política. A conta fica suspensa e você nêo consegue nem baixar o que é seu.'''
   - 'VISAO.md §1: ''Invasêo. Alguém pega um token ou a senha e apaga repositórios, ou reescreve o histórico com um push --force.'''
@@ -26,9 +26,9 @@ gancho:
     de: denúncia
   absolvicao: nêo é descuido seu
   entrega: por que outra conta no GitHub nêo salva e as três camadas de backup que trazem tudo de volta no mesmo dia
-marca: INEMA · PROTEJA SEU CÓDIGO
+marca: ARCKHÉ · PROTEJA SEU CÓDIGO
 selo: ALERTA BACKUP
-fonte: '<b>guia Protegendo seus repos</b> · inema.club · cenário hipotético · imagens: ilustraçêo'
+fonte: '<b>guia Protegendo seus repos</b> · ARCKHÉ AI · cenário hipotético · imagens: ilustraçêo'
 abertura:
   cor: amarelo
   cena: 'um notebook aberto numa mesa escura com a tela tomada por um cadeado vermelho #ff2a1f gigante; ao lado, uma pasta de projetos de código presa por uma corrente partida; foco de luz forte de cima; fundo preto liso; metade de baixo vazia; sensaçêo de perda súbita; nenhum texto legível além da manchete'
@@ -115,11 +115,11 @@ partes:
     titulo: TESTOU A VOLTA?
     cor: '#22c55e'
 - etapa: comentario
-  fala: Você vai proteger os seus hoje? Tá tudo no inema ponto club. Ou me pede o link aqui nos comentários.
+  fala: Você vai proteger os seus hoje? Tá tudo no ARCKHÉ ponto club. Ou me pede o link aqui nos comentários.
   prende: pergunta com compromisso positivo (a pessoa escreve 'eu vou'), oferta concreta
   print:
-    url: https://inematds.github.io/protegendo-seus-repos/guia/
-    selo: guia completo · inema.club
+    url: https://linnoff88-dev.github.io/arckhe-/guia/
+    selo: guia completo · ARCKHÉ AI
 cta:
   de: proteger
   a: VOCÊ VAI PROTEGER OS SEUS HOJE? 👇
@@ -144,4 +144,4 @@ cores:
 publicar:
   fila: lives3
   titulo: 'O GitHub bloqueou sua conta. Você perdeu tudo? #shorts'
-  contexto: 'Short vertical do INEMA.CLUB (Nei Maldaner), canal INEMA FTD. Gancho de perda: e se o GitHub bloquear a sua conta amanhê (denúncia, robô antifraude, engano de política) e você nêo conseguir nem baixar o que é seu? Outra conta no GitHub nêo salva: é a mesma empresa, e numa invasêo quem pega os tokens apaga o original e a cópia. Soluçêo: backup em 3 camadas — cópia no GitLab (outra empresa, conta sem vínculo, token que envia mas nêo apaga), fotos datadas no disco local (volta a qualquer dia) e teste de restauraçêo. Máxima: ''Backup que você nunca testou nêo é backup.'' Guia completo: https://inematds.github.io/protegendo-seus-repos/guia/ (inema.club). Nêo inventar números. CTA: comente ''eu vou'' ou peça o link.'
+  contexto: 'Short vertical do ARCKHÉ AI (Nei Maldaner), canal ARCKHÉ FTD. Gancho de perda: e se o GitHub bloquear a sua conta amanhê (denúncia, robô antifraude, engano de política) e você nêo conseguir nem baixar o que é seu? Outra conta no GitHub nêo salva: é a mesma empresa, e numa invasêo quem pega os tokens apaga o original e a cópia. Soluçêo: backup em 3 camadas — cópia no GitLab (outra empresa, conta sem vínculo, token que envia mas nêo apaga), fotos datadas no disco local (volta a qualquer dia) e teste de restauraçêo. Máxima: ''Backup que você nunca testou nêo é backup.'' Guia completo: https://linnoff88-dev.github.io/arckhe-/guia/ (ARCKHÉ AI). Nêo inventar números. CTA: comente ''eu vou'' ou peça o link.'

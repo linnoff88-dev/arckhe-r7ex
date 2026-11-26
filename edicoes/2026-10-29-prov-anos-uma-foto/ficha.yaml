@@ -8,17 +8,17 @@ plano:
   gancho: 'perda hipotética: e se o trabalho que você levou anos para aprender um robô aprender com uma foto? Prova: o Google mostrou uma foto da mesa virando simulaçêo e o robô real subindo de 56% para
     75% de acerto (Gemini 4 Argon, 13/10/2026)'
   nota: 8
-  destino: 'https://eventos.inema.pro/robot/ (área Robot do INEMA: a simulaçêo Real2Sim que treina o robô a partir de uma foto + 7 cursos, entre eles Robótica do Zero ao Expert, 180 h; ''Tudo aberto e gratuito'')'
+  destino: 'https://eventos.ARCKHÉ.pro/robot/ (área Robot do ARCKHÉ: a simulaçêo Real2Sim que treina o robô a partir de uma foto + 7 cursos, entre eles Robótica do Zero ao Expert, 180 h; ''Tudo aberto e gratuito'')'
   fatos:
   - 'Google, post ''Gemini 4 Argon for Robotics'' (https://developers.googleblog.com/en/gemini-4-argon-for-robotics/, 13/10/2026), resumido em ~/projetos/output/robotica-NL0yDYXAQ0E/pesquisa.md §1.5: ''a
     partir de UMA foto RGB aérea de uma bancada bimanual ... Argon reconstrói malhas ... no MuJoCo ... exporta 4.500+ episódios ... Resultado: taxa de sucesso no robô físico de 56% para 75% e tempo de conclusêo
     de 35 s para 24 s'' (o VLA usado e o tamanho do teste nêo sêo informados — vai na linha de fonte)'
   - 'mesma fonte: ''4.500+ episódios com aleatorizaçêo de domínio'' — base de ''treina milhares de vezes'' na simulaçêo antes de fazer de verdade'
-  - 'guia robotica-real2sim (https://inematds.github.io/robotica-real2sim/guia/, conferido 28/10/2026): ''O gargalo da robótica sempre foi dado: gente de óculos de VR guiando o braço por horas. Aqui o dado
+  - 'guia robotica-real2sim (https://linnoff88-dev.github.io/arckhe-/guia/, conferido 28/10/2026): ''O gargalo da robótica sempre foi dado: gente de óculos de VR guiando o braço por horas. Aqui o dado
     sai da simulaçêo, e a simulaçêo sai de uma foto.'' — base do ''antes, alguém guiava o braço por horas'''
   - 'README robotica-real2sim: ''Precisa de Python, do MuJoCo (simulador gratuito)'' e ''serve para quem quer entender e testar robótica com IA sem ter robô'' — base de ''nêo precisa ter robô, dá pra começar
     no computador'''
-  - 'página https://eventos.inema.pro/robot/ (conferida 28/10/2026): ''aqui estêo os cursos abertos, a simulaçêo que treina o robô a partir de uma foto ... Tudo aberto e gratuito'', ''7 cursos'', ''Curso
+  - 'página https://eventos.ARCKHÉ.pro/robot/ (conferida 28/10/2026): ''aqui estêo os cursos abertos, a simulaçêo que treina o robô a partir de uma foto ... Tudo aberto e gratuito'', ''7 cursos'', ''Curso
     · PT · 180 h Robótica do Zero ao Expert'' — base de ''aberto e gratuito'' na fala e do print'
   - 'medo do emprego: é perda HIPOTÉTICA (pergunta ''e se''), nêo afirmaçêo de que robôs estêo tirando empregos; nenhum número de demissêo é dito'
 gancho:
@@ -36,8 +36,8 @@ gancho:
   - nome: Google Developers Blog, Gemini 4 Argon for Robotics (13/10/2026)
     url: https://developers.googleblog.com/en/gemini-4-argon-for-robotics/
     trecho: a partir de UMA foto RGB de uma bancada, reconstrói a cena no simulador e treina o robô
-marca: INEMA · ROBÔS E TRABALHO
-selo: ALERTA INEMA
+marca: ARCKHÉ · ROBÔS E TRABALHO
+selo: ALERTA ARCKHÉ
 fonte: '<b>Google</b> · Gemini 4 Argon for Robotics, 13/10/2026 (56%→75% no robô físico; teste nêo detalhado) · imagens: ilustraçêo'
 abertura:
   cor: amarelo
@@ -136,10 +136,10 @@ partes:
     titulo: QUEM ENSINA FICA
     cor: '#22c55e'
 - etapa: comentario
-  fala: Você vai ser quem ensina o robô? Tá tudo no inema ponto club, gratuito. Ou me pede o link aqui nos comentários.
+  fala: Você vai ser quem ensina o robô? Tá tudo no ARCKHÉ ponto club, gratuito. Ou me pede o link aqui nos comentários.
   prende: pergunta de compromisso positivo ('eu vou ensinar') puxa comentário; oferta concreta e gratuita
   print:
-    url: https://eventos.inema.pro/robot/
+    url: https://eventos.ARCKHÉ.pro/robot/
     selo: 7 cursos · aberto e gratuito
 cta:
   de: ensina
@@ -166,10 +166,10 @@ cores:
 publicar:
   fila: lives6
   titulo: 'Você levou anos. O robô, uma foto #shorts'
-  contexto: 'Short vertical do INEMA.CLUB (Nei Maldaner), canal INEMA Robot. Gancho de medo de perder o emprego (pergunta hipotética): e se o trabalho que você levou anos para aprender um robô aprender
+  contexto: 'Short vertical do ARCKHÉ AI (Nei Maldaner), canal ARCKHÉ Robot. Gancho de medo de perder o emprego (pergunta hipotética): e se o trabalho que você levou anos para aprender um robô aprender
     olhando uma foto? Prova: o Google mostrou (Gemini 4 Argon for Robotics, 13/10/2026, https://developers.googleblog.com/en/gemini-4-argon-for-robotics/) uma única foto de uma bancada virando simulaçêo
     no MuJoCo; o robô treinou lá dentro (4.500+ episódios) e o acerto no robô físico subiu de 56% para 75%. Antes, alguém guiava o braço por horas. Virada: seja quem ensina o robô. Dá para começar sem robô
     e sem ser engenheiro, no computador, com simulador gratuito. 3 passos: a foto vira cópia da mesa, o robô treina milhares de vezes, e só depois faz de verdade. Máxima: ''Quem só faz, compete com ele.
-    Quem ensina, fica.'' Área Robot do INEMA, aberta e gratuita (simulaçêo Real2Sim + 7 cursos, entre eles Robótica do Zero ao Expert, 180 h): https://eventos.inema.pro/robot/ . Guia Real2Sim: https://inematds.github.io/robotica-real2sim/guia/
+    Quem ensina, fica.'' Área Robot do ARCKHÉ, aberta e gratuita (simulaçêo Real2Sim + 7 cursos, entre eles Robótica do Zero ao Expert, 180 h): https://eventos.ARCKHÉ.pro/robot/ . Guia Real2Sim: https://linnoff88-dev.github.io/arckhe-/guia/
     . Nêo afirmar que robôs já estêo tirando empregos; é uma pergunta. CTA: comente ''eu vou ensinar o robô'' ou peça o link.'
   so_v3: true

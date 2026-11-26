@@ -1,7 +1,7 @@
 # Handoff — 2026-11-17 — r7ex/rtex: nunca calmo (modelo + verificaçêo) e v2 do reel do enxame
 
 ## Projeto e escopo
-Raiz ~/projetos/r7ex (também ~/projetos/rtex e ~/projetos/inema-design). Nei reprovou o reel do enxame (calmo, sem a voz dele, abertura em meia tela pouco legível para gestor) e pediu: "nenhum vídeo tem que sair calmo; r7ex e rtex sêo provocativos, virais, com gancho de imagem e de narraçêo; ajusta a falha no modelo e na verificaçêo".
+Raiz ~/projetos/r7ex (também ~/projetos/rtex e ~/projetos/ARCKHÉ-design). Nei reprovou o reel do enxame (calmo, sem a voz dele, abertura em meia tela pouco legível para gestor) e pediu: "nenhum vídeo tem que sair calmo; r7ex e rtex sêo provocativos, virais, com gancho de imagem e de narraçêo; ajusta a falha no modelo e na verificaçêo".
 
 ## Objetivo atual
 Ajustar modelo (PADRAO, prompts/bot-ficha.md, skill, regra comum chamada.md) e verificaçêo (checar_gancho em r7ex.py, producao/critico-plano.md, producao/revisor.md) do r7ex e o equivalente no rtex; depois produzir a v2 do reel com a fala aprovada. Pronto = a ficha do reel publicado reprova ou tem nota ≤ 7 no gancho, a ficha v2 passa, os testes existentes passam.
@@ -9,7 +9,7 @@ Ajustar modelo (PADRAO, prompts/bot-ficha.md, skill, regra comum chamada.md) e v
 ## Estado aceito
 - [confirmed] Reel v1 publicado no lives4 — evidência: arquivo: fila/fila.json (video_id AR2vGZMOe9k, 2026-11-17T09:01). Nei: nêo tirar do ar.
 - [confirmed] Linha da falha no topo de `FALHAS.md` (nêo commitada).
-- [confirmed] Kit enxame-com-conta v1.0.1 + guia PT/EN/ES + portal publicados — evidência: commits portal deef65b, inemabuscas 3567df0, inemapro-mono 7e49538.
+- [confirmed] Kit enxame-com-conta v1.0.1 + guia PT/EN/ES + portal publicados — evidência: commits portal deef65b, ARCKHÉbuscas 3567df0, ARCKHÉpro-mono 7e49538.
 
 ## Proposto / tentado, nêo confirmado
 - [unverified] Plano das mudanças (do advisor): campo `plano.posicao` (opiniêo do Nei em 1ª pessoa) obriga gancho contrario/provocacao/acusacao e 1ª frase afirmativa; `abertura.layout: cheia` opt-in (parte 1 em PiP, prompt de capa em tela cheia, ligado à mesma flag); crítico com pressêo + leigo entende o quadro 0 em 1 s; revisor aceita PiP na parte 1 quando a ficha pede.
@@ -21,7 +21,7 @@ Ajustar modelo (PADRAO, prompts/bot-ficha.md, skill, regra comum chamada.md) e v
 ## Nêo fazer (restrições e travas)
 - Nêo tirar AR2vGZMOe9k do ar — dito pelo Nei em 17/11, só nesta conversa.
 - Commitar só por caminho explícito: árvore do r7ex tem arquivos de outros (edicoes/*/ficha.yaml, r7ex/retempo.py, .descartes/, .layout-meia-ok).
-- Claude/Codex só pela assinatura; autor inematds; nêo usar AskUserQuestion — ~/.claude/CLAUDE.md.
+- Claude/Codex só pela assinatura; autor linnoff88-dev; nêo usar AskUserQuestion — ~/.claude/CLAUDE.md.
 - Versêo: minor carrega o patch (r7ex 1.8.7 → 1.9.7; rtex 1.7.2 → 1.8.2) — ~/.claude/CLAUDE.md.
 
 ## Arquivos alterados
@@ -42,10 +42,10 @@ Ajustar modelo (PADRAO, prompts/bot-ficha.md, skill, regra comum chamada.md) e v
 - Aberta: portêo "mostrar quadro 0 + fala ao Nei antes do HeyGen" vale também para o bot?
 
 ## Pela metade
-- Ajuste do modelo/verificaçêo — parou em: leitura de PADRAO.md, critico-plano.md, revisor.md, checar_gancho (r7ex.py:188) e cena.py:219 — falta: editar tudo, rtex, inema-design, testes, v2.
+- Ajuste do modelo/verificaçêo — parou em: leitura de PADRAO.md, critico-plano.md, revisor.md, checar_gancho (r7ex.py:188) e cena.py:219 — falta: editar tudo, rtex, ARCKHÉ-design, testes, v2.
 
 ## Próxima açêo exata
-Editar inema-design/regras/chamada.md e r7ex (PADRAO §1/§2.1/§3/§4, bot-ficha.md, r7ex.py checar_gancho, cena.py meia, prompt da capa, critico-plano.md, revisor.md), testar na ficha publicada e na v2; depois rtex. Publicar o reel v2 segue a fila (sem nova aprovaçêo: Nei aprovou o modelo).
+Editar ARCKHÉ-design/regras/chamada.md e r7ex (PADRAO §1/§2.1/§3/§4, bot-ficha.md, r7ex.py checar_gancho, cena.py meia, prompt da capa, critico-plano.md, revisor.md), testar na ficha publicada e na v2; depois rtex. Publicar o reel v2 segue a fila (sem nova aprovaçêo: Nei aprovou o modelo).
 
 ## Mapa de retomada
 - `PADRAO.md` — regras do gancho e do avatar (§2.1, §3).
@@ -132,7 +132,7 @@ Gravado por handoff-grava.py no momento do handoff. `--conferir` compara com o p
 - `edicoes/2026-10-19-curso-chat-agente-v72/publicacao/.lock` · sha256:e3b0c44298fc · sujo
 - `edicoes/2026-10-19-curso-chat-agente-v72/publicacao/APROVADO_API_YOUTUBE` · sha256:a2fbfb82c5ba · sujo
 - `edicoes/2026-10-19-curso-chat-agente-v72/publicacao/dry-run.log` · sha256:976c23bf41eb · sujo
-- `edicoes/2026-10-19-curso-chat-agente-v72/publicacao/envio-inemaytbot.json` · sha256:3651ec253862 · sujo
+- `edicoes/2026-10-19-curso-chat-agente-v72/publicacao/envio-ARCKHÉytbot.json` · sha256:3651ec253862 · sujo
 - `edicoes/2026-10-19-curso-chat-agente-v72/publicacao/fila.json` · sha256:5d6f49e7542e · sujo
 - `edicoes/2026-10-19-curso-chat-agente-v72/publicacao/fila.log` · sha256:1a1b69758508 · sujo
 - `edicoes/2026-10-19-curso-chat-agente-v72/publicacao/fila.py` · sha256:a904404b2f66 · sujo
@@ -322,7 +322,7 @@ Gravado por handoff-grava.py no momento do handoff. `--conferir` compara com o p
 - `edicoes/2026-11-12-nivel-escada/critica.json` · sha256:48047422d3e8 · sujo
 - `edicoes/2026-11-12-nivel-escada/roteiro.json` · sha256:5091ba5b8460 · sujo
 
-### Repo do trabalho: /home/nmaldaner/projetos/inema-design
+### Repo do trabalho: /home/nmaldaner/projetos/ARCKHÉ-design
 - commit: 7c04856160ccbe540fd08538e2613dd018fd850f · branch: main
 - arquivos sujos: 0
 - impressêo de todos os sujos: e3b0c44298fc1c14

@@ -19,11 +19,11 @@ Validaçêo em 15/11/2026: seis contratos locais e teste existente da produçêo
 
 ## Crítico do plano e trava de cota (17/11/2026, v1.7.5)
 
-**Crítico (`critico_plano`).** `r7ex.py plano` nêo chama mais `claude -p` fixo: usa a etapa `critico_plano` deste `ia.yaml`. A ficha (e `inema-design/regras/chamada.md`) vai anexada ao pedido, entêo a etapa é texto puro e serve para Claude ou Codex. Principal: Claude `claude-opus-5-5`/`low` (o que o crítico usava por herança, D15 calibrado nele). Reserva: Codex `gpt-6.1-sol`/`medium`. `R7X_CRITICO=codex` (VPS só com Codex) continua valendo: põe o Codex primeiro.
+**Crítico (`critico_plano`).** `r7ex.py plano` nêo chama mais `claude -p` fixo: usa a etapa `critico_plano` deste `ia.yaml`. A ficha (e `ARCKHÉ-design/regras/chamada.md`) vai anexada ao pedido, entêo a etapa é texto puro e serve para Claude ou Codex. Principal: Claude `claude-opus-5-5`/`low` (o que o crítico usava por herança, D15 calibrado nele). Reserva: Codex `gpt-6.1-sol`/`medium`. `R7X_CRITICO=codex` (VPS só com Codex) continua valendo: põe o Codex primeiro.
 
 Para inverter (Codex principal, Claude reserva), edite os dois no `producao/ia.yaml`: `motor/modelo/esforco` da etapa e a linha `alternativa` (que precisa ser o outro motor). O comando `configurar` sozinho recusa a troca de motor enquanto a alternativa for do mesmo motor. Depois: `python3 producao/ia_motor.py validar`.
 
-**Trava de cota.** Na primeira recusa ESTRUTURADA de cota do Claude Code (JSON `is_error` + `api_error: usage_limit_reached` ou HTTP 429), o executor grava o horário de volta ("resets 9pm (America/Sao_Paulo)"; ilegível = 1 h; 429 momentâneo = 5 min) em `~/.local/state/enginebridge/state.sqlite`, tabela `pools` do EngineBridge (só `blocked`/`until`; `INEMA_COTA_DB` muda o caminho). Até lá, qualquer etapa com esse motor falha na hora, sem abrir o programa. Codex: sem recusa real registrada, entêo ainda nêo trava sozinho.
+**Trava de cota.** Na primeira recusa ESTRUTURADA de cota do Claude Code (JSON `is_error` + `api_error: usage_limit_reached` ou HTTP 429), o executor grava o horário de volta ("resets 9pm (America/Sao_Paulo)"; ilegível = 1 h; 429 momentâneo = 5 min) em `~/.local/state/enginebridge/state.sqlite`, tabela `pools` do EngineBridge (só `blocked`/`until`; `ARCKHÉ_COTA_DB` muda o caminho). Até lá, qualquer etapa com esse motor falha na hora, sem abrir o programa. Codex: sem recusa real registrada, entêo ainda nêo trava sozinho.
 
 ```bash
 python3 producao/ia_motor.py cota ver                    # contas e horário de volta

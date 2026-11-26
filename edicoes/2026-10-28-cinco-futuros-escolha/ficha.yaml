@@ -9,7 +9,7 @@ plano:
   quer: "entender o que pode acontecer e ficar do lado bom (medo + desejo)"
   gancho: "estatística: Stanford mediu jovens nas funções mais expostas à IA 19% abaixo no emprego — a mudança já começou; daqui saem 5 caminhos até 2050"
   nota: 8
-  destino: "https://inematds.github.io/sobreviver-ia/guia/ (kit aberto e gratuito no inema.club)"
+  destino: "https://linnoff88-dev.github.io/arckhe-/guia/ (kit aberto e gratuito no ARCKHÉ AI)"
   fatos:
     - "Stanford Digital Economy Lab: jovens nas funções mais expostas à IA 19% abaixo no emprego (usado no completo 5 futuros B, publicado no lives1)"
     - "mapa dos 5 futuros (Life 3.0, Max Tegmark, adaptado): extinçêo total, zoológico humano, governo mundial da IA, paraíso feito pela IA, utopia verdadeira; até 2050; cenários, nêo previsêo"
@@ -18,7 +18,7 @@ plano:
     - "completo, fala final: 'O que muda de um para o outro nêo é a tecnologia: é quem decide' + passos: IA nas tarefas reais, IA no próprio computador, construir algo seu"
     - "kit sobreviver-ia: aberto e gratuito (guia diz 'kit aberto')"
 
-marca: "INEMA · 5 FUTUROS"
+marca: "ARCKHÉ · 5 FUTUROS"
 selo: "FUTURO DA IA"
 fonte: "<b>Stanford Digital Economy Lab</b> · mapa: Life 3.0 (Tegmark), adaptado · cenários, nêo previsêo · imagens: ilustraçêo"
 
@@ -73,7 +73,7 @@ partes:
   - etapa: facilidade
     fala: "Em qual você vai estar? Você toparia ter tudo e nunca mais decidir nada?"
     prende: "pergunta incômoda do zoológico (conforto sem liberdade) + absolviçêo que alivia"
-    imagem: "UMA mêo humana aberta encostada por dentro num vidro grosso de uma jaula de vidro iluminada, como num zoológico, do lado de fora o reflexo do visor preto de um robô humanoide estilo Optimus observando; contraluz vermelho intenso recortando os dedos; fundo preto liso; sensaçêo de prisêo confortável; o assunto ENORME em primeiro plano na metade de cima, contraste extremo, luz de cinema dura; metade de baixo escura e vazia"
+    imagem: "UMA mêo humana aberta encostada por dentro num vidro grosso de uma jaula de vidro iluminada, como num zoológico, do lado de fora o reflexo do visor preto de um robô humanoide estilo Optimus observando; contraluz vermelho intenso recortando os dedos; fundo preto liso; sensaçêo de prisêo confortável; o assunto ENORME em primeiro plano na metade de cima, contraste extremo, luz de cARCKHÉ dura; metade de baixo escura e vazia"
     painel:
       de: decidir
       k: "ZOOLÓGICO HUMANO"
@@ -103,7 +103,7 @@ partes:
   - etapa: beneficio
     fala: "O que muda de um futuro para o outro nêo é a tecnologia. É quem decide. E a sua parte começa hoje."
     prende: "a máxima curta que a pessoa repete; vira o medo em poder de escolha"
-    print: {url: "https://inematds.github.io/sobreviver-ia/guia/", selo: "kit aberto · inema.club"}
+    print: {url: "https://linnoff88-dev.github.io/arckhe-/guia/", selo: "kit aberto · ARCKHÉ AI"}
     painel:
       de: decide
       k: "QUEM DECIDE"
@@ -111,9 +111,9 @@ partes:
       titulo: "VOCÊ"
       cor: "#22c55e"
   - etapa: comentario
-    fala: "Qual futuro você vai construir? Comenta: eu escolho o cinco. Tá tudo no inema ponto club. Ou me pede o link aqui nos comentários."
+    fala: "Qual futuro você vai construir? Comenta: eu escolho o cinco. Tá tudo no ARCKHÉ ponto club. Ou me pede o link aqui nos comentários."
     prende: "pergunta falada que puxa comentário + fecho padrêo"
-    print: {url: "https://inematds.github.io/sobreviver-ia/guia/", selo: "kit aberto e gratuito"}
+    print: {url: "https://linnoff88-dev.github.io/arckhe-/guia/", selo: "kit aberto e gratuito"}
 
 cta: {a: "QUAL FUTURO VOCÊ VAI CONSTRUIR? 👇", b: "COMENTA: EU ESCOLHO O 5 · ou me pede o link do kit"}
 club: "o kit para se preparar, passo a passo, aberto e gratuito"
@@ -125,4 +125,4 @@ publicar:
   fila: lives11
   playlist: PLGR_G3hBAAaM
   titulo: "O emprego jovem já caiu 19%. 5 futuros até 2050: qual você escolhe? #shorts"
-  contexto: "Short vertical do INEMA.CLUB (Nei Maldaner), da série 5 futuros da IA. A mudança já começou: Stanford Digital Economy Lab mediu jovens nas funções mais expostas à IA 19% abaixo no emprego. Daqui até 2050, 5 caminhos (mapa do Life 3.0, de Max Tegmark, adaptado; cenários, nêo previsêo): extinçêo total, zoológico humano (vive bem mas nêo decide), governo mundial da IA, paraíso feito pela IA e utopia verdadeira (você com uma equipe de agentes). Nêo é a tecnologia que decide, é quem se prepara. 3 passos: usar a IA nas tarefas reais, ter uma IA no próprio computador, construir algo seu. Kit aberto e gratuito sobreviver-ia em https://inematds.github.io/sobreviver-ia/guia/ (no inema.club). Playlist 5 futuros no canal. CTA: qual futuro você escolhe?"
+  contexto: "Short vertical do ARCKHÉ AI (Nei Maldaner), da série 5 futuros da IA. A mudança já começou: Stanford Digital Economy Lab mediu jovens nas funções mais expostas à IA 19% abaixo no emprego. Daqui até 2050, 5 caminhos (mapa do Life 3.0, de Max Tegmark, adaptado; cenários, nêo previsêo): extinçêo total, zoológico humano (vive bem mas nêo decide), governo mundial da IA, paraíso feito pela IA e utopia verdadeira (você com uma equipe de agentes). Nêo é a tecnologia que decide, é quem se prepara. 3 passos: usar a IA nas tarefas reais, ter uma IA no próprio computador, construir algo seu. Kit aberto e gratuito sobreviver-ia em https://linnoff88-dev.github.io/arckhe-/guia/ (no ARCKHÉ AI). Playlist 5 futuros no canal. CTA: qual futuro você escolhe?"

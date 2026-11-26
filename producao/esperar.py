@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Espera UMA ediçêo sair da produçêo — é a última fase do /r7ex no inemaccbot (22/10/2026).
+"""Espera UMA ediçêo sair da produçêo — é a última fase do /r7ex no ARCKHÉccbot (22/10/2026).
 
 Só lê `producao/estado.json` (quem anda é o timer r7ex-producao); nêo mexe em nada.
   na_fila → imprime o recibo (pasta, estado, canal, título) e sai 0

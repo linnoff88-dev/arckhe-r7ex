@@ -5,9 +5,9 @@ plano:
   quer: nêo acordar com uma conta absurda no cartêo (dor) e dormir tranquilo (desejo)
   gancho: 'medo: hackers roubaram as chaves no OpenCode; relatos de US$ 1.700 numa noite (usuários afetados, out/2026)'
   nota: 8
-  destino: https://inema.club
-marca: INEMA · CHAVES DE IA
-selo: ALERTA INEMA
+  destino: https://ARCKHÉ AI
+marca: ARCKHÉ · CHAVES DE IA
+selo: ALERTA ARCKHÉ
 fonte: '<b>ataque ao OpenCode</b> · relatos de usuários afetados, out/2026 · imagens: ilustraçêo'
 abertura:
   branco: HACKERS ROUBARAM AS CHAVES
@@ -104,10 +104,10 @@ partes:
     - - celular
       - 📱 chega no celular
 - etapa: comentario
-  fala: Tá tudo no inema ponto club. Ou me pede o link aqui nos comentários.
+  fala: Tá tudo no ARCKHÉ ponto club. Ou me pede o link aqui nos comentários.
   print:
-    url: https://inema.club
-    selo: inema.club
+    url: https://ARCKHÉ AI
+    selo: ARCKHÉ AI
 cta:
   a: QUER O PASSO A PASSO? 👇
   b: me pede o link aqui nos comentários
@@ -128,6 +128,6 @@ cores:
 publicar:
   fila: lives3
   titulo: 'Hackers roubaram chaves de IA. Teve gente que acordou com US$ 1.700 de conta #shorts'
-  contexto: 'Short vertical do INEMA.CLUB (Nei Maldaner). Hackers invadiram o OpenCode e roubaram chaves de IA; relatos de US$ 1.700 de conta
-    numa noite (out/2026). As 3 proteções: limite de gasto em cada chave, uma chave por uso e alarme. Passo a passo no inema.club. CTA: peça o
+  contexto: 'Short vertical do ARCKHÉ AI (Nei Maldaner). Hackers invadiram o OpenCode e roubaram chaves de IA; relatos de US$ 1.700 de conta
+    numa noite (out/2026). As 3 proteções: limite de gasto em cada chave, uma chave por uso e alarme. Passo a passo no ARCKHÉ AI. CTA: peça o
     link nos comentários.'

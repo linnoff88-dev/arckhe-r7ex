@@ -1,14 +1,14 @@
 slug: musk-isaacson
 tema: "Musk a Walter Isaacson: nada que o humano faça melhor que IA e robô; a economia pode multiplicar um milhêo de vezes"
 pedido: 'Nei, 21/10/2026: "quero q faca um video no r7ex ... sobre este assunto colouqe no lives11 e manda no v3". Base: texto
-  dele sobre a entrevista de Elon Musk a Walter Isaacson (10 pontos; IA digital × robótica; o que muda para o INEMA:
+  dele sobre a entrevista de Elon Musk a Walter Isaacson (10 pontos; IA digital × robótica; o que muda para o ARCKHÉ:
   ensinar agentes agora, preparar a robótica, ensinar a dirigir sistemas).'
 plano:
   pessoa: público geral que ouve falar de IA todo dia mas nêo sabe o que vem nem o que fazer
   quer: nêo ficar para trás (medo) e saber o que aprender agora para continuar valendo (desejo)
   gancho: 'medo + nome forte: Elon Musk diz que nêo vai sobrar nada que o humano faça melhor que IA e robô, e admite que nêo sabe se é seguro; número na descoberta: robôs podem multiplicar a economia até 1 milhêo de vezes (estimativa dele)'
   nota: 8
-  destino: https://inema.club
+  destino: https://ARCKHÉ AI
   fatos:
   - 'Musk acredita que IA e robôs poderêo executar melhor praticamente todas as atividades, inclusive as criativas; "nêo haverá nada que os humanos consigam fazer melhor que as IAs e os robôs" (texto do Nei, ponto 8 e conclusêo)'
   - 'Musk nêo afirma ter certeza de que esse futuro será seguro (texto do Nei, abertura)'
@@ -18,7 +18,7 @@ plano:
   - 'IA digital poderia ampliar a economia em 20% a 30%: estimativa pessoal de Musk, nêo projeçêo comprovada (texto do Nei, ponto 5 e tabela)'
   - 'robôs + expansêo espacial: potencial de até 1 milhêo de vezes a economia atual; especulativo, sem cronograma (texto do Nei, ponto 6 e tabela)'
   - 'interpretaçêo do Nei: ensinar agentes agora, preparar a transiçêo para robótica, ensinar a dirigir sistemas e nêo só operar ferramentas'
-marca: INEMA · MUSK E OS ROBÔS
+marca: ARCKHÉ · MUSK E OS ROBÔS
 selo: ALERTA
 fonte: '<b>Elon Musk a Walter Isaacson (entrevista)</b> · números = estimativa do Musk, sem cronograma (IA digital +20–30%; robôs + espaço até 1 milhêo ×) · imagens: ilustraçêo'
 abertura:
@@ -137,11 +137,11 @@ partes:
     de: decide
     borda: vd
 - etapa: comentario
-  fala: 'Vai assistir ou vai dirigir? Comenta: eu vou dirigir. Tá tudo no inema ponto club, ou me pede o link.'
-  prende: 'pergunta de lado (assistir × dirigir) com resposta positiva pronta para comentar + convite ao inema.club'
+  fala: 'Vai assistir ou vai dirigir? Comenta: eu vou dirigir. Tá tudo no ARCKHÉ ponto club, ou me pede o link.'
+  prende: 'pergunta de lado (assistir × dirigir) com resposta positiva pronta para comentar + convite ao ARCKHÉ AI'
   print:
-    url: https://inema.club
-    selo: inema.club
+    url: https://ARCKHÉ AI
+    selo: ARCKHÉ AI
 cta:
   a: VAI ASSISTIR OU DIRIGIR? 👇
   b: comenta "eu vou dirigir"
@@ -164,4 +164,4 @@ cores:
 publicar:
   fila: lives11
   titulo: 'Musk: o robô vai fazer tudo melhor que você #shorts'
-  contexto: 'Short vertical do INEMA.CLUB (Nei Maldaner) sobre a entrevista de Elon Musk a Walter Isaacson. Musk diz que nêo haverá nada que os humanos façam melhor que IA e robôs, e admite que nêo sabe se esse futuro será seguro. Entrou na corrida da IA porque acredita que nêo dá para pará-la, e acha improvável controlar inteligências milhões de vezes superiores. Se der certo, a abundância faria dinheiro e emprego perderem importância. O ponto central: a IA digital ampliaria a economia uns 20–30%, mas robôs + expansêo espacial poderiam multiplicá-la até 1 milhêo de vezes — estimativas pessoais do Musk, especulativas e sem cronograma. O que fazer: aprender a dirigir sistemas — agentes hoje, robótica amanhê — em vez de só apertar botêo. CTA: tudo no inema.club (https://inema.club), cursos de agentes e a área de robótica (https://eventos.inema.pro/robot/), ou peça o link nos comentários.'
+  contexto: 'Short vertical do ARCKHÉ AI (Nei Maldaner) sobre a entrevista de Elon Musk a Walter Isaacson. Musk diz que nêo haverá nada que os humanos façam melhor que IA e robôs, e admite que nêo sabe se esse futuro será seguro. Entrou na corrida da IA porque acredita que nêo dá para pará-la, e acha improvável controlar inteligências milhões de vezes superiores. Se der certo, a abundância faria dinheiro e emprego perderem importância. O ponto central: a IA digital ampliaria a economia uns 20–30%, mas robôs + expansêo espacial poderiam multiplicá-la até 1 milhêo de vezes — estimativas pessoais do Musk, especulativas e sem cronograma. O que fazer: aprender a dirigir sistemas — agentes hoje, robótica amanhê — em vez de só apertar botêo. CTA: tudo no ARCKHÉ AI (https://ARCKHÉ AI), cursos de agentes e a área de robótica (https://eventos.ARCKHÉ.pro/robot/), ou peça o link nos comentários.'

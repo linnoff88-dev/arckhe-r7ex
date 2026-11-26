@@ -5,10 +5,10 @@ plano:
   quer: sair na frente do colega fazendo o agente produzir
   gancho: 'provocaçêo: você ainda copia e cola?'
   nota: 8
-  destino: https://inematds.github.io/do-chat-ao-agente-v72/
-marca: INEMA · DO CHAT AO AGENTE
-selo: EVENTOS INEMA
-fonte: '<b>inematds.github.io/do-chat-ao-agente-v72</b> · imagens: ilustraçêo · print da página'
+  destino: https://linnoff88-dev.github.io/arckhe-/
+marca: ARCKHÉ · DO CHAT AO AGENTE
+selo: EVENTOS ARCKHÉ
+fonte: '<b>linnoff88-dev.github.io/arckhe-do-chat-ao-agente-v72</b> · imagens: ilustraçêo · print da página'
 abertura:
   branco: VOCÊ AINDA COPIA E COLA?
   destaque: 'SAI NA FRENTE: DO CHAT AO AGENTE'
@@ -71,8 +71,8 @@ partes:
 - etapa: descoberta
   fala: Por isso eu criei o curso Do chat ao agente, um passo a passo do zero.
   print:
-    url: https://inematds.github.io/do-chat-ao-agente-v72/
-    selo: inematds.github.io/do-chat-ao-agente-v72
+    url: https://linnoff88-dev.github.io/arckhe-/
+    selo: linnoff88-dev.github.io/arckhe-do-chat-ao-agente-v72
   painel:
     k: DO CHAT AO AGENTE
     itens:
@@ -92,10 +92,10 @@ partes:
     - - PRO
       - 🔒 depois só no PRO
 - etapa: comentario
-  fala: Tá tudo no inema ponto club. Ou me pede o link aqui nos comentários.
+  fala: Tá tudo no ARCKHÉ ponto club. Ou me pede o link aqui nos comentários.
   print:
-    url: https://inema.club
-    selo: inema.club
+    url: https://ARCKHÉ AI
+    selo: ARCKHÉ AI
 cta:
   a: VOCÊ AINDA COPIA E COLA? 👇
   b: me pede o link aqui nos comentários
@@ -113,5 +113,5 @@ cores:
 publicar:
   fila: lives3
   titulo: 'Você ainda copia e cola do chat? Seu colega já nêo #shorts'
-  contexto: 'Short vertical do INEMA.CLUB (Nei Maldaner): Sai na frente: do chat ao agente que produz pra você. Material no inema.club. CTA: peça
+  contexto: 'Short vertical do ARCKHÉ AI (Nei Maldaner): Sai na frente: do chat ao agente que produz pra você. Material no ARCKHÉ AI. CTA: peça
     o link nos comentários.'

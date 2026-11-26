@@ -9,7 +9,7 @@ plano:
   quer: "parar de ter o trabalho apagado a cada modelo novo (medo) e ter um método que se vende e se repete em qualquer negócio (desejo)"
   gancho: "provocaçêo/medo: a chamada do curso, 'Se a próxima IA apaga seu trabalho, você estava polindo a ferramenta'"
   nota: 8
-  destino: "https://inematds.github.io/crie-seu-metodo-v72/ (aberto e grátis no inema.club)"
+  destino: "https://linnoff88-dev.github.io/arckhe-/ (aberto e grátis no ARCKHÉ AI)"
   fatos:
     - "chamada do curso (curso.json, inicio.titulo): 'Se a próxima IA apaga seu trabalho, você estava polindo a ferramenta'"
     - "curso.json, kicker/lead: 'Curso · 7 aulas'; 'Pare de vender automaçêo. Comece a vender método. Em sete aulas práticas…'"
@@ -19,7 +19,7 @@ plano:
     - "aula 5, METODO.md com 13 peças ('Um método com treze peças quebra em silêncio')"
     - "aula 6, diagrama 'O mesmo ângulo em quatro lugares': anúncio, landing, atendimento, vendedor"
     - "aula 7, lead: 'Se sai um modelo novo e você só fica mais rápido, você estava trabalhando o critério.'"
-    - "FATOS.md: curso aberto e gratuito no INEMA.CLUB"
+    - "FATOS.md: curso aberto e gratuito no ARCKHÉ AI"
     - "aula 1, diagrama/passos: Você coordena e aprova; Agentes resolvem pelo contrato escrito; Equipe pede ao agente num canal fixo"
     - "aula 6, diagrama: Anúncio fala de uma dor; Landing com a mesma dor; Atendimento já sabe o ângulo; Vendedor abre perguntando"
 
@@ -32,9 +32,9 @@ gancho:
   absolvicao: "nêo é culpa sua"
   entrega: "por que a IA nova apaga quem vende ferramenta e o que vender no lugar (o método)"
 
-marca: "INEMA · CRIE SEU MÉTODO"
+marca: "ARCKHÉ · CRIE SEU MÉTODO"
 selo: "PROVOCAÇêO"
-fonte: "<b>curso Crie seu método</b> · 7 aulas, aberto e grátis no inema.club · imagens: ilustraçêo"
+fonte: "<b>curso Crie seu método</b> · 7 aulas, aberto e grátis no ARCKHÉ AI · imagens: ilustraçêo"
 
 abertura:
   branco: "A PRÓXIMA IA APAGA SEU TRABALHO?"
@@ -112,7 +112,7 @@ partes:
   - etapa: beneficio
     fala: "Sai um modelo novo e você acelera. Aí você sabe que tem método."
     prende: "fecha o gancho (apaga × acelera) com alívio; prova real com a página da aula do teste do modelo novo"
-    print: {url: "https://inematds.github.io/crie-seu-metodo-v72/aulas/criterio/", selo: "aula 7 · o critério"}
+    print: {url: "https://linnoff88-dev.github.io/arckhe-/aulas/criterio/", selo: "aula 7 · o critério"}
     painel:
       de: acelera
       k: "O MODELO NOVO"
@@ -120,9 +120,9 @@ partes:
       titulo: "ACELERA"
       cor: "#22c55e"
   - etapa: comentario
-    fala: "Vai parar de polir a ferramenta? Comenta eu faço. Sete aulas grátis no inema ponto club, ou pede o link."
+    fala: "Vai parar de polir a ferramenta? Comenta eu faço. Sete aulas grátis no ARCKHÉ ponto club, ou pede o link."
     prende: "oferta concreta e sem custo (7 aulas grátis) + pergunta que divide (apaga ou acelera?) puxa comentário"
-    print: {url: "https://inematds.github.io/crie-seu-metodo-v72/", selo: "7 aulas · aberto e grátis"}
+    print: {url: "https://linnoff88-dev.github.io/arckhe-/", selo: "7 aulas · aberto e grátis"}
 
 cta: {de: "Comenta", a: "VAI PARAR DE POLIR A FERRAMENTA? 👇", b: "comenta EU FAÇO ou me pede o link", comentario: "EU FAÇO"}
 club: "o curso Crie seu método, 7 aulas grátis"
@@ -133,4 +133,4 @@ cores: {apaga: "#ff2a1f", polindo: "#ff2a1f", ferramenta: "#ff2a1f", reversa: "#
 publicar:
   fila: lives3
   titulo: "Se a próxima IA apaga seu trabalho, você estava polindo a ferramenta #shorts"
-  contexto: "Short vertical do INEMA.CLUB (Nei Maldaner), provocativo: se a próxima IA apaga o seu trabalho, você estava polindo a ferramenta. Hoje um agente faz engenharia reversa de quase qualquer software e uma automaçêo sai em minutos; vender só isso ficou barato. O que vale é o método: peças repetíveis em qualquer negócio (clínica, imobiliária, escritório), muda o ângulo e a estrutura fica. A empresa em 3 camadas (você coordena os agentes, os agentes atendem a equipe), o método em 13 peças e um ângulo só do anúncio à landing, ao atendimento e ao vendedor. Curso Crie seu método: 7 aulas, aberto e grátis em https://inematds.github.io/crie-seu-metodo-v72/ (no inema.club). Nêo citar nenhuma fonte externa. CTA: comente EU FAÇO se vai parar de polir a ferramenta, ou peça o link nos comentários."
+  contexto: "Short vertical do ARCKHÉ AI (Nei Maldaner), provocativo: se a próxima IA apaga o seu trabalho, você estava polindo a ferramenta. Hoje um agente faz engenharia reversa de quase qualquer software e uma automaçêo sai em minutos; vender só isso ficou barato. O que vale é o método: peças repetíveis em qualquer negócio (clínica, imobiliária, escritório), muda o ângulo e a estrutura fica. A empresa em 3 camadas (você coordena os agentes, os agentes atendem a equipe), o método em 13 peças e um ângulo só do anúncio à landing, ao atendimento e ao vendedor. Curso Crie seu método: 7 aulas, aberto e grátis em https://linnoff88-dev.github.io/arckhe-/ (no ARCKHÉ AI). Nêo citar nenhuma fonte externa. CTA: comente EU FAÇO se vai parar de polir a ferramenta, ou peça o link nos comentários."

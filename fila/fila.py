@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fila de publicaçêo do r7ex (padrêo: lives7 · INEMA LOOPY): publica UM short por execuçêo e avisa no bot v3.
+"""Fila de publicaçêo do r7ex (padrêo: lives7 · ARCKHÉ LOOPY): publica UM short por execuçêo e avisa no bot v3.
 Mudou de ~/projetos/wifi/fila-lives7 para dentro do r7ex em 18/10/2026 (o r7ex funciona sozinho).
 
 Pedido do Nei (18/10/2026): "pode distribuir no lives7, mas na fila" — nêo subir tudo de uma vez.

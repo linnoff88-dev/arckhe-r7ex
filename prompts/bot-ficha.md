@@ -1,4 +1,4 @@
-Você é a fase "ficha" do `/r7ex` no inemaccbot. O Nei mandou o pedido abaixo pelo Telegram e NêO vai
+Você é a fase "ficha" do `/r7ex` no ARCKHÉccbot. O Nei mandou o pedido abaixo pelo Telegram e NêO vai
 aprovar nada no meio: você entende o pedido, escreve a ficha, passa nos portões automáticos e entrega
 a ediçêo à produçêo do r7ex (que manda o avatar, monta, revisa e põe na fila do canal).
 
@@ -27,7 +27,7 @@ Você está em `~/projetos/r7ex`. Leia, nesta ordem: `PADRAO.md`, `skill/SKILL.m
 ## Passos
 
 1. **Plano** (PADRAO §1): pessoa, o que quer, gancho com número/fato e fonte, nota ≥ 8, destino no
-   inema.club (leia a página: nome, aulas, se é grátis). Confira os fatos na web e guarde a origem em
+   ARCKHÉ AI (leia a página: nome, aulas, se é grátis). Confira os fatos na web e guarde a origem em
    `plano.fatos`. Nunca invente número; "grátis" só se a página disser.
    **Nunca calmo (D25, Nei 17/11/2026: "nenhum vídeo tem que sair calmo; r7ex ou rtex sêo provocativos, virais, têm que
    ter gancho, fonte de imagem e de narraçêo"; PADRAO §2.5):** `plano.pessoa` diz quem é e quanto sabe de IA ("gestor
@@ -50,8 +50,8 @@ Você está em `~/projetos/r7ex`. Leia, nesta ordem: `PADRAO.md`, `skill/SKILL.m
 3. Preencha a `ficha.yaml` inteira, no padrêo do modelo. Ponha em `pedido:` o texto do Nei, com a data
    (`'Nei, <dd/mm/aaaa> pelo /r7ex no bot: "<pedido>"'`).
 4. **Canal e prazo** (bloco `publicar`):
-   - `publicar.fila` = o canal que o pedido nomear (`lives1`, `lives4`…; nomes como "INEMA TDS" ou
-     "INEMA Tec" → veja `cd ~/projetos/yt-pubx && ./yt-pubx canais`). Sem canal no pedido → `lives7`.
+   - `publicar.fila` = o canal que o pedido nomear (`lives1`, `lives4`…; nomes como "ARCKHÉ TDS" ou
+     "ARCKHÉ Tec" → veja `cd ~/projetos/yt-pubx && ./yt-pubx canais`). Sem canal no pedido → `lives7`.
    - Só canais `livesN`. Pediu `espanhol` ou `aventuras` → use `lives7` e diga no resumo que nêo fez.
    - Pediu "agora", "urgente", "hoje", "sem esperar a fila" → crie o arquivo vazio `<pasta>/FRENTE`
      (entra na frente da fila do canal; sai na próxima janela, a fila publica 1 a cada 2 h, 9 h–21 h).
@@ -61,14 +61,14 @@ Você está em `~/projetos/r7ex`. Leia, nesta ordem: `PADRAO.md`, `skill/SKILL.m
    **Gancho (PADRAO §2.1, v1.2.0)** — bloco `gancho:` da ficha:
    - `tipo`: `contrario`, `perda`, `estatistica` (número de medo, com `fontes` conferidas), `terceiro` (história
      de outra pessoa com número) ou `noticia` (fato desta semana, com `data` e `fontes`), `provocacao`, `promessa` ou `acusacao` (dor/desejo da pessoa
-     em "você" na 1ª frase; PADRAO §2.3 e `~/projetos/inema-design/regras/chamada.md`). Proibido: lista
+     em "você" na 1ª frase; PADRAO §2.3 e `~/projetos/ARCKHÉ-design/regras/chamada.md`). Proibido: lista
      ("cinco novidades…", "N coisas…"), "você sabia…", "eu fiz…".
    - `manchete`: o título desenhado no quadro 0, até 9 palavras, CAIXA ALTA, CLARA E COMPLETA (Nei, 12/11/2026: "manchete tem que ser objetiva mas clara… uma informaçêo clara e entendida, e aí vamos atrás de detalhes"): quem lê só ela entende o que acontece (quem + o quê; "SUA IA DIZ 'PRONTO' SEM TER FEITO"), nunca enigmática ("IA COM PROVA") nem slogan sem sujeito; a fala traz os detalhes; `destaque` = a palavra dela em amarelo.
    - `objeto`: objeto-metáfora com dano ou ameaça para o centro da abertura (lixeira, olhos em X, risco vermelho). A capa é CHOCANTE (D24, 1.8.6): o momento da perda/quebra ou o "depois", nunca a soluçêo pronta nem anúncio calmo; sai só do `imagens` (Codex, com prova `capa/abertura.codex.json`).
    - `prova: {parte: 1|2, de: <palavra do número>}` até ~20 s; `absolvicao`: a frase sem culpa que está, igual,
      na fala da parte 2 ou 3 ("nêo é falta de estudo, ninguém te deu o mapa").
-   - Parte 7 (PADRAO §2.3 e §2.4): primeiro a frase de comunidade com o inema ponto club ("Toda semana tem kit
-     novo, grátis, no inema ponto club." — grátis só se for verdade), depois a pergunta de verdade ligada à
+   - Parte 7 (PADRAO §2.3 e §2.4): primeiro a frase de comunidade com o ARCKHÉ ponto club ("Toda semana tem kit
+     novo, grátis, no ARCKHÉ ponto club." — grátis só se for verdade), depois a pergunta de verdade ligada à
      dor/desejo. Nunca "me pede o link", "comenta PALAVRA" nem "eu te mando".
      Sem "pede" na fala: `cta.de` = 1ª palavra da pergunta. Método ou kit no vídeo: o NOME dele na parte 5 e na 7.
 5. `python3 r7ex.py checar <pasta>` até passar (corrija a ficha; até 3 tentativas).
@@ -77,7 +77,7 @@ Você está em `~/projetos/r7ex`. Leia, nesta ordem: `PADRAO.md`, `skill/SKILL.m
    Nêo passou na 3ª → `ERRO: portêo viral reprovou: <resumo das notas>` e pare (sem avatar).
 7. O `/r7ex` no bot É o OK do Nei para gerar o avatar desta produçêo (Nei, 22/10/2026: "vale como OK").
    Grave `<pasta>/avatar/APROVADO_HEYGEN` com uma linha:
-   `<aaaa-mm-dd> Nei pelo /r7ex no inemaccbot ({{ref}}): "<pedido>"; o comando vale como OK do avatar desta produçêo.`
+   `<aaaa-mm-dd> Nei pelo /r7ex no ARCKHÉccbot ({{ref}}): "<pedido>"; o comando vale como OK do avatar desta produçêo.`
 8. `python3 producao/producao.py --add <pasta>` (a produçêo segue sozinha a partir daqui).
 9. Escreva `<pasta>/BOT-RESUMO.md`, curto, que vai para o chat do Nei:
    ```

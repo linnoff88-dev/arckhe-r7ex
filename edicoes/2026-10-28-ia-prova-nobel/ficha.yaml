@@ -2,19 +2,19 @@
 # Par do explicavideo ~/projetos/output/ia-ciencia-fisica (fatos em FATOS.md). Pedido do Nei: rtex + r7ex + r7exp no lives11.
 slug: ia-prova-nobel
 tema: "A IA da OpenAI escreveu a prova de que a teoria de Yang-Mills existe; um Nobel de física está conferindo. A máquina descobre; quem decide é você."
-pedido: "Nei, 28/10/2026: 'explicavideo <lskEzJ7ixw0> e crie um rtex e um r7ex e um rtexjp no lives11 inema.ia e manda para o v3 <rWQ2CP3r75Q> use imagens criadas pelo codex ou q vc tire dos videos'. Este é o 1º dos dois r7ex (gancho de notícia); sem citar as fontes."
+pedido: "Nei, 28/10/2026: 'explicavideo <lskEzJ7ixw0> e crie um rtex e um r7ex e um rtexjp no lives11 ARCKHÉ.ia e manda para o v3 <rWQ2CP3r75Q> use imagens criadas pelo codex ou q vc tire dos videos'. Este é o 1º dos dois r7ex (gancho de notícia); sem citar as fontes."
 
 plano:
   pessoa: "quem trabalha com computador e vê a IA fazendo coisas cada vez mais difíceis e se pergunta qual vai ser o próprio papel"
   quer: "nêo ficar para trás quando a máquina já faz até ciência (dor) e virar quem coordena e decide o que a máquina faz (desejo)"
   gancho: "notícia desta semana: a OpenAI anunciou (26/10/2026) que o modelo dela provou a existência da teoria de Yang-Mills em 4 dimensões; o revisor é David Gross, Nobel de Física de 2004"
   nota: 8
-  destino: "https://inematds.github.io/claude-gestor-de-agentes-v72/ (curso Claude como gestor de agentes, 8 aulas + guia, no inema.club)"
+  destino: "https://linnoff88-dev.github.io/arckhe-/ (curso Claude como gestor de agentes, 8 aulas + guia, no ARCKHÉ AI)"
   fatos:
     - "Post da OpenAI de 26/10/2026 (captura em rWQ2CP3r75Q e lskEzJ7ixw0): 'this work also includes a proof of the existence of pure Yang-Mills theory, which is part of the Quantum Yang-Mills Theory Clay Mathematics Institute Millennium Prize problem.'"
     - "Transcriçêo rWQ2CP3r75Q: prova escrita em 9/9/2026, verificada em Lean em 16/10; grupo de revisêo liderado por David Gross (Nobel de Física 2004); a lacuna de massa continua aberta: a OpenAI NêO ganhou o prêmio inteiro (por isso a fala diz 'a primeira metade')"
     - "Instituto Clay, 24/05/2000: 7 problemas do milênio, US$ 1 milhêo cada; Yang-Mills é de 1954 (seminário de Princeton, pergunta de Pauli)"
-    - "Curso https://inematds.github.io/claude-gestor-de-agentes-v72/ (conferido 28/10/2026): 'Você deixa de conversar e passa a coordenar'; aulas: mandar tarefas para o segundo plano, acompanhar todas numa tela só, sessêo gestora 'o que ela decide e o que sobe para você'. A página nêo diz 'grátis': a fala nêo diz grátis."
+    - "Curso https://linnoff88-dev.github.io/arckhe-/ (conferido 28/10/2026): 'Você deixa de conversar e passa a coordenar'; aulas: mandar tarefas para o segundo plano, acompanhar todas numa tela só, sessêo gestora 'o que ela decide e o que sobe para você'. A página nêo diz 'grátis': a fala nêo diz grátis."
 
 gancho:
   tipo: noticia
@@ -27,7 +27,7 @@ gancho:
   fontes:
     - {nome: "OpenAI, 26/10/2026", trecho: "this work also includes a proof of the existence of pure Yang-Mills theory"}
 
-marca: "INEMA · IA FAZ CIÊNCIA"
+marca: "ARCKHÉ · IA FAZ CIÊNCIA"
 selo: "NOTÍCIA"
 fonte: "<b>OpenAI</b> · anúncio de 26/10/2026 · prova em revisêo (metade do problema) · imagens: ilustraçêo"
 
@@ -108,9 +108,9 @@ partes:
       titulo: "QUEM DECIDE É VOCÊ"
       cor: "#22c55e"
   - etapa: comentario
-    fala: "Você vai ser quem decide? Tá tudo no inema ponto club. Ou me pede o link aqui nos comentários."
+    fala: "Você vai ser quem decide? Tá tudo no ARCKHÉ ponto club. Ou me pede o link aqui nos comentários."
     prende: "pergunta com compromisso positivo e oferta concreta"
-    print: {url: "https://inematds.github.io/claude-gestor-de-agentes-v72/", selo: "8 aulas · gestor de agentes · inema.club"}
+    print: {url: "https://linnoff88-dev.github.io/arckhe-/", selo: "8 aulas · gestor de agentes · ARCKHÉ AI"}
 
 cta: {de: decide, a: "VOCÊ VAI SER QUEM DECIDE? 👇", b: "comenta EU DECIDO ou me pede o link", comentario: "EU DECIDO O QUE A IA FAZ 🧠"}
 club: "o curso Claude como gestor de agentes"
@@ -120,4 +120,4 @@ cores: {Nobel: "#ff2a1f", máquina: "#ff2a1f", "1954": "#ff2a1f", milhêo: "#ff2
 publicar:
   fila: lives11
   titulo: "Uma IA escreveu a prova. Um NOBEL está conferindo #shorts"
-  contexto: "Short vertical do INEMA.CLUB (Nei Maldaner), canal sobre IA e futuro. Notícia: a OpenAI anunciou em 26/10/2026 que o modelo dela escreveu a prova de que a teoria de Yang-Mills (física de 1954, a pergunta de Pauli em Princeton) existe em 4 dimensões, verificada em Lean; é a primeira metade de um dos 7 problemas do milênio do Instituto Clay (US$ 1 milhêo), a lacuna de massa continua aberta; o grupo de revisêo é liderado por David Gross, Nobel de Física de 2004. Nêo diga que a OpenAI ganhou o prêmio. Virada: a máquina descobre, quem decide é você: aprender a coordenar agentes (delegar, acompanhar, decidir) no curso Claude como gestor de agentes https://inematds.github.io/claude-gestor-de-agentes-v72/ no inema.club. NêO cite canais do YouTube de referência. CTA: comente 'eu decido' ou peça o link."
+  contexto: "Short vertical do ARCKHÉ AI (Nei Maldaner), canal sobre IA e futuro. Notícia: a OpenAI anunciou em 26/10/2026 que o modelo dela escreveu a prova de que a teoria de Yang-Mills (física de 1954, a pergunta de Pauli em Princeton) existe em 4 dimensões, verificada em Lean; é a primeira metade de um dos 7 problemas do milênio do Instituto Clay (US$ 1 milhêo), a lacuna de massa continua aberta; o grupo de revisêo é liderado por David Gross, Nobel de Física de 2004. Nêo diga que a OpenAI ganhou o prêmio. Virada: a máquina descobre, quem decide é você: aprender a coordenar agentes (delegar, acompanhar, decidir) no curso Claude como gestor de agentes https://linnoff88-dev.github.io/arckhe-/ no ARCKHÉ AI. NêO cite canais do YouTube de referência. CTA: comente 'eu decido' ou peça o link."

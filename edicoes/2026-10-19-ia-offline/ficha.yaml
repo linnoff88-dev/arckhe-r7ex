@@ -7,10 +7,10 @@ plano:
   quer: "nêo ficar sem resposta num apagêo (dor) e ter uma IA só sua, no próprio computador (desejo)"
   gancho: "novidade: Wikipedia pt sem fotos ~9 GB (Kiwix, ediçêo 2026) + modelo llama3.2:3b ~2 GB = ~11 GB, roda sem internet"
   nota: 7
-  destino: "https://inematds.github.io/sobreviver-ia/guia/#guia (IA e Wikipédia offline, no inema.club, projetos)"
+  destino: "https://linnoff88-dev.github.io/arckhe-/guia/#guia (IA e Wikipédia offline, no ARCKHÉ AI, projetos)"
 
-marca: "INEMA · IA SEM INTERNET"
-selo: "ALERTA INEMA"
+marca: "ARCKHÉ · IA SEM INTERNET"
+selo: "ALERTA ARCKHÉ"
 fonte: "<b>Kiwix</b> · Wikipedia pt sem fotos ~9 GB, ediçêo 2026 · <b>Ollama</b> llama3.2:3b ~2 GB · imagens: ilustraçêo"
 
 abertura:
@@ -71,8 +71,8 @@ partes:
       borda: vd
       itens: [[uma, "1️⃣ instala uma vez"], [sinal, "📵 funciona sem sinal"]]
   - etapa: comentario
-    fala: "Tá tudo no inema ponto club. Ou me pede o link aqui nos comentários."
-    print: {url: "https://inematds.github.io/sobreviver-ia/guia/#guia", selo: "IA offline · inema.club"}
+    fala: "Tá tudo no ARCKHÉ ponto club. Ou me pede o link aqui nos comentários."
+    print: {url: "https://linnoff88-dev.github.io/arckhe-/guia/#guia", selo: "IA offline · ARCKHÉ AI"}
 
 cta: {a: "SE A INTERNET CAIR, VOCÊ FICA SEM IA? 👇", b: "ou me pede o link do passo a passo nos comentários"}
 club: "a IA e a Wikipédia sem internet, passo a passo"
@@ -82,4 +82,4 @@ cores: {internet: "#ff2a1f", some: "#ff2a1f", Wikipédia: "#FACC15", onze: "#FAC
 publicar:
   fila: lives4
   titulo: "Caiu a internet, sua IA some: Wikipédia + IA no seu PC em 11 GB, sem internet #shorts"
-  contexto: "Short vertical do INEMA.CLUB (Nei Maldaner). IA e Wikipédia offline: o Ollama roda um modelo pequeno (llama3.2:3b, cerca de 2 GB) e o Kiwix abre a Wikipédia em português sem fotos (cerca de 9 GB, ediçêo 2026) — juntos cerca de 11 GB, funcionando sem internet. O script do projeto aberto sobreviver-ia instala tudo e por padrêo só mostra o que vai fazer (dry-run). Passo a passo no inema.club. CTA: se a internet cair você fica sem IA / peça o link."
+  contexto: "Short vertical do ARCKHÉ AI (Nei Maldaner). IA e Wikipédia offline: o Ollama roda um modelo pequeno (llama3.2:3b, cerca de 2 GB) e o Kiwix abre a Wikipédia em português sem fotos (cerca de 9 GB, ediçêo 2026) — juntos cerca de 11 GB, funcionando sem internet. O script do projeto aberto sobreviver-ia instala tudo e por padrêo só mostra o que vai fazer (dry-run). Passo a passo no ARCKHÉ AI. CTA: se a internet cair você fica sem IA / peça o link."

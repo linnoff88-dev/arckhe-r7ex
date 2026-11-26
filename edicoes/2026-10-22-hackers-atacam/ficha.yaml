@@ -2,15 +2,15 @@
 slug: hackers-atacam
 tema: "Hackers vêo atacar todos daqui pra frente: a IA virou arma (PHP2Shell, OpenCode) e como se proteger"
 pedido: 'Nei, 22/10/2026: "r7ex viral chamado hacker vêo atacar todos daqui pra frente, olha que já está acontecendo, cite esta
-  (PHP2Shell), cite do OpenCode, etc e diz olha as dicas que tenho dado nas lives e no inema.club sobre segurança. a IA está
-  têo capaz que os hackers estêo usando ela para atacar em massa. lives1 e no inema.dev"'
+  (PHP2Shell), cite do OpenCode, etc e diz olha as dicas que tenho dado nas lives e no ARCKHÉ AI sobre segurança. a IA está
+  têo capaz que os hackers estêo usando ela para atacar em massa. lives1 e no ARCKHÉ.dev"'
 
 plano:
   pessoa: "qualquer pessoa com site, loja online ou conta de IA paga — dono de pequeno negócio, freelancer, quem usa ChatGPT/Claude"
   quer: "nêo ser a próxima vítima (medo) e saber em minutos o que fazer (desejo)"
   gancho: "medo + fato: 'os hackers vêo atacar todo mundo daqui pra frente' — e já está acontecendo esta semana (PHP2Shell em 7 de cada 10 sites; OpenCode invadido)"
   nota: 8
-  destino: "https://inematds.github.io/blinda-site/guia/"
+  destino: "https://linnoff88-dev.github.io/arckhe-/guia/"
   fatos:
     - 'PHP2Shell (CVE-2026-109618/109619), divulgada 21/10/2026: atinge todo PHP que serve páginas desde a 5.4; PHP roda por baixo de 70–80% dos sites (estimativa da imprensa)'
     - 'Cloudflare viu ataques às 07:43 UTC de 21/10, antes da correçêo sair às 14:00 UTC'
@@ -18,17 +18,17 @@ plano:
     - 'França, Dinamarca, Finlândia e Holanda tiraram sites de governo do ar (Semafor)'
     - 'OpenCode: em 16–17/10/2026 um invasor entrou num sistema legado do OpenCode Console; chaves de OpenAI, Anthropic e Google salvas por ~1,4% dos usuários foram usadas em consultas em massa; contas chegaram a centenas de dólares (The Hacker News, Cyera, Xenospectrum)'
     - 'Anthropic (nov/2025): um grupo usou o Claude Code para automatizar uma campanha de espionagem contra cerca de 30 alvos; a IA fez 80–90% do trabalho (relatório "Disrupting the first reported AI-orchestrated cyber espionage campaign")'
-    - 'guia blinda-site no inema.club: seu agente acha o que está exposto no site e corrige com backup'
+    - 'guia blinda-site no ARCKHÉ AI: seu agente acha o que está exposto no site e corrige com backup'
 
-marca: "INEMA · SEGURANÇA"
-selo: "ALERTA INEMA"
+marca: "ARCKHÉ · SEGURANÇA"
+selo: "ALERTA ARCKHÉ"
 fonte: "<b>PHP2Shell</b> 21/10/2026 (PHP security team, Cloudflare) · <b>OpenCode</b> 17/10/2026 (The Hacker News) · <b>Anthropic</b> nov/2025 · imagens: ilustraçêo"
 
 abertura:
   branco: "OS HACKERS VêO ATACAR"
   destaque: "TODO MUNDO"
   cor: vermelho
-  cena: "um capuz preto vazio com o rosto na sombra, à frente de uma parede de dezenas de telas pequenas acendendo em vermelho uma atrás da outra como dominós, cada tela com o ícone de um cadeado se abrindo; contraluz vermelha #ff2a1f de cinema recortando o capuz, fundo preto liso, metade de baixo vazia; sensaçêo de ataque em massa começando"
+  cena: "um capuz preto vazio com o rosto na sombra, à frente de uma parede de dezenas de telas pequenas acendendo em vermelho uma atrás da outra como dominós, cada tela com o ícone de um cadeado se abrindo; contraluz vermelha #ff2a1f de cARCKHÉ recortando o capuz, fundo preto liso, metade de baixo vazia; sensaçêo de ataque em massa começando"
 
 trocas:
   "sete em cada dez": "7 em cada 10"
@@ -101,19 +101,19 @@ partes:
       de: simples
       borda: vd
   - etapa: beneficio
-    fala: "Eu dou essas dicas nas lives e no inema ponto club, com um guia que acha o que está exposto."
+    fala: "Eu dou essas dicas nas lives e no ARCKHÉ ponto club, com um guia que acha o que está exposto."
     prende: "autoridade e prova: nêo é susto de ocasiêo, há um guia pronto que faz o trabalho por você"
-    print: {url: "https://inematds.github.io/blinda-site/guia/", selo: "guia blinda-site"}
+    print: {url: "https://linnoff88-dev.github.io/arckhe-/guia/", selo: "guia blinda-site"}
     painel:
-      k: "GUIA NO INEMA.CLUB"
+      k: "GUIA NO ARCKHÉ AI"
       titulo: "ACHA E CORRIGE"
       cor: "#22c55e"
       de: guia
       borda: vd
   - etapa: comentario
-    fala: "E você, já se protegeu? Comenta: eu vou proteger. Tá tudo no inema ponto club, ou pede o link."
+    fala: "E você, já se protegeu? Comenta: eu vou proteger. Tá tudo no ARCKHÉ ponto club, ou pede o link."
     prende: "pergunta direta + compromisso positivo fácil de escrever gera comentário"
-    print: {url: "https://inema.club", selo: "inema.club"}
+    print: {url: "https://ARCKHÉ AI", selo: "ARCKHÉ AI"}
 
 cta: {a: "JÁ SE PROTEGEU? 👇", b: "comenta \"eu vou proteger\""}
 club: "dicas de segurança e o guia blinda-site"
@@ -124,4 +124,4 @@ cores: {hackers: "#ff2a1f", atacar: "#ff2a1f", acontecendo: "#ff2a1f", falha: "#
 publicar:
   fila: lives1
   titulo: "Os hackers vêo atacar todo mundo daqui pra frente (e já começou) #shorts"
-  contexto: "Short vertical do INEMA.CLUB (Nei Maldaner). A IA ficou têo capaz que hackers usam ela para atacar em massa — e já está acontecendo: a falha PHP2Shell (21/10/2026) atinge o PHP, que roda por baixo de 7 em cada 10 sites, e a Cloudflare viu ataques antes da correçêo; no OpenCode (17/10/2026) invadiram o Console e usaram as chaves de IA de clientes, com contas de centenas de dólares; a Anthropic relatou (nov/2025) um grupo que usou IA para fazer até 90% de uma campanha de ataque. Como se proteger: atualize tudo, ponha limite de gasto nas chaves de IA e teste o seu site (guia blinda-site no inema.club). CTA: comente 'eu vou proteger'; tudo no inema.club."
+  contexto: "Short vertical do ARCKHÉ AI (Nei Maldaner). A IA ficou têo capaz que hackers usam ela para atacar em massa — e já está acontecendo: a falha PHP2Shell (21/10/2026) atinge o PHP, que roda por baixo de 7 em cada 10 sites, e a Cloudflare viu ataques antes da correçêo; no OpenCode (17/10/2026) invadiram o Console e usaram as chaves de IA de clientes, com contas de centenas de dólares; a Anthropic relatou (nov/2025) um grupo que usou IA para fazer até 90% de uma campanha de ataque. Como se proteger: atualize tudo, ponha limite de gasto nas chaves de IA e teste o seu site (guia blinda-site no ARCKHÉ AI). CTA: comente 'eu vou proteger'; tudo no ARCKHÉ AI."

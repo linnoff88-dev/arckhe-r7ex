@@ -8,10 +8,10 @@ plano:
   quer: "nêo virar dependente de compensaçêo (dor) e ter lugar na mesa com a IA (desejo)"
   gancho: "medo com número: 71% dos americanos acham que a IA vai reduzir empregos em 2 anos (Pew, ago/2026)"
   nota: 8
-  destino: "https://inematds.github.io/profissional2027x/ (inema.club, formaçêo Profissional 2027, sem mensalidade)"
+  destino: "https://linnoff88-dev.github.io/arckhe-/ (ARCKHÉ AI, formaçêo Profissional 2027, sem mensalidade)"
 
-marca: "INEMA · BIG TECH VAI TE PAGAR?"
-selo: "ALERTA INEMA"
+marca: "ARCKHÉ · BIG TECH VAI TE PAGAR?"
+selo: "ALERTA ARCKHÉ"
 fonte: "<b>Pew Research</b> · ago/2026 · Anthropic, 18/10/2026 · OpenAI, abr/2026 · imagens: ilustraçêo"
 
 abertura:
@@ -71,8 +71,8 @@ partes:
       borda: vd
       itens: [[compensaçêo, "🙅 esperar compensaçêo"], [implementa, "🛠️ virar quem implementa"]]
   - etapa: comentario
-    fala: "Tá tudo no inema ponto club. Ou me pede o link aqui nos comentários."
-    print: {url: "https://inematds.github.io/profissional2027x/", selo: "formaçêo Profissional 2027 · inema.club"}
+    fala: "Tá tudo no ARCKHÉ ponto club. Ou me pede o link aqui nos comentários."
+    print: {url: "https://linnoff88-dev.github.io/arckhe-/", selo: "formaçêo Profissional 2027 · ARCKHÉ AI"}
 
 cta: {a: "VOCÊ QUER O TROCO OU A MESA? 👇", b: "ou me pede o link da formaçêo nos comentários"}
 club: "a formaçêo Profissional 2027, sem mensalidade"
@@ -82,4 +82,4 @@ cores: {"71%": "#ff2a1f", empregos: "#ff2a1f", troco: "#ff2a1f", Anthropic: "#FA
 publicar:
   fila: lives11
   titulo: "71% acham que a IA vai cortar empregos — e a big tech já oferece o troco #shorts"
-  contexto: "Short vertical do INEMA.CLUB (Nei Maldaner), tom provocativo. Fatos: Pew Research (ago/2026): 71% dos adultos americanos acham que a IA vai levar a menos empregos nos próximos 2 anos. Anthropic (18/10/2026) separou 5% das ações num fundo que pode fazer distribuições diretas; OpenAI (abr/2026) propôs fundo público que paga dividendos ao cidadêo. Provocaçêo: compensaçêo ou troco? Saída: escolher um processo de uma empresa pequena, automatizar com IA e medir o resultado — virar quem implementa (formaçêo Profissional 2027 no inema.club). CTA: você quer o troco ou a mesa? Nêo citar o canal de origem."
+  contexto: "Short vertical do ARCKHÉ AI (Nei Maldaner), tom provocativo. Fatos: Pew Research (ago/2026): 71% dos adultos americanos acham que a IA vai levar a menos empregos nos próximos 2 anos. Anthropic (18/10/2026) separou 5% das ações num fundo que pode fazer distribuições diretas; OpenAI (abr/2026) propôs fundo público que paga dividendos ao cidadêo. Provocaçêo: compensaçêo ou troco? Saída: escolher um processo de uma empresa pequena, automatizar com IA e medir o resultado — virar quem implementa (formaçêo Profissional 2027 no ARCKHÉ AI). CTA: você quer o troco ou a mesa? Nêo citar o canal de origem."

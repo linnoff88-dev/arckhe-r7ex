@@ -5,10 +5,10 @@ plano:
   quer: nêo apostar no formato que está morrendo
   gancho: 'medo: o SaaS está morrendo e tem gente apostando tudo nele'
   nota: 8
-  destino: https://inematds.github.io/prof2030/
-marca: INEMA · O FIM DO SAAS
-selo: ALERTA INEMA
-fonte: '<b>opiniêo do Nei Maldaner</b> · formaçêo Profissional 2030 no inema.club · imagens: ilustraçêo'
+  destino: https://linnoff88-dev.github.io/arckhe-/
+marca: ARCKHÉ · O FIM DO SAAS
+selo: ALERTA ARCKHÉ
+fonte: '<b>opiniêo do Nei Maldaner</b> · formaçêo Profissional 2030 no ARCKHÉ AI · imagens: ilustraçêo'
 abertura:
   branco: O SAAS ESTÁ MORRENDO
   destaque: E TEM GENTE APOSTANDO TUDO NELE
@@ -83,8 +83,8 @@ partes:
 - etapa: beneficio
   fala: Eu criei a formaçêo Profissional dois mil e trinta pra isso, e ela está de graça.
   print:
-    url: https://inematds.github.io/prof2030/
-    selo: inematds.github.io/prof2030
+    url: https://linnoff88-dev.github.io/arckhe-/
+    selo: linnoff88-dev.github.io/arckhe-prof2030
   painel:
     k: PROFISSIONAL 2030
     borda: vd
@@ -94,10 +94,10 @@ partes:
     - - graça
       - 🆓 de graça
 - etapa: comentario
-  fala: Tá tudo no inema ponto club. Ou me pede o link aqui nos comentários.
+  fala: Tá tudo no ARCKHÉ ponto club. Ou me pede o link aqui nos comentários.
   print:
-    url: https://inema.club
-    selo: inema.club
+    url: https://ARCKHÉ AI
+    selo: ARCKHÉ AI
 cta:
   a: VOCÊ AINDA PAGA QUAL ASSINATURA? 👇
   b: me pede o link aqui nos comentários
@@ -115,5 +115,5 @@ cores:
 publicar:
   fila: lives3
   titulo: 'O SaaS está morrendo, e tem gente apostando tudo nele #shorts'
-  contexto: 'Short vertical do INEMA.CLUB (Nei Maldaner): O SaaS está morrendo e tem gente apostando tudo nele. Material no inema.club. CTA: peça
+  contexto: 'Short vertical do ARCKHÉ AI (Nei Maldaner): O SaaS está morrendo e tem gente apostando tudo nele. Material no ARCKHÉ AI. CTA: peça
     o link nos comentários.'

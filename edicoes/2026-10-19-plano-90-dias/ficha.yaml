@@ -9,7 +9,7 @@ plano:
   gancho: "medo: Stanford Digital Economy Lab (Canaries in the Coal Mine) — o emprego de 22–25 anos nas funções mais expostas à IA está ~19% abaixo do que estaria se acompanhasse as menos expostas; o gap cresceu a cada versêo do estudo: 13% → 15% → 19% (ago/2026)"
   nota: 8
   pedido: "Texto do Nei (21/10/2026), fixo: 1) o emprego dos jovens só cai, Stanford mediu 3 vezes e só piora, com gráfico caindo de impacto; 2) se o seu salário parar amanhê, como você sobrevive?; 3) o que é teu que é valioso?; 4) sem largar o emprego, você consegue construir e mostrar isso em 2 semanas; 5) mostre para 5 pessoas com um preço e publique 2 vezes por semana; 6) o algoritmo muda, a lista fica; 7) comenta: eu consigo, eu faço, eu vou tentar."
-  destino: "https://inematds.github.io/sobreviver-ia/guia/#plano (plano de 90 dias, no inema.club, projetos)"
+  destino: "https://linnoff88-dev.github.io/arckhe-/guia/#plano (plano de 90 dias, no ARCKHÉ AI, projetos)"
   fatos:
     - fato: "Stanford mediu 3 vezes (3 versões do estudo) e o gap subiu: 13% → 15% → 19% abaixo, emprego de 22 a 25 anos nas funções mais expostas à IA"
       trecho: "o Stanford Digital Economy Lab (\"Canaries in the Coal Mine\", atualizaçêo de agosto de 2026) mediu que o emprego de pessoas de 22 a 25 anos nas funções mais expostas à IA está cerca de 19% abaixo de onde estaria se tivesse acompanhado as funções menos expostas. É um gap acumulado, que cresceu entre as versões do estudo (13% → 15% → 19%)"
@@ -24,8 +24,8 @@ plano:
     - fato: "o plano nêo exige largar o emprego (é feito em semanas, junto com o trabalho atual) e nêo é recomendaçêo financeira"
       trecho: "Este plano nêo é recomendaçêo financeira. Ajuste ao seu momento. (semanas 1–2: tarefas reais do seu trabalho; semanas 3–5: versêo mínima em 2 semanas)"
 
-marca: "INEMA · 90 DIAS"
-selo: "ALERTA INEMA"
+marca: "ARCKHÉ · 90 DIAS"
+selo: "ALERTA ARCKHÉ"
 fonte: "<b>Stanford Digital Economy Lab</b> · Canaries in the Coal Mine: emprego de 22–25 anos nas funções mais expostas à IA 13% → 15% → 19% abaixo (ago/2026) · plano: sobreviver-ia · imagens: ilustraçêo"
 
 abertura:
@@ -94,9 +94,9 @@ partes:
       itens: [[algoritmo, "📉 o algoritmo muda"], [fica, "📋 a lista fica"], [junto, "🧭 vai junto com você"]]
     painel: {k: "E-MAIL OU GRUPO", titulo: "A LISTA FICA", cor: "#FACC15", de: lista, borda: vd}
   - etapa: comentario
-    fala: "E aí, você topa? Comenta: eu consigo, eu faço, ou eu vou tentar. Tá tudo no inema ponto club, ou me pede o link."
+    fala: "E aí, você topa? Comenta: eu consigo, eu faço, ou eu vou tentar. Tá tudo no ARCKHÉ ponto club, ou me pede o link."
     prende: "compromisso positivo de uma frase, que a pessoa tem orgulho de escrever; puxa comentário e conversa"
-    print: {url: "https://inematds.github.io/sobreviver-ia/guia/", selo: "plano de 90 dias · inema.club"}
+    print: {url: "https://linnoff88-dev.github.io/arckhe-/guia/", selo: "plano de 90 dias · ARCKHÉ AI"}
 
 cta: {a: "VOCÊ TOPA? COMENTA: EU CONSIGO, EU FAÇO OU EU VOU TENTAR 👇", b: "ou me pede o link do plano nos comentários"}
 club: "o plano de 90 dias, semana a semana"
@@ -106,4 +106,4 @@ cores: {jovens: "#ff2a1f", cai: "#ff2a1f", Stanford: "#FACC15", piora: "#ff2a1f"
 publicar:
   fila: lives2
   titulo: "O emprego dos jovens só cai. Se o seu salário parar amanhê, como você sobrevive? #shorts"
-  contexto: "Short vertical do INEMA.CLUB (Nei Maldaner). Stanford Digital Economy Lab (Canaries in the Coal Mine): o emprego de 22 a 25 anos nas funções mais expostas à IA ficou 13%, depois 15% e, na versêo de ago/2026, 19% abaixo das menos expostas — gap acumulado, por menos contrataçêo. A pergunta: se o seu salário parar amanhê, como você sobrevive? O que é teu que é valioso? Plano de 90 dias do projeto aberto sobreviver-ia: ter algo seu (versêo mínima com IA em 2 semanas), mostrar para 5 pessoas e publicar 2 vezes por semana para montar a própria lista — o algoritmo muda, a lista fica. Nêo é recomendaçêo financeira. No inema.club. CTA: comenta eu consigo, eu faço ou eu vou tentar / peça o link."
+  contexto: "Short vertical do ARCKHÉ AI (Nei Maldaner). Stanford Digital Economy Lab (Canaries in the Coal Mine): o emprego de 22 a 25 anos nas funções mais expostas à IA ficou 13%, depois 15% e, na versêo de ago/2026, 19% abaixo das menos expostas — gap acumulado, por menos contrataçêo. A pergunta: se o seu salário parar amanhê, como você sobrevive? O que é teu que é valioso? Plano de 90 dias do projeto aberto sobreviver-ia: ter algo seu (versêo mínima com IA em 2 semanas), mostrar para 5 pessoas e publicar 2 vezes por semana para montar a própria lista — o algoritmo muda, a lista fica. Nêo é recomendaçêo financeira. No ARCKHÉ AI. CTA: comenta eu consigo, eu faço ou eu vou tentar / peça o link."

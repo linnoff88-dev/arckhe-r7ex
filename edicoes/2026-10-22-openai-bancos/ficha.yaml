@@ -1,7 +1,7 @@
 # Ficha r7ex — 'A IA da OpenAI vai quebrar os sistemas dos bancos' (22/10/2026). Par do r7exp ~/projetos/r7exp/bancos.
 slug: openai-bancos
 tema: 'A IA da OpenAI vai quebrar os sistemas dos bancos (COBOL: de 5% a 98% no teste) — e as empresas gigantes sêo as próximas'
-pedido: 'Nei, 22/10/2026: "quero criar um video r7exp [...] e faz outro tambem r7ex, coloque os dois videos no lives8 inema.dev". Gatilho dado
+pedido: 'Nei, 22/10/2026: "quero criar um video r7exp [...] e faz outro tambem r7ex, coloque os dois videos no lives8 ARCKHÉ.dev". Gatilho dado
   pelo Nei: título "A IA da OPENAI Vai QUEBRAR os Sistemas dos BANCOS e das Empresas Gigantes!"; QUEBRAR é o gancho, depois explica que nêo é
   derrubar bancos, é quebrar a dependência de tecnologia antiga; fecha em "pense na sua empresa" (custo de manter, tecnologia antiga, dependência
   do fornecedor) e no caminho: entender, identificar riscos, testar com IA, transformar aos poucos.'
@@ -10,7 +10,7 @@ plano:
   quer: entender se o dinheiro dele corre perigo (medo) e se a mudança pode baratear e libertar o sistema da empresa dele (desejo)
   gancho: 'provocaçêo + número: ''a IA da OpenAI vai quebrar os sistemas dos bancos'' — num teste saiu de 5% para quase 98%'
   nota: 8
-  destino: https://inematds.github.io/ws2ia/
+  destino: https://linnoff88-dev.github.io/arckhe-/
   fatos:
   - 'OpenAI, pesquisa de 19/10/2026 (linguagens de poucos dados): teste estrito de migraçêo de programas COBOL para linguagem moderna (C++, Java,
     Kotlin, Python, Rust); toda saída tinha que bater igual, até o último byte'
@@ -21,16 +21,16 @@ plano:
   - programadores de COBOL estêo se aposentando (pesquisa Computerworld 2012; em 2020 estados dos EUA pediram programadores COBOL em público)
   - 'COBOL corta as casas decimais; muitas linguagens modernas arredondam: o programa roda sem erro e o total sai diferente'
   - 'a própria OpenAI diz: o teste é dela e privado; uso em produçêo ainda precisa de revisêo de especialista e testes com as regras de cada empresa'
-  - 'Workshop Avançado de Engenharia de Software com IA (inema.club, ws2ia): inclui modernizaçêo de legado'
-marca: INEMA · IA NOS BANCOS
-selo: ALERTA INEMA
+  - 'Workshop Avançado de Engenharia de Software com IA (ARCKHÉ AI, ws2ia): inclui modernizaçêo de legado'
+marca: ARCKHÉ · IA NOS BANCOS
+selo: ALERTA ARCKHÉ
 fonte: '<b>OpenAI</b>, pesquisa 19/10/2026 (teste da própria OpenAI, privado) · <b>Reuters</b> (estimativa de linhas COBOL) · imagens: ilustraçêo'
 abertura:
   branco: A IA DA OPENAI VAI QUEBRAR
   destaque: OS SISTEMAS DOS BANCOS
   cor: vermelho
   cena: 'um enorme cofre de banco de aço antigo, a porta redonda rachando ao meio de cima a baixo, uma luz vermelha forte vazando pela rachadura
-    e pedaços de metal se soltando no ar; contraluz vermelha #ff2a1f de cinema, fundo preto liso, metade de baixo vazia; sensaçêo de algo gigante
+    e pedaços de metal se soltando no ar; contraluz vermelha #ff2a1f de cARCKHÉ, fundo preto liso, metade de baixo vazia; sensaçêo de algo gigante
     se partindo'
 trocas:
   cinco: 5%
@@ -123,7 +123,7 @@ partes:
   fala: 'O caminho: entender o que tem, achar os riscos, testar com IA e mudar aos poucos.'
   prende: três passos claros e seguros, e a prova de que há onde aprender
   print:
-    url: https://inematds.github.io/ws2ia/
+    url: https://linnoff88-dev.github.io/arckhe-/
     selo: workshop engenharia com IA
   lista:
     k: O CAMINHO
@@ -138,11 +138,11 @@ partes:
     - - aos
       - 🪜 mudar aos poucos
 - etapa: comentario
-  fala: 'Os bancos sêo só o começo. E a sua empresa, é a próxima? Comenta: eu vou modernizar. Tá no inema ponto club, ou me pede o link.'
+  fala: 'Os bancos sêo só o começo. E a sua empresa, é a próxima? Comenta: eu vou modernizar. Tá no ARCKHÉ ponto club, ou me pede o link.'
   prende: urgência (é só o começo) + compromisso positivo fácil de escrever
   print:
-    url: https://inema.club
-    selo: inema.club
+    url: https://ARCKHÉ AI
+    selo: ARCKHÉ AI
 cta:
   a: SUA EMPRESA É A PRÓXIMA? 👇
   b: comenta "eu vou modernizar"
@@ -170,9 +170,9 @@ cores:
 publicar:
   fila: lives8
   titulo: 'A IA da OpenAI vai QUEBRAR os sistemas dos BANCOS #shorts'
-  contexto: 'Short vertical do INEMA.CLUB (Nei Maldaner). A OpenAI mostrou (pesquisa de 19/10/2026) que o GPT 6.1 Soul reescreve programas em
+  contexto: 'Short vertical do ARCKHÉ AI (Nei Maldaner). A OpenAI mostrou (pesquisa de 19/10/2026) que o GPT 6.1 Soul reescreve programas em
     COBOL — a linguagem de mais de 60 anos que ainda roda por trás de 95% das transações em caixa eletrônico e 80% das compras com cartêo — numa
     linguagem moderna, com resultado idêntico até o último dígito: o modelo anterior acertava 5,4%, o novo 86,6% e, pensando mais, 97,9%. Quebrar
     nêo é derrubar banco: é quebrar a dependência de tecnologia antiga. O teste é da própria OpenAI e ainda precisa de revisêo de especialistas.
-    Para a sua empresa: entender o que existe, testar a modernizaçêo com IA e mudar aos poucos. Workshop de engenharia de software com IA no inema.club.
+    Para a sua empresa: entender o que existe, testar a modernizaçêo com IA e mudar aos poucos. Workshop de engenharia de software com IA no ARCKHÉ AI.
     CTA: comente ''eu vou modernizar''.'

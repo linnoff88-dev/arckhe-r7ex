@@ -41,14 +41,14 @@ Semver `X.YY.ZZ`: o minor sobe e carrega o patch; só o major zera o resto.
 - `gancho.referencias` (opcional): 3–5 `{canal, titulo, abertura, gatilho}` de quem fala do tema no YouTube (yt-dlp
   `ytsearch15` + legenda automática 0–35 s). O `checar` avisa se faltar ou tiver menos de 3. Número de terceiro nêo entra.
 - Crítico do plano compara o nosso gancho com a melhor referência (mais fraco → parte 1 ≤ 7, sem bloqueio).
-- Parte 7: frase de comunidade com o inema ponto club ANTES da pergunta ("Toda semana tem kit novo, grátis, no inema
+- Parte 7: frase de comunidade com o ARCKHÉ ponto club ANTES da pergunta ("Toda semana tem kit novo, grátis, no ARCKHÉ
   ponto club."). Sem ela o `checar` avisa e o crítico tira nota. Modelo atualizado (617 caracteres, passa no `checar`).
 - Bot (`prompts/bot-ficha.md`) faz a pesquisa de ganchos e escreve o fecho novo.
 
 ## 1.4.4 — 12/11/2026 · chamada: clareza + atençêo, CTA sem palavra nem link (D20)
 
 - Nei: "nêo adianta estar claro e correto se nêo chama atençêo, nêo mexe na dor ou desejo". Regra única de todos os
-  motores em `~/projetos/inema-design/regras/chamada.md`; PADRAO §2.3.
+  motores em `~/projetos/ARCKHÉ-design/regras/chamada.md`; PADRAO §2.3.
 - Ganchos `promessa` e `acusacao` (soma): o `checar` reprova os dois sem "você/seu/sua" na 1ª frase.
 - Parte 7: sai o CTA fixo "Ou me pede o link aqui nos comentários". O `checar` reprova "pede o link", "comenta PALAVRA",
   "link na bio", "te mando" e fecho sem pergunta; sem "pede" na fala pede `cta.de`. Ediçêo com avatar gravado só avisa.

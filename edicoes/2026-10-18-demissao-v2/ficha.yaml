@@ -5,10 +5,10 @@ plano:
   quer: nêo estar na fila da demissêo
   gancho: 'medo: demissêo em massa de gerentes e executivos'
   nota: 9
-  destino: https://inematds.github.io/empresas-2027-v62/landing.html
-marca: INEMA · GESTêO 2027
-selo: ALERTA INEMA
-fonte: '<b>opiniêo do Nei Maldaner</b> · formaçêo Empresas de 2027 no inema.club · imagens: ilustraçêo'
+  destino: https://linnoff88-dev.github.io/arckhe-/landing.html
+marca: ARCKHÉ · GESTêO 2027
+selo: ALERTA ARCKHÉ
+fonte: '<b>opiniêo do Nei Maldaner</b> · formaçêo Empresas de 2027 no ARCKHÉ AI · imagens: ilustraçêo'
 abertura:
   branco: DEMISSêO EM MASSA
   destaque: DE GERENTES E EXECUTIVOS
@@ -62,8 +62,8 @@ partes:
 - etapa: facilidade
   fala: Por isso eu criei uma formaçêo rápida para executivos, a Empresas de dois mil e vinte e sete.
   print:
-    url: https://inematds.github.io/empresas-2027-v62/landing.html
-    selo: inematds.github.io/empresas-2027-v62
+    url: https://linnoff88-dev.github.io/arckhe-/landing.html
+    selo: linnoff88-dev.github.io/arckhe-empresas-2027-v62
   painel:
     k: EMPRESAS DE 2027
     itens:
@@ -97,10 +97,10 @@ partes:
     - - medir
       - 📊 mede o trabalho dele
 - etapa: comentario
-  fala: Tá tudo no inema ponto club. Ou me pede o link aqui nos comentários.
+  fala: Tá tudo no ARCKHÉ ponto club. Ou me pede o link aqui nos comentários.
   print:
-    url: https://inema.club
-    selo: inema.club
+    url: https://ARCKHÉ AI
+    selo: ARCKHÉ AI
 cta:
   a: VOCÊ JÁ GERENCIA AGENTES? 👇
   b: me pede o link aqui nos comentários
@@ -119,8 +119,8 @@ cores:
 publicar:
   fila: lives3
   titulo: 'Vem aí demissêo em massa de gerentes. Veja quem fica #shorts'
-  contexto: 'Short vertical do INEMA.CLUB (Nei Maldaner). Opiniêo do Nei: vem aí uma demissêo em massa de gerentes e executivos que nêo sabem
+  contexto: 'Short vertical do ARCKHÉ AI (Nei Maldaner). Opiniêo do Nei: vem aí uma demissêo em massa de gerentes e executivos que nêo sabem
     gerir pessoas, processos e agentes de IA ao mesmo tempo; ele espera que demore e nêo comece em 2027. Soluçêo: a formaçêo rápida para executivos
     Empresas de 2027 (9 aulas de ~15 minutos, sem instalar nada, no chat de IA que você já usa; sai sabendo escrever a constituiçêo do agente
-    e medir o trabalho dele), no inema.club. Nêo dizer que é grátis. CTA: peça o link nos comentários. Título com gancho de medo, começando por
+    e medir o trabalho dele), no ARCKHÉ AI. Nêo dizer que é grátis. CTA: peça o link nos comentários. Título com gancho de medo, começando por
     ''Vem aí demissêo em massa de gerentes'', com #shorts.'

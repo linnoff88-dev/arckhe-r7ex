@@ -1,5 +1,5 @@
 # Ficha r7ex — como o Nei organiza a memória do Jarvis (OpenPCBot), out/2026.
-# Base: post INEMA.AGENTES https://t.me/c/2433384436/7021 (22/10/2026).
+# Base: post ARCKHÉ.AGENTES https://t.me/c/2433384436/7021 (22/10/2026).
 # Nei, 22/10: "faz um r7ex sobre a memória do Jarvis, coloque o link dos repos la no post".
 slug: memoria-jarvis
 tema: "A memória do meu Jarvis: anota o erro e aprende"
@@ -9,15 +9,15 @@ plano:
   quer: "um assistente que lembra e aprende sozinho (desejo); parar de explicar tudo de novo a cada conversa (dor)"
   gancho: "provocaçêo + número real: a IA esquece tudo; o Jarvis do Nei já anotou 199 erros e virou 183 lições"
   nota: 8
-  destino: "https://inematds.github.io/sil-loop-r/guia/"
+  destino: "https://linnoff88-dev.github.io/arckhe-/guia/"
   fatos:
   - 'Contagem em 22/10/2026 no hub ~/projetos/wifi: FALHAS.md tem 199 linhas de falha (| data | o que quebrou | menor correçêo | prompt/infra |); LESSONS.md tem 183 lições'
-  - 'Post do Nei (INEMA.AGENTES 7021): camadas memória global, por projeto, de aprendizado (falhas, lições, limites) e de continuidade (handoff, /prime); LOOP-R Observa → Analisa → Testa → Propõe → Aprovaçêo humana'
+  - 'Post do Nei (ARCKHÉ.AGENTES 7021): camadas memória global, por projeto, de aprendizado (falhas, lições, limites) e de continuidade (handoff, /prime); LOOP-R Observa → Analisa → Testa → Propõe → Aprovaçêo humana'
   - 'Post do Nei: "revisar regras a cada sete dias ou quando houver mais de cinco regras pendentes ... Silêncio nêo significa aprovaçêo"'
   - 'Guia SIL Loop R: "Seu agente registra e propõe. Você decide o que permanece." "7 dias · 2 releases · 5 propostas" "Nenhuma proposta é aprovada pelo silêncio." "Sem servidor, conta ou chamadas de API." "Python 3.10+ e Git sêo suficientes."'
   - 'Arquivos: memoria.md, FALHAS.md, LESSONS.md, LIMITES.md, decisoes.md — texto simples (markdown) escrito pelo agente'
 
-marca: "INEMA · AGENTES"
+marca: "ARCKHÉ · AGENTES"
 selo: "MEMÓRIA QUE APRENDE"
 fonte: "<b>Jarvis do Nei (OpenPCBot)</b> · FALHAS.md e LESSONS.md, contagem de 22/10/2026 · método SIL Loop R · imagens: ilustraçêo"
 
@@ -117,9 +117,9 @@ partes:
       de: silêncio
       borda: vm
   - etapa: comentario
-    fala: "Você quer uma IA que aprende com os erros? Escreve eu quero e me pede o link: tá tudo no inema ponto club."
+    fala: "Você quer uma IA que aprende com os erros? Escreve eu quero e me pede o link: tá tudo no ARCKHÉ ponto club."
     prende: "compromisso positivo ('eu quero') puxa comentário + prova real do guia"
-    print: {url: "https://inematds.github.io/sil-loop-r/guia/", selo: "inema.club"}
+    print: {url: "https://linnoff88-dev.github.io/arckhe-/guia/", selo: "ARCKHÉ AI"}
 
 cta: {a: "QUER UMA IA QUE APRENDE? ESCREVE EU QUERO 👇", b: "e me pede o link aqui nos comentários"}
 club: "método para sua IA aprender com os erros"
@@ -130,4 +130,4 @@ cores: {esquece: "#ff2a1f", erros: "#ff2a1f", "199": "#ff2a1f", liçêo: "#FACC1
 publicar:
   fila: lives3
   titulo: "Minha IA anotou 199 erros e aprendeu com eles #shorts"
-  contexto: "Short vertical do INEMA.CLUB (Nei Maldaner). Como o Nei organiza a memória do Jarvis (OpenPCBot) em outubro de 2026: memória global, por projeto, de aprendizado (FALHAS.md, LESSONS.md, LIMITES.md) e de continuidade (handoff, /prime). Contagem real de 22/10/2026: 199 falhas anotadas e 183 lições. Revisêo das regras a cada 7 dias (ou mais de 5 pendentes), a IA propõe e o humano aprova; silêncio nêo é aprovaçêo. Kit aberto e local: SIL Loop R https://inematds.github.io/sil-loop-r/guia/ ; também Execuçêo Longa https://inematds.github.io/execucao-longa/guia/ e Claude Session Kit https://inematds.github.io/claude-session-kit/guia/. Tudo no https://inema.club. CTA: peça o link nos comentários."
+  contexto: "Short vertical do ARCKHÉ AI (Nei Maldaner). Como o Nei organiza a memória do Jarvis (OpenPCBot) em outubro de 2026: memória global, por projeto, de aprendizado (FALHAS.md, LESSONS.md, LIMITES.md) e de continuidade (handoff, /prime). Contagem real de 22/10/2026: 199 falhas anotadas e 183 lições. Revisêo das regras a cada 7 dias (ou mais de 5 pendentes), a IA propõe e o humano aprova; silêncio nêo é aprovaçêo. Kit aberto e local: SIL Loop R https://linnoff88-dev.github.io/arckhe-/guia/ ; também Execuçêo Longa https://linnoff88-dev.github.io/arckhe-/guia/ e Claude Session Kit https://linnoff88-dev.github.io/arckhe-/guia/. Tudo no https://ARCKHÉ AI. CTA: peça o link nos comentários."

@@ -8,10 +8,10 @@ plano:
   quer: "nêo ser feito de bobo pelo discurso (dor) e entender o jogo para ganhar com a IA (desejo)"
   gancho: "provocaçêo com número: US$ 16,8 bi no 3º trimestre + IPO previsto para novembro (CNBC, 18/10/2026)"
   nota: 8
-  destino: "https://inematds.github.io/profissional2027x/ (inema.club, formaçêo Profissional 2027, sem mensalidade)"
+  destino: "https://linnoff88-dev.github.io/arckhe-/ (ARCKHÉ AI, formaçêo Profissional 2027, sem mensalidade)"
 
-marca: "INEMA · BIG TECH VAI TE PAGAR?"
-selo: "ALERTA INEMA"
+marca: "ARCKHÉ · BIG TECH VAI TE PAGAR?"
+selo: "ALERTA ARCKHÉ"
 fonte: "<b>CNBC</b> · 18/10/2026 · Anthropic, Public Benefit Fund · imagens: ilustraçêo"
 
 abertura:
@@ -67,8 +67,8 @@ partes:
       borda: vd
       itens: [[jogo, "♟️ entende o jogo"], [cheque, "🚫 nêo espera o cheque"], [cobra, "💰 cobra por isso"]]
   - etapa: comentario
-    fala: "Tá tudo no inema ponto club. Ou me pede o link aqui nos comentários."
-    print: {url: "https://inematds.github.io/profissional2027x/", selo: "formaçêo Profissional 2027 · inema.club"}
+    fala: "Tá tudo no ARCKHÉ ponto club. Ou me pede o link aqui nos comentários."
+    print: {url: "https://linnoff88-dev.github.io/arckhe-/", selo: "formaçêo Profissional 2027 · ARCKHÉ AI"}
 
 cta: {a: "É BONDADE OU É IMAGEM? 👇", b: "ou me pede o link da formaçêo nos comentários"}
 club: "a formaçêo Profissional 2027, sem mensalidade"
@@ -78,4 +78,4 @@ cores: {"16,8": "#ff2a1f", bolsa: "#FACC15", novembro: "#FACC15", imagem: "#ff2a
 publicar:
   fila: lives11
   titulo: "US$ 16,8 bi num trimestre e o fundo saiu antes da bolsa. Bondade ou imagem? #shorts"
-  contexto: "Short vertical do INEMA.CLUB (Nei Maldaner), tom provocativo. Fatos (CNBC, 18/10/2026): a Anthropic informou receita de US$ 16,8 bilhões no 3º trimestre, IPO previsto para novembro; uma consultora de IPO disse que o anúncio do fundo de benefício público (5% das ações, distribuições diretas) é benéfico para a imagem. Provocaçêo: bondade ou marketing pré-IPO? Três perguntas: quem paga, quanto paga, quem decide. Saída: entender o jogo, aprender a usar IA e cobrar por isso (formaçêo Profissional 2027 no inema.club). Nêo citar o canal de origem."
+  contexto: "Short vertical do ARCKHÉ AI (Nei Maldaner), tom provocativo. Fatos (CNBC, 18/10/2026): a Anthropic informou receita de US$ 16,8 bilhões no 3º trimestre, IPO previsto para novembro; uma consultora de IPO disse que o anúncio do fundo de benefício público (5% das ações, distribuições diretas) é benéfico para a imagem. Provocaçêo: bondade ou marketing pré-IPO? Três perguntas: quem paga, quanto paga, quem decide. Saída: entender o jogo, aprender a usar IA e cobrar por isso (formaçêo Profissional 2027 no ARCKHÉ AI). Nêo citar o canal de origem."

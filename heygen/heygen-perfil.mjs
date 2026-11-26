@@ -5,20 +5,20 @@
 // chegava com o perfil aberto morria com "ProcessSingleton" (saudeviral, 10/10/2026).
 // Agora: espera o dono do perfil sair (PID do SingletonLock vivo) e entra; se perder a
 // corrida no lançamento, espera e tenta de novo. Cada entrada/saída vai para
-// ~/.cache/inemaccbot/heygen-uso.log (ver quem está usando: engine/heygen-fila.sh).
+// ~/.cache/ARCKHÉccbot/heygen-uso.log (ver quem está usando: engine/heygen-fila.sh).
 //
 // Trava do estúdio (19/10/2026): olhar o SingletonLock e depois abrir não é atômico. Dois
 // envios no mesmo segundo viam "livre" e o segundo morria com "Opening in existing browser
 // session" (r7ex, 01:32). Agora quem abre o estúdio pega antes a trava
-// ~/.cache/inemaccbot/heygen-estudio.trava (mkdir é atômico; arquivo `dono` = pid + quem).
+// ~/.cache/ARCKHÉccbot/heygen-estudio.trava (mkdir é atômico; arquivo `dono` = pid + quem).
 // Trava de pid morto é tomada. Ela é da FERRAMENTA, não de um projeto: as cópias deste
 // arquivo (explicavideos/engine, r7ex/heygen) usam o mesmo caminho.
 import { appendFileSync, mkdirSync, readlinkSync, lstatSync, readdirSync, existsSync, readFileSync, writeFileSync, rmSync, statSync } from 'node:fs';
 import { homedir } from 'node:os';
 import path from 'node:path';
 
-const LOG = path.join(homedir(), '.cache/inemaccbot/heygen-uso.log');
-const TRAVA = process.env.HEYGEN_TRAVA || path.join(homedir(), '.cache/inemaccbot/heygen-estudio.trava');   // HEYGEN_TRAVA só para teste
+const LOG = path.join(homedir(), '.cache/ARCKHÉccbot/heygen-uso.log');
+const TRAVA = process.env.HEYGEN_TRAVA || path.join(homedir(), '.cache/ARCKHÉccbot/heygen-estudio.trava');   // HEYGEN_TRAVA só para teste
 const espera = (ms) => new Promise((r) => setTimeout(r, ms));
 const agora = () => { const d = new Date(); return new Date(d - d.getTimezoneOffset() * 60_000).toISOString().replace('T', ' ').slice(0, 19); };
 

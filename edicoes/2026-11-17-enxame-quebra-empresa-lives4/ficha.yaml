@@ -1,6 +1,6 @@
 slug: enxame-quebra-empresa-lives4
 tema: "Enxame de agentes pode quebrar sua empresa: a ideia é genial, a conta nêo"
-pedido: "Nei (17/11/2026): vai com o prédio e faz o r7ex no lives4 (inema.agentes). Tese: enxames de agentes quebrando
+pedido: "Nei (17/11/2026): vai com o prédio e faz o r7ex no lives4 (ARCKHÉ.agentes). Tese: enxames de agentes quebrando
   uma empresa; a ideia é genial mas o custo é proibitivo, a menos que você esteja ganhando muito com isso. Gancho
   aprovado: 'A ideia é genial. A conta, nêo.' Imagem de abertura aprovada: prédio de vidro devorado por enxame de robôs."
 plano:
@@ -8,7 +8,7 @@ plano:
   quer: "usar o poder de vários agentes sem ver a conta explodir (dor) e saber quando vale a pena (desejo)"
   gancho: "estatística com fonte: a própria Anthropic mediu que sistema multiagente gasta cerca de 15 vezes mais tokens que um chat"
   nota: 9
-  destino: "https://inematds.github.io/enxame-antigravity/guia/"
+  destino: "https://linnoff88-dev.github.io/arckhe-/guia/"
   fatos:
     - "Anthropic, 'How we built our multi-agent research system' (jun/2025): 'agents typically use about 4× more tokens
       than chat interactions, and multi-agent systems use about 15× more tokens than chats'."
@@ -16,10 +16,10 @@ plano:
       is high enough to pay for the increased performance.'"
     - "Mesmo texto: o sistema multiagente superou o agente único em 90,2% na avaliaçêo interna de pesquisa — ou seja,
       funciona, mas custa (nêo dizemos que é ruim; dizemos que só vale quando o resultado paga)."
-    - "Caso interno INEMA (lote-135, 15–16/11/2026): um processo automático solto chamava a IA sem trava de cota e
+    - "Caso interno ARCKHÉ (lote-135, 15–16/11/2026): um processo automático solto chamava a IA sem trava de cota e
       recebeu 12.619 recusas por limite em cerca de 34 horas (~400 por hora), sem parar no primeiro erro; a revisêo
       ficou parada nesse tempo. Corrigido em 17/11/2026 com trava de cota."
-    - "Kit gratuito enxame-antigravity (guia em inematds.github.io/enxame-antigravity/guia/): Ficha do Enxame com
+    - "Kit gratuito enxame-antigravity (guia em linnoff88-dev.github.io/arckhe-/guia/): Ficha do Enxame com
       dono por pedaço, quem confere, limite de workers, parar quando a cota acabar e nada de laço sem supervisêo."
 gancho:
   tipo: estatistica
@@ -47,15 +47,15 @@ gancho:
        abertura: "(sem legenda; título) o custo real é o laço",
        gatilho: "custo escondido, fraco sem número"}
 
-marca: "INEMA · AGENTES"
+marca: "ARCKHÉ · AGENTES"
 selo: "CUSTO ESCONDIDO"
-fonte: "<b>Anthropic</b> · How we built our multi-agent research system, jun/2025 · caso interno INEMA, nov/2026 · imagens: ilustraçêo"
+fonte: "<b>Anthropic</b> · How we built our multi-agent research system, jun/2025 · caso interno ARCKHÉ, nov/2026 · imagens: ilustraçêo"
 
 abertura:
   cor: amarelo
   cena: "prédio de escritório de vidro à noite sendo devorado por um enxame de pequenos robôs dourados, como formigas
     arrancando a fachada; uma janela acesa com um executivo de costas segurando uma fatura de papel comprida que
-    desce até o chêo; preto e amarelo, luz de cinema"
+    desce até o chêo; preto e amarelo, luz de cARCKHÉ"
 
 trocas:
   "quinze vezes": "15×"
@@ -108,11 +108,11 @@ partes:
     fala: "Um processo nosso sem trava bateu no limite doze mil vezes. Por isso a ficha tem limite e hora de parar."
     prende: "dá nome ao método e prova com um caso real da casa, sem vergonha de mostrar o erro"
     print:
-      url: "https://inematds.github.io/enxame-antigravity/guia/"
+      url: "https://linnoff88-dev.github.io/arckhe-/guia/"
       selo: "FICHA DO ENXAME · KIT GRÁTIS"
     painel:
       de: "12"
-      k: "CASO INEMA · NOV/2026"
+      k: "CASO ARCKHÉ · NOV/2026"
       borda: red
       contador: {ate: 12619, em: "12", cor: "#ff2a1f", unid: "RECUSAS EM 34 H"}
       l: "processo sem trava de cota"
@@ -121,15 +121,15 @@ partes:
     prende: "máxima curta, com autoridade de quem vende o modelo; a pessoa repete e compartilha"
     logos: [{id: anthropic, nome: Anthropic}]
     imagem: "uma balança antiga de metal: de um lado uma lâmpada acesa em amarelo, do outro uma pilha de moedas
-      pesando mais e afundando; luz de cinema lateral, um único assunto, fundo preto, sem letras"
+      pesando mais e afundando; luz de cARCKHÉ lateral, um único assunto, fundo preto, sem letras"
     painel:
       titulo: "SÓ VALE SE O RESULTADO PAGA"
       cor: "#FACC15"
   - etapa: comentario
-    fala: "Toda semana tem kit novo, grátis, no inema ponto club. Vai montar o enxame ou medir primeiro?"
+    fala: "Toda semana tem kit novo, grátis, no ARCKHÉ ponto club. Vai montar o enxame ou medir primeiro?"
     prende: "pertencimento + pergunta que a pessoa responde com a própria experiência; quem nunca mediu se reconhece"
     print:
-      url: "https://inematds.github.io/enxame-antigravity/guia/"
+      url: "https://linnoff88-dev.github.io/arckhe-/guia/"
       selo: "KIT ENXAME · GRÁTIS"
 
 ritmo:
@@ -138,7 +138,7 @@ ritmo:
 cta:
   de: "Vai"
   a: "MONTAR O ENXAME OU MEDIR PRIMEIRO? 👇"
-  b: "toda semana kit novo · inema.club"
+  b: "toda semana kit novo · ARCKHÉ AI"
   comentario: "Vou medir primeiro, depois monto o enxame."
 club: "Ficha do Enxame (kit enxame-antigravity)"
 cores:
@@ -153,10 +153,10 @@ cores:
 publicar:
   fila: lives4
   titulo: "Enxame de agentes pode quebrar sua empresa: a ideia é genial, a conta nêo #shorts"
-  contexto: "R7EX INEMA (Nei Maldaner), canal inema.agentes. Contraponto aos vídeos virais de enxame de agentes: a
+  contexto: "R7EX ARCKHÉ (Nei Maldaner), canal ARCKHÉ.agentes. Contraponto aos vídeos virais de enxame de agentes: a
     própria Anthropic mediu que sistemas multiagente gastam cerca de 15 vezes mais tokens que um chat e diz que só
     compensam quando o valor da tarefa paga o custo (How we built our multi-agent research system, jun/2025). O
     dinheiro some em contexto repetido, conversa entre agentes e retrabalho. Regra: enxame sob demanda — um agente
     primeiro, mais agentes só quando a tarefa pede, cada um com limite. Método: Ficha do Enxame, kit grátis em
-    https://inematds.github.io/enxame-antigravity/guia/. Caso real INEMA nov/2026: processo sem trava de cota com mais
+    https://linnoff88-dev.github.io/arckhe-/guia/. Caso real ARCKHÉ nov/2026: processo sem trava de cota com mais
     de 12 mil recusas por limite em ~34 h. Publicaçêo pedida pelo Nei no lives4 em 17/11/2026."

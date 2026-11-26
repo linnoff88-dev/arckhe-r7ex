@@ -7,10 +7,10 @@ plano:
   quer: "nêo entrar em pânico numa pane (dor) e ter a família tranquila com tudo contado (desejo)"
   gancho: "medo: pane de 14 dias; cálculo do kit — 2 pessoas × 14 dias × 2.000 kcal = 56.000 kcal; água 1,5–2 L/pessoa/dia"
   nota: 7
-  destino: "https://inematds.github.io/sobreviver-ia/guia/#kit (calculadora do kit, no inema.club, projetos)"
+  destino: "https://linnoff88-dev.github.io/arckhe-/guia/#kit (calculadora do kit, no ARCKHÉ AI, projetos)"
 
-marca: "INEMA · KIT DE 14 DIAS"
-selo: "ALERTA INEMA"
+marca: "ARCKHÉ · KIT DE 14 DIAS"
+selo: "ALERTA ARCKHÉ"
 fonte: "<b>cálculo do kit sobreviver-ia</b> · 2.000 kcal e 1,5–2 L de água por pessoa/dia · imagens: ilustraçêo"
 
 abertura:
@@ -72,8 +72,8 @@ partes:
       borda: vd
       itens: [[sábado, "📅 um sábado"], [pronta, "🏠 casa pronta"]]
   - etapa: comentario
-    fala: "Tá tudo no inema ponto club. Ou me pede o link aqui nos comentários."
-    print: {url: "https://inematds.github.io/sobreviver-ia/guia/#kit", selo: "calculadora do kit · inema.club"}
+    fala: "Tá tudo no ARCKHÉ ponto club. Ou me pede o link aqui nos comentários."
+    print: {url: "https://linnoff88-dev.github.io/arckhe-/guia/#kit", selo: "calculadora do kit · ARCKHÉ AI"}
 
 cta: {a: "SUA CASA AGUENTA QUANTOS DIAS? 👇", b: "ou me pede o link da calculadora nos comentários"}
 club: "o kit de 14 dias, passo a passo"
@@ -83,4 +83,4 @@ cores: {luz: "#ff2a1f", catorze: "#FACC15", calorias: "#FACC15", pânico: "#ff2a
 publicar:
   fila: lives10
   titulo: "Sua casa aguenta 14 dias sem luz, água e internet? A conta que quase ninguém fez #shorts"
-  contexto: "Short vertical do INEMA.CLUB (Nei Maldaner). Kit de 14 dias em casa para panes longas: 2 pessoas × 14 dias precisam de 56.000 kcal (2.000 kcal por pessoa por dia), de 42 a 56 litros de água para beber (1,5 a 2 L por pessoa por dia) e 1 mês de gasto em dinheiro vivo. A calculadora do projeto aberto sobreviver-ia faz a conta e gera a lista de compras. Passo a passo no inema.club. CTA: sua casa aguenta quantos dias / peça o link."
+  contexto: "Short vertical do ARCKHÉ AI (Nei Maldaner). Kit de 14 dias em casa para panes longas: 2 pessoas × 14 dias precisam de 56.000 kcal (2.000 kcal por pessoa por dia), de 42 a 56 litros de água para beber (1,5 a 2 L por pessoa por dia) e 1 mês de gasto em dinheiro vivo. A calculadora do projeto aberto sobreviver-ia faz a conta e gera a lista de compras. Passo a passo no ARCKHÉ AI. CTA: sua casa aguenta quantos dias / peça o link."

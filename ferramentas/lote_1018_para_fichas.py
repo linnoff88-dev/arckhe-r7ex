@@ -17,10 +17,10 @@ ns = {"__file__": str(R7 / "ev-lote-1018.py")}
 exec(compile(src.replace("RAW = Path(sys.argv[1])", "RAW = None").replace("import ev_util  # noqa: E402", ""), "lote", "exec"), ns)
 LOTE, COMUM = ns["R"], ns["COMUM"]
 
-URL = {"prof2027-c.png": "https://inematds.github.io/profissional2027x/", "prof2030-c.png": "https://inematds.github.io/prof2030/",
-       "chat72-c.png": "https://inematds.github.io/do-chat-ao-agente-v72/", "emp27-c.png": "https://inematds.github.io/empresas-2027-v62/landing.html",
-       "diga-c.png": "https://inematds.github.io/diga-o-que-importa/guia/", "const-c.png": "https://inematds.github.io/constituicao-agentes-v62/landing.html",
-       "club-c.png": "https://inema.club"}
+URL = {"prof2027-c.png": "https://linnoff88-dev.github.io/arckhe-/", "prof2030-c.png": "https://linnoff88-dev.github.io/arckhe-/",
+       "chat72-c.png": "https://linnoff88-dev.github.io/arckhe-/", "emp27-c.png": "https://linnoff88-dev.github.io/arckhe-/landing.html",
+       "diga-c.png": "https://linnoff88-dev.github.io/arckhe-/guia/", "const-c.png": "https://linnoff88-dev.github.io/arckhe-/landing.html",
+       "club-c.png": "https://ARCKHÉ AI"}
 PLANO = {
     "ferramentas": ("quem vive testando ferramenta nova de IA e sente que está ficando para trás", "parar de correr atrás de app e aprender a pedir", "provocaçêo: quem caça app é superficial; tudo está no GitHub", 8),
     "2027": ("profissional que acha que precisa virar programador para ganhar com IA", "faturar em 2027 ajudando empresas", "provocaçêo: quem fatura em 2027 nêo é quem cria software", 8),
@@ -29,7 +29,7 @@ PLANO = {
     "demissao": ("gerente ou executivo que ainda nêo lida com agentes de IA", "nêo estar na fila da demissêo", "medo: demissêo em massa de gerentes e executivos", 9),
     "gestor": ("gestor de empresa pequena ou média", "chefiar uma equipe com agentes sem medo", "novidade: seu novo funcionário nêo é gente", 8),
 }
-DESTINO = {"ferramentas": "https://inema.club", "2027": URL["prof2027-c.png"], "saas": URL["prof2030-c.png"], "chat": URL["chat72-c.png"],
+DESTINO = {"ferramentas": "https://ARCKHÉ AI", "2027": URL["prof2027-c.png"], "saas": URL["prof2030-c.png"], "chat": URL["chat72-c.png"],
            "demissao": URL["emp27-c.png"], "gestor": URL["diga-c.png"]}
 
 
@@ -69,7 +69,7 @@ for slug, c in LOTE.items():
     a, b, cor, cena = c["abre"]
     pessoa, quer, gancho, nota = PLANO[slug]
     tit = rot["titulo_post"]; tit = tit if "#shorts" in tit else tit + " #shorts"
-    ctx = rot.get("contexto_youtube") or f"Short vertical do INEMA.CLUB (Nei Maldaner): {rot['tema']}. Material no inema.club. CTA: peça o link nos comentários."
+    ctx = rot.get("contexto_youtube") or f"Short vertical do ARCKHÉ AI (Nei Maldaner): {rot['tema']}. Material no ARCKHÉ AI. CTA: peça o link nos comentários."
     ficha = {"slug": f"{slug}-v2", "tema": rot["tema"],
              "plano": {"pessoa": pessoa, "quer": quer, "gancho": gancho, "nota": nota, "destino": DESTINO[slug]},
              "marca": c["marca"], "selo": c["selo"], "fonte": c["fonte"],

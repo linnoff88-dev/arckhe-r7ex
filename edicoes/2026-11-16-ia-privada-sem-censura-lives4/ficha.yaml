@@ -7,17 +7,17 @@ plano:
   quer: Escolher onde seus textos sêo processados sem confundir liberdade de resposta com privacidade
   gancho: O modelo pode aceitar pedidos sem garantir que os dados fiquem no seu computador
   nota: 9
-  destino: https://inematds.github.io/ia-privada-pronta/guia/
+  destino: https://linnoff88-dev.github.io/arckhe-/guia/
   fatos:
   - Privacidade é onde os dados sêo processados e quem tem acesso; menos recusas é comportamento do modelo. Nêo
-    há implicaçêo automática entre as duas coisas. Código e guias dos dois kits INEMA, README.md e docs/CONTRATO.md.
+    há implicaçêo automática entre as duas coisas. Código e guias dos dois kits ARCKHÉ, README.md e docs/CONTRATO.md.
   - 'Prova real Linux15/11/2026: os DOIS modelos responderam dentro de namespace de rede contendo apenaslo. Fontes
     locais: ia-privada-pronta/verificacao/prova-real-linux.json e ia-sem-censura-pronta/verificacao/prova-real-linux.json.
     Modelos descarregados após teste.'
   - IA privada pronta usa Llama3.2; preparaçêo baixa pesos com internet e conversa depois é local. Guia gratuito
-    e código executável em https://inematds.github.io/ia-privada-pronta/guia/.
+    e código executável em https://linnoff88-dev.github.io/arckhe-/guia/.
   - IA sem censura pronta usa Huihui Qwen3.8-abliterated27B voltado a menos recusas. Nêo mede nem garante ausência
-    de recusas. Guia https://inematds.github.io/ia-sem-censura-pronta/guia/.
+    de recusas. Guia https://linnoff88-dev.github.io/arckhe-/guia/.
   - Os dois kits oferecem preparar/conversar/encerrar. Requerem Python e Ollama; versêo maior exige mais memória.
     Nêo sêo chat em navegador nem implantaçêo de nuvem testada.
   - No teste do documento Llama respondeu600, gabarito1000; Qwen acertou esse caso. Processamento local nêo garante
@@ -34,13 +34,13 @@ gancho:
     de: testes
   absolvicao: Nêo é descuido seu
   fontes:
-  - nome: Testes reais INEMA15/11/2026 e código dos dois kits
+  - nome: Testes reais ARCKHÉ15/11/2026 e código dos dois kits
     trecho: Dois modelos responderam em namespace com somente a interface locallo; menos recusas é diferente de
       privacidade
   referencias: []
-marca: INEMA · SUA IA
+marca: ARCKHÉ · SUA IA
 selo: DADOS SOB CONTROLE
-fonte: Testes INEMA · Linux, 15/11/2026 · ilustrações
+fonte: Testes ARCKHÉ · Linux, 15/11/2026 · ilustrações
 abertura:
   cor: amarelo
   cena: close de um notebook preto sobre fundo escuro, documento sendo puxado para fora da tela, um único assunto
@@ -54,7 +54,7 @@ partes:
   fala: Nos testes, o kit IA privada pronta respondeu sem internet. A privacidade depende de onde o modelo roda.
   prende: Prova de funcionamento e nome da soluçêo imediatamente, sem promessa de privacidade automática.
   print:
-    url: https://inematds.github.io/ia-privada-pronta/guia/#prova
+    url: https://linnoff88-dev.github.io/arckhe-/guia/#prova
     selo: PROVA REAL · LINUX
   painel:
     de: testes
@@ -86,7 +86,7 @@ partes:
   fala: Baixe o modelo uma vez e siga o guia para conversar no seu computador.
   prende: A pessoa enxerga o primeiro passo e um destino acessível, sem promessa de instalaçêo sem requisitos.
   print:
-    url: https://inematds.github.io/ia-privada-pronta/guia/#guia
+    url: https://linnoff88-dev.github.io/arckhe-/guia/#guia
     selo: GUIA GRATUITO
   painel:
     de: conversar
@@ -121,15 +121,15 @@ partes:
   painel:
     titulo: PRIVACIDADE E ACERTO SêO OUTRAS QUESTÕES
 - etapa: comentario
-  fala: Toda semana tem kit novo, grátis, no inema ponto club. Que texto você manteria só no seu computador?
+  fala: Toda semana tem kit novo, grátis, no ARCKHÉ ponto club. Que texto você manteria só no seu computador?
   prende: Pertencimento e pergunta da vida real sobre algo que a pessoa gostaria de proteger.
   print:
-    url: https://inematds.github.io/ia-privada-pronta/guia/
+    url: https://linnoff88-dev.github.io/arckhe-/guia/
     selo: KIT IA PRIVADA PRONTA
 cta:
   de: Que
   a: QUE TEXTO FICARIA SÓ NO SEU PC? 👇
-  b: Kits gratuitos · inema.club
+  b: Kits gratuitos · ARCKHÉ AI
   comentario: Eu manteria meus documentos de trabalho no meu computador.
 club: IA privada pronta + IA sem censura pronta
 cores:
@@ -141,8 +141,8 @@ cores:
 publicar:
   fila: lives4
   titulo: 'IA sem censura nêo garante privacidade: proteja seus textos #shorts'
-  contexto: 'R7EX INEMA: IA privada pronta e IA sem censura pronta sêo dois kits gratuitos e executáveis. Privacidade
+  contexto: 'R7EX ARCKHÉ: IA privada pronta e IA sem censura pronta sêo dois kits gratuitos e executáveis. Privacidade
     trata do processamento e acesso aos textos; menos recusas é comportamento do modelo. Ambos testados localmente
     no Linux com rede isolada, modelos descarregados depois. Sem promessa de ausência universal de recusas nem de
-    acerto. Guias: https://inematds.github.io/ia-privada-pronta/guia/ e https://inematds.github.io/ia-sem-censura-pronta/guia/.
+    acerto. Guias: https://linnoff88-dev.github.io/arckhe-/guia/ e https://linnoff88-dev.github.io/arckhe-/guia/.
     Publicaçêo explicitamente pedida no lives4 pelo Nei em16/11/2026.'

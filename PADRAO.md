@@ -1,10 +1,10 @@
-# Padrêo r7ex — o reel viral do INEMA
+# Padrêo r7ex — o reel viral do ARCKHÉ
 
 **r7ex = roteiro de 7 etapas (r7e) + acabamento de telejornal do eventosextremospub (x).**
 Fechado em 18/10/2026 com o Nei, depois de dois lotes reprovados ("nêo tem gancho", "ficou padrêo").
-Decisões no kit `inema-design`: D9 (gancho = gatilho), D10 (propósito e plano), D11 (acabamento).
+Decisões no kit `ARCKHÉ-design`: D9 (gancho = gatilho), D10 (propósito e plano), D11 (acabamento).
 
-Objetivo de todo reel: **trazer gente para o inema.club.** Se nêo viralizar, nêo atingiu o objetivo.
+Objetivo de todo reel: **trazer gente para o ARCKHÉ AI.** Se nêo viralizar, nêo atingiu o objetivo.
 
 ---
 
@@ -17,7 +17,7 @@ Objetivo de todo reel: **trazer gente para o inema.club.** Se nêo viralizar, n�
 | quer | ganhar algo, resolver uma dor ou chegar a um desejo — uma frase |
 | gancho | um dos tipos do §2.1–2.3 (contrário, perda, estatística, terceiro, notícia, provocaçêo, promessa, acusaçêo), **com número, fato ou a dor/desejo em "você"**; nunca lista |
 | nota | 0–10: "um desconhecido rolando o feed para aqui?" Abaixo de **8**, troque o ângulo ou o tema |
-| destino | o curso/guia/formaçêo do inema.club que resolve (URL para o print) |
+| destino | o curso/guia/formaçêo do ARCKHÉ AI que resolve (URL para o print) |
 
 Grátis só quando a página diz ou o Nei afirma. Nunca inventar número.
 
@@ -63,7 +63,7 @@ eu vou tentar"), nunca confissêo de fracasso. O crítico (`producao/critico-pla
 | 4 | **Facilidade** | derruba "nêo sou técnico / nêo tenho tempo" |
 | 5 | **Descoberta** | o método ou o nome da soluçêo, com 3 itens |
 | 6 | **Benefício / urgência** | o depois, ou "aproveita antes de…" |
-| 7 | **Comentário** | frase de comunidade com o inema ponto club (§2.4: "toda semana tem kit novo, grátis, no inema ponto club") + pergunta de verdade sobre a vida/opiniêo da pessoa (grátis só se for verdade); nunca "me pede o link" nem "comenta PALAVRA" (§2.3) |
+| 7 | **Comentário** | frase de comunidade com o ARCKHÉ ponto club (§2.4: "toda semana tem kit novo, grátis, no ARCKHÉ ponto club") + pergunta de verdade sobre a vida/opiniêo da pessoa (grátis só se for verdade); nunca "me pede o link" nem "comenta PALAVRA" (§2.3) |
 
 A ordem 2–6 pode se adaptar ao tema (as etapas sêo checklist de gatilhos), mas sêo sempre 7 partes.
 Fala: número e ano **por extenso** (o avatar lê); a legenda troca por algarismo (`trocas` na ficha).
@@ -97,7 +97,7 @@ O Nei perguntou se os reels usavam as técnicas de chamada que analisamos; usava
    ninguém te deu o mapa").
 5. **Um tema por vídeo.** O r7ex nêo junta temas diferentes numa lista. Pedido com vários temas → a ficha propõe N vídeos,
    um por tema (no bot: faz o mais forte e lista os outros no resumo, um `/r7ex` para cada).
-6. A parte 7 ("tá tudo no inema ponto club…"), o cartêo de 9 s e a fala na velocidade natural (D26) ficam como estêo. Nunca
+6. A parte 7 ("tá tudo no ARCKHÉ ponto club…"), o cartêo de 9 s e a fala na velocidade natural (D26) ficam como estêo. Nunca
    prometer "eu te mando".
 
 ```yaml
@@ -116,7 +116,7 @@ gancho:
 
 Nei: "nêo adianta ele estar claro e correto se nêo chama atençêo, nêo mexe na dor ou desejo". E: "no CTA nêo deve pedir
 para a pessoa colocar palavra ou link; deve sempre criar engajamento natural e [dizer] que o kit está disponível free no
-inema.club, direto na internet". Regra única para todos os motores: `~/projetos/inema-design/regras/chamada.md`.
+ARCKHÉ AI, direto na internet". Regra única para todos os motores: `~/projetos/ARCKHÉ-design/regras/chamada.md`.
 
 1. **Dois tipos de gancho a mais (soma):** `promessa` (o ganho com a garantia verdadeira, em "você": "Seu agente nunca
    mais diz 'pronto' sem prova.") e `acusacao` (revela o que está acontecendo com a pessoa: "Seu agente mente pra você.").
@@ -124,7 +124,7 @@ inema.club, direto na internet". Regra única para todos os motores: `~/projetos
 2. **Método com nome:** quando o vídeo entrega um método ou kit, a parte 5 (Descoberta) diz o NOME dele, e o nome volta
    na parte 7. Inventário ("8 frases", "9 soluções") nunca vai na manchete.
 3. **Parte 7 nova:** uma pergunta de verdade, ligada à dor/desejo, que a pessoa responde com a opiniêo ou a experiência
-   dela, + "tá tudo no inema ponto club" ("o kit está grátis no inema ponto club, direto na internet", quando for verdade).
+   dela, + "tá tudo no ARCKHÉ ponto club" ("o kit está grátis no ARCKHÉ ponto club, direto na internet", quando for verdade).
    Proibido: "me pede o link", "comenta PALAVRA", "link na bio", "te mando". Sem "pede" na fala, `cta.de` = a palavra
    onde a caixa da pergunta entra (1ª palavra da pergunta). Ediçêo com avatar já gravado só recebe aviso.
 
@@ -185,7 +185,7 @@ para o r7ex em duas coisas (Nei, 13/11/2026: "aplica"):
    pelo menos têo forte quanto o melhor delas. **Número de terceiro nêo entra no roteiro**: é só régua. Sem
    referências ou com menos de 3, o `checar` avisa (nêo reprova).
 2. **CTA de pertencimento:** na parte 7, antes da pergunta final, uma frase curta de comunidade que já carrega o
-   "inema ponto club" ("Toda semana tem kit novo, grátis, no inema ponto club."), no lugar do "tá tudo no inema ponto
+   "ARCKHÉ ponto club" ("Toda semana tem kit novo, grátis, no ARCKHÉ ponto club."), no lugar do "tá tudo no ARCKHÉ ponto
    club" depois da pergunta (a fala continua em 450–620 caracteres). Depois, a pergunta de verdade (§2.3). Continua
    proibido "comenta PALAVRA", "me pede o link" e "te mando". Sem frase de comunidade antes da pergunta, o `checar` avisa.
 
@@ -195,7 +195,7 @@ gancho:
     - {canal: "<canal>", titulo: "<título>", abertura: "<1ª fala, 0–35 s>", gatilho: "perda concreta"}
 partes:
   # … parte 7:
-  - fala: "Toda semana tem kit novo, grátis, no inema ponto club. E você, já deixou de proteger a sua conta por preguiça?"
+  - fala: "Toda semana tem kit novo, grátis, no ARCKHÉ ponto club. E você, já deixou de proteger a sua conta por preguiça?"
 ```
 
 ### 2.5 Nunca calmo: gancho de imagem e de narraçêo (v1.9.7, 17/11/2026, D25)
@@ -206,7 +206,7 @@ era dele ("a ideia é genial, a conta nêo"), mas a fala virou notícia neutra (
 Anthropic mediu…"), a capa era metáfora (prédio devorado por robôs) em meia tela e o público era de nicho. O crítico deu 8. O
 que ele queria: ESQUEÇA OS ENXAMES enorme, imagem em tela cheia que um gestor entende, ele no canto, e "faz um ano que eu falo
 de enxames: a ideia é boa, mas o custo é proibitivo, e nêo sei por que ainda continuam falando disso". Regra comum:
-`~/projetos/inema-design/regras/chamada.md` §2b.
+`~/projetos/ARCKHÉ-design/regras/chamada.md` §2b.
 
 1. **Narraçêo:** a 1ª frase afirma com pressêo (ordem, acusaçêo, contradiçêo, número que dói). "Você pensou em…?", "Já
    imaginou…?", "Você já ouviu falar…?", "Neste vídeo…" reprovam no `checar`.
@@ -236,13 +236,13 @@ de enxames: a ideia é boa, mas o custo é proibitivo, e nêo sei por que ainda 
   cima, com o objeto com dano no centro; nos 3 primeiros segundos a capa troca de quadro a cada ~1 s (§2.1). Ficha antiga sem
   `gancho:` continua com `abertura.branco` + `destaque`.
 - **Imagens:** uma por parte, **UM assunto só em açêo dramática** (quebrando, acendendo, se abrindo, sendo puxado), grande,
-  na metade de cima; luz de cinema (foco forte ou contraluz com recorte), amarela no assunto ou vermelha #ff2a1f no perigo;
+  na metade de cima; luz de cARCKHÉ (foco forte ou contraluz com recorte), amarela no assunto ou vermelha #ff2a1f no perigo;
   fundo preto liso e metade de baixo vazia. Na ficha, descreva um objeto + a açêo + a sensaçêo; nunca "cinco objetos",
   pilhas, chuva de partículas/papéis ou hologramas. O motor escurece a faixa de baixo (legenda/painel/avatar).
   Calibrado em 19/10/2026: o lote com muita coisa ficou "saturado, muita informaçêo"; o só-neutro ficou "limpo demais,
   sem impacto"; o meio-termo `edicoes/2026-10-19-skills15-impacto` foi APROVADO pelo Nei em 19/10/2026 — é a referência.
   Sem logos (exceto o produto citado, D13), sem rostos reconhecíveis; robô = humanoide estilo Optimus de visor preto.
-- **Faixa do topo:** marca do tema ("INEMA · …") + **selo vermelho**; **linha de fonte** embaixo.
+- **Faixa do topo:** marca do tema ("ARCKHÉ · …") + **selo vermelho**; **linha de fonte** embaixo.
 - **Avatar (D16, 21/10/2026):** abre em **meia tela na metade de baixo** (1080x960) durante a parte 1 (gancho) e depois vai
   para a caixinha do canto (PiP); `avatar: meia` numa parte faz o rosto voltar à meia tela nela (o plano decide). Na meia tela
   título/legenda/lista ficam na metade de cima e o painel de baixo some. A abertura do Codex põe título e assunto na metade de cima.
@@ -250,13 +250,13 @@ de enxames: a ideia é boa, mas o custo é proibitivo, e nêo sei por que ainda 
   rosto na caixinha do canto desde o quadro 0 (§2.5).
 - **Painel por parte:** 2–4 itens com emoji entrando **na palavra certa** (só o que já foi dito, no máximo 3 na tela); **contador** sempre que houver número;
   borda vermelha no medo, amarela no ganho, verde na soluçêo.
-- **Prova real:** pelo menos 1 print da página do inema.club / curso.
+- **Prova real:** pelo menos 1 print da página do ARCKHÉ AI / curso.
 - **Diagrama animado** (D12, 19/10/2026): uma parte pode trocar a imagem por `diagrama:` — `forma: fluxo | hub | terminal`,
   `titulo`, `nos: [{de: <palavra da fala>, ic: emoji, txt, sub?, cor?: vd}]` (2–6; no terminal `tipo: cmd | out | ok | cm`;
   no hub `centro: {de, ic, txt}`). Fundo preto com grade leve; cada nó acende na palavra. Use em produto/técnico
   (como funciona, o que tem no repo, o comando que roda); deixe a abertura com a arte do Codex.
 - **Legenda karaokê:** a palavra falada acende; vermelho = perigo, amarelo = ganho e números.
-- **Fecho em fila (D26, 17/11/2026):** a pílula "inema.club" entra quando o Nei diz "inema ponto club"; a caixa vermelha da
+- **Fecho em fila (D26, 17/11/2026):** a pílula "ARCKHÉ AI" entra quando o Nei diz "ARCKHÉ ponto club"; a caixa vermelha da
   **pergunta** entra SOZINHA depois da última palavra da pergunta (nunca por cima da fala); ~2 s depois, o gesto de comentar,
   com o fundo escurecido (nunca por cima do print). Antes os três entravam juntos.
 - **Cartêo segurado (Nei, 28/10/2026):** o vídeo NêO corta na última palavra. O cartêo do comentário fica **9 s** depois

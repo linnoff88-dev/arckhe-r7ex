@@ -2,14 +2,14 @@
 # Fatos: ~/projetos/wifi/longrun/2026-10-28-claude-gestor-agentes/FATOS.md (docs oficiais code.claude.com) + curso v7.2.
 slug: claude-gestor-agentes
 tema: "O Claude deixou de ser um chat: agora você coordena uma equipe de agentes"
-pedido: "Nei, 28/10/2026: 'um r7ex falando da novidade em 9x16 lives7 inema.ccode' — a novidade = o Claude passou a gerir várias sessões e agentes num lugar só (sessões em segundo plano, tela que mostra quem precisa de você, projetos na nuvem). Sem citar a fonte. Nêo chamar de 'Claude 2.0'. CTA para o curso Claude como gestor de agentes (8 aulas)."
+pedido: "Nei, 28/10/2026: 'um r7ex falando da novidade em 9x16 lives7 ARCKHÉ.ccode' — a novidade = o Claude passou a gerir várias sessões e agentes num lugar só (sessões em segundo plano, tela que mostra quem precisa de você, projetos na nuvem). Sem citar a fonte. Nêo chamar de 'Claude 2.0'. CTA para o curso Claude como gestor de agentes (8 aulas)."
 
 plano:
   pessoa: "quem já usa o Claude ou o ChatGPT no trabalho e vive abrindo uma conversa atrás da outra"
   quer: "fazer vários trabalhos andarem ao mesmo tempo sem virar babá da IA (desejo) e nêo ficar para trás de quem já faz (medo)"
   gancho: "novidade + provocaçêo: você ainda conversa com uma IA de cada vez? O Claude agora toca vários trabalhos ao mesmo tempo, até com o computador desligado"
   nota: 8
-  destino: "https://inematds.github.io/claude-gestor-de-agentes-v72/ (curso aberto e grátis no inema.club)"
+  destino: "https://linnoff88-dev.github.io/arckhe-/ (curso aberto e grátis no ARCKHÉ AI)"
   fatos:
     - "docs claude-projects: 'A project is one ongoing conversation where Claude coordinates a stream of related work… starts a thread for each task. Each thread is usually a cloud session: Claude Code running in the cloud rather than on your machine' (beta pública Pro e Max)"
     - "docs claude-code-on-the-web / FATOS: sessões na nuvem continuam rodando depois que você fecha o app ou desliga o computador"
@@ -17,11 +17,11 @@ plano:
     - "curso aula 4 (sessêo gestora) é o destino do print da parte 6"
     - "docs agent-view: claude --bg inicia sessêo em segundo plano; o supervisor mantém rodando com o terminal fechado"
     - "docs agent-view: notificaçêo quando uma sessêo precisa de você, termina ou falha"
-    - "curso claude-gestor-de-agentes-v72: 8 aulas, aberto e grátis no inema.club"
+    - "curso claude-gestor-de-agentes-v72: 8 aulas, aberto e grátis no ARCKHÉ AI"
 
-marca: "INEMA · CLAUDE GESTOR DE AGENTES"
+marca: "ARCKHÉ · CLAUDE GESTOR DE AGENTES"
 selo: "NOVIDADE"
-fonte: "<b>curso Claude como gestor de agentes</b> · 8 aulas, aberto e grátis no inema.club · imagens: ilustraçêo"
+fonte: "<b>curso Claude como gestor de agentes</b> · 8 aulas, aberto e grátis no ARCKHÉ AI · imagens: ilustraçêo"
 
 abertura:
   branco: "VOCÊ AINDA FALA COM UMA IA DE CADA VEZ?"
@@ -88,7 +88,7 @@ partes:
   - etapa: beneficio
     fala: "Você para de ser babá da IA e vira o chefe dela."
     prende: "a virada de identidade (babá → chefe) que dá status e alívio; prova real com a página da aula da sessêo gestora"
-    print: {url: "https://inematds.github.io/claude-gestor-de-agentes-v72/aulas/sessao-gestora/", selo: "aula 4 · você no comando"}
+    print: {url: "https://linnoff88-dev.github.io/arckhe-/aulas/sessao-gestora/", selo: "aula 4 · você no comando"}
     painel:
       de: chefe
       k: "DE BABÁ A"
@@ -96,9 +96,9 @@ partes:
       titulo: "CHEFE"
       cor: "#22c55e"
   - etapa: comentario
-    fala: "E você, vai continuar no chat ou vai coordenar? Oito aulas grátis. Tá tudo no inema ponto club. Ou me pede o link aqui nos comentários."
+    fala: "E você, vai continuar no chat ou vai coordenar? Oito aulas grátis. Tá tudo no ARCKHÉ ponto club. Ou me pede o link aqui nos comentários."
     prende: "pergunta que divide (coordenar × ficar no chat) puxa comentário; oferta concreta e sem custo"
-    print: {url: "https://inematds.github.io/claude-gestor-de-agentes-v72/", selo: "8 aulas · aberto e grátis"}
+    print: {url: "https://linnoff88-dev.github.io/arckhe-/", selo: "8 aulas · aberto e grátis"}
 
 cta: {a: "VAI CONTINUAR NO CHAT OU VAI COORDENAR? 👇", b: "comenta EU VOU COORDENAR ou me pede o link"}
 club: "o curso Claude como gestor de agentes, 8 aulas grátis"
@@ -108,4 +108,4 @@ cores: {desligado: "#FACC15", vários: "#FACC15", trás: "#ff2a1f", chat: "#ff2a
 publicar:
   fila: lives7
   titulo: "O Claude virou gestor de agentes: vários trabalhos ao mesmo tempo #shorts"
-  contexto: "Short vertical do INEMA.CLUB (Nei Maldaner) sobre a novidade do Claude: ele deixou de ser só um chat e passou a gerir várias sessões e agentes num lugar só. Claude Code: sessões em segundo plano (claude --bg) e a agent view (claude agents), uma tela que mostra quem terminou, quem travou e quem precisa de você, com aviso quando uma sessêo precisa de você. Projects (beta pública nos planos Pro e Max): uma conversa que coordena várias tarefas na nuvem, que continuam rodando com o computador desligado. As 3 peças: segundo plano, sessêo gestora, projetos na nuvem. De operador da IA a gestor dela. Curso Claude como gestor de agentes: 8 aulas, aberto e grátis em https://inematds.github.io/claude-gestor-de-agentes-v72/ (no inema.club). Nêo citar nenhuma fonte externa nem chamar de 'Claude 2.0'. CTA: comente EU VOU COORDENAR para receber o link."
+  contexto: "Short vertical do ARCKHÉ AI (Nei Maldaner) sobre a novidade do Claude: ele deixou de ser só um chat e passou a gerir várias sessões e agentes num lugar só. Claude Code: sessões em segundo plano (claude --bg) e a agent view (claude agents), uma tela que mostra quem terminou, quem travou e quem precisa de você, com aviso quando uma sessêo precisa de você. Projects (beta pública nos planos Pro e Max): uma conversa que coordena várias tarefas na nuvem, que continuam rodando com o computador desligado. As 3 peças: segundo plano, sessêo gestora, projetos na nuvem. De operador da IA a gestor dela. Curso Claude como gestor de agentes: 8 aulas, aberto e grátis em https://linnoff88-dev.github.io/arckhe-/ (no ARCKHÉ AI). Nêo citar nenhuma fonte externa nem chamar de 'Claude 2.0'. CTA: comente EU VOU COORDENAR para receber o link."

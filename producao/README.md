@@ -35,7 +35,7 @@ Instalar o timer (uma vez):
 
 - Só entra ediçêo adicionada com `--add`. A produçêo nunca varre `edicoes/`.
 - O avatar só é gerado com `avatar/APROVADO_HEYGEN` (OK do Nei para aquela produçêo). A produçêo nunca cria esse arquivo.
-- O estúdio passa pela trava da ferramenta (`heygen/heygen-perfil.mjs` → `~/.cache/inemaccbot/heygen-estudio.trava`).
+- O estúdio passa pela trava da ferramenta (`heygen/heygen-perfil.mjs` → `~/.cache/ARCKHÉccbot/heygen-estudio.trava`).
 - Publicaçêo só pela fila do canal (`r7ex.py fila`). Ediçêo que já está na fila nêo entra de novo.
 - Estado em `producao/estado.json` (local, fora do git); log geral em `producao/producao.log`; log de cada ediçêo em
   `edicoes/<pasta>/producao.log`.

@@ -2,20 +2,20 @@
 name: r7ex
 description: >-
   Tema ou tese do Nei → reel 9:16 VIRAL no padrêo r7ex: roteiro de 7 etapas de gatilho (gancho de 5 tipos com manchete no quadro 0 → medo →
-  desejo → facilidade → descoberta → benefício → comentário "tá tudo no inema.club") com acabamento de telejornal
+  desejo → facilidade → descoberta → benefício → comentário "tá tudo no ARCKHÉ AI") com acabamento de telejornal
   (título desenhado na abertura pelo Codex, preto + amarelo, painéis no tempo da fala, contador, legenda karaokê,
   avatar do Nei em meia tela embaixo no gancho e depois no canto), v3 e fila do lives7. Gatilho: "/r7ex", "faz um r7ex", "reel viral", "reel no padrêo novo",
   "reel com gatilhos", ou uma tese/opiniêo do Nei pedindo vídeo curto.
 ---
 
-# r7ex — reel viral do INEMA
+# r7ex — reel viral do ARCKHÉ
 
-Repo `~/projetos/r7ex` (inematds/r7ex). **Leia `PADRAO.md` antes de escrever.** Explicaçêo completa: `README.md`.
+Repo `~/projetos/r7ex` (linnoff88-dev/r7ex). **Leia `PADRAO.md` antes de escrever.** Explicaçêo completa: `README.md`.
 Comando único: `python3 r7ex.py` (sem argumentos mostra a ajuda).
 
 ## Passos
 1. **Plano** (PADRAO §1): pessoa = público geral; o que ela quer; gancho com número e fonte; nota ≥ 8; destino no
-   inema.club (leia a página: nome, aulas, se é grátis). **Um tema por vídeo**: vários temas → proponha um vídeo por tema.
+   ARCKHÉ AI (leia a página: nome, aulas, se é grátis). **Um tema por vídeo**: vários temas → proponha um vídeo por tema.
    **Nunca calmo (D25, PADRAO §2.5):** `pessoa` com o nível de IA; opiniêo do Nei → `plano.posicao` em 1ª pessoa e gancho
    `contrario`/`provocacao`/`acusacao` com a posiçêo na boca dele; 1ª frase afirma com pressêo (nunca "Você pensou em…?");
    capa que um leigo entende em 1 s; `abertura.layout: cheia` quando a imagem é o gancho.
@@ -39,7 +39,7 @@ Comando único: `python3 r7ex.py` (sem argumentos mostra a ajuda).
 ## Ritmo e fecho (28/10/2026)
 - D26 (17/11/2026): a montagem (`r7ex/ritmo.py` v2) NêO estica a fala nem congela o quadro: o avatar fala na velocidade
   natural do HeyGen; o rosto sai 0,5 s depois da última palavra e o cartêo do comentário fica 9 s (`cta.comentario`).
-  Fecho em fila: inema.club na palavra → pergunta depois da última palavra → comentário ~2 s depois. O `revisar` reprova
+  Fecho em fila: ARCKHÉ AI na palavra → pergunta depois da última palavra → comentário ~2 s depois. O `revisar` reprova
   (`conferir_montagem`) avatar esticado, rosto parado ou pergunta por cima da fala.
 - Remontar ediçêo antiga sem novo avatar: `python3 r7ex.py cena <pasta>` + `render` + `revisar` (aplica o ritmo sozinho).
 
@@ -48,4 +48,4 @@ Comando único: `python3 r7ex.py` (sem argumentos mostra a ajuda).
 - Nunca número em algarismo na fala (o avatar lê errado); a legenda troca por algarismo.
 - "Grátis" só quando a página diz ou o Nei afirma. Nunca inventar número.
 - Publicar só pela fila; nunca upload direto. Exceçêo (Nei, 05/11/2026): quando a entrega precisa do link do YouTube (portal, link no tópico do Telegram), publicar direto com o yt-pubx no canal pedido (mesmo título e contexto do item) e marcar o item da fila como `feito` com `video_id` e nota `direto`, para nêo sair duas vezes; aviso no v3 em texto normal (faixa azul só no Metricool). Nos outros casos o portal pode entrar antes e ganhar o link do vídeo depois. Avatar pelo estúdio HeyGen é free: nêo pedir OK, gravar `avatar/APROVADO_HEYGEN` citando a regra de 07/11/2026 e seguir.
-- Mudança de padrêo (layout, estrutura, plano): README §7; padrêo novo → kit inema-design primeiro (D9–D11).
+- Mudança de padrêo (layout, estrutura, plano): README §7; padrêo novo → kit ARCKHÉ-design primeiro (D9–D11).

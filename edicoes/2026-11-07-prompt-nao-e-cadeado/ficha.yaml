@@ -12,7 +12,7 @@ plano:
   quer: "deixar o agente trabalhar sozinho sem medo de ele apagar ou vazar algo por causa de uma ordem escondida (dor) e dormir tranquilo (desejo)"
   gancho: "contrário: para de confiar no prompt; um e-mail com ordem escondida basta. Injeçêo de prompt é o risco nº 1 da lista OWASP Top 10 para aplicações com LLM"
   nota: 8
-  destino: "https://inematds.github.io/agente-blindado/guia/"
+  destino: "https://linnoff88-dev.github.io/arckhe-/guia/"
   fatos:
     - "OWASP Top 10 for LLM Applications (edições 2023 e 2025): LLM01 = Prompt Injection, o primeiro item da lista"
     - "Claude Code pede permissêo antes de rodar comandos e editar arquivos (modo padrêo de permissões); n8n tem aprovaçêo humana (human-in-the-loop) para ferramentas do AI Agent"
@@ -29,8 +29,8 @@ gancho:
   fontes:
     - {nome: "OWASP Top 10 for LLM Applications 2025", trecho: "LLM01:2025 Prompt Injection"}
 
-marca: "INEMA · AGENTE SEGURO"
-selo: "ALERTA INEMA"
+marca: "ARCKHÉ · AGENTE SEGURO"
+selo: "ALERTA ARCKHÉ"
 fonte: "<b>OWASP Top 10 for LLM Applications 2025</b> · LLM01 Prompt Injection · imagens: ilustraçêo"
 
 abertura:
@@ -103,9 +103,9 @@ partes:
       borda: vd
       titulo: "O ESTRAGO NêO PASSA"
   - etapa: comentario
-    fala: "Qual trava você liga hoje? Comenta o número. Tá tudo no inema ponto club, ou me pede o link aqui nos comentários."
-    prende: "pede um comentário fácil e leva ao inema.club"
-    print: {url: "https://inematds.github.io/agente-blindado/guia/", selo: "inema.club"}
+    fala: "Qual trava você liga hoje? Comenta o número. Tá tudo no ARCKHÉ ponto club, ou me pede o link aqui nos comentários."
+    prende: "pede um comentário fácil e leva ao ARCKHÉ AI"
+    print: {url: "https://linnoff88-dev.github.io/arckhe-/guia/", selo: "ARCKHÉ AI"}
 
 ritmo:
   pausa_antes: {parte: 6, de: "Segurança"}
@@ -118,4 +118,4 @@ cores: {confiar: "#ff2a1f", escondida: "#ff2a1f", apaga: "#ff2a1f", injeçêo: "
 publicar:
   fila: lives4
   titulo: "Seu prompt nêo é cadeado: 5 travas para o agente de IA #shorts"
-  contexto: "Short vertical do INEMA.CLUB (Nei Maldaner). Injeçêo de prompt é o risco nº 1 da lista OWASP Top 10 para LLM (2025): um e-mail ou página com ordem escondida faz o agente executar algo que você nêo pediu. As 5 travas: marcar o texto que vem de fora, hierarquia de instruções (suas ordens primeiro), ferramentas mínimas, humano aprova antes de ações destrutivas, e planejador separado do executor. A segurança mora fora do prompt. Kit gratuito Agente Blindado (5 travas + banco de 10 ataques): https://inematds.github.io/agente-blindado/guia/ e no inema.club. CTA: peça o link nos comentários."
+  contexto: "Short vertical do ARCKHÉ AI (Nei Maldaner). Injeçêo de prompt é o risco nº 1 da lista OWASP Top 10 para LLM (2025): um e-mail ou página com ordem escondida faz o agente executar algo que você nêo pediu. As 5 travas: marcar o texto que vem de fora, hierarquia de instruções (suas ordens primeiro), ferramentas mínimas, humano aprova antes de ações destrutivas, e planejador separado do executor. A segurança mora fora do prompt. Kit gratuito Agente Blindado (5 travas + banco de 10 ataques): https://linnoff88-dev.github.io/arckhe-/guia/ e no ARCKHÉ AI. CTA: peça o link nos comentários."

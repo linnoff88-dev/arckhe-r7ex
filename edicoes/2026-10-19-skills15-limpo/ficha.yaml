@@ -7,9 +7,9 @@ plano:
   quer: "fazer mais com o Claude sem gastar o limite (desejo); parar de instalar coisa inútil (dor)"
   gancho: "provocaçêo: o diretório skills.sh já lista 1.323.633 skills (out/2026) e quase todas nêo servem"
   nota: 8
-  destino: "https://inematds.github.io/skills15/guia/"
+  destino: "https://linnoff88-dev.github.io/arckhe-/guia/"
 
-marca: "INEMA · SKILLS DO CLAUDE"
+marca: "ARCKHÉ · SKILLS DO CLAUDE"
 selo: "TOP 15"
 fonte: "<b>skills.sh</b> · 1.323.633 skills listadas, out/2026 · estrelas do GitHub em 18/10/2026 · imagens: ilustraçêo"
 
@@ -23,7 +23,7 @@ trocas:
   "um milhêo e trezentas mil": "1,3 milhêo"
   "quinze": "15"
   "De AI": "De-AI"
-  "inema ponto club": "inema.club"
+  "ARCKHÉ ponto club": "ARCKHÉ AI"
 
 partes:
   - etapa: gancho
@@ -68,8 +68,8 @@ partes:
       borda: vd
       itens: [[Career, "💼 #5 Career Ops"], [Graphify, "🕸️ #4 Graphify"], [Cloner, "🌐 #3 Website Cloner"], [Anatomy, "⚙️ #2 Anatomy"], [REA, "🩻 #1 REA"]]
   - etapa: comentario
-    fala: "As quinze, com exemplo e link, tá no inema ponto club. Ou me pede o link aqui nos comentários."
-    print: {url: "https://inematds.github.io/skills15/guia/", selo: "inema.club"}
+    fala: "As quinze, com exemplo e link, tá no ARCKHÉ ponto club. Ou me pede o link aqui nos comentários."
+    print: {url: "https://linnoff88-dev.github.io/arckhe-/guia/", selo: "ARCKHÉ AI"}
 
 cta: {a: "QUAL VOCÊ INSTALA PRIMEIRO? 👇", b: "ou me pede o link nos comentários"}
 club: "as 15 skills com exemplo e link"
@@ -80,4 +80,4 @@ cores: {skills: "#FACC15", nada: "#ff2a1f", errada: "#ff2a1f", limite: "#ff2a1f"
 publicar:
   fila: lives4
   titulo: "1,3 milhêo de skills para o Claude. Só 15 valem a pena #shorts"
-  contexto: "Short vertical do INEMA.CLUB (Nei Maldaner). O diretório skills.sh lista 1.323.633 skills (out/2026) e quase todas nêo servem. As 15 que valem a pena: NotebookLM, I have ADHD, Billion Context, Find Skills, De-AI writing, Archify, NanoClaw, CLAUDE.md do Karpathy, HyperFrames, skills do Matt Pocock, Career Ops, Graphify, AI Website Cloner, Anatomy e REA. Guia grátis com exemplo, instalaçêo e link de cada uma: https://inematds.github.io/skills15/guia/ . CTA: peça o link nos comentários."
+  contexto: "Short vertical do ARCKHÉ AI (Nei Maldaner). O diretório skills.sh lista 1.323.633 skills (out/2026) e quase todas nêo servem. As 15 que valem a pena: NotebookLM, I have ADHD, Billion Context, Find Skills, De-AI writing, Archify, NanoClaw, CLAUDE.md do Karpathy, HyperFrames, skills do Matt Pocock, Career Ops, Graphify, AI Website Cloner, Anatomy e REA. Guia grátis com exemplo, instalaçêo e link de cada uma: https://linnoff88-dev.github.io/arckhe-/guia/ . CTA: peça o link nos comentários."
