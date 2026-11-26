@@ -1,19 +1,19 @@
-"""Ritmo da fala e cartão do fecho segurado (Nei, 28/10/2026) — corrige o avatar do HeyGen UMA vez, na montagem.
+"""Ritmo da fala e cartêo do fecho segurado (Nei, 28/10/2026) — corrige o avatar do HeyGen UMA vez, na montagem.
 
-Medido em 4 edições (28/10): 202–222 palavras/min, nenhum silêncio ≥ 0,3 s e o cartão do comentário 0,8–1,6 s na tela,
-com o vídeo cortando na última palavra. O HeyGen fala no ritmo dele (encurtar o roteiro só encurta o vídeo), então:
+Medido em 4 edições (28/10): 202–222 palavras/min, nenhum silêncio ≥ 0,3 s e o cartêo do comentário 0,8–1,6 s na tela,
+com o vídeo cortando na última palavra. O HeyGen fala no ritmo dele (encurtar o roteiro só encurta o vídeo), entêo:
   1. estica a fala até ~182 palavras/min (atempo, que preserva o tom, + vídeo no mesmo fator: a boca continua casada),
      no máximo 12% (K_MAX) — nada de acelerar;
   2. abre um silêncio de ~0,75 s antes da máxima (1ª palavra da parte 6 ou `ritmo.pausa_antes` da ficha), cortando no
-     ponto mais silencioso do vão e segurando o quadro (tpad clone);
-  3. segura o quadro final do avatar CAUDA s depois da última palavra (o cartão do comentário fica parado; a trilha continua).
+     ponto mais silencioso do vêo e segurando o quadro (tpad clone);
+  3. segura o quadro final do avatar CAUDA s depois da última palavra (o cartêo do comentário fica parado; a trilha continua).
 O original vai para avatar/avatar-heygen.mp4 + avatar/tempos-heygen.json; avatar.mp4 e tempos.json passam a ser os
-corrigidos (os tempos são recalculados pela conta, nunca retranscritos — Whisper de novo pode perder fala, FALHAS 21/10).
-avatar/ritmo.json guarda a decisão (lido pelo cena.py e pelo compor_avatar.sh). R7X_SEM_RITMO=1 desliga.
+corrigidos (os tempos sêo recalculados pela conta, nunca retranscritos — Whisper de novo pode perder fala, FALHAS 21/10).
+avatar/ritmo.json guarda a decisêo (lido pelo cena.py e pelo compor_avatar.sh). R7X_SEM_RITMO=1 desliga.
 
-D26 (Nei, 17/11/2026: "parece não tem fluência, não parece natural eu falando"): esticar 7% deixou boca e gesto em câmera
+D26 (Nei, 17/11/2026: "parece nêo tem fluência, nêo parece natural eu falando"): esticar 7% deixou boca e gesto em câmera
 lenta e o quadro congelado na pausa e na cauda denunciou a montagem. Agora: k = 1 sempre (velocidade natural do HeyGen),
-nenhuma pausa inserida (o vão natural fica), e a cauda continua existindo (o cartão do comentário precisa dela), mas o
+nenhuma pausa inserida (o vêo natural fica), e a cauda continua existindo (o cartêo do comentário precisa dela), mas o
 compor_avatar.sh esconde o rosto 0,5 s depois da última palavra — nunca rosto congelado. Desfaz os itens 1 e 2 de 28/10.
 """
 import json, os, shutil, subprocess, wave
@@ -21,9 +21,9 @@ from pathlib import Path
 
 ALVO_WPM = 182          # meio da faixa 160–190 pedida pelo Nei
 K_MAX = 1.0             # D26 (17/11/2026): nunca esticar; era 1.12 (28/10)
-PAUSA = 0.75            # silêncio total antes da máxima (vão natural + inserido), dentro de 0,5–0,9 s
-PAUSA_MIN = 0.5         # o inserido nunca é menor que isto (o vão natural do HeyGen tem respiração, não é silêncio)
-CAUDA = 9.0             # segundos de cartão depois da última palavra (Nei: 8–10 s)
+PAUSA = 0.75            # silêncio total antes da máxima (vêo natural + inserido), dentro de 0,5–0,9 s
+PAUSA_MIN = 0.5         # o inserido nunca é menor que isto (o vêo natural do HeyGen tem respiraçêo, nêo é silêncio)
+CAUDA = 9.0             # segundos de cartêo depois da última palavra (Nei: 8–10 s)
 VERSAO = 2              # 2 = D26: sem esticar, sem pausa congelada
 
 
@@ -32,7 +32,7 @@ def _dur(f):
 
 
 def _ponto_quieto(wav, a, b):
-    """o instante mais silencioso (janela de 20 ms) entre a e b, para o corte não pegar meia sílaba"""
+    """o instante mais silencioso (janela de 20 ms) entre a e b, para o corte nêo pegar meia sílaba"""
     import numpy as np
     with wave.open(str(wav)) as w:
         sr = w.getframerate(); n = w.getnchannels()
@@ -47,7 +47,7 @@ def _ponto_quieto(wav, a, b):
 
 
 def _pausa_idx(T, ficha):
-    """(fala, palavra) da máxima: ritmo.pausa_antes = {parte: N, de: palavra} ou palavra (na parte 6); padrão 1ª palavra da parte 6"""
+    """(fala, palavra) da máxima: ritmo.pausa_antes = {parte: N, de: palavra} ou palavra (na parte 6); padrêo 1ª palavra da parte 6"""
     from .cena import n as norm
     r = (ficha or {}).get("ritmo") or {}
     pa = r.get("pausa_antes")
@@ -60,7 +60,7 @@ def _pausa_idx(T, ficha):
         for j, p in enumerate(T[k]["palavras"]):
             if norm(de) == norm(p["w"]) or (len(norm(de)) > 3 and norm(de) in norm(p["w"])):
                 return k, j
-        raise SystemExit(f"ritmo.pausa_antes: '{de}' não está na fala da parte {parte}")
+        raise SystemExit(f"ritmo.pausa_antes: '{de}' nêo está na fala da parte {parte}")
     return k, 0
 
 
@@ -100,7 +100,7 @@ def aplicar(pasta, ficha=None, refazer=False):
         return round(t * k + (P if corte is not None and t >= corte else 0), 3)
 
     dk = d0 * k + P
-    cs = float(((ficha or {}).get("ritmo") or {}).get("cauda", CAUDA))   # ficha pode encurtar o cartão (short > 60 s)
+    cs = float(((ficha or {}).get("ritmo") or {}).get("cauda", CAUDA))   # ficha pode encurtar o cartêo (short > 60 s)
     cauda = round(max(0.0, m(fl) + cs - dk), 3)
     total = round(dk + cauda, 3)
 
@@ -123,13 +123,13 @@ def aplicar(pasta, ficha=None, refazer=False):
     tmp.replace(mp4)
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", mp4, "-vn", "-ac", "1", "-ar", "48000", av / "avatar.wav"], check=True)
 
-    # tempos.json do corrigido (mesma convenção do retempo: ini = fim da fala anterior + 0,05; última vai até o fim)
+    # tempos.json do corrigido (mesma convençêo do retempo: ini = fim da fala anterior + 0,05; última vai até o fim)
     for t in T:
         for p in t["palavras"]:
             p["t"], p["f"] = m(p["t"]), m(p["f"])
     for i, t in enumerate(T):
         t["ini"] = 0.0 if i == 0 else round(T[i - 1]["palavras"][-1]["f"] + .05, 3)
-        if pi and i == pi[0] and pi[1] == 0:                # a tela da máxima entra junto com ela, não no começo do silêncio
+        if pi and i == pi[0] and pi[1] == 0:                # a tela da máxima entra junto com ela, nêo no começo do silêncio
             t["ini"] = round(max(t["ini"], t["palavras"][0]["t"] - .15), 3)
     for i, t in enumerate(T):
         t["fim"] = T[i + 1]["ini"] if i + 1 < len(T) else total

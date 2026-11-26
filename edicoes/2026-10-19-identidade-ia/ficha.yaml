@@ -1,23 +1,23 @@
-# Ficha r7ex — identidade por caráter, não por cargo (sobreviver-ia, plano semanas 9–11, 19/10/2026). Pedido do Nei: "refaça outros 5 vídeos do r7ex ... mesmo avatar ... diversos lives, cada um com conteúdo diferente, e manda para o v3". Canal: lives3.
+# Ficha r7ex — identidade por caráter, nêo por cargo (sobreviver-ia, plano semanas 9–11, 19/10/2026). Pedido do Nei: "refaça outros 5 vídeos do r7ex ... mesmo avatar ... diversos lives, cada um com conteúdo diferente, e manda para o v3". Canal: lives3.
 slug: identidade-ia
 tema: "A IA pode comprimir 100 anos de progresso em 10. Se você é o seu cargo, cada avanço dói"
 
 plano:
   pessoa: "profissional que se define pelo cargo (sou advogado, sou contador, sou programador)"
-  quer: "não sentir cada avanço da IA como ameaça pessoal (dor) e atravessar a mudança firme (desejo)"
-  gancho: "provocação: Dario Amodei (Anthropic), Machines of Loving Grace, 2024 — 50 a 100 anos de progresso da biologia em 5 a 10 anos"
+  quer: "nêo sentir cada avanço da IA como ameaça pessoal (dor) e atravessar a mudança firme (desejo)"
+  gancho: "provocaçêo: Dario Amodei (Anthropic), Machines of Loving Grace, 2024 — 50 a 100 anos de progresso da biologia em 5 a 10 anos"
   nota: 7
   destino: "https://inematds.github.io/sobreviver-ia/guia/#plano (plano de 90 dias, semanas 9–13, no inema.club, projetos)"
 
 marca: "INEMA · QUEM É VOCÊ SEM CARGO"
 selo: "ALERTA INEMA"
-fonte: "<b>Dario Amodei</b> · Machines of Loving Grace, 2024 · imagens: ilustração"
+fonte: "<b>Dario Amodei</b> · Machines of Loving Grace, 2024 · imagens: ilustraçêo"
 
 abertura:
   branco: "100 ANOS DE PROGRESSO EM 10"
-  destaque: "E O SEU CARGO NÃO VAI JUNTO"
+  destaque: "E O SEU CARGO NêO VAI JUNTO"
   cor: amarelo
-  cena: "um crachá de empresa com foto apagada, sem texto legível, pendurado num cordão e se desfazendo em pó dourado no ar, fundo preto; uma ampulheta enorme ao fundo com a areia caindo muito rápido, luz amarela forte"
+  cena: "um crachá de empresa com foto apagada, sem texto legível, pendurado num cordêo e se desfazendo em pó dourado no ar, fundo preto; uma ampulheta enorme ao fundo com a areia caindo muito rápido, luz amarela forte"
 
 trocas:
   "cem anos": "100 anos"
@@ -27,7 +27,7 @@ trocas:
 
 partes:
   - etapa: gancho
-    fala: "O chefe da Anthropic escreveu que a IA pode comprimir até cem anos de progresso da biologia em dez anos. E o seu cargo não vai junto."
+    fala: "O chefe da Anthropic escreveu que a IA pode comprimir até cem anos de progresso da biologia em dez anos. E o seu cargo nêo vai junto."
     painel:
       de: comprimir
       k: "DARIO AMODEI · 2024"
@@ -43,13 +43,13 @@ partes:
       itens: [[advogado, "⚖️ sou advogado"], [contador, "🧾 sou contador"], [ameaça, "💥 cada avanço dói"]]
   - etapa: desejo
     fala: "Imagina ver a mudança chegando e continuar firme, porque você sabe quem é."
-    imagem: "uma pessoa de costas, em pé numa rocha no meio de um mar agitado à noite, iluminada por um foco amarelo; ondas batendo em volta; rosto não aparece; sensação de firmeza"
+    imagem: "uma pessoa de costas, em pé numa rocha no meio de um mar agitado à noite, iluminada por um foco amarelo; ondas batendo em volta; rosto nêo aparece; sensaçêo de firmeza"
     painel:
       k: "FIRME NA MUDANÇA"
       itens: [[mudança, "🌊 a mudança chega"], [firme, "🧍 você continua firme"]]
   - etapa: facilidade
-    fala: "Não precisa de terapia nem de curso. Precisa de papel, caneta e uma frase."
-    imagem: "uma folha de papel em branco e uma caneta sobre uma mesa preta, iluminadas por um único foco amarelo de cima; sensação de começo simples"
+    fala: "Nêo precisa de terapia nem de curso. Precisa de papel, caneta e uma frase."
+    imagem: "uma folha de papel em branco e uma caneta sobre uma mesa preta, iluminadas por um único foco amarelo de cima; sensaçêo de começo simples"
     painel:
       k: "PAPEL E CANETA"
       itens: [[papel, "📝 papel"], [caneta, "🖊️ caneta"], [frase, "💬 uma frase"]]

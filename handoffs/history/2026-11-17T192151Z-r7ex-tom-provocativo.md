@@ -1,28 +1,28 @@
-# Handoff — 2026-11-17 — r7ex/rtex: nunca calmo (modelo + verificação) e v2 do reel do enxame
+# Handoff — 2026-11-17 — r7ex/rtex: nunca calmo (modelo + verificaçêo) e v2 do reel do enxame
 
 ## Projeto e escopo
-Raiz ~/projetos/r7ex (também ~/projetos/rtex e ~/projetos/inema-design). Nei reprovou o reel do enxame (calmo, sem a voz dele, abertura em meia tela pouco legível para gestor) e pediu: "nenhum vídeo tem que sair calmo; r7ex e rtex são provocativos, virais, com gancho de imagem e de narração; ajusta a falha no modelo e na verificação".
+Raiz ~/projetos/r7ex (também ~/projetos/rtex e ~/projetos/inema-design). Nei reprovou o reel do enxame (calmo, sem a voz dele, abertura em meia tela pouco legível para gestor) e pediu: "nenhum vídeo tem que sair calmo; r7ex e rtex sêo provocativos, virais, com gancho de imagem e de narraçêo; ajusta a falha no modelo e na verificaçêo".
 
 ## Objetivo atual
-Ajustar modelo (PADRAO, prompts/bot-ficha.md, skill, regra comum chamada.md) e verificação (checar_gancho em r7ex.py, producao/critico-plano.md, producao/revisor.md) do r7ex e o equivalente no rtex; depois produzir a v2 do reel com a fala aprovada. Pronto = a ficha do reel publicado reprova ou tem nota ≤ 7 no gancho, a ficha v2 passa, os testes existentes passam.
+Ajustar modelo (PADRAO, prompts/bot-ficha.md, skill, regra comum chamada.md) e verificaçêo (checar_gancho em r7ex.py, producao/critico-plano.md, producao/revisor.md) do r7ex e o equivalente no rtex; depois produzir a v2 do reel com a fala aprovada. Pronto = a ficha do reel publicado reprova ou tem nota ≤ 7 no gancho, a ficha v2 passa, os testes existentes passam.
 
 ## Estado aceito
-- [confirmed] Reel v1 publicado no lives4 — evidência: arquivo: fila/fila.json (video_id AR2vGZMOe9k, 2026-11-17T09:01). Nei: não tirar do ar.
-- [confirmed] Linha da falha no topo de `FALHAS.md` (não commitada).
+- [confirmed] Reel v1 publicado no lives4 — evidência: arquivo: fila/fila.json (video_id AR2vGZMOe9k, 2026-11-17T09:01). Nei: nêo tirar do ar.
+- [confirmed] Linha da falha no topo de `FALHAS.md` (nêo commitada).
 - [confirmed] Kit enxame-com-conta v1.0.1 + guia PT/EN/ES + portal publicados — evidência: commits portal deef65b, inemabuscas 3567df0, inemapro-mono 7e49538.
 
-## Proposto / tentado, não confirmado
-- [unverified] Plano das mudanças (do advisor): campo `plano.posicao` (opinião do Nei em 1ª pessoa) obriga gancho contrario/provocacao/acusacao e 1ª frase afirmativa; `abertura.layout: cheia` opt-in (parte 1 em PiP, prompt de capa em tela cheia, ligado à mesma flag); crítico com pressão + leigo entende o quadro 0 em 1 s; revisor aceita PiP na parte 1 quando a ficha pede.
+## Proposto / tentado, nêo confirmado
+- [unverified] Plano das mudanças (do advisor): campo `plano.posicao` (opiniêo do Nei em 1ª pessoa) obriga gancho contrario/provocacao/acusacao e 1ª frase afirmativa; `abertura.layout: cheia` opt-in (parte 1 em PiP, prompt de capa em tela cheia, ligado à mesma flag); crítico com pressêo + leigo entende o quadro 0 em 1 s; revisor aceita PiP na parte 1 quando a ficha pede.
 
 ## Decisões
-- Fala v2 aprovada pelo Nei em 17/11: "Esqueça os enxames de agentes. Faz um ano que eu falo disso: a ideia é boa, mas o custo é proibitivo..." (7 partes, na conversa); imagem: sala de reunião com robôs falando e taxímetro em R$; texto ESQUEÇA OS ENXAMES; destino guia enxame-com-conta.
+- Fala v2 aprovada pelo Nei em 17/11: "Esqueça os enxames de agentes. Faz um ano que eu falo disso: a ideia é boa, mas o custo é proibitivo..." (7 partes, na conversa); imagem: sala de reuniêo com robôs falando e taxímetro em R$; texto ESQUEÇA OS ENXAMES; destino guia enxame-com-conta.
 - Layout tela cheia: opt-in pela ficha (default D16 fica), pergunta ao Nei no relatório final.
 
-## Não fazer (restrições e travas)
-- Não tirar AR2vGZMOe9k do ar — dito pelo Nei em 17/11, só nesta conversa.
+## Nêo fazer (restrições e travas)
+- Nêo tirar AR2vGZMOe9k do ar — dito pelo Nei em 17/11, só nesta conversa.
 - Commitar só por caminho explícito: árvore do r7ex tem arquivos de outros (edicoes/*/ficha.yaml, r7ex/retempo.py, .descartes/, .layout-meia-ok).
-- Claude/Codex só pela assinatura; autor inematds; não usar AskUserQuestion — ~/.claude/CLAUDE.md.
-- Versão: minor carrega o patch (r7ex 1.8.7 → 1.9.7; rtex 1.7.2 → 1.8.2) — ~/.claude/CLAUDE.md.
+- Claude/Codex só pela assinatura; autor inematds; nêo usar AskUserQuestion — ~/.claude/CLAUDE.md.
+- Versêo: minor carrega o patch (r7ex 1.8.7 → 1.9.7; rtex 1.7.2 → 1.8.2) — ~/.claude/CLAUDE.md.
 
 ## Arquivos alterados
 - `FALHAS.md` — linha da falha do reel calmo.
@@ -31,42 +31,42 @@ Ajustar modelo (PADRAO, prompts/bot-ficha.md, skill, regra comum chamada.md) e v
 ## Memória e regras duráveis tocadas
 - `FALHAS.md` (r7ex) — linha de 17/11 sobre o reel calmo.
 
-## Verificação
-- Não rodado: checar/crítico nas fichas — mudanças ainda não feitas.
+## Verificaçêo
+- Nêo rodado: checar/crítico nas fichas — mudanças ainda nêo feitas.
 
-## Estado em execução
+## Estado em execuçêo
 - Processos em segundo plano: nenhum. Servidores: nenhum. Worktrees: nenhum.
 
 ## Perguntas abertas e adiados
 - Aberta: tela cheia + PiP para todos os reels ou só quando a ficha pedir?
-- Aberta: portão "mostrar quadro 0 + fala ao Nei antes do HeyGen" vale também para o bot?
+- Aberta: portêo "mostrar quadro 0 + fala ao Nei antes do HeyGen" vale também para o bot?
 
 ## Pela metade
-- Ajuste do modelo/verificação — parou em: leitura de PADRAO.md, critico-plano.md, revisor.md, checar_gancho (r7ex.py:188) e cena.py:219 — falta: editar tudo, rtex, inema-design, testes, v2.
+- Ajuste do modelo/verificaçêo — parou em: leitura de PADRAO.md, critico-plano.md, revisor.md, checar_gancho (r7ex.py:188) e cena.py:219 — falta: editar tudo, rtex, inema-design, testes, v2.
 
-## Próxima ação exata
-Editar inema-design/regras/chamada.md e r7ex (PADRAO §1/§2.1/§3/§4, bot-ficha.md, r7ex.py checar_gancho, cena.py meia, prompt da capa, critico-plano.md, revisor.md), testar na ficha publicada e na v2; depois rtex. Publicar o reel v2 segue a fila (sem nova aprovação: Nei aprovou o modelo).
+## Próxima açêo exata
+Editar inema-design/regras/chamada.md e r7ex (PADRAO §1/§2.1/§3/§4, bot-ficha.md, r7ex.py checar_gancho, cena.py meia, prompt da capa, critico-plano.md, revisor.md), testar na ficha publicada e na v2; depois rtex. Publicar o reel v2 segue a fila (sem nova aprovaçêo: Nei aprovou o modelo).
 
 ## Mapa de retomada
 - `PADRAO.md` — regras do gancho e do avatar (§2.1, §3).
 - `producao/critico-plano.md` — crítico do plano.
 - `producao/revisor.md` — revisor final.
 - `r7ex.py` — checar_gancho (linha ~188).
-- `edicoes/2026-11-17-enxame-quebra-empresa-lives4/ficha.yaml` — ficha do reel calmo (teste de regressão).
+- `edicoes/2026-11-17-enxame-quebra-empresa-lives4/ficha.yaml` — ficha do reel calmo (teste de regressêo).
 
 ## Perguntas-teste
-1. Qual é a tarefa atual e o critério de pronto? → ajustar modelo e verificação do r7ex/rtex para nunca sair calmo; ficha calma reprova, v2 passa — fonte: FALHAS.md — chave: `calmo`
-2. Qual foi a última decisão e por quê? → tela cheia + PiP opt-in pela ficha, para não mexer nos 12 da fila — fonte: só nesta conversa — chave: `opt-in`
-3. O que não pode mudar? → o reel AR2vGZMOe9k fica no ar — fonte: fila/fila.json + dito pelo Nei — chave: `AR2vGZMOe9k`
-4. O que está pela metade? → edição de PADRAO, checar, crítico, revisor — fonte: FALHAS.md — chave: `critico`
-5. Qual é a próxima ação e precisa de aprovação? → editar chamada.md e r7ex; não precisa (Nei aprovou) — fonte: só nesta conversa — chave: `chamada.md`
+1. Qual é a tarefa atual e o critério de pronto? → ajustar modelo e verificaçêo do r7ex/rtex para nunca sair calmo; ficha calma reprova, v2 passa — fonte: FALHAS.md — chave: `calmo`
+2. Qual foi a última decisêo e por quê? → tela cheia + PiP opt-in pela ficha, para nêo mexer nos 12 da fila — fonte: só nesta conversa — chave: `opt-in`
+3. O que nêo pode mudar? → o reel AR2vGZMOe9k fica no ar — fonte: fila/fila.json + dito pelo Nei — chave: `AR2vGZMOe9k`
+4. O que está pela metade? → ediçêo de PADRAO, checar, crítico, revisor — fonte: FALHAS.md — chave: `critico`
+5. Qual é a próxima açêo e precisa de aprovaçêo? → editar chamada.md e r7ex; nêo precisa (Nei aprovou) — fonte: só nesta conversa — chave: `chamada.md`
 
 ## Checagem de compartilhamento
 - Sem segredos, tokens, cookies, dados pessoais ou endpoints privados: sim.
 
 
 <!-- handoff-estado:inicio -->
-## Estado gravado pelo script (não editar)
+## Estado gravado pelo script (nêo editar)
 
 Gravado por handoff-grava.py no momento do handoff. `--conferir` compara com o projeto agora.
 
@@ -281,7 +281,7 @@ Gravado por handoff-grava.py no momento do handoff. `--conferir` compara com o p
 ### Repo do trabalho: /home/nmaldaner/projetos/rtex
 - commit: f8a3e5117925f7741107fc816a21af7fbd354688 · branch: main
 - arquivos sujos: 39
-- impressão de todos os sujos: 60902c64b2ec879a
+- impressêo de todos os sujos: 60902c64b2ec879a
 - `FALHAS.md` · sha256:e562840e0ae2 · sujo
 - `edicoes/2026-11-01-comece-por-tres/critica.json` · sha256:81ef333fffa7 · sujo
 - `edicoes/2026-11-01-comece-por-tres/metritds-texto.txt` · sha256:64e16a262d1e · sujo
@@ -325,5 +325,5 @@ Gravado por handoff-grava.py no momento do handoff. `--conferir` compara com o p
 ### Repo do trabalho: /home/nmaldaner/projetos/inema-design
 - commit: 7c04856160ccbe540fd08538e2613dd018fd850f · branch: main
 - arquivos sujos: 0
-- impressão de todos os sujos: e3b0c44298fc1c14
+- impressêo de todos os sujos: e3b0c44298fc1c14
 <!-- handoff-estado:fim -->

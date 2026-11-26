@@ -1,5 +1,5 @@
-# Ficha r7ex — refação do "modelos novos de IA em novembro" (21/10/2026), no padrão D13–D15.
-# Nei, 20/10: "achei fraco, não teve impacto, deveria ter as imagens com logo de cada um, não tinha texto em cada assunto";
+# Ficha r7ex — refaçêo do "modelos novos de IA em novembro" (21/10/2026), no padrêo D13–D15.
+# Nei, 20/10: "achei fraco, nêo teve impacto, deveria ter as imagens com logo de cada um, nêo tinha texto em cada assunto";
 # "refaz com logo de cada um". Fonte: https://www.youtube.com/watch?v=2BXktpaCEN4 (WorldofAI, AI News de 20/10/2026). lives4 + v3.
 slug: ia-novembro-v2
 tema: Uma IA fez um site por 1 centavo — e tem mais 7 na fila
@@ -8,8 +8,8 @@ pedido: 'Nei, 20/10/2026: r7ex viral, chamada forte, novos modelos de IA de nov/
 fala_max: 900
 fala_max_motivo: 'lista de 9 modelos, cada um com logo e um fato (pedido do Nei: citar cada um)'
 plano:
-  pessoa: qualquer um que usa ou paga ChatGPT, Claude ou Gemini, não só programador
-  quer: pagar menos e pegar a IA melhor antes dos outros (desejo); não ficar para trás na próxima leva (medo)
+  pessoa: qualquer um que usa ou paga ChatGPT, Claude ou Gemini, nêo só programador
+  quer: pagar menos e pegar a IA melhor antes dos outros (desejo); nêo ficar para trás na próxima leva (medo)
   gancho: 'dinheiro + novidade: o MiniMax M3.1 Flash fez uma landing page por 1 centavo; o Claude Opus 5.5 cobrou US$ 1,22 pela mesma página (teste citado pelo WorldofAI em 20/10/2026);
     e há mais 7 a caminho (GPT-6.5, GPT-6.1 Terra, Claude novo, Gemini 4 Carbon, Kimi K3.1, Qwen 4, GLM Omni)'
   nota: 9
@@ -17,15 +17,15 @@ plano:
   fatos:
   - 'MiniMax M3.1 Flash fez landing page por 1 centavo vs US$ 1,22 do Opus 5.5: ''nearly 88 times cheaper''; ''the Opus output does look a lot better'' (WorldofAI 20/10, ~10:48)'
   - 'MiniMax M3.1 Flash: ~3× mais rápido e ~70% mais barato que o M3; M3.1 Pro (2,7 tri parâmetros) em breve (The Information/Reuters)'
-  - 'GPT-6.1 Terra: Microsoft atualizou 18 configs de avaliação de GPT-5.6 Terra para GPT-6.1 Terra (PR da Microsoft)'
-  - 'GPT-6.5: site opensi.lol tem referência a 6.5 no código e contagem para 1º/nov 10h SF; o domínio era paródia à venda — não oficial'
+  - 'GPT-6.1 Terra: Microsoft atualizou 18 configs de avaliaçêo de GPT-5.6 Terra para GPT-6.1 Terra (PR da Microsoft)'
+  - 'GPT-6.5: site opensi.lol tem referência a 6.5 no código e contagem para 1º/nov 10h SF; o domínio era paródia à venda — nêo oficial'
   - Anthropic prepara modelo que reconhece a classe inteira de problemas e pergunta se resolve tudo; provável Fable 5.5 (The Information, testador anônimo)
   - 'Gemini 4 Carbon: Business Insider disse que poderia igualar o Opus 5.5 em código; checkpoints Carbon B/C testados ficaram abaixo'
   - 'Kimi K3.1: visto em PR do SGLang; quatro níveis de raciocínio (low, medium, high, max), aceita imagem'
   - 'Qwen 4: acesso antecipado para embaixadores nos próximos dias (representante no Discord do Qwen)'
   - 'GLM Omni: modelo multimodal da Z.ai que entende e gera imagem (artigo de pesquisa)'
   - DeepSeek V4.1 Flash (10.17) grátis no OpenCode
-  - 'Kimi é da Moonshot AI, Qwen da Alibaba e GLM da Z.ai (Zhipu): as três são empresas chinesas (o vídeo trata como ''Chinese AI news'')'
+  - 'Kimi é da Moonshot AI, Qwen da Alibaba e GLM da Z.ai (Zhipu): as três sêo empresas chinesas (o vídeo trata como ''Chinese AI news'')'
 marca: INEMA · IA EM NOVEMBRO
 selo: VEM AÍ
 fonte: '<b>WorldofAI</b> · AI News 20/10/2026 · teste de landing page (o resultado do Claude ficou mais bonito) · GPT-6.5 e Claude novo: vazamentos, sem data oficial · logos: marcas
@@ -34,8 +34,8 @@ abertura:
   branco: VEM AÍ 7 IAs NOVAS
   destaque: E UMA JÁ FAZ SITE POR 1 CENTAVO
   cor: amarelo
-  cena: uma única moeda de cobre de um centavo, gigante, girando de pé no ar e soltando faíscas douradas na borda, sob um foco de luz amarela intensa de cima; reflexo num chão preto
-    molhado; fundo preto liso; sensação de choque com o preço
+  cena: uma única moeda de cobre de um centavo, gigante, girando de pé no ar e soltando faíscas douradas na borda, sob um foco de luz amarela intensa de cima; reflexo num chêo preto
+    molhado; fundo preto liso; sensaçêo de choque com o preço
 trocas:
   dezoito: '18'
   oitenta e oito vezes: 88×
@@ -105,9 +105,9 @@ partes:
     - - '18'
       - 🌍 18 testes da Microsoft já citam o Terra
     - - novembro
-      - '⏳ site não oficial (talvez piada): GPT-6.5 em 1º/nov'
+      - '⏳ site nêo oficial (talvez piada): GPT-6.5 em 1º/nov'
   painel:
-    k: DATA NÃO OFICIAL
+    k: DATA NêO OFICIAL
     titulo: 1º/NOV?
     cor: '#ff2a1f'
     de: novembro
@@ -161,7 +161,7 @@ partes:
     de: China
 - etapa: urgencia
   fala: 'O DeepSeek quatro ponto um Flash tá de graça no OpenCode: dá pra testar hoje sem pagar um centavo.'
-  prende: 'grátis hoje, sem pagar nada: ação imediata e motivo para salvar o vídeo'
+  prende: 'grátis hoje, sem pagar nada: açêo imediata e motivo para salvar o vídeo'
   logos:
   - id: deepseek
     nome: DeepSeek V4.1
@@ -215,7 +215,7 @@ publicar:
   fila: lives4
   titulo: 'Uma IA fez um site por 1 centavo. O Claude cobrou US$ 1,22 #shorts'
   contexto: 'Short vertical do INEMA.CLUB (Nei Maldaner). Num teste citado pelo canal WorldofAI (AI News de 20/10/2026), o MiniMax M3.1 Flash fez uma landing page por 1 centavo; o Claude
-    Opus 5.5 cobrou US$ 1,22 (o resultado do Claude ficou mais bonito). A caminho (vários previstos para novembro): GPT-6.5 (um site faz contagem para 1º de novembro; não oficial) e
+    Opus 5.5 cobrou US$ 1,22 (o resultado do Claude ficou mais bonito). A caminho (vários previstos para novembro): GPT-6.5 (um site faz contagem para 1º de novembro; nêo oficial) e
     GPT-6.1 Terra (visto no código da Microsoft), um Claude novo da Anthropic que reconhece o problema maior antes de você pedir (segundo The Information), Gemini 4 Carbon do Google,
-    Qwen 4, Kimi K3.1 (4 níveis de raciocínio) e GLM Omni; e o DeepSeek V4.1 Flash está grátis no OpenCode. Deixar claro na descrição o que é vazamento. CTA: veja o que tem no inema.club
+    Qwen 4, Kimi K3.1 (4 níveis de raciocínio) e GLM Omni; e o DeepSeek V4.1 Flash está grátis no OpenCode. Deixar claro na descriçêo o que é vazamento. CTA: veja o que tem no inema.club
     (https://inema.club) ou peça o link nos comentários. Fonte: https://www.youtube.com/watch?v=2BXktpaCEN4'

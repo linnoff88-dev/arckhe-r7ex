@@ -1,4 +1,4 @@
-"""Contratos de troca de motor e do portão visual, sem rede/publicação."""
+"""Contratos de troca de motor e do portêo visual, sem rede/publicaçêo."""
 import copy, datetime as dt, json, os, subprocess, tempfile, unittest
 from zoneinfo import ZoneInfo
 from pathlib import Path
@@ -72,7 +72,7 @@ class Trava(unittest.TestCase):
   self.assertEqual(dt.datetime.fromtimestamp(ate,ZoneInfo('America/Sao_Paulo')).strftime('%d %H:%M'),'16 21:00')
  def test_texto_normal_sobre_limite_nao_bloqueia(self):
   ok=json.dumps({"type":"result","is_error":False,"result":"You've hit your weekly limit · resets 9pm (America/Sao_Paulo)"})
-  self.assertIsNone(ia.recusa_cota_claude(ok)); self.assertIsNone(ia.recusa_cota_claude('não é json'))
+  self.assertIsNone(ia.recusa_cota_claude(ok)); self.assertIsNone(ia.recusa_cota_claude('nêo é json'))
  def test_horario_com_data_e_absurdo(self):
   agora=dt.datetime(2026,11,15,11,0,tzinfo=ZoneInfo('America/Sao_Paulo')).timestamp()
   ate=ia.horario_volta('resets Nov 16, 9pm (America/Sao_Paulo)',agora)

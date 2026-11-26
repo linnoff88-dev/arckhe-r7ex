@@ -14,7 +14,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#05080c;font-fam
 #topo{position:absolute;left:56px;right:56px;top:70px;display:flex;justify-content:space-between;align-items:center}
 #marca{font:900 28px Inter;letter-spacing:6px;white-space:nowrap;flex-shrink:0}
 #selo{background:var(--red);border-radius:40px;padding:10px 22px;font:900 22px Inter;letter-spacing:1px;white-space:nowrap}
-/* telas: foto cheia por cima do mapa (capa do quadro 0, ilustração de granizo); topo, painel e legenda ficam por cima (13/10/2026) */
+/* telas: foto cheia por cima do mapa (capa do quadro 0, ilustraçêo de granizo); topo, painel e legenda ficam por cima (13/10/2026) */
 #telas{position:absolute;inset:0;pointer-events:none}
 #telas .tl{position:absolute;inset:0;overflow:hidden;opacity:0}
 #telas .tl img{width:100%;height:100%;object-fit:cover;transform-origin:50% 40%}
@@ -71,7 +71,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#05080c;font-fam
 #club .ic{width:70px;height:70px;border-radius:14px;background:var(--red);display:grid;place-items:center;font:900 40px Inter;color:#fff}
 #club .tx{font:900 40px/1.1 Inter}
 #club .tx small{display:block;font:700 26px Inter;color:#556}
-/* fecho segurado (Nei, 28/10/2026): depois da última palavra o cartão fica ~9 s e o gesto de comentar é encenado:
+/* fecho segurado (Nei, 28/10/2026): depois da última palavra o cartêo fica ~9 s e o gesto de comentar é encenado:
    campo de comentário → texto digitando → Publicar → comentário publicado. Sem legenda (a fala acabou). */
 #fecho{position:absolute;inset:0;background:#0c0c10;opacity:0;pointer-events:none}
 #comenta{position:absolute;left:56px;right:56px;top:470px;background:#16161c;border:2px solid rgba(255,255,255,.16);border-radius:28px;
@@ -140,7 +140,7 @@ body.cn.mt #lista{top:520px}
 body.cn.mt #cta{top:400px;right:40px;min-height:0}
 body.cn.mt #club{top:760px;right:40px}
 
-/* modo largo (16:9, explicação longa): mapa cheio 1920x1080, avatar na faixa da direita (x 1280–1920, no ffmpeg) */
+/* modo largo (16:9, explicaçêo longa): mapa cheio 1920x1080, avatar na faixa da direita (x 1280–1920, no ffmpeg) */
 html.lg,html.lg body{width:1920px;height:1080px}
 body.lg #vinheta{background:linear-gradient(180deg,rgba(5,8,12,.85) 0,rgba(5,8,12,0) 220px,rgba(5,8,12,0) 760px,rgba(5,8,12,.92) 1080px)}
 body.lg #topo{left:48px;right:688px;top:36px}
@@ -188,7 +188,7 @@ body.limpo #vinheta{background:radial-gradient(120% 80% at 50% 45%,rgba(5,8,12,0
 body.limpo .pino .cx{font-size:62px;padding:14px 26px;border-left-width:10px}
 body.limpo .pino .cx small{font-size:38px}
 body.limpo .pino .pt{width:30px;height:30px}
-/* diagrama animado (19/10/2026, Nei: "visual limpo, não só imagem: animações, diagramas"): fundo preto com grade leve,
+/* diagrama animado (19/10/2026, Nei: "visual limpo, nêo só imagem: animações, diagramas"): fundo preto com grade leve,
    nós que acendem na palavra falada; área y 150–1160 (acima da legenda/painel/avatar do modo canto) */
 #diag{position:absolute;inset:0;opacity:0;pointer-events:none;background:#0c0c10;
   background-image:radial-gradient(ellipse at 50% 32%,rgba(250,204,21,.10),transparent 60%),linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
@@ -223,7 +223,7 @@ body.limpo .pino .pt{width:30px;height:30px}
 #diag .term .cur{display:inline-block;width:16px;height:32px;background:#FACC15;vertical-align:-5px;margin-left:4px}
 #diag .cp .no{padding:12px 24px}#diag .cp .no .ic{font-size:46px}#diag .cp .no .tx{font-size:38px}#diag .cp .no .tx small{font-size:22px;margin-top:3px}
 #diag .cp .seta{height:40px}
-/* D26 (17/11/2026): até 4 nós = nós grandes ocupando a área (a tela da explicação não fica vazia) */
+/* D26 (17/11/2026): até 4 nós = nós grandes ocupando a área (a tela da explicaçêo nêo fica vazia) */
 #diag .gd .no{padding:34px 36px;gap:30px;border-width:3px}#diag .gd .no .ic{font-size:84px}#diag .gd .no .tx{font-size:60px}#diag .gd .no .tx small{font-size:32px}
 #diag .gd .seta{height:92px}#diag .gd .dt{font-size:40px;margin-bottom:40px}
 #diag .gd .hub .no{width:400px;padding:26px 30px}#diag .gd .hub .no .ic{font-size:70px}#diag .gd .hub .no .tx{font-size:50px}
@@ -361,7 +361,7 @@ function camadas(t){
   for(const c of C.colunas||[]){
     const o=vis(t,c.ini,c.fim,.5); if(!o) continue;
     const ordem=c.ordem||{};
-    // brilho opcional no chão de cada coluna (fogo): disco translúcido que cresce junto (15/10/2026)
+    // brilho opcional no chêo de cada coluna (fogo): disco translúcido que cresce junto (15/10/2026)
     if(c.brilho) L.push(new deck.ScatterplotLayer({id:'colb-'+c.id,data:c.dados,getPosition:d=>d.p,radiusUnits:'meters',
       getRadius:d=>(c.raio||5500)*c.brilho*Math.sqrt(prog(t,c.ini+(ordem[d.id]||0)*c.varredura,1.2)),
       getFillColor:d=>[...(d.cor||c.cor),Math.round(70*o)],updateTriggers:{getRadius:t,getFillColor:t}}));
@@ -388,7 +388,7 @@ function camadas(t){
   return L;
 }
 
-// gráfico de previsão: barras empilhadas por série (ex.: regiões) por dia, sobe com prog; total em cima de cada coluna.
+// gráfico de previsêo: barras empilhadas por série (ex.: regiões) por dia, sobe com prog; total em cima de cada coluna.
 // g = {rotulos:[..], series:[{nome,cor,v:[..]}], unid:'mm', ini, dur, previsto_a_partir: indice (colunas dali em diante hachuradas), linha:{nome,cor,v:[..],unid}}
 function grafico(g,t,p){
   const W=620,H=270,L=58,R=10,T=26,B=46,n=g.rotulos.length,k=prog(t,g.ini??p.ini,g.dur||1.4);
@@ -399,7 +399,7 @@ function grafico(g,t,p){
     const x=L+i*bw+bw*.14, w=bw*.72, prev=g.previsto_a_partir!=null&&i>=g.previsto_a_partir; let base=0;
     g.series.forEach(s=>{const v=(s.v[i]||0)*k; if(v<=0) return; const y0=y(base+v), h=y(base)-y0;
       o+=`<rect x="${x}" y="${y0}" width="${w}" height="${h}" fill="${s.cor}" opacity="${prev?.78:1}" ${prev?'stroke="#fff" stroke-opacity=".5" stroke-dasharray="5 4"':''}/>`; base+=v;});
-    // g.marcar = índices com rótulo (série longa: 24 barras não cabem rótulo em todas, 15/10/2026)
+    // g.marcar = índices com rótulo (série longa: 24 barras nêo cabem rótulo em todas, 15/10/2026)
     if(!g.marcar||g.marcar.includes(i)){
     o+=`<text x="${x+w/2}" y="${y(base)-7}" font-size="19" font-weight="900" text-anchor="middle" opacity="${k}">${Math.round(tot[i]).toLocaleString('pt-BR')}</text>`;}
     if(!(g.marcar_x||g.marcar)||(g.marcar_x||g.marcar).includes(i)){
@@ -412,7 +412,7 @@ function grafico(g,t,p){
   return o;
 }
 
-// ranking: onde o volume é MAIOR (Nei, 13/10/2026: destacar o maior volume, não média). r={itens:[{nome,v,sub?}], cor, unid, ini, dur}
+// ranking: onde o volume é MAIOR (Nei, 13/10/2026: destacar o maior volume, nêo média). r={itens:[{nome,v,sub?}], cor, unid, ini, dur}
 function ranking(r,t,p){
   const k=prog(t,r.ini??p.ini,r.dur||1.2), mx=Math.max(...r.itens.map(i=>i.v),1);
   return '<div class="rk">'+r.itens.map((i,n)=>`<div class="r ${n==0?'top':''}"><span class="nm">${n==0?'▲ ':''}${i.nome}</span>`+
@@ -455,11 +455,11 @@ function diagrama(t){
   D.innerHTML=h+'</div>';
 }
 
-// gesto de comentar no cartão segurado (28/10/2026): tempos relativos ao fim da fala (c.fala_fim), determinístico por t
+// gesto de comentar no cartêo segurado (28/10/2026): tempos relativos ao fim da fala (c.fala_fim), determinístico por t
 function comenta(t,c){
   const CM=document.getElementById('comenta'), FE=document.getElementById('fecho');
-  // D26 (17/11/2026): o cartão da pergunta entra sozinho (fala_fim+.15) e fica ~2 s antes do comentário; o fundo escurece
-  // quase todo para o comentário não ficar por cima do print. Era +.25 e .62 (tudo entrava junto).
+  // D26 (17/11/2026): o cartêo da pergunta entra sozinho (fala_fim+.15) e fica ~2 s antes do comentário; o fundo escurece
+  // quase todo para o comentário nêo ficar por cima do print. Era +.25 e .62 (tudo entrava junto).
   const e0=c&&c.fala_fim!=null?c.fala_fim+1.8:null;
   if(e0==null||t<e0+.25){CM.style.opacity=0;FE.style.opacity=0;return;}
   const e=e0, txt=[...c.comentario], t1=e+1.0, cps=12, t2=t1+txt.length/cps, tp=t2+.7, tk=tp+.35, tpub=tk+.25;
@@ -468,7 +468,7 @@ function comenta(t,c){
   const n=Math.max(0,Math.min(txt.length,Math.floor((t-t1)*cps))), digitado=t>=tpub?'':txt.slice(0,n).join('');
   const pisca=Math.floor(t*2.5)%2===0;
   const campo=digitado?`${digitado}${t<t2+.6||pisca?'<i class="cur"></i>':''}`:(t<t1?`<span class="ph">Adicione um comentário…</span>${pisca?'<i class="cur"></i>':''}`:`<span class="ph">Adicione um comentário…</span>`);
-  // mão chega no Publicar depois de digitar, aperta (botão encolhe) e solta; o comentário aparece publicado
+  // mêo chega no Publicar depois de digitar, aperta (botêo encolhe) e solta; o comentário aparece publicado
   const km=prog(t,t2+.1,.55), aperta=t>=tk&&t<tpub;
   const mao=t>=t2+.1&&t<tpub+.5?`<div class="mao" style="right:${lerp(-40,70,km)}px;top:${lerp(150,40,km)}px;opacity:${Math.min(km*2,1-prog(t,tpub+.1,.4))}">👆</div>`:'';
   const pub=`<div class="pub" style="transform:scale(${aperta?.92:1});filter:brightness(${aperta?1.25:1})">Publicar</div>`;
@@ -510,7 +510,7 @@ function html(t){
   comenta(t,c);
   const CL=document.getElementById('club'); const cl=C.club;
   if(cl){CL.innerHTML=`<div class="ic">▶</div><div class="tx">${cl.a}<small>${cl.b}</small></div>`;CL.style.opacity=vis(t,cl.ini,cl.fim,.3);}
-  // telas: foto cheia com zoom lento; selo pequeno (ex.: "ilustração"). Os <img> são criados uma vez (sem piscar)
+  // telas: foto cheia com zoom lento; selo pequeno (ex.: "ilustraçêo"). Os <img> sêo criados uma vez (sem piscar)
   const TL=document.getElementById('telas');
   if(!TL.childElementCount) (C.telas||[]).forEach(m=>{ const d=document.createElement('div'); d.className='tl'+(m.escurece?' '+m.escurece:''); const im=IMG[m.src].im; d.appendChild(im.parentNode?im.cloneNode():im);
     if(m.selo){const s=document.createElement('div'); s.className='sl'; s.textContent=m.selo; d.appendChild(s);} TL.appendChild(d); });

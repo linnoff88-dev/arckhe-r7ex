@@ -1,21 +1,21 @@
 slug: hacker-v2
 tema: 'Hackers roubaram chaves de IA: US$ 1.700 numa noite e as 3 proteções'
 plano:
-  pessoa: qualquer um que paga uma IA com cartão (ChatGPT, Claude, Gemini), não só programador
-  quer: não acordar com uma conta absurda no cartão (dor) e dormir tranquilo (desejo)
+  pessoa: qualquer um que paga uma IA com cartêo (ChatGPT, Claude, Gemini), nêo só programador
+  quer: nêo acordar com uma conta absurda no cartêo (dor) e dormir tranquilo (desejo)
   gancho: 'medo: hackers roubaram as chaves no OpenCode; relatos de US$ 1.700 numa noite (usuários afetados, out/2026)'
   nota: 8
   destino: https://inema.club
 marca: INEMA · CHAVES DE IA
 selo: ALERTA INEMA
-fonte: '<b>ataque ao OpenCode</b> · relatos de usuários afetados, out/2026 · imagens: ilustração'
+fonte: '<b>ataque ao OpenCode</b> · relatos de usuários afetados, out/2026 · imagens: ilustraçêo'
 abertura:
   branco: HACKERS ROUBARAM AS CHAVES
   destaque: US$ 1.700 NUMA NOITE
   cor: vermelho
   cena: quarto escuro de madrugada, um homem sentado na beira da cama, de lado, o rosto na sombra iluminado só pela luz vermelha do celular; na
     tela, uma fatura com um alerta vermelho. Em primeiro plano, uma chave dourada luminosa partida ao meio, com estilhaços de luz amarela (nova
-    composição, ângulo diferente de qualquer versão anterior)
+    composiçêo, ângulo diferente de qualquer versêo anterior)
 trocas:
   mil e setecentos dólares: US$ 1.700
   mil dólares: US$ 1.000
@@ -36,8 +36,8 @@ partes:
     l: relatos de usuários afetados
 - etapa: medo
   fala: A chave é a senha que a IA usa pra cobrar de você, e a sua pode ser a próxima.
-  imagem: uma mão encapuzada saindo de um notebook escuro e puxando uma chave dourada luminosa presa a um cartão de crédito; linhas de código
-    vermelhas ilegíveis ao fundo; sensação de roubo
+  imagem: uma mêo encapuzada saindo de um notebook escuro e puxando uma chave dourada luminosa presa a um cartêo de crédito; linhas de código
+    vermelhas ilegíveis ao fundo; sensaçêo de roubo
   painel:
     k: A CHAVE É A SUA SENHA
     borda: red
@@ -45,7 +45,7 @@ partes:
     - - senha
       - 🔑 a senha que a IA usa
     - - cobrar
-      - 💳 cobra no seu cartão
+      - 💳 cobra no seu cartêo
     - - próxima
       - ⚠️ a sua pode ser a próxima
 - etapa: desejo
@@ -62,9 +62,9 @@ partes:
     - - teto
       - 🛡️ o gasto tem teto
 - etapa: facilidade
-  fala: Você não precisa ser especialista, nem programador.
-  imagem: monitor numa mesa escura mostrando um painel de configuração com um controle deslizante de limite travado por um pequeno cadeado amarelo
-    luminoso (formas, nada legível); uma mão ajustando o mouse
+  fala: Você nêo precisa ser especialista, nem programador.
+  imagem: monitor numa mesa escura mostrando um painel de configuraçêo com um controle deslizante de limite travado por um pequeno cadeado amarelo
+    luminoso (formas, nada legível); uma mêo ajustando o mouse
   painel:
     k: SEM SER ESPECIALISTA
     itens:
@@ -73,7 +73,7 @@ partes:
     - - programador
       - ✅ sem programar
 - etapa: descoberta
-  fala: 'São três ajustes: limite de gasto em cada chave, uma chave pra cada uso e um alarme que avisa quando o gasto foge do normal. Roubaram
+  fala: 'Sêo três ajustes: limite de gasto em cada chave, uma chave pra cada uso e um alarme que avisa quando o gasto foge do normal. Roubaram
     uma? Você cancela só aquela, e o resto segue funcionando.'
   imagem: 'três objetos luminosos alinhados numa mesa preta, como num produto de luxo: um cadeado dourado com um medidor, um chaveiro com várias
     chaves separadas penduradas em ganchos, e um sino de alarme amarelo brilhando'
@@ -90,8 +90,8 @@ partes:
     - - cancela
       - ✂️ roubou uma? cancela só ela
 - etapa: beneficio
-  fala: O susto vira um aviso no celular, não uma conta de mil dólares.
-  imagem: close de um celular na mão mostrando uma notificação amarela de alerta (sem texto legível), e ao lado, rasgada e caindo, uma fatura
+  fala: O susto vira um aviso no celular, nêo uma conta de mil dólares.
+  imagem: close de um celular na mêo mostrando uma notificaçêo amarela de alerta (sem texto legível), e ao lado, rasgada e caindo, uma fatura
     enorme de papel com destaque vermelho
   painel:
     k: SEM LIMITE × COM LIMITE

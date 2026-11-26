@@ -2,19 +2,19 @@ slug: saas-v2
 tema: O SaaS está morrendo e tem gente apostando tudo nele
 plano:
   pessoa: quem paga assinatura de software ou aposta em criar um SaaS
-  quer: não apostar no formato que está morrendo
+  quer: nêo apostar no formato que está morrendo
   gancho: 'medo: o SaaS está morrendo e tem gente apostando tudo nele'
   nota: 8
   destino: https://inematds.github.io/prof2030/
 marca: INEMA · O FIM DO SAAS
 selo: ALERTA INEMA
-fonte: '<b>opinião do Nei Maldaner</b> · formação Profissional 2030 no inema.club · imagens: ilustração'
+fonte: '<b>opiniêo do Nei Maldaner</b> · formaçêo Profissional 2030 no inema.club · imagens: ilustraçêo'
 abertura:
   branco: O SAAS ESTÁ MORRENDO
   destaque: E TEM GENTE APOSTANDO TUDO NELE
   cor: vermelho
-  cena: um cartão de crédito preto gigante com o símbolo de assinatura (duas setas em círculo) gravado em dourado, rachando ao meio e explodindo
-    em estilhaços sobre uma mesa preta, luz forte vinda de cima (nova composição, ângulo diferente de qualquer versão anterior)
+  cena: um cartêo de crédito preto gigante com o símbolo de assinatura (duas setas em círculo) gravado em dourado, rachando ao meio e explodindo
+    em estilhaços sobre uma mesa preta, luz forte vinda de cima (nova composiçêo, ângulo diferente de qualquer versêo anterior)
 trocas: {}
 partes:
 - etapa: gancho
@@ -67,7 +67,7 @@ partes:
     - - igual
       - 📌 sempre igual
 - etapa: descoberta
-  fala: 'Então te dou a dica: em dois mil e vinte e sete, foca no formato novo, ajudar empresas a usar a IA do jeito delas.'
+  fala: 'Entêo te dou a dica: em dois mil e vinte e sete, foca no formato novo, ajudar empresas a usar a IA do jeito delas.'
   imagem: uma consultora de costas ao lado do dono de uma pequena oficina, os dois olhando um tablet com painéis amarelos luminosos; oficina escura
     com luz quente de destaque
   painel:
@@ -81,7 +81,7 @@ partes:
     - - jeito
       - 🏢 IA do jeito de cada empresa
 - etapa: beneficio
-  fala: Eu criei a formação Profissional dois mil e trinta pra isso, e ela está de graça.
+  fala: Eu criei a formaçêo Profissional dois mil e trinta pra isso, e ela está de graça.
   print:
     url: https://inematds.github.io/prof2030/
     selo: inematds.github.io/prof2030
@@ -89,8 +89,8 @@ partes:
     k: PROFISSIONAL 2030
     borda: vd
     itens:
-    - - formação
-      - 🎓 formação Profissional 2030
+    - - formaçêo
+      - 🎓 formaçêo Profissional 2030
     - - graça
       - 🆓 de graça
 - etapa: comentario
@@ -101,7 +101,7 @@ partes:
 cta:
   a: VOCÊ AINDA PAGA QUAL ASSINATURA? 👇
   b: me pede o link aqui nos comentários
-club: formação Profissional 2030, grátis
+club: formaçêo Profissional 2030, grátis
 cores:
   saas: '#ff2a1f'
   morrendo: '#ff2a1f'

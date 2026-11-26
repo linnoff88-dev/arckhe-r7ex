@@ -1,13 +1,13 @@
 [
  {
   "id": "f1",
-  "fala": "Na sua empresa vai ter funcionário que não é gente, e alguém vai ter que chefiar.",
-  "legenda": "Na sua empresa vai ter funcionário que não é gente, e alguém vai ter que chefiar."
+  "fala": "Na sua empresa vai ter funcionário que nêo é gente, e alguém vai ter que chefiar.",
+  "legenda": "Na sua empresa vai ter funcionário que nêo é gente, e alguém vai ter que chefiar."
  },
  {
   "id": "f2",
-  "fala": "A transformação na gestão é essa: aprender as novas funções.",
-  "legenda": "A transformação na gestão é essa: aprender as novas funções."
+  "fala": "A transformaçêo na gestêo é essa: aprender as novas funções.",
+  "legenda": "A transformaçêo na gestêo é essa: aprender as novas funções."
  },
  {
   "id": "f3",
@@ -26,8 +26,8 @@
  },
  {
   "id": "f6",
-  "fala": "Depois escreva a constituição do seu agente: o que ele faz, o que nunca faz e quando chama você.",
-  "legenda": "Depois escreva a constituição do seu agente: o que ele faz, o que nunca faz e quando chama você."
+  "fala": "Depois escreva a constituiçêo do seu agente: o que ele faz, o que nunca faz e quando chama você.",
+  "legenda": "Depois escreva a constituiçêo do seu agente: o que ele faz, o que nunca faz e quando chama você."
  },
  {
   "id": "f7",

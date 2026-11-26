@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Transcrição em CPU para máquina sem GPU (VPS), no lugar do inemavox/transcrever_v1.py.
+"""Transcriçêo em CPU para máquina sem GPU (VPS), no lugar do inemavox/transcrever_v1.py.
 
 Mesmos argumentos que o r7ex/whisper.py passa:
   python3 transcrever_v1.py --in a16.wav --outdir t --whisper-model large-v3 --src pt [--words]
 Grava <outdir>/transcript.json = {"segments": [{"start", "end", "text", "words": [{"word", "start", "end"}]}]}.
 
-Usa faster-whisper (int8). O modelo pedido é trocado por R7X_WHISPER_CPU (padrão "small"): o retempo alinha
-contra o texto conhecido, então o modelo pequeno basta e cabe em 3,7 GB.
-Se o faster-whisper não estiver no python atual, reexecuta no venv R7X_WHISPER_VENV (padrão ~/.venvs/whisper).
+Usa faster-whisper (int8). O modelo pedido é trocado por R7X_WHISPER_CPU (padrêo "small"): o retempo alinha
+contra o texto conhecido, entêo o modelo pequeno basta e cabe em 3,7 GB.
+Se o faster-whisper nêo estiver no python atual, reexecuta no venv R7X_WHISPER_VENV (padrêo ~/.venvs/whisper).
 Uso no r7ex: CS_INEMAVOX=<esta pasta> CS_WHISPER_RESIDENTE=0.
 """
 import argparse
@@ -21,7 +21,7 @@ try:
 except ImportError:
     venv = Path(os.environ.get("R7X_WHISPER_VENV", Path.home() / ".venvs/whisper"))
     venv_py = venv / "bin/python3"
-    # o python do venv é link para o do sistema: comparar o prefixo, não o executável resolvido
+    # o python do venv é link para o do sistema: comparar o prefixo, nêo o executável resolvido
     if venv_py.exists() and Path(sys.prefix).resolve() != venv.resolve():
         os.execv(str(venv_py), [str(venv_py), __file__, *sys.argv[1:]])
     sys.exit("faster-whisper ausente (crie o venv: python3 -m venv ~/.venvs/whisper && ~/.venvs/whisper/bin/pip install faster-whisper)")

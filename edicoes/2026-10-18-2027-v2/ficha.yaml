@@ -3,25 +3,25 @@ tema: Quem vai faturar em 2027 é quem ajuda os outros a criar com IA
 plano:
   pessoa: profissional que acha que precisa virar programador para ganhar com IA
   quer: faturar em 2027 ajudando empresas
-  gancho: 'provocação: quem fatura em 2027 não é quem cria software'
+  gancho: 'provocaçêo: quem fatura em 2027 nêo é quem cria software'
   nota: 8
   destino: https://inematds.github.io/profissional2027x/
 marca: INEMA · QUEM FATURA EM 2027
-selo: OPINIÃO · NEI
-fonte: '<b>opinião do Nei Maldaner</b> · formação Profissional 2027 no inema.club · imagens: ilustração'
+selo: OPINIêO · NEI
+fonte: '<b>opiniêo do Nei Maldaner</b> · formaçêo Profissional 2027 no inema.club · imagens: ilustraçêo'
 abertura:
   branco: QUEM VAI FATURAR EM 2027
-  destaque: NÃO É QUEM CRIA SOFTWARE
+  destaque: NêO É QUEM CRIA SOFTWARE
   cor: amarelo
   cena: em primeiro plano, um programador de costas, exausto, sozinho de madrugada diante de três telas de código; ao fundo, numa sala iluminada
-    em dourado, um consultor de costas apertando a mão de um empresário (nova composição, ângulo diferente de qualquer versão anterior)
+    em dourado, um consultor de costas apertando a mêo de um empresário (nova composiçêo, ângulo diferente de qualquer versêo anterior)
 trocas:
   anos noventa: anos 90
   anos dois mil: anos 2000
   dois mil e dez: '2010'
 partes:
 - etapa: gancho
-  fala: Quem vai faturar em dois mil e vinte e sete não é quem cria software. É quem ajuda os outros a criar. Acorda!
+  fala: Quem vai faturar em dois mil e vinte e sete nêo é quem cria software. É quem ajuda os outros a criar. Acorda!
   painel:
     k: QUEM FATURA EM 2027
     de: ajuda
@@ -33,7 +33,7 @@ partes:
     - - Acorda
       - ⏰ acorda!
 - etapa: medo
-  fala: As empresas estão perdidas no meio de tanta opção de inteligência artificial, e vão pagar quem mostrar o caminho.
+  fala: As empresas estêo perdidas no meio de tanta opçêo de inteligência artificial, e vêo pagar quem mostrar o caminho.
   imagem: um empresário de terno, de costas, perdido no meio de um labirinto escuro de dezenas de telas luminosas com setas para todos os lados;
     luz amarela e branca
   painel:
@@ -42,10 +42,10 @@ partes:
     itens:
     - - perdidas
       - 😵 perdidas
-    - - opção
-      - 🔀 opção demais de IA
+    - - opçêo
+      - 🔀 opçêo demais de IA
     - - pagar
-      - 💰 vão pagar quem mostrar o caminho
+      - 💰 vêo pagar quem mostrar o caminho
 - etapa: desejo
   fala: Isso já aconteceu com a internet nos anos noventa, com os sites nos anos dois mil e com o celular em dois mil e dez. Sempre faturou quem
     ensinou.
@@ -92,7 +92,7 @@ partes:
       - 🤝 começa a atender
 - etapa: beneficio
   fala: Aprende agora, enquanto ainda dá tempo de chegar primeiro.
-  imagem: uma pessoa de costas chegando primeiro ao topo de uma escada luminosa amarela no escuro, enquanto outras silhuetas ainda estão nos degraus
+  imagem: uma pessoa de costas chegando primeiro ao topo de uma escada luminosa amarela no escuro, enquanto outras silhuetas ainda estêo nos degraus
     de baixo
   painel:
     k: CHEGA PRIMEIRO
@@ -110,7 +110,7 @@ partes:
 cta:
   a: CONSULTOR, AUDITOR OU TREINADOR? 👇
   b: me pede o link aqui nos comentários
-club: formação gratuita Profissional 2027
+club: formaçêo gratuita Profissional 2027
 cores:
   faturar: '#FACC15'
   software: '#ff2a1f'
@@ -125,6 +125,6 @@ cores:
   primeiro: '#FACC15'
 publicar:
   fila: lives3
-  titulo: 'Quem vai faturar em 2027 não é quem cria software #shorts'
+  titulo: 'Quem vai faturar em 2027 nêo é quem cria software #shorts'
   contexto: 'Short vertical do INEMA.CLUB (Nei Maldaner): Quem vai faturar em 2027 é quem ajuda os outros a criar com IA. Material no inema.club.
     CTA: peça o link nos comentários.'

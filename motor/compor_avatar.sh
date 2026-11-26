@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Mapa (modo avatar) + avatar do HeyGen na faixa 1080x608 em y=1110 (formato 9:16 do explicavideos) + trilha.
-# Voz do HeyGen chega ~-26 dB: loudnorm a -14 LUFS (padrão de short) antes de mixar (09/10/2026).
+# Voz do HeyGen chega ~-26 dB: loudnorm a -14 LUFS (padrêo de short) antes de mixar (09/10/2026).
 # uso: motor/compor_avatar.sh <pasta-da-edicao> [saida.mp4]   (precisa de <edicao>/avatar/avatar.mp4 e cena.js gerado com --avatar)
 set -euo pipefail
 AQUI="$(cd "$(dirname "$0")" && pwd)"
@@ -20,7 +20,7 @@ TAG="${R7X_TAG:-$AQUI/tag-nei.txt}"
 D=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$A")
 # fade só na música: o HeyGen termina logo após a última palavra e o fade na mistura engolia o CTA
 FADE=$(python3 -c "print(max(0, $D - 1.4))")
-# pausa antes da máxima (r7ex/ritmo.py, 28/10/2026): a trilha some junto com a voz nesse vão (silêncio de verdade, não
+# pausa antes da máxima (r7ex/ritmo.py, 28/10/2026): a trilha some junto com a voz nesse vêo (silêncio de verdade, nêo
 # só a voz calada com a cama subindo pelo sidechain); fora dele, 0.2 como sempre. Sem avatar/ritmo.json, 0.2 fixo.
 VOLM=$(python3 - "$E/avatar/ritmo.json" <<'PY'
 import json, sys, os

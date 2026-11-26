@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Fila de publicação do r7ex (padrão: lives7 · INEMA LOOPY): publica UM short por execução e avisa no bot v3.
+"""Fila de publicaçêo do r7ex (padrêo: lives7 · INEMA LOOPY): publica UM short por execuçêo e avisa no bot v3.
 Mudou de ~/projetos/wifi/fila-lives7 para dentro do r7ex em 18/10/2026 (o r7ex funciona sozinho).
 
-Pedido do Nei (18/10/2026): "pode distribuir no lives7, mas na fila" — não subir tudo de uma vez.
+Pedido do Nei (18/10/2026): "pode distribuir no lives7, mas na fila" — nêo subir tudo de uma vez.
 Modelo: ~/projetos/wifi/fila-espanhol/fila_es.py (sem o 'liberar' e sem a trava de 15 min, que é do canal ES).
 Roda pelo timer systemd `fila-lives7.timer` (9 h às 21 h, 1 a cada 2 h = 7 por dia).
 Uso: fila_lives7.py            (publica o próximo)
      fila_lives7.py --status   (mostra a fila)
-     fila.py --add <mp4> --nome "..." --contexto "..." [--titulo "..."] [--canal lives7] [--playlist ID]   (entra no FIM da fila; com arquivo FRENTE na pasta da edição, entra na frente dos pendentes)
+     fila.py --add <mp4> --nome "..." --contexto "..." [--titulo "..."] [--canal lives7] [--playlist ID]   (entra no FIM da fila; com arquivo FRENTE na pasta da ediçêo, entra na frente dos pendentes)
 """
 import fcntl, json, os, re, subprocess, sys, time
 from datetime import datetime
@@ -53,14 +53,14 @@ def adicionar(argv):
         if k in argv:
             item[v] = argv[argv.index(k) + 1]
     if not item.get("nome") or not item.get("contexto"):
-        sys.exit("--nome e --contexto são obrigatórios")
+        sys.exit("--nome e --contexto sêo obrigatórios")
     if not os.path.exists(arq):
-        sys.exit(f"arquivo não existe: {arq}")
+        sys.exit(f"arquivo nêo existe: {arq}")
     item["id"] = re.sub(r"[^a-z0-9-]", "", Path(arq).parent.name.lower() + "-" + Path(arq).stem.lower())
     fila = ler()
     if any(x.get("arquivo") == arq for x in fila):
         sys.exit(f"já está na fila: {arq}")
-    if (Path(arq).parent / "FRENTE").exists():  # pedido do Nei: esta edição passa na frente (após as outras já adiantadas)
+    if (Path(arq).parent / "FRENTE").exists():  # pedido do Nei: esta ediçêo passa na frente (após as outras já adiantadas)
         item["frente"] = True
         pos = [i for i, x in enumerate(fila) if x["estado"] == "pendente" and not x.get("frente")]
         fila.insert(pos[0] if pos else len(fila), item)
@@ -68,13 +68,13 @@ def adicionar(argv):
         fila.append(item)
     FILA.write_text(json.dumps(fila, ensure_ascii=False, indent=1))
     pend = [x["id"] for x in fila if x["estado"] == "pendente"].index(item["id"]) + 1
-    print(f"na fila do {item.get("canal", CANAL)}: {item['id']} (posição {pend}; ~{(pend + len(HORAS) - 1) // len(HORAS)} dia(s))")
+    print(f"na fila do {item.get("canal", CANAL)}: {item['id']} (posiçêo {pend}; ~{(pend + len(HORAS) - 1) // len(HORAS)} dia(s))")
 
 
 def main():
     if "--add" in sys.argv:
         return adicionar(sys.argv)
-    # Só publica quando chamado SEM argumentos (o timer). Qualquer outro (--help, erro de digitação) só mostra a ajuda.
+    # Só publica quando chamado SEM argumentos (o timer). Qualquer outro (--help, erro de digitaçêo) só mostra a ajuda.
     if len(sys.argv) > 1 and "--status" not in sys.argv:
         print(__doc__ or "uso: fila.py [--status | --add <mp4> --nome ... --contexto ...]"); return
     fila = ler()
@@ -126,5 +126,5 @@ if __name__ == "__main__":
         try:
             fcntl.flock(lk, fcntl.LOCK_EX | fcntl.LOCK_NB)
         except BlockingIOError:
-            print("outra execução em andamento"); sys.exit(0)
+            print("outra execuçêo em andamento"); sys.exit(0)
         main()

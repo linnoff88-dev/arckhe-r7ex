@@ -5,7 +5,7 @@ Uso: meia_filtro.py <meia.txt> <entrada-com-o-quadro> <saida>
 meia.txt: uma linha "ini fim" (segundos) por trecho, escrita pelo r7ex/cena.py. Imprime um pedaço de filter_complex
 que pega [<entrada>] (o quadro já com o PiP) e devolve [<saida>] com o rosto grande por cima nesses trechos:
 cada trecho é um recorte do avatar (trim mantém o tempo original) com dissolve de 0,35 s na entrada e na saída —
-o PiP fica por baixo o tempo todo, então a troca vira um dissolve rosto grande ↔ PiP (Nei, 21/10/2026).
+o PiP fica por baixo o tempo todo, entêo a troca vira um dissolve rosto grande ↔ PiP (Nei, 21/10/2026).
 """
 import os
 import sys

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Teste da produção com edições falsas: sem HeyGen, sem Telegram, sem render. `python3 producao/teste_producao.py`"""
+"""Teste da produçêo com edições falsas: sem HeyGen, sem Telegram, sem render. `python3 producao/teste_producao.py`"""
 import sys, tempfile
 from pathlib import Path
 
@@ -30,7 +30,7 @@ def roda(args, timeout, saida=None):
     if cmd == "enviar":
         return 0, "enviado"
     if cmd == "fila":
-        P.FILA.write_text(P.FILA.read_text() + str(pasta / "video.mp4")); return 0, f"na fila do lives4: {pasta.name} (posição 1)"
+        P.FILA.write_text(P.FILA.read_text() + str(pasta / "video.mp4")); return 0, f"na fila do lives4: {pasta.name} (posiçêo 1)"
     raise AssertionError(cmd)
 
 
@@ -56,20 +56,20 @@ def confere(cond, msg):
     ok += 1; print("ok:", msg)
 
 
-# sem APROVADO não entra
+# sem APROVADO nêo entra
 sem = edicao("sem-aprovado", aprovado=False)
 try:
     P.add(str(sem)); confere(False, "sem APROVADO deveria recusar")
 except SystemExit:
-    confere(True, "sem APROVADO_HEYGEN não entra na produção")
+    confere(True, "sem APROVADO_HEYGEN nêo entra na produçêo")
 
 a, b = edicao("a"), edicao("b")
 P.add(str(a)); P.add(str(b))
 P.rodada()
 confere([c for c in chamadas if c[0] == "avatar-enviar"] == [("avatar-enviar", "a"), ("avatar-enviar", "b")],
-        "todas vão ao estúdio na mesma rodada (25/10: não esperar a anterior ficar pronta)")
+        "todas vêo ao estúdio na mesma rodada (25/10: nêo esperar a anterior ficar pronta)")
 confere(estado(a) == "esperando_avatar" and estado(b) == "esperando_avatar", "a e b esperando o HeyGen")
-P.rodada()   # a: 2ª conferência → pronto → montar → revisão → fila
+P.rodada()   # a: 2ª conferência → pronto → montar → revisêo → fila
 confere(estado(a) == "na_fila", "a chegou à fila na 2ª rodada")
 confere(sum(1 for c in chamadas if c == ("fazer", "a")) == 1, "a montou uma vez")
 confere(any(m.startswith("Terminei: r7ex a") for m in avisos), "aviso Terminei no v3")
@@ -77,21 +77,21 @@ confere(P.FILA.read_text().count(str(a / "video.mp4")) == 1, "a entrou uma vez n
 
 veredito["v"] = "reprovado"
 P.rodada(); P.rodada()
-confere(estado(b) == "parado", "b reprovado na revisão fica parado")
+confere(estado(b) == "parado", "b reprovado na revisêo fica parado")
 confere(any(m.startswith("Falhou: r7ex b") for m in avisos), "aviso Falhou no v3")
 n = len(chamadas); P.rodada()
-confere(len(chamadas) == n, "parado não anda sozinho")
+confere(len(chamadas) == n, "parado nêo anda sozinho")
 
 veredito["v"] = "aprovado"; veredito["s"] = ["6 s: falta o logo do Copilot", "impacto 6/10"]
 P.retomar(str(b)); confere(estado(b) == "montar", "retomar com avatar pronto volta para montar")
 P.rodada()
-confere(estado(b) == "na_fila", "b com sugestão segue para a fila (21/10: sugestão não para)")
-confere(any(m.startswith("Terminei: r7ex b") and "SUGESTÃO" in m and "logo do Copilot" in m for m in avisos),
-        "aviso Terminei leva a tarja vermelha SUGESTÃO com as sugestões")
+confere(estado(b) == "na_fila", "b com sugestêo segue para a fila (21/10: sugestêo nêo para)")
+confere(any(m.startswith("Terminei: r7ex b") and "SUGESTêO" in m and "logo do Copilot" in m for m in avisos),
+        "aviso Terminei leva a tarja vermelha SUGESTêO com as sugestões")
 veredito.pop("s")
 
 c = edicao("c"); (c / "video.mp4").write_text("v"); P.FILA.write_text(P.FILA.read_text() + str(c / "video.mp4"))
-P.add(str(c)); confere(estado(c) == "na_fila", "edição já na fila entra como na_fila (não duplica)")
+P.add(str(c)); confere(estado(c) == "na_fila", "ediçêo já na fila entra como na_fila (nêo duplica)")
 try:
     P.add(str(a)); confere(False, "add repetido deveria recusar")
 except SystemExit:
@@ -101,6 +101,6 @@ d = edicao("d"); P.add(str(d)); P.rodada()          # vai ao estúdio, fica espe
 with P.Estado() as e:
     e[str(d)]["desde"] = "2000-01-01 00:00"          # esperando há muito tempo; a 1ª conferência diz "processando"
 P.rodada()
-confere(estado(d) == "parado" and any("não entregou" in m for m in avisos), "avatar que não chega em 6 h para com aviso")
+confere(estado(d) == "parado" and any("nêo entregou" in m for m in avisos), "avatar que nêo chega em 6 h para com aviso")
 
 print(f"\n{ok} conferências ok · pasta {tmp}")

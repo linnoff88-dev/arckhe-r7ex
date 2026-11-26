@@ -1,12 +1,12 @@
 # Ficha r7ex — UM arquivo por reel com tudo. Exemplo real: o reel do hacker (18/10/2026), reescrito no gancho v1.2.0 (28/10/2026).
-# Padrão completo em PADRAO.md. Rode `r7ex.py checar <pasta>` depois de editar.
+# Padrêo completo em PADRAO.md. Rode `r7ex.py checar <pasta>` depois de editar.
 slug: hacker
 tema: "Hackers roubaram a chave de IA de um cara: US$ 1.700 numa noite"
 
 plano:
-  pessoa: "qualquer um que paga uma IA com cartão (ChatGPT, Claude, Gemini), não só programador; sabe usar o chat, nunca mexeu em chave"   # quem é + quanto sabe de IA (D25)
-  # posicao: "faz um ano que eu falo disso: ..."   # D25: quando a tese é opinião do Nei, as palavras dele em 1ª pessoa → gancho contrario/provocacao/acusacao
-  quer: "não acordar com uma conta absurda no cartão (dor) e dormir tranquilo (desejo)"
+  pessoa: "qualquer um que paga uma IA com cartêo (ChatGPT, Claude, Gemini), nêo só programador; sabe usar o chat, nunca mexeu em chave"   # quem é + quanto sabe de IA (D25)
+  # posicao: "faz um ano que eu falo disso: ..."   # D25: quando a tese é opiniêo do Nei, as palavras dele em 1ª pessoa → gancho contrario/provocacao/acusacao
+  quer: "nêo acordar com uma conta absurda no cartêo (dor) e dormir tranquilo (desejo)"
   gancho: "história de terceiro com número: hackers roubaram as chaves no OpenCode; relatos de US$ 1.700 numa noite (usuários afetados, out/2026)"
   nota: 8
   destino: "https://inema.club"
@@ -18,14 +18,14 @@ gancho:
   tipo: terceiro                     # contrario | perda | estatistica | terceiro | noticia (lista é proibida)
   manchete: "ACORDOU DEVENDO US$ 1.700"   # ≤ 6 palavras, CAIXA ALTA, MAIS FORTE que a fala; desenhada pelo Codex no quadro 0
   destaque: "1.700"                  # UMA palavra da manchete, em amarelo
-  objeto: "uma chave dourada partida ao meio, com um risco vermelho em cima, presa a um cartão de crédito rachado"   # dano/ameaça
+  objeto: "uma chave dourada partida ao meio, com um risco vermelho em cima, presa a um cartêo de crédito rachado"   # dano/ameaça
   prova: {parte: 1, de: "1.700"}     # a palavra do número com fonte; até ~20 s (60 palavras)
-  absolvicao: "não é descuido seu"   # o problema do espectador sem culpa, igual na fala da parte 2 ou 3
+  absolvicao: "nêo é descuido seu"   # o problema do espectador sem culpa, igual na fala da parte 2 ou 3
   fontes:                            # obrigatório em estatistica, terceiro e noticia (noticia também tem data: aaaa-mm-dd)
     - {nome: "relatos de usuários afetados pelo ataque ao OpenCode, out/2026", trecho: "US$ 1.700 de conta numa noite"}
-  # v1.5.4 (Retenção): 3–5 vídeos de quem fala do tema no YouTube (yt-dlp --flat-playlist "ytsearch15:<termo>" + legenda
-  # automática, 1ª fala 0–35 s). Régua do crítico: o nosso gancho tem de ser pelo menos tão forte quanto o melhor.
-  # Número de terceiro NÃO entra no roteiro. Sem referências o checar só avisa.
+  # v1.5.4 (Retençêo): 3–5 vídeos de quem fala do tema no YouTube (yt-dlp --flat-playlist "ytsearch15:<termo>" + legenda
+  # automática, 1ª fala 0–35 s). Régua do crítico: o nosso gancho tem de ser pelo menos têo forte quanto o melhor.
+  # Número de terceiro NêO entra no roteiro. Sem referências o checar só avisa.
   referencias:
     - {canal: "<canal de segurança, 120 mil views>", titulo: "<título do vídeo>", abertura: "<1ª fala, 0–35 s>", gatilho: "perda concreta"}
     - {canal: "<canal BR de IA>", titulo: "<título>", abertura: "<1ª fala>", gatilho: "medo + número"}
@@ -33,11 +33,11 @@ gancho:
 
 marca: "INEMA · CHAVES DE IA"        # faixa do topo
 selo: "ALERTA INEMA"                 # selo vermelho do topo
-fonte: "<b>ataque ao OpenCode</b> · relatos de usuários afetados, out/2026 · imagens: ilustração"
+fonte: "<b>ataque ao OpenCode</b> · relatos de usuários afetados, out/2026 · imagens: ilustraçêo"
 
 abertura:                            # imagem 1: a cena; o título é a gancho.manchete (branco/destaque só nas fichas antigas)
   cor: amarelo
-  # layout: cheia                    # D25: arte em tela cheia e rosto no canto desde o quadro 0 (padrão: meia, D16)
+  # layout: cheia                    # D25: arte em tela cheia e rosto no canto desde o quadro 0 (padrêo: meia, D16)
   cena: "quarto escuro de madrugada, um homem sentado na beira da cama, de lado, o rosto na sombra iluminado só pela luz vermelha do celular"
 
 trocas:                              # fala (por extenso) → legenda (algarismo)
@@ -50,15 +50,15 @@ partes:
     fala: "Um cara foi dormir e acordou com mil e setecentos dólares de conta de IA. Roubaram a chave dele numa noite só."
     prende: "história de uma pessoa real com número que dói no bolso; a manchete na tela grita mais que a voz"
     painel:
-      de: "1.700"                    # palavra em que o painel entra (padrão: início da parte)
+      de: "1.700"                    # palavra em que o painel entra (padrêo: início da parte)
       k: "ATAQUE AO OPENCODE · OUT/2026"
       borda: red                     # red | am | vd
       contador: {ate: 1700, em: "1.700", cor: "#ff2a1f", unid: "US$ NUMA NOITE"}
       l: "relatos de usuários afetados"
   - etapa: medo
-    fala: "A chave é a senha que a IA usa pra cobrar de você, e a sua pode ser a próxima. E não é descuido seu: ninguém te avisou."
-    prende: "o problema vira da pessoa ('a sua pode ser a próxima') e logo vem a absolvição, que faz ela ficar sem culpa"
-    imagem: "uma mão encapuzada saindo de um notebook escuro e puxando uma chave dourada luminosa presa a um cartão de crédito; sensação de roubo"
+    fala: "A chave é a senha que a IA usa pra cobrar de você, e a sua pode ser a próxima. E nêo é descuido seu: ninguém te avisou."
+    prende: "o problema vira da pessoa ('a sua pode ser a próxima') e logo vem a absolviçêo, que faz ela ficar sem culpa"
+    imagem: "uma mêo encapuzada saindo de um notebook escuro e puxando uma chave dourada luminosa presa a um cartêo de crédito; sensaçêo de roubo"
     painel:
       k: "A CHAVE É A SUA SENHA"
       borda: red
@@ -71,14 +71,14 @@ partes:
       k: "PREJUÍZO COM TETO"
       titulo: "O GASTO TEM TETO"
   - etapa: facilidade
-    fala: "Não precisa ser programador."
-    prende: "derruba a desculpa 'isso não é para mim'"
+    fala: "Nêo precisa ser programador."
+    prende: "derruba a desculpa 'isso nêo é para mim'"
     imagem: "um controle deslizante de limite travado por um cadeado amarelo luminoso, numa mesa escura"
     painel:
       k: "SEM SER ESPECIALISTA"
       titulo: "SEM PROGRAMAR"
   - etapa: descoberta
-    fala: "São três ajustes: limite de gasto em cada chave, uma chave pra cada uso e um alarme quando o gasto foge do normal."
+    fala: "Sêo três ajustes: limite de gasto em cada chave, uma chave pra cada uso e um alarme quando o gasto foge do normal."
     prende: "o método com nome e 3 itens fáceis de lembrar"
     imagem: "um cadeado dourado com um medidor de gasto, sob foco de luz amarela, sobre uma mesa preta"
     lista:
@@ -88,9 +88,9 @@ partes:
       de: ajustes
       titulo: "3 AJUSTES"
   - etapa: beneficio
-    fala: "O susto vira um aviso no celular, não uma conta de mil dólares."
+    fala: "O susto vira um aviso no celular, nêo uma conta de mil dólares."
     prende: "a máxima: uma frase curta que a pessoa repete"
-    imagem: "close de um celular na mão mostrando uma notificação amarela de alerta (sem texto legível), e ao lado uma fatura de papel rasgada caindo"
+    imagem: "close de um celular na mêo mostrando uma notificaçêo amarela de alerta (sem texto legível), e ao lado uma fatura de papel rasgada caindo"
     painel:
       k: "SEM LIMITE × COM LIMITE"
       borda: vd
@@ -108,7 +108,7 @@ partes:
     prende: "comunidade antes (toda semana tem kit novo) e depois a pergunta da vida da pessoa, ligada à dor; sem pedir palavra nem link (PADRAO §2.3, §2.4)"
     print: {url: "https://inema.club", selo: "inema.club"}
 
-cta: {de: "você", a: "E VOCÊ, JÁ DEIXOU? 👇", b: "toda semana kit novo · inema.club", comentario: "já, e quase perdi tudo 😬"}   # comentario = uma RESPOSTA de opinião/experiência, nunca pedido de link (§2.3)
+cta: {de: "você", a: "E VOCÊ, JÁ DEIXOU? 👇", b: "toda semana kit novo · inema.club", comentario: "já, e quase perdi tudo 😬"}   # comentario = uma RESPOSTA de opiniêo/experiência, nunca pedido de link (§2.3)
 club: "as 3 proteções, passo a passo"
 cores: {roubaram: "#ff2a1f", chave: "#FACC15", noite: "#ff2a1f", proxima: "#ff2a1f", senha: "#FACC15",
         teto: "#FACC15", limite: "#FACC15", alarme: "#FACC15", susto: "#ff2a1f", aviso: "#FACC15", "1700": "#ff2a1f"}

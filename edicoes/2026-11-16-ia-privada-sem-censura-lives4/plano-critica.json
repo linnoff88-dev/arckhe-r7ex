@@ -3,20 +3,20 @@
     {
       "n": 1,
       "nota": 8,
-      "porque": "Manchete clara e ameaça pessoal concreta; a solução aparece na parte 2, mas a fala pode tocar mais diretamente nos documentos de trabalho.",
+      "porque": "Manchete clara e ameaça pessoal concreta; a soluçêo aparece na parte 2, mas a fala pode tocar mais diretamente nos documentos de trabalho.",
       "melhorar": "Sua IA responde sem censura. Mas quem está recebendo os documentos que você coloca nela?"
     },
     {
       "n": 2,
       "nota": 8,
-      "porque": "Apresenta a solução e a prova cedo; a tela confirma o teste, mas a linguagem técnica do rodapé dificulta o entendimento imediato.",
+      "porque": "Apresenta a soluçêo e a prova cedo; a tela confirma o teste, mas a linguagem técnica do rodapé dificulta o entendimento imediato.",
       "melhorar": "Na tela, substituir rede isolada contendo somente lo por Rede externa bloqueada durante o teste."
     },
     {
       "n": 3,
       "nota": 8,
       "porque": "Retira a culpa e esclarece a diferença, mas repete a abertura sem trazer um exemplo da vida da pessoa.",
-      "melhorar": "Não é descuido seu: uma IA aceitar seu pedido não significa que seu contrato ficou no seu computador."
+      "melhorar": "Nêo é descuido seu: uma IA aceitar seu pedido nêo significa que seu contrato ficou no seu computador."
     },
     {
       "n": 4,
@@ -34,7 +34,7 @@
       "n": 6,
       "nota": 7,
       "porque": "A ressalva é verdadeira, mas repete privacidade e introduz acerto sem mostrar a prova concreta disponível.",
-      "melhorar": "Fala: E rodar no seu computador também não impede a IA de errar. Tela: Teste do documento: Llama respondeu 600; gabarito 1000, com a fonte INEMA."
+      "melhorar": "Fala: E rodar no seu computador também nêo impede a IA de errar. Tela: Teste do documento: Llama respondeu 600; gabarito 1000, com a fonte INEMA."
     },
     {
       "n": 7,
@@ -44,7 +44,7 @@
     }
   ],
   "bloqueios": [],
-  "resumo": "Plano coerente e gravável, com gancho claro, solução e prova cedo; falta aumentar a identificação pessoal e substituir a repetição final pela demonstração do erro, sem régua comparativa porque não há referências.",
+  "resumo": "Plano coerente e gravável, com gancho claro, soluçêo e prova cedo; falta aumentar a identificaçêo pessoal e substituir a repetiçêo final pela demonstraçêo do erro, sem régua comparativa porque nêo há referências.",
   "notas": [
     8,
     8,

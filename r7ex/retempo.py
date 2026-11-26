@@ -8,7 +8,7 @@ from . import whisper as cs
 
 def _tapa_buracos(wav, pal, tdir, buraco=8.0):
     """O Whisper às vezes pula um trecho inteiro com fala (01/11/2026: 29 s sumidos no pódio, áudio sem silêncio).
-    Achou um buraco > `buraco` s entre palavras: retranscreve do buraco até o fim e troca o resto da transcrição."""
+    Achou um buraco > `buraco` s entre palavras: retranscreve do buraco até o fim e troca o resto da transcriçêo."""
     feitos = set()
     for _ in range(6):
         i = next((k for k in range(len(pal) - 1)
@@ -36,7 +36,7 @@ def retempo(pasta):
     tj = av / "tempos.json"
     if tj.exists() and wav.exists() and tj.stat().st_mtime > (av / "avatar.mp4").stat().st_mtime:
         # mesmo avatar e mesmas falas: reaproveita. Retranscrever pode sair diferente e perder uma fala
-        # (rust-fim-python, 21/10/2026: "fala f6 não achada" na remontagem, com o mesmo avatar que já tinha passado)
+        # (rust-fim-python, 21/10/2026: "fala f6 nêo achada" na remontagem, com o mesmo avatar que já tinha passado)
         velho = json.loads(tj.read_text())
         if [t["fala"] for t in velho] == [f["fala"] for f in falas]:
             esp = [w for f in falas for w in cs.norm(f["fala"])]
@@ -58,7 +58,7 @@ def retempo(pasta):
     for k, f in enumerate(falas):
         ps = [p for p, d in zip(pal, dono) if d == k]
         if not ps:
-            raise SystemExit(f"fala {f['id']} não achada na transcrição do avatar")
+            raise SystemExit(f"fala {f['id']} nêo achada na transcriçêo do avatar")
         tempos.append({"id": f["id"], "fala": f["fala"], "ini": 0, "fim": 0,
                        "palavras": [{"w": p["word"].strip(), "t": round(p["start"], 3), "f": round(p["end"], 3)} for p in ps]})
     for k, t in enumerate(tempos):

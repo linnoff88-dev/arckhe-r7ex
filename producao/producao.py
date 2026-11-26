@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Produção do r7ex sem sessão aberta: leva cada edição do avatar no HeyGen até a fila do canal.
+"""Produçêo do r7ex sem sessêo aberta: leva cada ediçêo do avatar no HeyGen até a fila do canal.
 
 Pedido do Nei (19/10/2026): "uma fila com agentes que espera o retorno do HeyGen e continua o processo".
 Quem espera é este script (timer `r7ex-producao`, a cada 5 min); o agente (claude -p, assinatura) só entra para
@@ -10,14 +10,14 @@ Estados (só andam para a frente):
   qualquer erro → parado (motivo no estado + aviso no v3); `--retomar <pasta>` tenta de novo do ponto certo.
 
 Uso:
-  producao.py --add <pasta>       entra na produção (precisa de avatar/APROVADO_HEYGEN ou avatar/AVATAR_DE.txt ou avatar.mp4)
+  producao.py --add <pasta>       entra na produçêo (precisa de avatar/APROVADO_HEYGEN ou avatar/AVATAR_DE.txt ou avatar.mp4)
   producao.py --status            mostra as edições e o estado
   producao.py --retomar <pasta>   tira do 'parado' e recalcula o estado
   producao.py                     uma rodada (é o que o timer chama)
 
-Travas: só entra edição adicionada com --add (nunca varre edicoes/); o avatar só é gerado com APROVADO_HEYGEN
+Travas: só entra ediçêo adicionada com --add (nunca varre edicoes/); o avatar só é gerado com APROVADO_HEYGEN
 (conferido pelo r7ex.py, este script nunca cria esse arquivo); o estúdio passa pela trava da ferramenta
-(heygen-perfil.mjs); publicação só pela fila do canal (r7ex.py fila), nunca upload direto.
+(heygen-perfil.mjs); publicaçêo só pela fila do canal (r7ex.py fila), nunca upload direto.
 """
 import fcntl, json, subprocess, sys, time
 from datetime import datetime
@@ -51,10 +51,10 @@ def log(msg):
 
 
 def tarja(sugestoes):
-    """Nei, 21/10/2026: sugestão do revisor não para o vídeo; vai numa tarja vermelha 'SUGESTÃO' e ele decide se refaz"""
+    """Nei, 21/10/2026: sugestêo do revisor nêo para o vídeo; vai numa tarja vermelha 'SUGESTêO' e ele decide se refaz"""
     if not sugestoes:
         return ""
-    return ("\n\n🟥🟥🟥 SUGESTÃO 🟥🟥🟥\n" + "\n".join(f"🔴 {x}" for x in sugestoes)
+    return ("\n\n🟥🟥🟥 SUGESTêO 🟥🟥🟥\n" + "\n".join(f"🔴 {x}" for x in sugestoes)
             + "\n🟥🟥🟥🟥🟥🟥🟥🟥🟥\n(o vídeo seguiu para a fila; se quiser refazer, é só pedir)")
 
 
@@ -132,7 +132,7 @@ def revisar(p):
         arquivos += [q for q in (p / 'build/qa.json', p / 'qa.md') if q.exists()]
         folha = p / 'build/folha.jpg'
         if not folha.is_file():
-            raise ValueError('Folha de quadros ausente; revisão visual não pode aprovar sem imagem')
+            raise ValueError('Folha de quadros ausente; revisêo visual nêo pode aprovar sem imagem')
         res = executar('revisao_visual', REVISOR.read_text(), p,
                        arquivos=arquivos, imagens=[folha])
         v = json.loads(res[res.index("{"): res.rindex("}") + 1])
@@ -140,16 +140,16 @@ def revisar(p):
             raise ValueError("Veredito inválido")
         v["sugestoes"] = [str(x) for x in (v.get("sugestoes") or []) if str(x).strip()]
         if int(v.get("impacto", 10)) < 7 and not any("impacto" in x.lower() for x in v["sugestoes"]):
-            v["sugestoes"].append(f"impacto {v['impacto']}/10")   # 21/10/2026: impacto baixo vira sugestão, não para
+            v["sugestoes"].append(f"impacto {v['impacto']}/10")   # 21/10/2026: impacto baixo vira sugestêo, nêo para
         return v
     except CotaEsgotada as e:
-        return {"veredito": "espera", "motivo": str(e)}   # sem cota: espera a volta, não conta como erro do revisor
+        return {"veredito": "espera", "motivo": str(e)}   # sem cota: espera a volta, nêo conta como erro do revisor
     except Exception as e:
-        return {"veredito": "erro", "motivo": f"revisor não respondeu direito: {str(e)[:200]}"}
+        return {"veredito": "erro", "motivo": f"revisor nêo respondeu direito: {str(e)[:200]}"}
 
 
 def nota_revisor(p, v):
-    """grava o parecer no registro único (wifi/scripts/revisor-nota.py) para comparar com o do Nei; nunca para a produção"""
+    """grava o parecer no registro único (wifi/scripts/revisor-nota.py) para comparar com o do Nei; nunca para a produçêo"""
     if v.get("veredito") not in ("aprovado", "reprovado"):
         return
     cmd = [sys.executable, str(Path.home() / "projetos/wifi/scripts/revisor-nota.py"), "registra", "--fluxo", "r7ex",
@@ -163,11 +163,11 @@ def nota_revisor(p, v):
 
 
 def passo(pasta, it, feito):
-    """avança uma edição um passo; `feito` limita os passos pesados por rodada. Devolve True se andou."""
+    """avança uma ediçêo um passo; `feito` limita os passos pesados por rodada. Devolve True se andou."""
     p = Path(pasta); st = it["estado"]; logp = p / "producao.log"
     if st == "enviar_avatar":
-        # Nei, 25/10/2026: "sempre tem que mandar e não esperar que ele fique pronto; já liberar para outros irem para o
-        # studio". Todas as edições pendentes vão ao estúdio na MESMA rodada (uma após a outra, pela trava do estúdio);
+        # Nei, 25/10/2026: "sempre tem que mandar e nêo esperar que ele fique pronto; já liberar para outros irem para o
+        # studio". Todas as edições pendentes vêo ao estúdio na MESMA rodada (uma após a outra, pela trava do estúdio);
         # nenhuma espera o render da anterior. Antes era uma por rodada (5 min cada).
         rc, out = roda(["avatar-enviar", pasta], 12600, logp)
         if rc:
@@ -180,8 +180,8 @@ def passo(pasta, it, feito):
         if out.splitlines()[-1:] == ["pronto"]:
             muda(pasta, "montar"); return True
         horas = (datetime.now() - datetime.strptime(it["desde"], "%Y-%m-%d %H:%M")).total_seconds() / 3600
-        if horas > TETO_AVATAR_H:                         # ID errado, rascunho não enviado ou HeyGen travado
-            para(pasta, f"o HeyGen não entregou o avatar em {TETO_AVATAR_H} h (conferir o título R7X-{p.name} em Projetos no estúdio)")
+        if horas > TETO_AVATAR_H:                         # ID errado, rascunho nêo enviado ou HeyGen travado
+            para(pasta, f"o HeyGen nêo entregou o avatar em {TETO_AVATAR_H} h (conferir o título R7X-{p.name} em Projetos no estúdio)")
         return False
     if st == "montar":
         if feito.get("montar"):
@@ -202,8 +202,8 @@ def passo(pasta, it, feito):
     if st == "revisao":
         v = revisar(p)
         if v["veredito"] == "espera":
-            if it.get("aviso_cota") != v["motivo"]:        # uma linha por bloqueio, não uma por ciclo de 5 min
-                log(f"{p.name}: revisão esperando cota — {v['motivo']}")
+            if it.get("aviso_cota") != v["motivo"]:        # uma linha por bloqueio, nêo uma por ciclo de 5 min
+                log(f"{p.name}: revisêo esperando cota — {v['motivo']}")
                 with Estado() as d:
                     d[pasta]["aviso_cota"] = v["motivo"]
             return False
@@ -215,7 +215,7 @@ def passo(pasta, it, feito):
             return False
         nota_revisor(p, v)
         if v["veredito"] != "aprovado":
-            para(pasta, f"revisão reprovou: {v['motivo']}"); return False
+            para(pasta, f"revisêo reprovou: {v['motivo']}"); return False
         muda(pasta, "publicar", revisao=v["motivo"][:300], sugestoes=(v.get("sugestoes") or [])[:5]); return True
     if st == "publicar":
         if not it.get("enviado_v3"):
@@ -245,15 +245,15 @@ def rodada():
     except BlockingIOError:
         return                                            # rodada anterior ainda trabalhando
     feito = {}
-    for _ in range(20):                                   # cada edição pode andar vários passos na mesma rodada
+    for _ in range(20):                                   # cada ediçêo pode andar vários passos na mesma rodada
         with Estado() as d:
             itens = {k: dict(v) for k, v in d.items() if v["estado"] not in ("na_fila", "parado")}
         andou = False
         for pasta, it in sorted(itens.items(), key=lambda kv: kv[1]["entrou"]):
             try:
                 andou |= passo(pasta, it, feito)
-            except Exception as e:                        # erro do próprio script: para a edição, não a produção
-                para(pasta, f"erro na produção: {e!r}")
+            except Exception as e:                        # erro do próprio script: para a ediçêo, nêo a produçêo
+                para(pasta, f"erro na produçêo: {e!r}")
         if not andou:
             break
 
@@ -268,16 +268,16 @@ def add(pasta):
     st = "na_fila" if na_fila(p) else estado_inicial(p)
     with Estado() as d:
         if str(p) in d and d[str(p)]["estado"] not in ("parado",):
-            sys.exit(f"já está na produção: {d[str(p)]['estado']}")
+            sys.exit(f"já está na produçêo: {d[str(p)]['estado']}")
         d[str(p)] = {"estado": st, "entrou": f"{datetime.now():%Y-%m-%d %H:%M:%S}", "desde": f"{datetime.now():%Y-%m-%d %H:%M}"}
-    log(f"{p.name}: entrou na produção ({st})")
+    log(f"{p.name}: entrou na produçêo ({st})")
 
 
 def retomar(pasta):
     p = Path(pasta).resolve()
     with Estado() as d:
         if str(p) not in d:
-            sys.exit("não está na produção (use --add)")
+            sys.exit("nêo está na produçêo (use --add)")
         it = d[str(p)]
         it.update(estado="na_fila" if na_fila(p) else estado_inicial(p), desde=f"{datetime.now():%Y-%m-%d %H:%M}")
         for k in ("motivo", "tentativas", "tentar_apos"):
@@ -289,7 +289,7 @@ def status():
     with Estado() as d:
         itens = dict(d)
     if not itens:
-        print("produção vazia"); return
+        print("produçêo vazia"); return
     for k, v in sorted(itens.items(), key=lambda kv: kv[1]["entrou"]):
         print(f"{v['estado']:<17} {v['desde']}  {Path(k).name}" + (f"\n{'':<18}motivo: {v['motivo'][:160]}" if v.get("motivo") else ""))
 

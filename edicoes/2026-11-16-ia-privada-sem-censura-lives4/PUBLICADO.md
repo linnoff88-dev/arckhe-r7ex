@@ -1,8 +1,8 @@
 # Publicado
 
 - lives4: https://youtube.com/shorts/i39hwHL6-bU
-- Duração: 42,17 s, 1080×1920.
-- Revisão independente: Codex assinatura, aprovado, impacto8, sem defeitos. Sugestão: aproximar texto menor do guia em18,56s.
+- Duraçêo: 42,17 s, 1080×1920.
+- Revisêo independente: Codex assinatura, aprovado, impacto8, sem defeitos. Sugestêo: aproximar texto menor do guia em18,56s.
 - Arquivo no v3: mensagem5003.
 - Plano: plano-publicacao.json; recibo real: publicacao-upload.log e publicacao.json.
 - Release: https://github.com/inematds/ia-privada-pronta/releases/tag/r7ex-v1.0.0 (MP4 HTTP206; hash igual ao revisado).

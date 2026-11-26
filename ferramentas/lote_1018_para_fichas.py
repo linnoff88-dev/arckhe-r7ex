@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Converte os 7 reels de 18/10/2026 (roteiros do reel7etapas + lote do eventosextremospub) em fichas do r7ex,
-para refazer pelo r7ex com imagens novas e o MESMO avatar (pedido do Nei: "faça novamente ... não será a mesma cópia,
+para refazer pelo r7ex com imagens novas e o MESMO avatar (pedido do Nei: "faça novamente ... nêo será a mesma cópia,
 mas vai usar o avatar que já está pronto ... manda para o lives3").
 uso: python3 ferramentas/lote_1018_para_fichas.py   → edicoes/2026-10-18-<slug>-v2/ficha.yaml (+ avatar/AVATAR_DE.txt)"""
 import importlib.util, json, re
@@ -22,12 +22,12 @@ URL = {"prof2027-c.png": "https://inematds.github.io/profissional2027x/", "prof2
        "diga-c.png": "https://inematds.github.io/diga-o-que-importa/guia/", "const-c.png": "https://inematds.github.io/constituicao-agentes-v62/landing.html",
        "club-c.png": "https://inema.club"}
 PLANO = {
-    "ferramentas": ("quem vive testando ferramenta nova de IA e sente que está ficando para trás", "parar de correr atrás de app e aprender a pedir", "provocação: quem caça app é superficial; tudo está no GitHub", 8),
-    "2027": ("profissional que acha que precisa virar programador para ganhar com IA", "faturar em 2027 ajudando empresas", "provocação: quem fatura em 2027 não é quem cria software", 8),
-    "saas": ("quem paga assinatura de software ou aposta em criar um SaaS", "não apostar no formato que está morrendo", "medo: o SaaS está morrendo e tem gente apostando tudo nele", 8),
-    "chat": ("quem usa ChatGPT copiando e colando", "sair na frente do colega fazendo o agente produzir", "provocação: você ainda copia e cola?", 8),
-    "demissao": ("gerente ou executivo que ainda não lida com agentes de IA", "não estar na fila da demissão", "medo: demissão em massa de gerentes e executivos", 9),
-    "gestor": ("gestor de empresa pequena ou média", "chefiar uma equipe com agentes sem medo", "novidade: seu novo funcionário não é gente", 8),
+    "ferramentas": ("quem vive testando ferramenta nova de IA e sente que está ficando para trás", "parar de correr atrás de app e aprender a pedir", "provocaçêo: quem caça app é superficial; tudo está no GitHub", 8),
+    "2027": ("profissional que acha que precisa virar programador para ganhar com IA", "faturar em 2027 ajudando empresas", "provocaçêo: quem fatura em 2027 nêo é quem cria software", 8),
+    "saas": ("quem paga assinatura de software ou aposta em criar um SaaS", "nêo apostar no formato que está morrendo", "medo: o SaaS está morrendo e tem gente apostando tudo nele", 8),
+    "chat": ("quem usa ChatGPT copiando e colando", "sair na frente do colega fazendo o agente produzir", "provocaçêo: você ainda copia e cola?", 8),
+    "demissao": ("gerente ou executivo que ainda nêo lida com agentes de IA", "nêo estar na fila da demissêo", "medo: demissêo em massa de gerentes e executivos", 9),
+    "gestor": ("gestor de empresa pequena ou média", "chefiar uma equipe com agentes sem medo", "novidade: seu novo funcionário nêo é gente", 8),
 }
 DESTINO = {"ferramentas": "https://inema.club", "2027": URL["prof2027-c.png"], "saas": URL["prof2030-c.png"], "chat": URL["chat72-c.png"],
            "demissao": URL["emp27-c.png"], "gestor": URL["diga-c.png"]}
@@ -74,7 +74,7 @@ for slug, c in LOTE.items():
              "plano": {"pessoa": pessoa, "quer": quer, "gancho": gancho, "nota": nota, "destino": DESTINO[slug]},
              "marca": c["marca"], "selo": c["selo"], "fonte": c["fonte"],
              "abertura": {"branco": a, "destaque": b, "cor": "vermelho" if "vermelho" in cor else "amarelo",
-                          "cena": cena + " (nova composição, ângulo diferente de qualquer versão anterior)"},
+                          "cena": cena + " (nova composiçêo, ângulo diferente de qualquer versêo anterior)"},
              "trocas": c["troca"], "partes": partes,
              "cta": {"a": c["cta"][0], "b": c["cta"][1]}, "club": c["club"], "cores": c["cores"],
              "publicar": {"fila": "lives3", "titulo": tit, "contexto": ctx}}
@@ -86,7 +86,7 @@ for slug, c in LOTE.items():
 # o hacker: a ficha do modelo, com imagens novas e destino lives3
 f = yaml.safe_load((R / "modelo/ficha.yaml").read_text())
 f["slug"] = "hacker-v2"; f["publicar"]["fila"] = "lives3"
-f["abertura"]["cena"] += " (nova composição, ângulo diferente de qualquer versão anterior)"
+f["abertura"]["cena"] += " (nova composiçêo, ângulo diferente de qualquer versêo anterior)"
 E = R / "edicoes/2026-10-18-hacker-v2"; (E / "avatar").mkdir(parents=True, exist_ok=True)
 (E / "ficha.yaml").write_text(yaml.safe_dump(f, allow_unicode=True, sort_keys=False, width=140))
 (E / "avatar/AVATAR_DE.txt").write_text(str(R7 / "2026-10-18-opencode-v3/avatar/avatar.mp4") + "\n")

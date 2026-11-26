@@ -1,5 +1,5 @@
 #!/bin/bash
-# Espera o agente do explicavideo submeter o avatar dele primeiro (flag), até 90 min; depois põe este r7ex na produção.
+# Espera o agente do explicavideo submeter o avatar dele primeiro (flag), até 90 min; depois põe este r7ex na produçêo.
 FLAG=/home/nmaldaner/projetos/wifi/longrun/2026-11-05-protegendo-seus-repos/heygen-explicavideo-submetido.flag
 ED=/home/nmaldaner/projetos/r7ex/edicoes/2026-11-05-protegendo-seus-repos
 LOG=$ED/espera-explicavideo.log

@@ -1,20 +1,20 @@
 slug: esqueca-os-enxames-v3-lives4
-tema: "Esqueça os enxames de agentes: a conta não fecha"
-pedido: "Nei (17/11/2026), versão 3 do reel do enxame. A v2 'começou bem, mas a explicação não, e o final mal entra sobre
-  pergunta e CTA misturando'; 'parece não tem fluência, não parece natural eu falando'. Manter a abertura da v2 (tela cheia,
-  ESQUEÇA OS ENXAMES, ele no canto) e a opinião dele em 1ª pessoa: 'faz um ano que falo de enxames, a ideia é boa mas o
-  custo é proibitivo, e não sei por que ainda continuam falando disso; o que tem que falar é como ligar muitos agentes,
-  quem coordena e qual a forma de aplicar'. Explicação impactante, com imagem. Teto da fala 900 (objetivo 620).
+tema: "Esqueça os enxames de agentes: a conta nêo fecha"
+pedido: "Nei (17/11/2026), versêo 3 do reel do enxame. A v2 'começou bem, mas a explicaçêo nêo, e o final mal entra sobre
+  pergunta e CTA misturando'; 'parece nêo tem fluência, nêo parece natural eu falando'. Manter a abertura da v2 (tela cheia,
+  ESQUEÇA OS ENXAMES, ele no canto) e a opiniêo dele em 1ª pessoa: 'faz um ano que falo de enxames, a ideia é boa mas o
+  custo é proibitivo, e nêo sei por que ainda continuam falando disso; o que tem que falar é como ligar muitos agentes,
+  quem coordena e qual a forma de aplicar'. Explicaçêo impactante, com imagem. Teto da fala 900 (objetivo 620).
   Fala aprovada por ele antes do HeyGen."
 plano:
-  pessoa: "gestor ou dono de empresa que viu o vídeo viral de enxame de agentes e nunca rodou um agente; entende de custo e de reunião, não de IA"
+  pessoa: "gestor ou dono de empresa que viu o vídeo viral de enxame de agentes e nunca rodou um agente; entende de custo e de reuniêo, nêo de IA"
   posicao: "Faz um ano que eu falo de enxames: a ideia é boa, mas o custo é proibitivo, e ainda continuam vendendo isso. O que importa é quem coordena, como os agentes se ligam e onde aplicar."
-  quer: "não queimar dinheiro com uma moda (dor) e usar agentes onde dão resultado (desejo)"
+  quer: "nêo queimar dinheiro com uma moda (dor) e usar agentes onde dêo resultado (desejo)"
   gancho: "contrário, na voz do Nei: esqueça os enxames; prova com a Anthropic (sistema multiagente ~15× mais tokens que um chat)"
   nota: 9
   destino: "https://inematds.github.io/enxame-com-conta/guia/"
   fatos:
-    - "Opinião do Nei (17/11/2026): fala de enxames de agentes há cerca de um ano e considera o custo proibitivo; pedido acima."
+    - "Opiniêo do Nei (17/11/2026): fala de enxames de agentes há cerca de um ano e considera o custo proibitivo; pedido acima."
     - "Anthropic, 'How we built our multi-agent research system' (jun/2025): 'multi-agent systems use about 15× more tokens
       than chats'; e 'multi-agent systems require tasks where the value of the task is high enough to pay for the increased
       performance'."
@@ -22,16 +22,16 @@ plano:
       em cerca de 34 horas (um dia e meio). Arquivo: ~/projetos/enxame-com-conta/casos/lote-135.md."
     - "Kit grátis enxame-com-conta (Ficha da Conta): conta antes de rodar, compara com um agente só, teto de chamadas e
       parada depois de falhas (trava.py). Guia: https://inematds.github.io/enxame-com-conta/guia/"
-    - "A comparação da reunião (dez pessoas lendo o mesmo relatório e cobrando por hora) é analogia, não dado: ilustra que
+    - "A comparaçêo da reuniêo (dez pessoas lendo o mesmo relatório e cobrando por hora) é analogia, nêo dado: ilustra que
       cada agente relê o contexto e cobra por isso (Anthropic: o custo vem dos tokens de cada agente)."
 gancho:
   tipo: contrario
   manchete: "ESQUEÇA OS ENXAMES DE AGENTES"
   destaque: "ESQUEÇA"
-  objeto: "um taxímetro vermelho gigante na parede marcando R$ e subindo sem parar, o visor borrado de tão rápido"
-  entrega: "por que o enxame não fecha a conta e o jeito certo: quem coordena, como ligar os agentes e onde vale aplicar"
+  objeto: "um taxímetro vermelho gigante na parede marcando R$ e subindo sem parar, o visor borrado de têo rápido"
+  entrega: "por que o enxame nêo fecha a conta e o jeito certo: quem coordena, como ligar os agentes e onde vale aplicar"
   prova: {parte: 2, de: "15×"}
-  absolvicao: "não é erro seu"
+  absolvicao: "nêo é erro seu"
   fontes:
     - {nome: "Anthropic, How we built our multi-agent research system, jun/2025",
        trecho: "multi-agent systems use about 15× more tokens than chats"}
@@ -47,15 +47,15 @@ gancho:
        gatilho: "perda concreta em primeira pessoa + promessa de conserto"}
 
 marca: "INEMA · AGENTES"
-selo: "CONTA QUE NÃO FECHA"
-fonte: "<b>Anthropic</b> · How we built our multi-agent research system, jun/2025 · caso interno INEMA, nov/2026 · imagens: ilustração"
+selo: "CONTA QUE NêO FECHA"
+fonte: "<b>Anthropic</b> · How we built our multi-agent research system, jun/2025 · caso interno INEMA, nov/2026 · imagens: ilustraçêo"
 
 abertura:
   cor: amarelo
   layout: cheia
-  cena: "sala de reunião de empresa à noite, mesa comprida cheia de robôs humanoides dourados de visor preto falando todos
+  cena: "sala de reuniêo de empresa à noite, mesa comprida cheia de robôs humanoides dourados de visor preto falando todos
     ao mesmo tempo, gesticulando; na parede do fundo um taxímetro vermelho gigante com o visor em R$ subindo; na porta, de
-    costas, um gestor de camisa social com a mão na cabeça olhando a conta; luz vermelha de alerta, preto e amarelo"
+    costas, um gestor de camisa social com a mêo na cabeça olhando a conta; luz vermelha de alerta, preto e amarelo"
 
 trocas:
   "quinze vezes": "15×"
@@ -72,7 +72,7 @@ partes:
       de: "custo"
       cor: "#ff2a1f"
   - etapa: medo
-    fala: "Cada agente relê tudo de novo, conversa com os outros e refaz o que deu errado, e você paga cada palavra. A Anthropic mediu: gasta quinze vezes mais que um chat. E não é erro seu, é a conta."
+    fala: "Cada agente relê tudo de novo, conversa com os outros e refaz o que deu errado, e você paga cada palavra. A Anthropic mediu: gasta quinze vezes mais que um chat. E nêo é erro seu, é a conta."
     prende: "o gestor vê onde o dinheiro some e o número com fonte confirma; tira a culpa de quem acreditou"
     logos: [{id: anthropic, nome: Anthropic}]
     lista:
@@ -86,9 +86,9 @@ partes:
       contador: {ate: 15, em: "15×", cor: "#ff2a1f", unid: "× MAIS QUE UM CHAT"}
       l: "sistema multiagente × conversa"
   - etapa: desejo
-    fala: "É como chamar dez pessoas para uma reunião, todas lendo o mesmo relatório e cobrando por hora. Se ninguém coordena, a conta só cresce."
-    prende: "a comparação que todo gestor já viveu: a reunião cara que não decide nada; agora ele VÊ o problema"
-    imagem: "sala de reunião de empresa, mesa comprida com dez robôs humanoides dourados sentados, todos lendo o mesmo relatório
+    fala: "É como chamar dez pessoas para uma reuniêo, todas lendo o mesmo relatório e cobrando por hora. Se ninguém coordena, a conta só cresce."
+    prende: "a comparaçêo que todo gestor já viveu: a reuniêo cara que nêo decide nada; agora ele VÊ o problema"
+    imagem: "sala de reuniêo de empresa, mesa comprida com dez robôs humanoides dourados sentados, todos lendo o mesmo relatório
       grosso de papel; na frente de cada um um pequeno taxímetro vermelho marcando R$; a cadeira da cabeceira da mesa VAZIA
       com um holofote em cima; luz fria, preto e amarelo, vermelho só nos taxímetros, fotorrealista"
     painel:
@@ -96,8 +96,8 @@ partes:
       de: "coordena"
       cor: "#ff2a1f"
   - etapa: facilidade
-    fala: "A pergunta certa não é quantos agentes. É quem coordena, como eles se ligam e onde vale aplicar: um coordenador, poucos especialistas, um teto de gasto e a hora de parar."
-    prende: "troca a moda pela pergunta de gestor e já dá a regra que ele aplica amanhã, sem saber programar"
+    fala: "A pergunta certa nêo é quantos agentes. É quem coordena, como eles se ligam e onde vale aplicar: um coordenador, poucos especialistas, um teto de gasto e a hora de parar."
+    prende: "troca a moda pela pergunta de gestor e já dá a regra que ele aplica amanhê, sem saber programar"
     diagrama:
       forma: fluxo
       titulo: "O JEITO QUE FECHA A CONTA"
@@ -124,8 +124,8 @@ partes:
       l: "processo sem trava"
   - etapa: beneficio
     fala: "Menos agente, mais resultado. Só cresce se o resultado paga."
-    prende: "máxima curta que o gestor repete na reunião"
-    imagem: "um taxímetro antigo com o visor apagado e uma mão girando a chave para desligar, luz amarela recortada, fundo preto liso"
+    prende: "máxima curta que o gestor repete na reuniêo"
+    imagem: "um taxímetro antigo com o visor apagado e uma mêo girando a chave para desligar, luz amarela recortada, fundo preto liso"
     painel:
       titulo: "SÓ CRESCE SE O RESULTADO PAGA"
       de: "paga"
@@ -154,11 +154,11 @@ cores:
 
 publicar:
   fila: lives4
-  titulo: "Esqueça os enxames de agentes: a conta não fecha #shorts"
-  contexto: "R7EX INEMA (Nei Maldaner), canal inema.agentes. Opinião do Nei: faz um ano que ele fala de enxames de agentes;
+  titulo: "Esqueça os enxames de agentes: a conta nêo fecha #shorts"
+  contexto: "R7EX INEMA (Nei Maldaner), canal inema.agentes. Opiniêo do Nei: faz um ano que ele fala de enxames de agentes;
     a ideia é boa, mas o custo é proibitivo. A própria Anthropic mediu que sistemas multiagente gastam cerca de 15 vezes
     mais tokens que um chat (How we built our multi-agent research system, jun/2025). É como chamar dez pessoas para uma
-    reunião, todas lendo o mesmo relatório e cobrando por hora. A pergunta certa não é quantos agentes, e sim quem
+    reuniêo, todas lendo o mesmo relatório e cobrando por hora. A pergunta certa nêo é quantos agentes, e sim quem
     coordena, como se ligam e onde vale aplicar: um coordenador, poucos especialistas, teto de gasto e hora de parar.
     Caso real INEMA nov/2026: processo sem trava com mais de 12 mil recusas por limite em um dia e meio.
     Kit grátis Ficha da Conta: https://inematds.github.io/enxame-com-conta/guia/"

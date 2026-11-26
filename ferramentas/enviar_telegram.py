@@ -5,7 +5,7 @@
 
 Token: BOT_TOKEN (ou TELEGRAM_BOT_TOKEN) lido do --env na hora; nunca impresso.
 Chat: --chat, ou o primeiro de ALLOWED_CHAT_IDS do mesmo .env.
-> 49 MB: faz <arquivo>-720p.mp4 e manda essa. Recibo em <arquivo>.envio-telegram.json (não reenvia).
+> 49 MB: faz <arquivo>-720p.mp4 e manda essa. Recibo em <arquivo>.envio-telegram.json (nêo reenvia).
 """
 import argparse
 import json
@@ -26,7 +26,7 @@ a = ap.parse_args()
 
 arq = Path(a.arquivo)
 if not arq.exists():
-    sys.exit(f"Falhou: arquivo não existe: {arq}")
+    sys.exit(f"Falhou: arquivo nêo existe: {arq}")
 recibo = Path(str(arq) + ".envio-telegram.json")
 if recibo.exists():
     print("já enviado:", recibo.read_text().strip())
@@ -62,7 +62,7 @@ req = urllib.request.Request(f"https://api.telegram.org/bot{token}/{metodo}", da
                              headers={"Content-Type": f"multipart/form-data; boundary={limite}"})
 try:
     r = json.loads(urllib.request.urlopen(req, timeout=600).read())
-except Exception as e:  # noqa: BLE001 — a mensagem não pode levar o token
+except Exception as e:  # noqa: BLE001 — a mensagem nêo pode levar o token
     sys.exit(f"Falhou: envio ao Telegram — {str(e).replace(token, '***')[:200]}")
 if not r.get("ok"):
     sys.exit(f"Falhou: Telegram respondeu {str(r)[:200]}")

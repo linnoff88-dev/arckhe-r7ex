@@ -1,24 +1,24 @@
 #!/usr/bin/env python3
 """r7ex — reel viral do INEMA: roteiro de 7 etapas (r7e) + acabamento de telejornal (motor copiado do eventosextremospub).
-Padrão em PADRAO.md · explicação completa em README.md · ficha de exemplo em modelo/ficha.yaml.
+Padrêo em PADRAO.md · explicaçêo completa em README.md · ficha de exemplo em modelo/ficha.yaml.
 
   python3 r7ex.py novo <slug>             cria edicoes/<data>-<slug>/ficha.yaml (copia o modelo para editar)
-  python3 r7ex.py checar <pasta>          portão da ficha: 7 partes, 450–900 caracteres (objetivo 620, D26), palavras dos painéis na fala, `prende` por parte,
-                                          gancho v1.2.0 (tipo, manchete ≤ 6 palavras ≠ fala, objeto, prova até ~20 s, absolvição; lista reprova);
+  python3 r7ex.py checar <pasta>          portêo da ficha: 7 partes, 450–900 caracteres (objetivo 620, D26), palavras dos painéis na fala, `prende` por parte,
+                                          gancho v1.2.0 (tipo, manchete ≤ 6 palavras ≠ fala, objeto, prova até ~20 s, absolviçêo; lista reprova);
                                           avisa sem gancho.referencias (3–5) e sem frase de comunidade antes da pergunta da parte 7 (v1.5.4)
   python3 r7ex.py plano <pasta>           crítico de viralidade (claude -p): sem bloqueios, gancho ≥ 8, média ≥ 7,5, nenhuma < 6 antes do avatar (D15)
   python3 r7ex.py avatar <pasta> [--de <mp4>]   avatar no estúdio do HeyGen (precisa de avatar/APROVADO_HEYGEN), ou reaproveita um mp4
   python3 r7ex.py imagens <pasta>         Codex desenha a abertura (com o título) e as imagens; prints reais das páginas
   python3 r7ex.py cena <pasta>            falas.json + tempo de cada palavra + ritmo v2 (fala natural, sem esticar nem congelar, D26;
-                                          cartão do comentário 9 s depois da última palavra) + cena.js
+                                          cartêo do comentário 9 s depois da última palavra) + cena.js
   python3 r7ex.py render <pasta>          monta o vídeo (tela :99) → <pasta>/video.mp4
   python3 r7ex.py revisar <pasta>         folha de 12 quadros → <pasta>/build/folha.jpg (LER antes de enviar)
   python3 r7ex.py enviar <pasta>          manda ao bot v3
-  python3 r7ex.py fila <pasta>            entra no fim da fila do canal (fila/fila.py; padrão lives7)
+  python3 r7ex.py fila <pasta>            entra no fim da fila do canal (fila/fila.py; padrêo lives7)
   python3 r7ex.py fazer <pasta> [--de <mp4>]   (ou avatar/AVATAR_DE.txt na pasta) checar → imagens + avatar → cena → render → revisar (enviar/fila depois de ler a folha)
   python3 r7ex.py avatar-enviar <pasta>   só manda a fala ao estúdio (grava avatar/video_id.txt), sem esperar
   python3 r7ex.py avatar-conferir <pasta> uma conferência no HeyGen (leitura): imprime pronto | processando
-  Produção sozinha (sem sessão aberta): python3 producao/producao.py --add <pasta>  (ver producao/README.md)
+  Produçêo sozinha (sem sessêo aberta): python3 producao/producao.py --add <pasta>  (ver producao/README.md)
 """
 import concurrent.futures as cf
 import datetime as dt
@@ -31,29 +31,29 @@ R = Path(__file__).resolve().parent
 sys.path.insert(0, str(R))
 from r7ex import cena as CENA, pecas, retempo as RT, ritmo as RITMO  # noqa: E402
 
-VERSAO = "1.10.7"   # semver do r7ex (1.10.7 = D26 fluência: fala sem esticar nem congelar, teto 900 (objetivo 620), fecho em fila, diagrama grande, conferir_montagem no revisar, 17/11; 1.9.7 = nunca calmo D25: plano.posicao, abertura morna reprova, abertura.layout cheia + teste do leigo na capa, 17/11; 1.8.7 = capa: manchete 6–24% e cena 24–41%, acima do rosto, 17/11; 1.8.6 = capa chocante do Codex com prova e trava no render, 17/11; 1.7.6 = ia_motor cota ver|liberar, 17/11; 1.7.5 = crítico pelo ia.yaml + trava de cota, 17/11; 1.5.4 = Retenção: gancho.referencias (aviso) + CTA de pertencimento antes da pergunta, 13/11; 1.4.4 = chamada D20: ganchos promessa/acusação + CTA sem "me pede o link", 12/11; 1.3.3 = edição com avatar gravado remonta sem exigir prende/nota, 05/11; 1.3.2 = palavra do painel sem rigor; 1.1.0 = fecho segurado + ritmo da fala; 1.2.0 = regras do gancho, quadro 0 + 3 s; 1.3.1 = gancho provocação + entrega, 29/10/2026)
+VERSAO = "1.10.7"   # semver do r7ex (1.10.7 = D26 fluência: fala sem esticar nem congelar, teto 900 (objetivo 620), fecho em fila, diagrama grande, conferir_montagem no revisar, 17/11; 1.9.7 = nunca calmo D25: plano.posicao, abertura morna reprova, abertura.layout cheia + teste do leigo na capa, 17/11; 1.8.7 = capa: manchete 6–24% e cena 24–41%, acima do rosto, 17/11; 1.8.6 = capa chocante do Codex com prova e trava no render, 17/11; 1.7.6 = ia_motor cota ver|liberar, 17/11; 1.7.5 = crítico pelo ia.yaml + trava de cota, 17/11; 1.5.4 = Retençêo: gancho.referencias (aviso) + CTA de pertencimento antes da pergunta, 13/11; 1.4.4 = chamada D20: ganchos promessa/acusaçêo + CTA sem "me pede o link", 12/11; 1.3.3 = ediçêo com avatar gravado remonta sem exigir prende/nota, 05/11; 1.3.2 = palavra do painel sem rigor; 1.1.0 = fecho segurado + ritmo da fala; 1.2.0 = regras do gancho, quadro 0 + 3 s; 1.3.1 = gancho provocaçêo + entrega, 29/10/2026)
 
 # Gancho (v1.2.0, Nei 28/10/2026: "sim, aplica no r7ex também"). O quadro 0 é a capa: a manchete já escrita, mais forte que a
 # fala, um objeto com dano e uma troca de quadro a cada ~1 s até os 3 s. Tipos de gancho em GANCHO_TIPOS (8 desde a 1.4.4); lista é proibida.
 GANCHO_TIPOS = {
     "contrario": "manda parar ou inverte o senso comum (\"PARA DE …\")",
-    "perda": "perda hipotética (\"E SE … SUMISSE AMANHÃ?\")",
+    "perda": "perda hipotética (\"E SE … SUMISSE AMANHê?\")",
     "estatistica": "número que dá medo, com fonte conferida em gancho.fontes",
     "terceiro": "história de outra pessoa, com número",
     "noticia": "fato de ontem/desta semana, com data e fonte",
-    # v1.3.1 (Nei 29/10/2026): soma, não substitui. Afirmação que cutuca, com nome ou número já na 1ª frase.
-    "provocacao": "afirmação que cutuca quem assiste, com nome ou número na 1ª frase e uma pergunta deixada no ar "
+    # v1.3.1 (Nei 29/10/2026): soma, nêo substitui. Afirmaçêo que cutuca, com nome ou número já na 1ª frase.
+    "provocacao": "afirmaçêo que cutuca quem assiste, com nome ou número na 1ª frase e uma pergunta deixada no ar "
                   "(\"A Hyundai contratou 25 mil funcionários. Nenhum pede aumento.\")",
-    # v1.4.4 (D20, Nei 12/11/2026: "não adianta estar claro e correto se não chama atenção, não mexe na dor ou desejo").
+    # v1.4.4 (D20, Nei 12/11/2026: "nêo adianta estar claro e correto se nêo chama atençêo, nêo mexe na dor ou desejo").
     # Regra: ~/projetos/inema-design/regras/chamada.md. Os dois falam com a pessoa ("você") na 1ª frase.
-    "promessa": "o ganho, com a garantia verdadeira, falado em 'você' (\"O seu agente nunca mais vai dizer pronto se não tiver provado. É isso que este método faz.\")",
+    "promessa": "o ganho, com a garantia verdadeira, falado em 'você' (\"O seu agente nunca mais vai dizer pronto se nêo tiver provado. É isso que este método faz.\")",
     "acusacao": "revela o que está acontecendo com a pessoa, em 'você' (\"Seu agente mente pra você.\")",
 }
 VOCE = re.compile(r"\b(voc[eê]s?|seus?|suas?|te|teu|tua)\b", re.I)
 CTA_PROIBIDO = re.compile(r"\bpe[cd]e\s+o\s+link\b|\blink\s+na\s+bio\b|\bcoment[ae]\s+a\s+palavra\b|\b(te|lhe)\s+(mando|envio)\b|"
                           r"\bno\s+(direct|privado)\b|\bfixad[oa]\b", re.I)
-CTA_PALAVRA = re.compile(r"\b[Cc]oment[ae]\s+[\"'“]?[A-ZÁÉÍÓÚÂÊÔÃÕÇ]{2,}\b")
-TEM_NOME = re.compile(r"\s[A-ZÁÉÍÓÚÂÊÔÃÕ][\wáéíóúâêôãõç]+")   # nome próprio depois da 1ª palavra (Hyundai, Claude, GitHub…)
+CTA_PALAVRA = re.compile(r"\b[Cc]oment[ae]\s+[\"'“]?[A-ZÁÉÍÓÚÂÊÔêÕÇ]{2,}\b")
+TEM_NOME = re.compile(r"\s[A-ZÁÉÍÓÚÂÊÔêÕ][\wáéíóúâêôêõç]+")   # nome próprio depois da 1ª palavra (Hyundai, Claude, GitHub…)
 NUM_EXT = (r"um|uma|dois|duas|tr[eê]s|quatro|cinco|seis|sete|oito|nove|dez|onze|doze|treze|quatorze|catorze|quinze|"
            r"dezesseis|dezessete|dezoito|dezenove|vinte|trinta|quarenta|cinquenta|cem|\d+")
 LISTA_SUBST = (r"coisas|novidades|dicas|motivos|ferramentas|formas|jeitos|passos|erros|sinais|segredos|truques|raz[oõ]es|"
@@ -62,12 +62,12 @@ LISTA_SUBST = (r"coisas|novidades|dicas|motivos|ferramentas|formas|jeitos|passos
 LISTA_ADJ = r"melhores|maiores|piores|principais|grandes|novas|novos|pequenas|pequenos|incr[ií]veis|simples|r[aá]pidas|r[aá]pidos"
 LISTA_RE = re.compile(rf"^\W*(as|os|top)?\s*({NUM_EXT})\s+(({LISTA_ADJ})\s+)?({LISTA_SUBST})\b", re.I)
 PROIBIDO_RE = re.compile(r"^\W*(voc[eê] sabia|sabia que|eu fiz|eu criei|eu testei|eu montei)\b", re.I)
-TEM_NUMERO = re.compile(rf"\d|\b({NUM_EXT}|mil|milh[aã]o|milh[oõ]es|bilh[aã]o|bilh[oõ]es|metade|dobro|triplo|por cento)\b", re.I)
-# D25 (Nei 17/11/2026): "nenhum vídeo tem que sair calmo; r7ex ou rtex não são vídeos calmos, são provocativos, são virais e
-# têm que ter gancho, fonte de imagem e de narração". Caso: enxame-quebra-empresa abriu com "Você pensou em montar um enxame…?".
+TEM_NUMERO = re.compile(rf"\d|\b({NUM_EXT}|mil|milh[aê]o|milh[oõ]es|bilh[aê]o|bilh[oõ]es|metade|dobro|triplo|por cento)\b", re.I)
+# D25 (Nei 17/11/2026): "nenhum vídeo tem que sair calmo; r7ex ou rtex nêo sêo vídeos calmos, sêo provocativos, sêo virais e
+# têm que ter gancho, fonte de imagem e de narraçêo". Caso: enxame-quebra-empresa abriu com "Você pensou em montar um enxame…?".
 MORNA_RE = re.compile(r"^\W*(e\s+)?(voc[eê]s?\s+(j[aá]\s+)?(pensou|pensaram|imaginou|ouviu\s+falar|conhece|quer\s+saber|gostaria)|"
                       r"j[aá]\s+(pensou|imaginou|ouviu)|imagin[ae]\b|pense\s+n|neste\s+v[ií]deo|hoje\s+(vamos|eu\s+vou)|vamos\s+falar)", re.I)
-TIPOS_POSICAO = ("contrario", "provocacao", "acusacao")   # D25: a opinião do Nei abre a fala com pressão
+TIPOS_POSICAO = ("contrario", "provocacao", "acusacao")   # D25: a opiniêo do Nei abre a fala com pressêo
 EU = re.compile(r"\b(eu|meu|minha|me|comigo)\b", re.I)
 PALAVRAS_20S = 60   # ~20 s de fala a ~182 palavras/min: a prova (número com fonte) entra antes disso
 
@@ -80,12 +80,12 @@ HEYGEN_BAIXAR = os.environ.get("R7X_HEYGEN_BAIXAR", "heygen-estudio-baixar.mjs")
 TELA = ":99"                                                  # nunca a tela do Nei (memória heygen-login-na-tela)
 TROCAS_PADRAO = {"inema ponto club": "inema.club", "dois mil e vinte e sete": "2027", "dois mil e trinta": "2030",
                  "dois mil e vinte e seis": "2026"}
-# Imagem LIMPA (Nei, 19/10/2026: "saturadas, muita informação, não é como o eventosextremos"): um assunto só, fundo liso,
+# Imagem LIMPA (Nei, 19/10/2026: "saturadas, muita informaçêo, nêo é como o eventosextremos"): um assunto só, fundo liso,
 # luz neutra; o amarelo é do texto/painel (regra "imagens sem amarelado" de 12/10). A metade de baixo fica sob legenda+painel+avatar.
-# 2ª calibragem (Nei, 19/10/2026: o limpo "ficou limpo demais, não tem impacto"): continua UM assunto e fundo liso,
-# mas com luz dramática de cinema no assunto — o impacto vem da luz e da ação, não da quantidade de coisas.
+# 2ª calibragem (Nei, 19/10/2026: o limpo "ficou limpo demais, nêo tem impacto"): continua UM assunto e fundo liso,
+# mas com luz dramática de cinema no assunto — o impacto vem da luz e da açêo, nêo da quantidade de coisas.
 ESTILO = ("Estilo foto cinematográfica realista de impacto, como pôster de filme: UM único objeto ou assunto principal, grande, "
-          "na metade de CIMA do quadro, numa AÇÃO ou estado dramático (quebrando, acendendo, se abrindo, sendo puxado); "
+          "na metade de CIMA do quadro, numa AÇêO ou estado dramático (quebrando, acendendo, se abrindo, sendo puxado); "
           "luz dramática: foco de luz forte de cima ou contraluz com recorte brilhante na borda, sombras profundas, contraste alto. "
           "A luz do assunto pode ser amarela (#FACC15) ou, só se houver perigo, vermelha (#ff2a1f); o resto da cena é fundo "
           "liso e escuro (preto #0c0c10), sem outros objetos — a metade de baixo escura e vazia. Sem objetos espalhados, sem "
@@ -94,19 +94,19 @@ ESTILO = ("Estilo foto cinematográfica realista de impacto, como pôster de fil
           "Robô, quando houver: humanoide industrial estilo Tesla Optimus, com visor preto na frente, nunca fofo ou cartoon. "
           "Nenhum texto nas imagens, EXCETO na abertura.png.")
 COR = {"vermelho": "vermelho #ff2a1f", "amarelo": "amarelo #FACC15"}
-# Capa chocante (v1.8.6, Nei 17/11/2026: "a imagem inicial chocante não está feita com o Codex… cria este padrão para o r7ex e o
-# rtex"). A imersão saiu com capas de anúncio calmo (mão apertando botão, documentos com check) feitas fora do `imagens`.
+# Capa chocante (v1.8.6, Nei 17/11/2026: "a imagem inicial chocante nêo está feita com o Codex… cria este padrêo para o r7ex e o
+# rtex"). A imersêo saiu com capas de anúncio calmo (mêo apertando botêo, documentos com check) feitas fora do `imagens`.
 # Regra: a abertura é SEMPRE do Codex image_gen, mostra o momento da perda/quebra ou o "depois" chocante, e o render recusa
 # abertura sem capa/abertura.codex.json (sha256 igual a um arquivo de ~/.codex*/generated_images). Kit: inema-design D24.
-CHOQUE = ("PADRÃO CAPA CHOCANTE: tem de parar o dedo num relance, como pôster de filme de suspense. Mostre o MOMENTO da perda, "
-          "da quebra ou o \"depois\" chocante (o que dá errado se nada mudar), nunca a solução pronta, nunca anúncio calmo de produto "
-          "(nada de mão apertando botão, documentos com check verde, escritório arrumado). Luz vermelha #ff2a1f no perigo. "
+CHOQUE = ("PADRêO CAPA CHOCANTE: tem de parar o dedo num relance, como pôster de filme de suspense. Mostre o MOMENTO da perda, "
+          "da quebra ou o \"depois\" chocante (o que dá errado se nada mudar), nunca a soluçêo pronta, nunca anúncio calmo de produto "
+          "(nada de mêo apertando botêo, documentos com check verde, escritório arrumado). Luz vermelha #ff2a1f no perigo. "
           "Telas e papéis sem texto legível. "
           # D25 (Nei 17/11/2026): a imagem do prédio devorado por robôs pedia para pensar; o gestor tem de entender num relance.
-          "TESTE DO LEIGO: quem não sabe nada de IA (um gestor, um dono de empresa) entende a cena em 1 segundo: uma situação "
-          "concreta do mundo dele (taxímetro girando em R$, fatura enorme, sala de reunião, celular travado), não metáfora abstrata.")
+          "TESTE DO LEIGO: quem nêo sabe nada de IA (um gestor, um dono de empresa) entende a cena em 1 segundo: uma situaçêo "
+          "concreta do mundo dele (taxímetro girando em R$, fatura enorme, sala de reuniêo, celular travado), nêo metáfora abstrata.")
 CAPA_MEIA = ("A manchete fica entre 6% e 24% da altura, com margem de 7% nas laterais (nada encosta na borda); a cena chocante "
-             "inteira (o objeto e a ação) fica LOGO ABAIXO, entre 24% e 41% da altura, compacta; dos 42% para baixo só fundo escuro "
+             "inteira (o objeto e a açêo) fica LOGO ABAIXO, entre 24% e 41% da altura, compacta; dos 42% para baixo só fundo escuro "
              "e liso, sem texto e sem nada importante (ali entram a legenda e o rosto). ")
 # D25 (Nei 17/11/2026: "deveria ocupar toda a tela e eu como PiP inicialmente"): abertura.layout: cheia → a cena ocupa a tela
 # inteira e o rosto fica na caixinha do canto (x 59–96%, y 67–91%) desde o quadro 0.
@@ -188,8 +188,8 @@ PERTENCE = re.compile(r"\btoda\s+semana\b|\bcomunidade\b|\ba\s+gente\b|\bjunt[oa
 
 
 def checar_referencias(refs):
-    """v1.5.4 (Retenção, Nei 13/11/2026 "aplica"): gancho.referencias = 3–5 vídeos de quem fala do tema no YouTube
-    ({canal, titulo, abertura (1ª fala 0–35 s), gatilho}). Só AVISA: é a régua do crítico, não entra no roteiro."""
+    """v1.5.4 (Retençêo, Nei 13/11/2026 "aplica"): gancho.referencias = 3–5 vídeos de quem fala do tema no YouTube
+    ({canal, titulo, abertura (1ª fala 0–35 s), gatilho}). Só AVISA: é a régua do crítico, nêo entra no roteiro."""
     if not refs:
         log("aviso: gancho sem 'referencias' (3–5 {canal, titulo, abertura, gatilho} de quem fala do tema no YouTube: "
             "yt-dlp --flat-playlist \"ytsearch15:<termo>\" + legenda automática 0–35 s; README passo 2)")
@@ -218,18 +218,18 @@ def checar_gancho(p, f):
         erros.append("gancho sem 'manchete' (o título desenhado no quadro 0)")
     else:
         if len(pal) > 9:   # v1.4.4 (Nei 12/11/2026): clara e completa vale mais que curta; era ≤ 6
-            erros.append(f"gancho.manchete com {len(pal)} palavras ('{m}'): no máximo 9 — a informação inteira, clara, sem enfeite")
+            erros.append(f"gancho.manchete com {len(pal)} palavras ('{m}'): no máximo 9 — a informaçêo inteira, clara, sem enfeite")
         elif len(pal) > 6:
             log(f"aviso: gancho.manchete com {len(pal)} palavras: confira na folha se cabe na capa")
         if m != m.upper():
             erros.append(f"gancho.manchete em CAIXA ALTA: '{m}'")
         if CENA.n(m) == CENA.n(fala1) or CENA.n(m) in CENA.n(fala1):
-            log("aviso: gancho.manchete igual a um pedaço da fala: tudo bem se for a informação clara; a fala traz os detalhes")
+            log("aviso: gancho.manchete igual a um pedaço da fala: tudo bem se for a informaçêo clara; a fala traz os detalhes")
     d = str(g.get("destaque") or "").strip()
     if not d or " " in d:
         erros.append("gancho.destaque: UMA palavra da manchete, a que fica em amarelo")
     elif pal and CENA.n(d) not in [CENA.n(w) for w in pal]:
-        erros.append(f"gancho.destaque '{d}' não é uma palavra da manchete '{m}'")
+        erros.append(f"gancho.destaque '{d}' nêo é uma palavra da manchete '{m}'")
     for nome, txt in (("manchete", m), ("fala da parte 1", fala1), ("tema", str(f.get("tema") or ""))):
         if LISTA_RE.search(txt):
             erros.append(f"gancho de LISTA na {nome} ('{txt[:60]}'): proibido ('N coisas/novidades…'). Um tema por vídeo — "
@@ -245,30 +245,30 @@ def checar_gancho(p, f):
     if tipo == "provocacao":
         frase1 = re.split(r"(?<=[.!?])\s", fala1)[0]
         if frase1.rstrip().endswith("?"):
-            erros.append(f"gancho provocação abre com pergunta ('{frase1[:60]}'): afirme — 'Nenhum pede aumento.', não 'Seu emprego é o próximo?'")
+            erros.append(f"gancho provocaçêo abre com pergunta ('{frase1[:60]}'): afirme — 'Nenhum pede aumento.', nêo 'Seu emprego é o próximo?'")
         if not (TEM_NUMERO.search(frase1) or TEM_NOME.search(frase1)):
-            erros.append(f"gancho provocação sem nome nem número na 1ª frase ('{frase1[:60]}'): diga quem (Hyundai, Claude…) ou quanto")
-    # D25: nunca calmo — a 1ª frase afirma com pressão; a posição do Nei (plano.posicao) abre a fala na boca dele.
+            erros.append(f"gancho provocaçêo sem nome nem número na 1ª frase ('{frase1[:60]}'): diga quem (Hyundai, Claude…) ou quanto")
+    # D25: nunca calmo — a 1ª frase afirma com pressêo; a posiçêo do Nei (plano.posicao) abre a fala na boca dele.
     frase1 = re.split(r"(?<=[.!?])\s", fala1)[0]
     if MORNA_RE.search(frase1):
-        erros.append(f"abertura morna ('{frase1[:60]}'): a 1ª frase afirma com pressão — manda, acusa ou contradiz "
+        erros.append(f"abertura morna ('{frase1[:60]}'): a 1ª frase afirma com pressêo — manda, acusa ou contradiz "
                      "(PADRAO §2.5, chamada.md §2b, D25)")
     posicao = str((f.get("plano") or {}).get("posicao") or "").strip()
     if posicao:
         if tipo not in TIPOS_POSICAO:
-            erros.append(f"plano.posicao (opinião do Nei) com gancho '{tipo}': use {', '.join(TIPOS_POSICAO)}; o número vira prova "
-                         "logo depois, não abertura (D25)")
+            erros.append(f"plano.posicao (opiniêo do Nei) com gancho '{tipo}': use {', '.join(TIPOS_POSICAO)}; o número vira prova "
+                         "logo depois, nêo abertura (D25)")
         if frase1.rstrip().endswith("?"):
-            erros.append(f"plano.posicao com abertura em pergunta ('{frase1[:60]}'): afirme a posição ('Esqueça os enxames.')")
+            erros.append(f"plano.posicao com abertura em pergunta ('{frase1[:60]}'): afirme a posiçêo ('Esqueça os enxames.')")
         fala12 = " ".join(x["fala"] for x in f["partes"][:2])
         if not EU.search(fala12):
-            erros.append("plano.posicao não aparece em 1ª pessoa nas partes 1–2: a opinião vai na boca do Nei "
+            erros.append("plano.posicao nêo aparece em 1ª pessoa nas partes 1–2: a opiniêo vai na boca do Nei "
                          "('faz um ano que eu falo disso…', D25)")
     else:
-        log("aviso: sem plano.posicao — se a tese é opinião do Nei, escreva-a em 1ª pessoa com as palavras dele (D25)")
+        log("aviso: sem plano.posicao — se a tese é opiniêo do Nei, escreva-a em 1ª pessoa com as palavras dele (D25)")
     lay = (f.get("abertura") or {}).get("layout")
     if lay not in (None, "meia", "cheia"):
-        erros.append(f"abertura.layout '{lay}': use meia (padrão D16) ou cheia (arte em tela cheia, avatar no canto desde o quadro 0)")
+        erros.append(f"abertura.layout '{lay}': use meia (padrêo D16) ou cheia (arte em tela cheia, avatar no canto desde o quadro 0)")
     if not str(g.get("entrega") or "").strip():
         log("aviso: gancho sem 'entrega' (o que a pessoa leva do vídeo e quer ver, ex.: 'quem está trocando gente por robô e "
             "o que fazer antes'); o gitbombando bombou porque entregou conteúdo que as pessoas querem")
@@ -301,11 +301,11 @@ def checar_gancho(p, f):
             elif antes + k > PALAVRAS_20S:
                 erros.append(f"a prova '{pv['de']}' entra na palavra {antes + k} (~{(antes + k) / 3:.0f} s): tem de ser até a {PALAVRAS_20S}ª (~20 s)")
             elif not TEM_NUMERO.search(legenda_da(f, f["partes"][pn_ - 1])) and not ((f["partes"][pn_ - 1].get("painel") or {}).get("contador")):
-                erros.append(f"a parte {pn_} da prova não tem número (na fala ou no contador)")
+                erros.append(f"a parte {pn_} da prova nêo tem número (na fala ou no contador)")
     checar_referencias(g.get("referencias"))
     ab = CENA.n(g.get("absolvicao") or "")
     if not ab:
-        erros.append("gancho sem 'absolvicao' (o problema do espectador sem culpa: 'não é falta de estudo, ninguém te deu o mapa')")
+        erros.append("gancho sem 'absolvicao' (o problema do espectador sem culpa: 'nêo é falta de estudo, ninguém te deu o mapa')")
     elif not any(ab in CENA.n(x["fala"]) for x in f["partes"][1:3]):
         erros.append("gancho.absolvicao tem de estar, igual, na fala da parte 2 ou 3 (logo depois do problema)")
     return erros
@@ -315,19 +315,19 @@ def cmd_checar(pasta):
     p, f = ficha(pasta)
     erros = []
     if len(f.get("partes") or []) != 7:
-        erros.append(f"são {len(f.get('partes') or [])} partes; o padrão é 7")
+        erros.append(f"sêo {len(f.get('partes') or [])} partes; o padrêo é 7")
     tot = fala_total(f)
-    # D26 (Nei, 17/11/2026): "teto pode ficar em 900, mantendo objetivo do 620; temos que ser flexíveis com algo que não
-    # vai ser o fundamental". O teto de 620 forçou frase telegráfica ("Cada agente lê tudo, fala, refaz") e a fala não
+    # D26 (Nei, 17/11/2026): "teto pode ficar em 900, mantendo objetivo do 620; temos que ser flexíveis com algo que nêo
+    # vai ser o fundamental". O teto de 620 forçou frase telegráfica ("Cada agente lê tudo, fala, refaz") e a fala nêo
     # soou como o Nei. Objetivo 620; até 900 passa com aviso (fala natural vale mais que caber). Era 450–620 (800 com motivo).
     OBJ, TETO = 620, 900
     if not 450 <= len(tot) <= TETO:
-        if (p / "avatar/AVATAR_DE.txt").exists() or (p / "avatar/avatar.mp4").exists():   # avatar já gravado: a fala não muda
+        if (p / "avatar/AVATAR_DE.txt").exists() or (p / "avatar/avatar.mp4").exists():   # avatar já gravado: a fala nêo muda
             log(f"aviso: fala com {len(tot)} caracteres (450–{TETO}), aceita porque o avatar já existe")
         else:
             erros.append(f"fala com {len(tot)} caracteres (mínimo 450, objetivo {OBJ}, teto {TETO})")
     elif len(tot) > OBJ:
-        log(f"aviso: fala com {len(tot)} caracteres, acima do objetivo {OBJ} (ok até {TETO} se ficou natural; ~{len(tot) / 5.6 / 195 * 60 + 9:.0f} s com o cartão)")
+        log(f"aviso: fala com {len(tot)} caracteres, acima do objetivo {OBJ} (ok até {TETO} se ficou natural; ~{len(tot) / 5.6 / 195 * 60 + 9:.0f} s com o cartêo)")
     vistos = {}
     for i, x in enumerate(f["partes"], 1):   # D26: o mesmo print em duas partes deixa a tela parada e repete a mensagem
         u = (x.get("print") or {}).get("url")
@@ -345,11 +345,11 @@ def cmd_checar(pasta):
     elif not PERTENCE.search(f7.split("?")[0] if "?" in f7 else f7):   # v1.5.4: pertencimento ANTES da pergunta final
         log("aviso: parte 7 sem frase de comunidade antes da pergunta (ex.: 'toda semana tem kit novo, grátis, no inema ponto "
             "club'; PADRAO §2.4)")
-    # D20 (Nei 12/11/2026): "no CTA não deve pedir para a pessoa colocar palavra ou link; deve sempre criar engajamento
-    # natural". Antes o CTA fixo era "Ou me pede o link aqui nos comentários". Edição com avatar gravado só recebe aviso.
+    # D20 (Nei 12/11/2026): "no CTA nêo deve pedir para a pessoa colocar palavra ou link; deve sempre criar engajamento
+    # natural". Antes o CTA fixo era "Ou me pede o link aqui nos comentários". Ediçêo com avatar gravado só recebe aviso.
     m = CTA_PROIBIDO.search(f7) or CTA_PALAVRA.search(f7)
     for prob in ([f"a parte 7 pede palavra/link ('{m.group(0)}'): pergunta de verdade + inema ponto club (chamada.md §4)"] if m else []) \
-            + ([] if "?" in f7 else ["a parte 7 sem pergunta: o fecho pergunta algo da vida/opinião da pessoa, ligado à dor/desejo"]) \
+            + ([] if "?" in f7 else ["a parte 7 sem pergunta: o fecho pergunta algo da vida/opiniêo da pessoa, ligado à dor/desejo"]) \
             + ([] if "pede" in [CENA.n(w) for w in f7.split()] or (f.get("cta") or {}).get("de") else
                ["cta.de: sem 'pede' na fala, diga a palavra da parte 7 onde a caixa da pergunta entra (1ª palavra da pergunta)"]):
         if avatar_gravado(p):
@@ -361,7 +361,7 @@ def cmd_checar(pasta):
     extras = [f"cta.{k} pede palavra/link ('{(CTA_PROIBIDO.search(str(cta.get(k) or '')) or CTA_PALAVRA.search(str(cta.get(k) or ''))).group(0)}')"
               for k in ("a", "b") if CTA_PROIBIDO.search(str(cta.get(k) or "")) or CTA_PALAVRA.search(str(cta.get(k) or ""))]
     if pedido_re.search(str(cta.get("comentario") or "")):
-        extras.append(f"cta.comentario é pedido ('{cta['comentario']}'): o texto digitado é uma RESPOSTA de opinião/experiência (§2.3)")
+        extras.append(f"cta.comentario é pedido ('{cta['comentario']}'): o texto digitado é uma RESPOSTA de opiniêo/experiência (§2.3)")
     for prob in extras:
         if avatar_gravado(p):
             log(f"aviso: {prob} — aceito porque o avatar já existe")
@@ -373,7 +373,7 @@ def cmd_checar(pasta):
         if not (f.get("abertura") or {}).get(k):
             erros.append(f"abertura sem '{k}'")
     eg = checar_gancho(p, f)
-    if eg and avatar_gravado(p):   # edição com avatar já gravado: a fala não muda (mesma regra do tamanho da fala)
+    if eg and avatar_gravado(p):   # ediçêo com avatar já gravado: a fala nêo muda (mesma regra do tamanho da fala)
         for e in eg:
             log(f"aviso (gancho v1.2, aceito porque o avatar já existe): {e}")
     else:
@@ -390,7 +390,7 @@ def cmd_checar(pasta):
         if dg and not 2 <= len(dg.get("nos") or dg.get("linhas") or []) <= 6:
             erros.append(f"parte {i + 1}: diagrama com 2 a 6 nós/linhas")
         if not str(x.get("prende") or "").strip():   # D15: por que um desconhecido continua aqui
-            if avatar_gravado(p):   # edição antiga com avatar gravado (Nei 05/11/2026: remontar sem tanto rigor)
+            if avatar_gravado(p):   # ediçêo antiga com avatar gravado (Nei 05/11/2026: remontar sem tanto rigor)
                 log(f"aviso: parte {i + 1} sem 'prende:', aceito porque o avatar já existe")
             else:
                 erros.append(f"parte {i + 1} sem 'prende:' (por que um desconhecido para e continua nesta parte)")
@@ -440,12 +440,12 @@ def cmd_checar(pasta):
             leg = leg.replace(a, b)
         for w in filter(None, palavras):
             if CENA.n(w) not in CENA.n(leg):
-                erros.append(f"parte {i + 1}: '{w}' do painel/diagrama não está na fala/legenda")
-    pa = (f.get("ritmo") or {}).get("pausa_antes")   # a máxima (padrão: 1ª palavra da parte 6); pausa de ~0,75 s antes dela
+                erros.append(f"parte {i + 1}: '{w}' do painel/diagrama nêo está na fala/legenda")
+    pa = (f.get("ritmo") or {}).get("pausa_antes")   # a máxima (padrêo: 1ª palavra da parte 6); pausa de ~0,75 s antes dela
     if pa:
         pn_, de_ = (pa.get("parte", 6), pa.get("de")) if isinstance(pa, dict) else (6, pa)
         if not 2 <= int(pn_) <= len(f["partes"]):
-            erros.append(f"ritmo.pausa_antes: parte {pn_} não existe")
+            erros.append(f"ritmo.pausa_antes: parte {pn_} nêo existe")
         elif de_ and (" " in str(de_).strip() or CENA.n(de_) not in CENA.n(f["partes"][int(pn_) - 1]["fala"])):
             erros.append(f"ritmo.pausa_antes: '{de_}' tem de ser UMA palavra da fala da parte {pn_}")
     if not any(x.get("print") for x in f["partes"]):
@@ -457,7 +457,7 @@ def cmd_checar(pasta):
 
 def plano_aprovado(c):
     """D15 calibrado (21/10/2026): sem bloqueios objetivos E gancho ≥ 8 E média ≥ 7,5 E nenhuma parte < 6.
-    (o 1º desenho, gancho ≥ 9 e todas ≥ 8, não convergiu: o crítico oscila ±1 e sempre acha algo — ia-novembro-v2, 8 rodadas)"""
+    (o 1º desenho, gancho ≥ 9 e todas ≥ 8, nêo convergiu: o crítico oscila ±1 e sempre acha algo — ia-novembro-v2, 8 rodadas)"""
     n = c["notas"]
     return not c.get("bloqueios") and n[0] >= 8 and sum(n) / len(n) >= 7.5 and min(n) >= 6
 
@@ -483,15 +483,15 @@ def cmd_plano(pasta):
         try:
             res = executar("critico_plano", pedido, p, arquivos=anexos, preferir=os.environ.get("R7X_CRITICO") or None)
         except CotaEsgotada as e:
-            falha(f"crítico do plano sem cota: {e}. NÃO reescreva a ficha: o plano não foi julgado; rode de novo depois.")
+            falha(f"crítico do plano sem cota: {e}. NêO reescreva a ficha: o plano nêo foi julgado; rode de novo depois.")
         except Exception as e:
-            falha(f"crítico do plano não rodou: {str(e)[:200]}")
+            falha(f"crítico do plano nêo rodou: {str(e)[:200]}")
         try:
             c = json.loads(res[res.index("{"): res.rindex("}") + 1])
             c["notas"] = [int(x["nota"]) for x in sorted(c["partes"], key=lambda x: x["n"])]
             assert len(c["notas"]) == 7
         except Exception as e:
-            falha(f"crítico do plano não respondeu direito: {str(e)[:200]}")
+            falha(f"crítico do plano nêo respondeu direito: {str(e)[:200]}")
         c["hash"] = h
         arq.write_text(json.dumps(c, ensure_ascii=False, indent=1))
     n = c["notas"]
@@ -500,18 +500,18 @@ def cmd_plano(pasta):
     if not plano_aprovado(c):
         itens = [f"BLOQUEIO: {b}" for b in c.get("bloqueios") or []]
         itens += [f"parte {x['n']} ({x['nota']}): {x.get('melhorar') or x.get('porque')}" for x in c["partes"] if x.get("melhorar")]
-        falha("plano não passou (D15: sem bloqueios, gancho ≥ 8, média ≥ 7,5, nenhuma < 6) — reescreva:\n  - " + "\n  - ".join(itens))
+        falha("plano nêo passou (D15: sem bloqueios, gancho ≥ 8, média ≥ 7,5, nenhuma < 6) — reescreva:\n  - " + "\n  - ".join(itens))
     log("plano aprovado")
     return c
 
 
 def avatar_enviar(pasta):
-    """manda a fala ao estúdio do HeyGen (fila/trava do estúdio) e grava avatar/video_id.txt; não espera o render"""
+    """manda a fala ao estúdio do HeyGen (fila/trava do estúdio) e grava avatar/video_id.txt; nêo espera o render"""
     p, f = ficha(pasta); av = p / "avatar"; av.mkdir(exist_ok=True)
     if (av / "avatar.mp4").exists() or (av / "video_id.txt").exists():
         return
     if not (av / "APROVADO_HEYGEN").exists():
-        falha("falta avatar/APROVADO_HEYGEN (o HeyGen só roda com o OK do Nei para esta produção)")
+        falha("falta avatar/APROVADO_HEYGEN (o HeyGen só roda com o OK do Nei para esta produçêo)")
     cmd_checar(pasta); cmd_plano(pasta)                 # D15: só grava avatar de roteiro que prende
     falas(p, f)
     (av / "fala.txt").write_text(fala_total(f) + "\n")
@@ -521,17 +521,17 @@ def avatar_enviar(pasta):
                        stdout=lg, stderr=subprocess.STDOUT, timeout=12000)
     s = (av / "studio.log").read_text()
     if "ERRO:" in s:
-        falha("estúdio: " + s[s.index("ERRO:"):][:200] + "  (sessão caiu? abra o login na tela do Nei — README §HeyGen)")
+        falha("estúdio: " + s[s.index("ERRO:"):][:200] + "  (sessêo caiu? abra o login na tela do Nei — README §HeyGen)")
     m = re.search(r"create-v4/([0-9a-f]{32})", s)
     if not m:
-        falha("estúdio não devolveu o id (avatar/studio.log)")
+        falha("estúdio nêo devolveu o id (avatar/studio.log)")
     (av / "video_id.txt").write_text(m.group(1))
     log("avatar enviado ao estúdio:", m.group(1))
 
 
 def avatar_conferir(pasta, minutos=0.02):
     """confere o avatar no HeyGen (leitura) e baixa se pronto → 'pronto' | 'processando'; erro do HeyGen = falha.
-    minutos=0.02 = uma conferência só (para a produção); o fazer manual espera até 290 min."""
+    minutos=0.02 = uma conferência só (para a produçêo); o fazer manual espera até 290 min."""
     av = Path(pasta).resolve() / "avatar"  # absoluto: o node roda em heygen/ (22/10: caminho relativo travou o hackers-atacam)
     if (av / "avatar.mp4").exists():
         return "pronto"
@@ -550,18 +550,18 @@ def cmd_avatar(pasta, de=None):
     falas(p, f)
     if de:
         shutil.copy(de, av / "avatar.mp4")
-        (av / "APROVADO_HEYGEN").write_text(f"Reaproveita o avatar {de} (nenhuma geração nova no HeyGen).\n")
+        (av / "APROVADO_HEYGEN").write_text(f"Reaproveita o avatar {de} (nenhuma geraçêo nova no HeyGen).\n")
         log("avatar reaproveitado de", de)
     elif not (av / "avatar.mp4").exists():
         if not (av / "APROVADO_HEYGEN").exists():
-            falha("falta avatar/APROVADO_HEYGEN (o HeyGen só roda com o OK do Nei para esta produção)")
+            falha("falta avatar/APROVADO_HEYGEN (o HeyGen só roda com o OK do Nei para esta produçêo)")
         avatar_enviar(pasta)
         if avatar_conferir(pasta, minutos=290) != "pronto":
             falha("download do avatar: tempo esgotado esperando o HeyGen")
     d, sem = RT.retempo(p)
     log(f"avatar {d:.1f} s · fala × roteiro {sem:.0%}")
     if sem < 0.90:
-        falha(f"o avatar não fala o roteiro ({sem:.0%} < 90%)")
+        falha(f"o avatar nêo fala o roteiro ({sem:.0%} < 90%)")
     log_ritmo(RITMO.aplicar(p, f))
 
 
@@ -569,7 +569,7 @@ def log_ritmo(r):
     if r:
         pz = r.get("pausa") or {}
         log(f"ritmo: {r['wpm_heygen']:.0f} → {r['wpm']:.0f} palavras/min (×{r['k']}) · pausa {pz.get('inserida', 0):.2f} s antes da máxima "
-            f"({pz.get('fala')}) · cartão {r['cauda']:.1f} s depois da última palavra · {r['duracao']:.1f} s")
+            f"({pz.get('fala')}) · cartêo {r['cauda']:.1f} s depois da última palavra · {r['duracao']:.1f} s")
 
 
 def cmd_imagens(pasta):
@@ -601,9 +601,9 @@ def cmd_imagens(pasta):
     falta = [n for n in ["abertura.png"] + list(nome.values()) if not (capa / n).exists()]
     # só as que faltam: com a lista inteira o Codex refazia todas e trocava a abertura aprovada (musk, 21/10/2026)
     linhas = [l for l in linhas if l.split(" — ")[0].split(". ", 1)[1] in falta]
-    pedido = (f"Gere {len(linhas)} imagens com a ferramenta de geração de imagem (image_gen) e salve nesta pasta, em PNG, formato RETRATO 9:16 "
+    pedido = (f"Gere {len(linhas)} imagens com a ferramenta de geraçêo de imagem (image_gen) e salve nesta pasta, em PNG, formato RETRATO 9:16 "
               f"(o maior tamanho vertical disponível). {ESTILO}\n\n" + "\n".join(linhas) +
-              "\n\nNão mexa em nenhum outro arquivo da pasta. Ao final, liste os arquivos salvos.\n")
+              "\n\nNêo mexa em nenhum outro arquivo da pasta. Ao final, liste os arquivos salvos.\n")
     (capa / "pedido.txt").write_text(pedido)
     if falta:
         log(f"Codex: {len(falta)} imagem(ns)…")
@@ -611,10 +611,10 @@ def cmd_imagens(pasta):
             subprocess.run(["codex", "exec", "--skip-git-repo-check", "--dangerously-bypass-approvals-and-sandbox"], input=pedido, text=True,
                            cwd=capa, stdout=lg, stderr=subprocess.STDOUT, timeout=2700)
     if "abertura.png" in falta and (capa / "abertura.png").exists() and not prova_codex(capa / "abertura.png", linhas[0]):
-        falha("capa/abertura.png não é cópia de uma imagem do Codex image_gen (generated_images); apague e rode de novo")
+        falha("capa/abertura.png nêo é cópia de uma imagem do Codex image_gen (generated_images); apague e rode de novo")
     for n in ["abertura.png"] + list(nome.values()):
         if not (capa / n).exists():
-            falha(f"o Codex não gerou capa/{n} (capa/codex.log)")
+            falha(f"o Codex nêo gerou capa/{n} (capa/codex.log)")
         pecas.vertical(capa / n)
     pecas.abertura(capa / "abertura.png")
     for i, x in enumerate(f["partes"], 1):
@@ -649,7 +649,7 @@ def cmd_cena(pasta):
     t = p / "avatar/tempos.json"
     if not t.exists() or t.stat().st_mtime < (p / "avatar/avatar.mp4").stat().st_mtime:
         d, sem = RT.retempo(p); log(f"retempo {d:.1f} s · {sem:.0%}")
-    log_ritmo(RITMO.aplicar(p, f))                      # edição antiga também ganha o ritmo novo, sem novo avatar
+    log_ritmo(RITMO.aplicar(p, f))                      # ediçêo antiga também ganha o ritmo novo, sem novo avatar
     dur, nt, npn, nl = CENA.montar(p, f, fl)
     log(f"cena.js ok: {dur} s · {nt} telas · {npn} painéis · {nl} blocos de legenda")
 
@@ -658,13 +658,13 @@ def cmd_render(pasta):
     p, f = ficha(pasta)
     if f.get("gancho") and not (p / "capa/abertura.codex.json").exists() and os.environ.get("R7X_CAPA_ANTIGA") != "1":
         falha("capa/abertura.png sem prova do Codex (capa/abertura.codex.json): a abertura chocante sai só pelo "
-              "`r7ex.py imagens` (v1.8.6). Edição antiga anterior à regra: R7X_CAPA_ANTIGA=1")
+              "`r7ex.py imagens` (v1.8.6). Ediçêo antiga anterior à regra: R7X_CAPA_ANTIGA=1")
     env = dict(os.environ, DISPLAY=TELA, GEO="geo-br.js", LAYOUT="canto", MUSICA=str(R / "assets/trilha.mp3"))
     with open(p / "build-render.log", "w") as lg:
         r = subprocess.run(["bash", R / "motor/compor_avatar.sh", p, p / "video.mp4"], cwd=R, env=env, stdout=lg, stderr=subprocess.STDOUT,
                            timeout=3600)
     if r.returncode:
-        txt = (p / "build-render.log").read_text()       # a linha do erro, não o fim do traceback (20/10/2026)
+        txt = (p / "build-render.log").read_text()       # a linha do erro, nêo o fim do traceback (20/10/2026)
         chave = [l.strip() for l in txt.splitlines() if re.search(r"Error|Timeout|exceeded|NO_MEMORY|failed", l)]
         falha("render: " + (" | ".join(chave[:2]) if chave else txt[-400:]))
     d = float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", p / "video.mp4"]))
@@ -676,7 +676,7 @@ def cmd_render(pasta):
 
 
 def conferir_montagem(p, f, v, d):
-    """D26 (Nei, 17/11/2026): portão determinístico do vídeo pronto, porque a folha de 12 quadros não mostra velocidade,
+    """D26 (Nei, 17/11/2026): portêo determinístico do vídeo pronto, porque a folha de 12 quadros nêo mostra velocidade,
     rosto congelado nem a ordem do fecho (o revisor aprovou o enxame v2 com os três defeitos). Devolve a lista de erros."""
     erros = []
     rj = p / "avatar/ritmo.json"
@@ -696,7 +696,7 @@ def conferir_montagem(p, f, v, d):
         C = json.loads(cj.read_text().split("=", 1)[1].rstrip().rstrip(";"))
         c = C.get("cta") or {}
         if c.get("fala_fim") is not None and f["partes"][-1]["fala"].rstrip().endswith("?") and c["ini"] < c["fala_fim"]:
-            erros.append(f"o cartão da pergunta entra em {c['ini']:.1f} s, antes de o Nei terminar a pergunta ({c['fala_fim']:.1f} s)")
+            erros.append(f"o cartêo da pergunta entra em {c['ini']:.1f} s, antes de o Nei terminar a pergunta ({c['fala_fim']:.1f} s)")
     if d > 60:
         log(f"aviso: vídeo com {d:.0f} s (passa de 1 min): enxugue a fala ou a cauda (ritmo.cauda)")
     return erros
@@ -708,7 +708,7 @@ def cmd_revisar(pasta):
     em = conferir_montagem(p, f, v, d)
     if em:
         falha("montagem reprovada (D26):\n  - " + "\n  - ".join(em))
-    # v1.2.0: com gancho, os 3 primeiros quadros são a capa (0 s) e os dois cortes (1 s, 2 s), para o revisor ver a troca
+    # v1.2.0: com gancho, os 3 primeiros quadros sêo a capa (0 s) e os dois cortes (1 s, 2 s), para o revisor ver a troca
     ts = ([0.05, 1.2, 2.2] if f.get("gancho") else [0.2, 1.5, 3.5]) + [round(5 + (d - 6) * i / 8, 2) for i in range(9)]
     qs = []
     for k, t in enumerate(ts):
@@ -737,7 +737,7 @@ def cmd_fila(pasta):
         falha("fila do canal desligada nesta máquina (R7X_SEM_FILA): nada vai para o YouTube daqui")
     p, f = ficha(pasta); pub = f["publicar"]
     if pub.get("so_v3"):
-        falha("ficha de teste (publicar.so_v3: true): vai só ao v3, não entra na fila do canal")
+        falha("ficha de teste (publicar.so_v3: true): vai só ao v3, nêo entra na fila do canal")
     subprocess.run(["python3", R / "fila/fila.py", "--add", p / "video.mp4", "--nome", f["tema"], "--titulo", pub["titulo"],
                     "--contexto", pub["contexto"], "--canal", pub.get("fila", "lives7")]
                    + (["--playlist", pub["playlist"]] if pub.get("playlist") else []), check=True)

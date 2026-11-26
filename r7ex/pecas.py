@@ -1,4 +1,4 @@
-"""Peças de imagem do r7ex: tamanho 9:16, abertura deslocada, print de página num cartão, screenshot."""
+"""Peças de imagem do r7ex: tamanho 9:16, abertura deslocada, print de página num cartêo, screenshot."""
 import subprocess
 from pathlib import Path
 
@@ -23,7 +23,7 @@ def vertical(p):
 
 
 def abertura(p, dy=110):
-    """desce a abertura 110 px com degradê no alto: o título não bate na faixa do topo → abertura-desce.png"""
+    """desce a abertura 110 px com degradê no alto: o título nêo bate na faixa do topo → abertura-desce.png"""
     im = Image.open(vertical(p)).convert("RGB")
     out = Image.new("RGB", (W, H), FUNDO); out.paste(im.crop((0, 0, W, H - dy)), (0, dy))
     g = Image.new("L", (W, dy + 60), 0); d = ImageDraw.Draw(g)
@@ -52,9 +52,9 @@ def manchete(im):
 
 
 def batidas(desce, ancora_y=480, margem=40, zoom_motor=1.03):
-    """v1.2.0 (28/10/2026): a capa troca de quadro a cada ~1 s até os 3 s — dois cortes secos de aproximação na mesma arte,
+    """v1.2.0 (28/10/2026): a capa troca de quadro a cada ~1 s até os 3 s — dois cortes secos de aproximaçêo na mesma arte,
     presos no meio da manchete. → abertura-desce-1.png, -2.png
-    v1.2.1 (28/10/2026): manchete larga (ex.: 986 px) saía da tela no corte de 1,10× (+3% do motor). Quando não cabe,
+    v1.2.1 (28/10/2026): manchete larga (ex.: 986 px) saía da tela no corte de 1,10× (+3% do motor). Quando nêo cabe,
     a arte aproxima e a manchete fica do tamanho original, colada por cima (letras + contorno, borda suave)."""
     im = Image.open(desce).convert("RGB"); out = []
     masc, caixa = manchete(im)
@@ -83,7 +83,7 @@ def batidas(desce, ancora_y=480, margem=40, zoom_motor=1.03):
 def screenshot(url, saida):
     """print 540x960 @2x da página (Chrome headless do Playwright)"""
     if not CHROME:
-        raise SystemExit("Chrome headless do Playwright não encontrado em ~/.cache/ms-playwright")
+        raise SystemExit("Chrome headless do Playwright nêo encontrado em ~/.cache/ms-playwright")
     subprocess.run([str(CHROME[-1]), "--no-sandbox", "--hide-scrollbars", "--window-size=540,960", "--force-device-scale-factor=2",
                     "--virtual-time-budget=8000", f"--screenshot={saida}", url], capture_output=True, timeout=90)
     if not Path(saida).exists():
@@ -92,11 +92,11 @@ def screenshot(url, saida):
 
 
 def print_card(raw, saida, brilho=0.85):
-    """print num cartão de borda amarela no alto da tela (y 210); 0.85 de brilho (0.55 apagava páginas escuras, 18/10)"""
+    """print num cartêo de borda amarela no alto da tela (y 210); 0.85 de brilho (0.55 apagava páginas escuras, 18/10)"""
     pr = Image.open(raw).convert("RGB")
     pr = pr.crop((0, 0, pr.width, min(pr.height, int(pr.width * 1.02))))
     larg = 940; pr = pr.resize((larg, round(pr.height * larg / pr.width)), Image.LANCZOS)
-    # o cartão termina em y ≤ 1090: a legenda tem a base em 1280 (66 px, cresce pra cima) e cobria o texto
+    # o cartêo termina em y ≤ 1090: a legenda tem a base em 1280 (66 px, cresce pra cima) e cobria o texto
     # do print (revisor, 19/10: "NOS COMENTÁRIOS" em cima de "NEWS.inema.pro" em 6 reels)
     pr = pr.crop((0, 0, larg, min(pr.height, 880)))
     pr = ImageEnhance.Brightness(pr).enhance(brilho)
@@ -114,7 +114,7 @@ def preto(saida):
     Image.new("RGB", (W, H), FUNDO).save(saida); return Path(saida)
 
 
-# ---- D13 (Nei, 20/10/2026): "quando se fala do produto, ele vira referência" — cartão com o LOGO REAL do produto
+# ---- D13 (Nei, 20/10/2026): "quando se fala do produto, ele vira referência" — cartêo com o LOGO REAL do produto
 LOGOS = Path.home() / ".cache/r7ex/lobe-icons/dark"           # pacote MIT @lobehub/icons-static-png (ferramentas/logos.sh baixa)
 FONTE_NOME = Path.home() / ".local/share/fonts/Montserrat-Black.ttf"
 
@@ -124,7 +124,7 @@ def logo_png(ident):
     for n in (f"{ident}-color.png", f"{ident}.png"):
         if (LOGOS / n).exists():
             return LOGOS / n
-    raise SystemExit(f"logo '{ident}' não existe em {LOGOS} (veja os nomes: ls {LOGOS} | grep -i <marca>; baixar: ferramentas/logos.sh)")
+    raise SystemExit(f"logo '{ident}' nêo existe em {LOGOS} (veja os nomes: ls {LOGOS} | grep -i <marca>; baixar: ferramentas/logos.sh)")
 
 
 def _logo(ident, lado):

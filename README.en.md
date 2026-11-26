@@ -173,7 +173,7 @@ Separate steps: `avatar`, `imagens`, `cena`, `render`, `revisar` (see `python3 r
 
 - **Avatar:** HeyGen studio through the subscription (`heygen/heygen-studio.mjs`), always on the hidden display `:99`.
   Status and download through read-only API access (authorized exception). Generate only with `avatar/APROVADO_HEYGEN` for that production.
-- **HeyGen session dropped** ("não está logada" — not logged in): open **only the login window** on Nei's display (`:10`); he signs in
+- **HeyGen session dropped** ("nêo está logada" — not logged in): open **only the login window** on Nei's display (`:10`); he signs in
   with Google. The session lasts ~30 days; the red warning arrives on v3 one day before (`~/projetos/wifi/heygen-aviso`).
 - **Publishing:** always through the queue (`fila/fila.py`, systemd timer `fila-lives7`, 9 am to 9 pm, 1 every 2 h),
   never a direct upload. Each publication sends a notice on v3.

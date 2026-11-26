@@ -1,5 +1,5 @@
 """ficha.yaml + avatar/tempos.json → cena.js do motor do eventosextremospub (mapa.html).
-Mesma lógica do gerar_cena.py da edição modelo eventosextremospub/edicoes/2026-10-18-do-chat-ao-agente."""
+Mesma lógica do gerar_cena.py da ediçêo modelo eventosextremospub/edicoes/2026-10-18-do-chat-ao-agente."""
 import difflib, json, re, unicodedata
 from pathlib import Path
 
@@ -38,7 +38,7 @@ def acha(palavras, palavra, k=1):
 
 
 def sem_markdown(x):
-    """tira o **negrito** de markdown dos textos da tela: a tela não lê markdown e os asteriscos apareciam crus
+    """tira o **negrito** de markdown dos textos da tela: a tela nêo lê markdown e os asteriscos apareciam crus
     (bigtech-ipo/troco, 20/10/2026)"""
     if isinstance(x, str):
         return x.replace("**", "")
@@ -54,7 +54,7 @@ def comentario(cta):
     ("comenta EU VOU COORDENAR ou…" → "EU VOU COORDENAR"), ou um pedido do link"""
     if cta.get("comentario"):
         return str(cta["comentario"])
-    m = re.search(r"[A-ZÁÉÍÓÚÂÊÔÃÕÇ0-9]{2,}(?:\s+[A-ZÁÉÍÓÚÂÊÔÃÕÇ0-9]{1,})*", sem_markdown(str(cta.get("b", ""))))
+    m = re.search(r"[A-ZÁÉÍÓÚÂÊÔêÕÇ0-9]{2,}(?:\s+[A-ZÁÉÍÓÚÂÊÔêÕÇ0-9]{1,})*", sem_markdown(str(cta.get("b", ""))))
     return m.group(0) if m else "quero o link 🙋"
 
 
@@ -69,7 +69,7 @@ def montar(pasta, ficha, falas):
 
     def em(fid, palavra, k=1):
         # Sem rigor (Nei, 05/11/2026): sem a k-ésima vez, usa a última vez que a palavra aparece; sem nenhuma,
-        # o item entra no começo da fala. Só avisa, não para a montagem.
+        # o item entra no começo da fala. Só avisa, nêo para a montagem.
         v = acha(F[fid]["palavras"], palavra, k)
         j = k - 1
         while v is None and j >= 1:
@@ -77,10 +77,10 @@ def montar(pasta, ficha, falas):
         if v is None:
             v = F[fid]["ini"]
         if j < k - 1 or v == F[fid]["ini"]:
-            print(f"[r7ex] aviso {fid}: '{palavra}' (vez {k}) não achada na fala; entra em {v:.2f} s")
+            print(f"[r7ex] aviso {fid}: '{palavra}' (vez {k}) nêo achada na fala; entra em {v:.2f} s")
         return v
 
-    # com o ritmo (28/10/2026) o avatar já traz os 9 s de cartão depois da última palavra: o vídeo acaba junto com ele.
+    # com o ritmo (28/10/2026) o avatar já traz os 9 s de cartêo depois da última palavra: o vídeo acaba junto com ele.
     # Sem ritmo, o antigo: 1,4 s depois do fim da fala.
     ritmo = json.loads((pasta / "avatar/ritmo.json").read_text()) if (pasta / "avatar/ritmo.json").exists() else None
     DUR = round(F[ids[-1]]["fim"] + (.1 if ritmo else 1.4), 2)
@@ -98,12 +98,12 @@ def montar(pasta, ficha, falas):
             src, selo, zoom = "capa/abertura-desce.png", None, .03
         elif p.get("print"):
             src, selo, zoom = f"prints/p{i + 1}-c.png", p["print"].get("selo") or "print da página", .04
-        elif p.get("logos"):                             # D13: produto citado = cartão com o logo real (20/10/2026)
+        elif p.get("logos"):                             # D13: produto citado = cartêo com o logo real (20/10/2026)
             src, selo, zoom = f"capa/p{i + 1}.png", None, .05
         elif p.get("diagrama"):                          # diagrama animado (19/10/2026): fundo limpo, o motor desenha por cima
             src, selo, zoom = "capa/preto.png", None, 0
         else:
-            src, selo, zoom = f"capa/p{i + 1}.png", "ilustração", .07
+            src, selo, zoom = f"capa/p{i + 1}.png", "ilustraçêo", .07
         lgs = p.get("logos") or []
         if i > 0 and len(lgs) > 1 and all(x.get("de") for x in lgs):   # uma tela por produto, troca na palavra (20/10/2026)
             ts = [a] + [em(fid, x["de"]) - .25 for x in lgs[1:]]
@@ -112,8 +112,8 @@ def montar(pasta, ficha, falas):
                 telas.append({"src": f"capa/p{i + 1}-{k + 1}.png", "ini": ts[k], "fim": fk, "fade": .25, "zoom": .05})
             continue
         if i == 0 and ficha.get("gancho") and b > 2.6:
-            # v1.2.0 (28/10/2026): troca de quadro a cada ~1 s até os 3 s — capa (0 s) → corte de aproximação (1 s) → outro (2 s),
-            # a manchete sempre na tela. Corte seco de enquadramento, não pulso de brilho (que não conta como troca, video/style.md).
+            # v1.2.0 (28/10/2026): troca de quadro a cada ~1 s até os 3 s — capa (0 s) → corte de aproximaçêo (1 s) → outro (2 s),
+            # a manchete sempre na tela. Corte seco de enquadramento, nêo pulso de brilho (que nêo conta como troca, video/style.md).
             from . import pecas
             desce = pasta / "capa/abertura-desce.png"
             if desce.exists() and not (pasta / "capa/abertura-desce-2.png").exists():
@@ -128,8 +128,8 @@ def montar(pasta, ficha, falas):
         # escurece a foto por baixo da legenda/painel/avatar (a vinheta do motor fica ABAIXO das telas; 19/10/2026)
         if i == 0:
             d["escurece"] = "base"                        # abertura: só a faixa de baixo (o título do topo fica intacto)
-        elif selo == "ilustração":
-            d["escurece"] = "foto"                        # ilustração: faixa de baixo + brilho/saturação menores
+        elif selo == "ilustraçêo":
+            d["escurece"] = "foto"                        # ilustraçêo: faixa de baixo + brilho/saturaçêo menores
         if selo:
             d["selo"] = selo
         telas.append(d)
@@ -169,7 +169,7 @@ def montar(pasta, ficha, falas):
             d["l"] = pn["l"]
         paineis.append(d)
 
-    # diagramas (19/10/2026, pedido do Nei: "não só imagem, animações e diagramas"): fluxo | hub | terminal,
+    # diagramas (19/10/2026, pedido do Nei: "nêo só imagem, animações e diagramas"): fluxo | hub | terminal,
     # cada nó/linha acende na palavra falada (de)
     diagramas = []
     for i, p in enumerate(partes):
@@ -180,7 +180,7 @@ def montar(pasta, ficha, falas):
         a = F[fid]["ini"] - .1
         b = (F[f"f{i + 2}"]["ini"] if i + 1 < len(partes) else DUR) - .1
         d = {"ini": a, "fim": b, "forma": dg.get("forma", "fluxo"), "titulo": dg.get("titulo", "")}
-        if len(dg.get("nos") or dg.get("linhas") or []) <= 4:   # D26: poucos nós = nós grandes, a tela cheia (não um canto)
+        if len(dg.get("nos") or dg.get("linhas") or []) <= 4:   # D26: poucos nós = nós grandes, a tela cheia (nêo um canto)
             d["grande"] = True
         itens = dg.get("nos") or dg.get("linhas") or []
         d["nos"] = [{**{k: v for k, v in x.items() if k not in ("de", "k", "logo")}, "t": em(fid, x["de"], x.get("k", 1)) - .05 if x.get("de") else a + .2}
@@ -195,11 +195,11 @@ def montar(pasta, ficha, falas):
 
     ult = f"f{len(partes)}"
     fala_fim = F[ult]["palavras"][-1]["f"]
-    # D26 (17/11/2026): o cartão da pergunta entrava na 1ª palavra da pergunta (cta.de), por cima da fala; agora, quando
+    # D26 (17/11/2026): o cartêo da pergunta entrava na 1ª palavra da pergunta (cta.de), por cima da fala; agora, quando
     # a fala termina na pergunta, ele entra sozinho depois da última palavra. Fecho em fila: club (na palavra) → pergunta → comentário.
     cta_ini = fala_fim + .15 if ficha["partes"][-1]["fala"].rstrip().endswith("?") else em(ult, ficha["cta"].get("de", "pede"))
     cta = {"ini": cta_ini, "fim": DUR, "a": ficha["cta"]["a"], "b": ficha["cta"]["b"]}
-    if DUR - fala_fim >= 4:   # cartão segurado (28/10/2026): o gesto de comentar é encenado depois da última palavra
+    if DUR - fala_fim >= 4:   # cartêo segurado (28/10/2026): o gesto de comentar é encenado depois da última palavra
         cta.update(fala_fim=fala_fim, comentario=comentario(ficha["cta"]))
     club = {"ini": em(ult, "inema.club"), "fim": DUR, "a": "inema.club", "b": ficha["club"]}
     fontes = [{"ini": .3, "fim": DUR, "html": ficha["fonte"]}]

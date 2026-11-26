@@ -6,15 +6,15 @@ pedido: "Nei, 28/10/2026: 'explicavideo <lskEzJ7ixw0> e crie um rtex e um r7ex e
 
 plano:
   pessoa: "quem trabalha com conhecimento (estudante, analista, profissional) e acha que o trabalho dele está seguro porque é 'intelectual'"
-  quer: "não acordar com o próprio trabalho derrubado pela máquina (dor) e usar essa força a seu favor, coordenando a IA (desejo)"
+  quer: "nêo acordar com o próprio trabalho derrubado pela máquina (dor) e usar essa força a seu favor, coordenando a IA (desejo)"
   gancho: "terceiro com fato: no dia do anúncio (26/10/2026), um doutorando de San Diego contou que teve de mudar às pressas um artigo que se apoiava na hipótese que a IA derrubou"
   nota: 8
   destino: "https://inematds.github.io/claude-gestor-de-agentes-v72/ (curso Claude como gestor de agentes, 8 aulas + guia, no inema.club)"
   fatos:
     - "Post da OpenAI de 26/10/2026 (captura em lskEzJ7ixw0): 'Surprisingly, our system has recently proved that the ETH is false, a result that was subsequently verified in Lean.' e 'The ETH has been widely believed to be true, and has been used in hundreds of papers'"
-    - "Transcrição rWQ2CP3r75Q: hipótese escrita em 1999 por Impagliazzo e Paturi (UC San Diego); 'durante más de 25 años, cientos de trabajos científicos... se escribieron dando por sentado' que estavam certos; algoritmo achado em 16/10, verificado em 17/10; 'el mismo día que salió la noticia, un doctorando de San Diego contaba que tuvo que cambiar a toda prisa un artículo porque se apoyaba en esa hipótesis'"
-    - "Mesma transcrição: NÃO quebra a criptografia nem resolve P vs NP ('el cifrado de internet ni se inmuta') — a fala não fala de senha nem banco"
-    - "Curso https://inematds.github.io/claude-gestor-de-agentes-v72/ (conferido 28/10/2026): 'Você deixa de conversar e passa a coordenar'; mandar tarefas para o segundo plano, acompanhar todas numa tela só, sessão gestora decide o que sobe para você. A página não diz 'grátis'."
+    - "Transcriçêo rWQ2CP3r75Q: hipótese escrita em 1999 por Impagliazzo e Paturi (UC San Diego); 'durante más de 25 años, cientos de trabajos científicos... se escribieron dando por sentado' que estavam certos; algoritmo achado em 16/10, verificado em 17/10; 'el mismo día que salió la noticia, un doctorando de San Diego contaba que tuvo que cambiar a toda prisa un artículo porque se apoyaba en esa hipótesis'"
+    - "Mesma transcriçêo: NêO quebra a criptografia nem resolve P vs NP ('el cifrado de internet ni se inmuta') — a fala nêo fala de senha nem banco"
+    - "Curso https://inematds.github.io/claude-gestor-de-agentes-v72/ (conferido 28/10/2026): 'Você deixa de conversar e passa a coordenar'; mandar tarefas para o segundo plano, acompanhar todas numa tela só, sessêo gestora decide o que sobe para você. A página nêo diz 'grátis'."
 
 gancho:
   tipo: terceiro
@@ -22,17 +22,17 @@ gancho:
   destaque: "FALSA"
   objeto: "uma pilha de artigos científicos impressos desabando de uma mesa, com uma coluna de mármore rachada ao meio por um traço vermelho #ff2a1f"
   prova: {parte: 1, de: "25"}
-  absolvicao: "não é culpa sua"
+  absolvicao: "nêo é culpa sua"
   fontes:
     - {nome: "OpenAI, 26/10/2026", trecho: "our system has recently proved that the ETH is false, a result that was subsequently verified in Lean"}
 
 marca: "INEMA · IA FAZ CIÊNCIA"
 selo: "ALERTA"
-fonte: "<b>OpenAI</b> · anúncio de 26/10/2026 · hipótese de 1999, em revisão pelos autores · imagens: ilustração"
+fonte: "<b>OpenAI</b> · anúncio de 26/10/2026 · hipótese de 1999, em revisêo pelos autores · imagens: ilustraçêo"
 
 abertura:
   cor: amarelo
-  cena: "uma biblioteca escura de universidade; em primeiro plano, uma coluna de mármore rachada ao meio, com um traço vermelho #ff2a1f na rachadura, e uma pilha de artigos científicos impressos desabando no chão; a mão metálica de um robô humanoide branco de visor preto empurra a coluna; foco de luz branca vindo de cima; fundo preto; metade de baixo vazia; sensação de choque"
+  cena: "uma biblioteca escura de universidade; em primeiro plano, uma coluna de mármore rachada ao meio, com um traço vermelho #ff2a1f na rachadura, e uma pilha de artigos científicos impressos desabando no chêo; a mêo metálica de um robô humanoide branco de visor preto empurra a coluna; foco de luz branca vindo de cima; fundo preto; metade de baixo vazia; sensaçêo de choque"
 
 ritmo:
   pausa_antes: {parte: 6, de: repete}
@@ -52,9 +52,9 @@ partes:
       contador: {ate: 25, em: "25", cor: "#ff2a1f", unid: "ANOS DE HIPÓTESE · CAIU"}
       l: "hipótese de 1999, verificada falsa em 17/10"
   - etapa: medo
-    fala: "Centenas de artigos se apoiavam nela. Se nem cientista está seguro, e o seu trabalho? Não é culpa sua: ninguém te avisou."
-    prende: "a escala (centenas de artigos) mostra que nem o trabalho intelectual está a salvo; a absolvição vem na hora"
-    imagem: "um corredor de biblioteca universitária com estantes cheias de artigos científicos, várias pastas caindo das prateleiras ao mesmo tempo, sob um foco de luz vermelha #ff2a1f de cima; fundo preto; metade de baixo vazia; sensação de desabamento; nenhum texto legível"
+    fala: "Centenas de artigos se apoiavam nela. Se nem cientista está seguro, e o seu trabalho? Nêo é culpa sua: ninguém te avisou."
+    prende: "a escala (centenas de artigos) mostra que nem o trabalho intelectual está a salvo; a absolviçêo vem na hora"
+    imagem: "um corredor de biblioteca universitária com estantes cheias de artigos científicos, várias pastas caindo das prateleiras ao mesmo tempo, sob um foco de luz vermelha #ff2a1f de cima; fundo preto; metade de baixo vazia; sensaçêo de desabamento; nenhum texto legível"
     painel:
       de: Centenas
       k: "O QUE SE APOIAVA NELA"
@@ -64,7 +64,7 @@ partes:
   - etapa: desejo
     fala: "Agora imagina essa máquina trabalhando pra você."
     prende: "vira o medo em desejo: a máquina que derruba também pode trabalhar para você"
-    imagem: "uma pessoa de costas, sem rosto visível, com a mão no ombro de um robô humanoide branco estilo Tesla Optimus de visor preto, os dois olhando para uma tela acesa em amarelo; foco de luz amarela de cima; fundo preto liso; metade de baixo vazia; sensação de parceria"
+    imagem: "uma pessoa de costas, sem rosto visível, com a mêo no ombro de um robô humanoide branco estilo Tesla Optimus de visor preto, os dois olhando para uma tela acesa em amarelo; foco de luz amarela de cima; fundo preto liso; metade de baixo vazia; sensaçêo de parceria"
     painel:
       de: trabalhando
       k: "O OUTRO LADO"
@@ -72,9 +72,9 @@ partes:
       titulo: "ELA FAZ · VOCÊ DECIDE"
       cor: "#FACC15"
   - etapa: facilidade
-    fala: "Não precisa ser cientista. Só precisa mandar e conferir."
+    fala: "Nêo precisa ser cientista. Só precisa mandar e conferir."
     prende: "derruba a desculpa técnica e diz exatamente a habilidade nova, em duas palavras"
-    imagem: "um notebook aberto numa mesa preta com uma lista de tarefas e marcas de conferido em verde, luz amarela da tela, uma caneta ao lado; foco de luz amarela de cima; fundo preto; metade de baixo vazia; sensação de simplicidade; nenhum texto legível"
+    imagem: "um notebook aberto numa mesa preta com uma lista de tarefas e marcas de conferido em verde, luz amarela da tela, uma caneta ao lado; foco de luz amarela de cima; fundo preto; metade de baixo vazia; sensaçêo de simplicidade; nenhum texto legível"
     painel:
       de: conferir
       k: "SEM SER CIENTISTA"
@@ -84,7 +84,7 @@ partes:
   - etapa: descoberta
     fala: "No curso Claude como gestor de agentes você aprende a ser o chefe: delegar, acompanhar e decidir."
     logos: [{id: claude, nome: "Claude"}]
-    prende: "nome da solução + 3 verbos fáceis de lembrar, cada um acendendo na palavra"
+    prende: "nome da soluçêo + 3 verbos fáceis de lembrar, cada um acendendo na palavra"
     diagrama:
       forma: fluxo
       titulo: "GESTOR DE AGENTES"
@@ -99,7 +99,7 @@ partes:
   - etapa: beneficio
     fala: "Quem só repete, a máquina troca. Quem coordena, cresce."
     prende: "a máxima depois do silêncio, em duas metades opostas, fácil de repetir"
-    imagem: "duas pessoas de costas, sem rosto visível: uma à esquerda apagada na sombra diante de uma pilha de papel, outra à direita iluminada por luz amarela coordenando várias telas com agentes; fundo preto liso; metade de baixo vazia; sensação de virada"
+    imagem: "duas pessoas de costas, sem rosto visível: uma à esquerda apagada na sombra diante de uma pilha de papel, outra à direita iluminada por luz amarela coordenando várias telas com agentes; fundo preto liso; metade de baixo vazia; sensaçêo de virada"
     painel:
       de: coordena
       k: "A VIRADA"
@@ -119,4 +119,4 @@ cores: {doutorando: "#FACC15", falsa: "#FACC15", "25": "#ff2a1f", Centenas: "#ff
 publicar:
   fila: lives11
   titulo: "Uma IA DERRUBOU 25 anos de ciência em um dia #shorts"
-  contexto: "Short vertical do INEMA.CLUB (Nei Maldaner), canal sobre IA e futuro. Notícia: a OpenAI anunciou em 26/10/2026 que o modelo dela provou que a hipótese do tempo exponencial (ETH, 1999, Impagliazzo e Paturi, da UC San Diego) é falsa, verificado em Lean em 17/10; centenas de artigos se apoiavam nela há mais de 25 anos; um doutorando de San Diego teve de mudar às pressas um artigo; os próprios autores da hipótese estão revisando. NÃO diga que quebra senhas, bancos ou criptografia (não quebra) nem que resolve P vs NP. Virada: quem só repete, a máquina troca; quem coordena, cresce: aprender a coordenar agentes (delegar, acompanhar, decidir) no curso Claude como gestor de agentes https://inematds.github.io/claude-gestor-de-agentes-v72/ no inema.club. NÃO cite canais do YouTube de referência. CTA: comente 'eu vou' ou peça o link."
+  contexto: "Short vertical do INEMA.CLUB (Nei Maldaner), canal sobre IA e futuro. Notícia: a OpenAI anunciou em 26/10/2026 que o modelo dela provou que a hipótese do tempo exponencial (ETH, 1999, Impagliazzo e Paturi, da UC San Diego) é falsa, verificado em Lean em 17/10; centenas de artigos se apoiavam nela há mais de 25 anos; um doutorando de San Diego teve de mudar às pressas um artigo; os próprios autores da hipótese estêo revisando. NêO diga que quebra senhas, bancos ou criptografia (nêo quebra) nem que resolve P vs NP. Virada: quem só repete, a máquina troca; quem coordena, cresce: aprender a coordenar agentes (delegar, acompanhar, decidir) no curso Claude como gestor de agentes https://inematds.github.io/claude-gestor-de-agentes-v72/ no inema.club. NêO cite canais do YouTube de referência. CTA: comente 'eu vou' ou peça o link."

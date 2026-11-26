@@ -16,18 +16,18 @@
  },
  {
   "id": "f4",
-  "fala": "Você não precisa ser especialista, nem programador.",
-  "legenda": "Você não precisa ser especialista, nem programador."
+  "fala": "Você nêo precisa ser especialista, nem programador.",
+  "legenda": "Você nêo precisa ser especialista, nem programador."
  },
  {
   "id": "f5",
-  "fala": "São três ajustes: limite de gasto em cada chave, uma chave pra cada uso e um alarme que avisa quando o gasto foge do normal. Roubaram uma? Você cancela só aquela, e o resto segue funcionando.",
-  "legenda": "São 3 ajustes: limite de gasto em cada chave, uma chave pra cada uso e um alarme que avisa quando o gasto foge do normal. Roubaram uma? Você cancela só aquela, e o resto segue funcionando."
+  "fala": "Sêo três ajustes: limite de gasto em cada chave, uma chave pra cada uso e um alarme que avisa quando o gasto foge do normal. Roubaram uma? Você cancela só aquela, e o resto segue funcionando.",
+  "legenda": "Sêo 3 ajustes: limite de gasto em cada chave, uma chave pra cada uso e um alarme que avisa quando o gasto foge do normal. Roubaram uma? Você cancela só aquela, e o resto segue funcionando."
  },
  {
   "id": "f6",
-  "fala": "O susto vira um aviso no celular, não uma conta de mil dólares.",
-  "legenda": "O susto vira um aviso no celular, não uma conta de US$ 1.000."
+  "fala": "O susto vira um aviso no celular, nêo uma conta de mil dólares.",
+  "legenda": "O susto vira um aviso no celular, nêo uma conta de US$ 1.000."
  },
  {
   "id": "f7",
